@@ -1,0 +1,1702 @@
+{
+    "bulbasaur": {
+        "id": "bulbasaur",
+        "name": "Bulbasaur",
+        "number": "001",
+        "region": "kanto",
+        "type": ["grass", "poison"],
+        "family": "bulbasaur",
+        "tags": [],
+        "notes": ""
+    },
+    "ivysaur": {
+        "id": "ivysaur",
+        "name": "Ivysaur",
+        "number": "002",
+        "region": "kanto",
+        "type": ["grass", "poison"],
+        "family": "bulbasaur",
+        "tags": [],
+        "notes": ""
+    },
+    "venusaur": {
+        "id": "venusaur",
+        "name": "Venusaur",
+        "number": "003",
+        "region": "kanto",
+        "type": ["grass", "poison"],
+        "family": "bulbasaur",
+        "tags": [],
+        "notes": ""
+    },
+    "charmander": {
+        "id": "charmander",
+        "name": "Charmander",
+        "number": "004",
+        "region": "kanto",
+        "type": ["fire", null],
+        "family": "charmander",
+        "tags": [],
+        "notes": ""
+    },
+    "charmeleon": {
+        "id": "charmeleon",
+        "name": "Charmeleon",
+        "number": "005",
+        "region": "kanto",
+        "type": ["fire", null],
+        "family": "charmander",
+        "tags": [],
+        "notes": ""
+    },
+    "charizard": {
+        "id": "charizard",
+        "name": "Charizard",
+        "number": "006",
+        "region": "kanto",
+        "type": ["fire", "flying"],
+        "family": "charmander",
+        "tags": [],
+        "notes": ""
+    },
+    "squirtle": {
+        "id": "squirtle",
+        "name": "Squirtle",
+        "number": "007",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "wartortle": {
+        "id": "wartortle",
+        "name": "Wartortle",
+        "number": "008",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "blastoise": {
+        "id": "blastoise",
+        "name": "Blastoise",
+        "number": "009",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": "squirtle",
+        "tags": [],
+        "notes": ""
+    },
+    "caterpie": {
+        "id": "caterpie",
+        "name": "Caterpie",
+        "number": "010",
+        "region": "kanto",
+        "type": ["bug", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "metapod": {
+        "id": "metapod",
+        "name": "Metapod",
+        "number": "011",
+        "region": "kanto",
+        "type": ["bug", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "butterfree": {
+        "id": "butterfree",
+        "name": "Butterfree",
+        "number": "012",
+        "region": "kanto",
+        "type": ["bug", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "weedle": {
+        "id": "weedle",
+        "name": "Weedle",
+        "number": "013",
+        "region": "kanto",
+        "type": ["bug", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "kakuna": {
+        "id": "kakuna",
+        "name": "Kakuna",
+        "number": "014",
+        "region": "kanto",
+        "type": ["bug", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "beedrill": {
+        "id": "beedrill",
+        "name": "Beedrill",
+        "number": "015",
+        "region": "kanto",
+        "type": ["bug", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "pidgey": {
+        "id": "pidgey",
+        "name": "Pidgey",
+        "number": "016",
+        "region": "kanto",
+        "type": ["normal", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "pidgeotto": {
+        "id": "pidgeotto",
+        "name": "Pidgeotto",
+        "number": "017",
+        "region": "kanto",
+        "type": ["normal", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "pidgeot": {
+        "id": "pidgeot",
+        "name": "Pidgeot",
+        "number": "018",
+        "region": "kanto",
+        "type": ["normal", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "rattata": {
+        "id": "rattata",
+        "name": "Rattata",
+        "number": "019",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "rattata-alola": {
+        "id": "rattata-alola",
+        "name": "Alolan Rattata",
+        "number": "019",
+        "region": "alola",
+        "type": ["dark", "normal"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "raticate": {
+        "id": "raticate",
+        "name": "Raticate",
+        "number": "020",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "raticate-alola": {
+        "id": "raticate-alola",
+        "name": "Alolan Raticate",
+        "number": "020",
+        "region": "alola",
+        "type": ["dark", "normal"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "spearow": {
+        "id": "spearow",
+        "name": "Spearow",
+        "number": "021",
+        "region": "kanto",
+        "type": ["normal", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "fearow": {
+        "id": "fearow",
+        "name": "Fearow",
+        "number": "022",
+        "region": "kanto",
+        "type": ["normal", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "ekans": {
+        "id": "ekans",
+        "name": "Ekans",
+        "number": "023",
+        "region": "kanto",
+        "type": ["poison", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "arbok": {
+        "id": "arbok",
+        "name": "Arbok",
+        "number": "024",
+        "region": "kanto",
+        "type": ["poison", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "pikachu": {
+        "id": "pikachu",
+        "name": "Pikachu",
+        "number": "025",
+        "region": "kanto",
+        "type": ["electric", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "raichu": {
+        "id": "raichu",
+        "name": "Raichu",
+        "number": "026",
+        "region": "kanto",
+        "type": ["electric", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "raichu-alola": {
+        "id": "raichu-alola",
+        "name": "Alolan Raichu",
+        "number": "026",
+        "region": "alola",
+        "type": ["electric", "psychic"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "sandshrew": {
+        "id": "sandshrew",
+        "name": "Sandshrew",
+        "number": "027",
+        "region": "kanto",
+        "type": ["ground", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "sandshrew-alola": {
+        "id": "sandshrew-alola",
+        "name": "Alolan Sandshrew",
+        "number": "027",
+        "region": "alola",
+        "type": ["ice", "steel"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "sandslash": {
+        "id": "sandslash",
+        "name": "Sandslash",
+        "number": "028",
+        "region": "kanto",
+        "type": ["ground", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "sandslash-alola": {
+        "id": "sandslash-alola",
+        "name": "Alolan Sandslash",
+        "number": "028",
+        "region": "alola",
+        "type": ["ice", "steel"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "nidoran-f": {
+        "id": "nidoran-f",
+        "name": "Nidoran",
+        "number": "029",
+        "region": "kanto",
+        "type": ["poison", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "nidorina": {
+        "id": "nidorina",
+        "name": "Nidorina",
+        "number": "030",
+        "region": "kanto",
+        "type": ["poison", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "nidoqueen": {
+        "id": "nidoqueen",
+        "name": "Nidoqueen",
+        "number": "031",
+        "region": "kanto",
+        "type": ["poison", "ground"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "nidoran-m": {
+        "id": "nidoran-m",
+        "name": "Nidoran",
+        "number": "032",
+        "region": "kanto",
+        "type": ["poison", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "nidorino": {
+        "id": "nidorino",
+        "name": "Nidorino",
+        "number": "033",
+        "region": "kanto",
+        "type": ["poison", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "nidoking": {
+        "id": "nidoking",
+        "name": "Nidoking",
+        "number": "034",
+        "region": "kanto",
+        "type": ["poison", "ground"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "clefairy": {
+        "id": "clefairy",
+        "name": "Clefairy",
+        "number": "035",
+        "region": "kanto",
+        "type": ["fairy", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "clefable": {
+        "id": "clefable",
+        "name": "Clefable",
+        "number": "036",
+        "region": "kanto",
+        "type": ["fairy", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "vulpix": {
+        "id": "vulpix",
+        "name": "Vulpix",
+        "number": "037",
+        "region": "kanto",
+        "type": ["fire", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "vulpix-alola": {
+        "id": "vulpix-alola",
+        "name": "Alolan Vulpix",
+        "number": "037",
+        "region": "alola",
+        "type": ["ice", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "ninetales": {
+        "id": "ninetales",
+        "name": "Ninetales",
+        "number": "038",
+        "region": "kanto",
+        "type": ["fire", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "ninetales-alola": {
+        "id": "ninetales-alola",
+        "name": "Alolan Ninetales",
+        "number": "038",
+        "region": "alola",
+        "type": ["ice", "fairy"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "jigglypuff": {
+        "id": "jigglypuff",
+        "name": "Jigglypuff",
+        "number": "039",
+        "region": "kanto",
+        "type": ["normal", "fairy"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "wigglytuff": {
+        "id": "wigglytuff",
+        "name": "Wigglytuff",
+        "number": "040",
+        "region": "kanto",
+        "type": ["normal", "fairy"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "zubat": {
+        "id": "zubat",
+        "name": "Zubat",
+        "number": "041",
+        "region": "kanto",
+        "type": ["poison", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "golbat": {
+        "id": "golbat",
+        "name": "Golbat",
+        "number": "042",
+        "region": "kanto",
+        "type": ["poison", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "oddish": {
+        "id": "oddish",
+        "name": "Oddish",
+        "number": "043",
+        "region": "kanto",
+        "type": ["grass", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "gloom": {
+        "id": "gloom",
+        "name": "Gloom",
+        "number": "044",
+        "region": "kanto",
+        "type": ["grass", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "vileplume": {
+        "id": "vileplume",
+        "name": "Vileplume",
+        "number": "045",
+        "region": "kanto",
+        "type": ["grass", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "paras": {
+        "id": "paras",
+        "name": "Paras",
+        "number": "046",
+        "region": "kanto",
+        "type": ["bug", "grass"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "parasect": {
+        "id": "parasect",
+        "name": "Parasect",
+        "number": "047",
+        "region": "kanto",
+        "type": ["bug", "grass"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "venonat": {
+        "id": "venonat",
+        "name": "Venonat",
+        "number": "048",
+        "region": "kanto",
+        "type": ["bug", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "venomoth": {
+        "id": "venomoth",
+        "name": "Venomoth",
+        "number": "049",
+        "region": "kanto",
+        "type": ["bug", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "diglett": {
+        "id": "diglett",
+        "name": "Diglett",
+        "number": "050",
+        "region": "kanto",
+        "type": ["ground", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "diglett-alola": {
+        "id": "diglett-alola",
+        "name": "Alolan Diglett",
+        "number": "050",
+        "region": "alola",
+        "type": ["ground", "steel"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "dugtrio": {
+        "id": "dugtrio",
+        "name": "Dugtrio",
+        "number": "051",
+        "region": "kanto",
+        "type": ["ground", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "dugtrio-alola": {
+        "id": "dugtrio-alola",
+        "name": "Alolan Dugtrio",
+        "number": "051",
+        "region": "alola",
+        "type": ["ground", "steel"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "meowth": {
+        "id": "meowth",
+        "name": "Meowth",
+        "number": "052",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "meowth-alola": {
+        "id": "meowth-alola",
+        "name": "Alolan Meowth",
+        "number": "052",
+        "region": "alola",
+        "type": ["dark", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "persian": {
+        "id": "persian",
+        "name": "Persian",
+        "number": "053",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "persian-alola": {
+        "id": "persian-alola",
+        "name": "Alolan Persian",
+        "number": "053",
+        "region": "alola",
+        "type": ["dark", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "psyduck": {
+        "id": "psyduck",
+        "name": "Psyduck",
+        "number": "054",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "golduck": {
+        "id": "golduck",
+        "name": "Golduck",
+        "number": "055",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "mankey": {
+        "id": "mankey",
+        "name": "Mankey",
+        "number": "056",
+        "region": "kanto",
+        "type": ["fighting", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "primeape": {
+        "id": "primeape",
+        "name": "Primeape",
+        "number": "057",
+        "region": "kanto",
+        "type": ["fighting", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "growlithe": {
+        "id": "growlithe",
+        "name": "Growlithe",
+        "number": "058",
+        "region": "kanto",
+        "type": ["fire", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "arcanine": {
+        "id": "arcanine",
+        "name": "Arcanine",
+        "number": "059",
+        "region": "kanto",
+        "type": ["fire", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "poliwag": {
+        "id": "poliwag",
+        "name": "Poliwag",
+        "number": "060",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "poliwhirl": {
+        "id": "poliwhirl",
+        "name": "Poliwhirl",
+        "number": "061",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "poliwrath": {
+        "id": "poliwrath",
+        "name": "Poliwrath",
+        "number": "062",
+        "region": "kanto",
+        "type": ["water", "fighting"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "abra": {
+        "id": "abra",
+        "name": "Abra",
+        "number": "063",
+        "region": "kanto",
+        "type": ["psychic", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "kadabra": {
+        "id": "kadabra",
+        "name": "Kadabra",
+        "number": "064",
+        "region": "kanto",
+        "type": ["psychic", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "alakazam": {
+        "id": "alakazam",
+        "name": "Alakazam",
+        "number": "065",
+        "region": "kanto",
+        "type": ["psychic", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "machop": {
+        "id": "machop",
+        "name": "Machop",
+        "number": "066",
+        "region": "kanto",
+        "type": ["fighting", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "machoke": {
+        "id": "machoke",
+        "name": "Machoke",
+        "number": "067",
+        "region": "kanto",
+        "type": ["fighting", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "machamp": {
+        "id": "machamp",
+        "name": "Machamp",
+        "number": "068",
+        "region": "kanto",
+        "type": ["fighting", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "bellsprout": {
+        "id": "bellsprout",
+        "name": "Bellsprout",
+        "number": "069",
+        "region": "kanto",
+        "type": ["grass", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "weepinbell": {
+        "id": "weepinbell",
+        "name": "Weepinbell",
+        "number": "070",
+        "region": "kanto",
+        "type": ["grass", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "victreebel": {
+        "id": "victreebel",
+        "name": "Victreebel",
+        "number": "071",
+        "region": "kanto",
+        "type": ["grass", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "tentacool": {
+        "id": "tentacool",
+        "name": "Tentacool",
+        "number": "072",
+        "region": "kanto",
+        "type": ["water", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "tentacruel": {
+        "id": "tentacruel",
+        "name": "Tentacruel",
+        "number": "073",
+        "region": "kanto",
+        "type": ["water", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "geodude": {
+        "id": "geodude",
+        "name": "Geodude",
+        "number": "074",
+        "region": "kanto",
+        "type": ["rock", "ground"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "geodude-alola": {
+        "id": "geodude-alola",
+        "name": "Alolan Geodude",
+        "number": "074",
+        "region": "alola",
+        "type": ["rock", "electric"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "graveler": {
+        "id": "graveler",
+        "name": "Graveler",
+        "number": "075",
+        "region": "kanto",
+        "type": ["rock", "ground"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "graveler-alola": {
+        "id": "graveler-alola",
+        "name": "Alolan Graveler",
+        "number": "075",
+        "region": "alola",
+        "type": ["rock", "electric"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "golem": {
+        "id": "golem",
+        "name": "Golem",
+        "number": "076",
+        "region": "kanto",
+        "type": ["rock", "ground"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "golem-alola": {
+        "id": "golem-alola",
+        "name": "Alolan Golem",
+        "number": "076",
+        "region": "alola",
+        "type": ["rock", "electric"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "ponyta": {
+        "id": "ponyta",
+        "name": "Ponyta",
+        "number": "077",
+        "region": "kanto",
+        "type": ["fire", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "rapidash": {
+        "id": "rapidash",
+        "name": "Rapidash",
+        "number": "078",
+        "region": "kanto",
+        "type": ["fire", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "slowpoke": {
+        "id": "slowpoke",
+        "name": "Slowpoke",
+        "number": "079",
+        "region": "kanto",
+        "type": ["water", "psychic"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "slowbro": {
+        "id": "slowbro",
+        "name": "Slowbro",
+        "number": "080",
+        "region": "kanto",
+        "type": ["water", "psychic"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "magnemite": {
+        "id": "magnemite",
+        "name": "Magnemite",
+        "number": "081",
+        "region": "kanto",
+        "type": ["electric", "steel"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "magneton": {
+        "id": "magneton",
+        "name": "Magneton",
+        "number": "082",
+        "region": "kanto",
+        "type": ["electric", "steel"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "farfetchd": {
+        "id": "farfetchd",
+        "name": "Farfetchd",
+        "number": "083",
+        "region": "kanto",
+        "type": ["normal", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "doduo": {
+        "id": "doduo",
+        "name": "Doduo",
+        "number": "084",
+        "region": "kanto",
+        "type": ["normal", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "dodrio": {
+        "id": "dodrio",
+        "name": "Dodrio",
+        "number": "085",
+        "region": "kanto",
+        "type": ["normal", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "seel": {
+        "id": "seel",
+        "name": "Seel",
+        "number": "086",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "dewgong": {
+        "id": "dewgong",
+        "name": "Dewgong",
+        "number": "087",
+        "region": "kanto",
+        "type": ["water", "ice"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "grimer": {
+        "id": "grimer",
+        "name": "Grimer",
+        "number": "088",
+        "region": "kanto",
+        "type": ["poison", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "grimer-alola": {
+        "id": "grimer-alola",
+        "name": "Alolan Grimer",
+        "number": "088",
+        "region": "alola",
+        "type": ["poison", "dark"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "muk": {
+        "id": "muk",
+        "name": "Muk",
+        "number": "089",
+        "region": "kanto",
+        "type": ["poison", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "muk-alola": {
+        "id": "muk-alola",
+        "name": "Alolan Muk",
+        "number": "089",
+        "region": "alola",
+        "type": ["poison", "dark"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "shellder": {
+        "id": "shellder",
+        "name": "Shellder",
+        "number": "090",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "cloyster": {
+        "id": "cloyster",
+        "name": "Cloyster",
+        "number": "091",
+        "region": "kanto",
+        "type": ["water", "ice"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "gastly": {
+        "id": "gastly",
+        "name": "Gastly",
+        "number": "092",
+        "region": "kanto",
+        "type": ["ghost", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "haunter": {
+        "id": "haunter",
+        "name": "Haunter",
+        "number": "093",
+        "region": "kanto",
+        "type": ["ghost", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "gengar": {
+        "id": "gengar",
+        "name": "Gengar",
+        "number": "094",
+        "region": "kanto",
+        "type": ["ghost", "poison"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "onix": {
+        "id": "onix",
+        "name": "Onix",
+        "number": "095",
+        "region": "kanto",
+        "type": ["rock", "ground"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "drowzee": {
+        "id": "drowzee",
+        "name": "Drowzee",
+        "number": "096",
+        "region": "kanto",
+        "type": ["psychic", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "hypno": {
+        "id": "hypno",
+        "name": "Hypno",
+        "number": "097",
+        "region": "kanto",
+        "type": ["psychic", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "krabby": {
+        "id": "krabby",
+        "name": "Krabby",
+        "number": "098",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "kingler": {
+        "id": "kingler",
+        "name": "Kingler",
+        "number": "099",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "voltorb": {
+        "id": "voltorb",
+        "name": "Voltorb",
+        "number": "100",
+        "region": "kanto",
+        "type": ["electric", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "electrode": {
+        "id": "electrode",
+        "name": "Electrode",
+        "number": "101",
+        "region": "kanto",
+        "type": ["electric", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "exeggcute": {
+        "id": "exeggcute",
+        "name": "Exeggcute",
+        "number": "102",
+        "region": "kanto",
+        "type": ["grass", "psychic"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "exeggutor": {
+        "id": "exeggutor",
+        "name": "Exeggutor",
+        "number": "103",
+        "region": "kanto",
+        "type": ["grass", "psychic"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "exeggutor-alola": {
+        "id": "exeggutor-alola",
+        "name": "Alolan Exeggutor",
+        "number": "103",
+        "region": "alola",
+        "type": ["grass", "dragon"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "cubone": {
+        "id": "cubone",
+        "name": "Cubone",
+        "number": "104",
+        "region": "kanto",
+        "type": ["ground", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "marowak": {
+        "id": "marowak",
+        "name": "Marowak",
+        "number": "105",
+        "region": "kanto",
+        "type": ["ground", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "marowak-alola": {
+        "id": "marowak-alola",
+        "name": "Alolan Marowak",
+        "number": "105",
+        "region": "alola",
+        "type": ["fire", "ghost"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "hitmonlee": {
+        "id": "hitmonlee",
+        "name": "Hitmonlee",
+        "number": "106",
+        "region": "kanto",
+        "type": ["fighting", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "hitmonchan": {
+        "id": "hitmonchan",
+        "name": "Hitmonchan",
+        "number": "107",
+        "region": "kanto",
+        "type": ["fighting", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "lickitung": {
+        "id": "lickitung",
+        "name": "Lickitung",
+        "number": "108",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "koffing": {
+        "id": "koffing",
+        "name": "Koffing",
+        "number": "109",
+        "region": "kanto",
+        "type": ["poison", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "weezing": {
+        "id": "weezing",
+        "name": "Weezing",
+        "number": "110",
+        "region": "kanto",
+        "type": ["poison", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "rhyhorn": {
+        "id": "rhyhorn",
+        "name": "Rhyhorn",
+        "number": "111",
+        "region": "kanto",
+        "type": ["ground", "rock"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "rhydon": {
+        "id": "rhydon",
+        "name": "Rhydon",
+        "number": "112",
+        "region": "kanto",
+        "type": ["ground", "rock"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "chansey": {
+        "id": "chansey",
+        "name": "Chansey",
+        "number": "113",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "tangela": {
+        "id": "tangela",
+        "name": "Tangela",
+        "number": "114",
+        "region": "kanto",
+        "type": ["grass", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "kangaskhan": {
+        "id": "kangaskhan",
+        "name": "Kangaskhan",
+        "number": "115",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "horsea": {
+        "id": "horsea",
+        "name": "Horsea",
+        "number": "116",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "seadra": {
+        "id": "seadra",
+        "name": "Seadra",
+        "number": "117",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "goldeen": {
+        "id": "goldeen",
+        "name": "Goldeen",
+        "number": "118",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "seaking": {
+        "id": "seaking",
+        "name": "Seaking",
+        "number": "119",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "staryu": {
+        "id": "staryu",
+        "name": "Staryu",
+        "number": "120",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "starmie": {
+        "id": "starmie",
+        "name": "Starmie",
+        "number": "121",
+        "region": "kanto",
+        "type": ["water", "psychic"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "mrmime": {
+        "id": "mrmime",
+        "name": "Mr. Mime",
+        "number": "122",
+        "region": "kanto",
+        "type": ["psychic", "fairy"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "scyther": {
+        "id": "scyther",
+        "name": "Scyther",
+        "number": "123",
+        "region": "kanto",
+        "type": ["bug", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "jynx": {
+        "id": "jynx",
+        "name": "Jynx",
+        "number": "124",
+        "region": "kanto",
+        "type": ["ice", "psychic"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "electabuzz": {
+        "id": "electabuzz",
+        "name": "Electabuzz",
+        "number": "125",
+        "region": "kanto",
+        "type": ["electric", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "magmar": {
+        "id": "magmar",
+        "name": "Magmar",
+        "number": "126",
+        "region": "kanto",
+        "type": ["fire", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "pinsir": {
+        "id": "pinsir",
+        "name": "Pinsir",
+        "number": "127",
+        "region": "kanto",
+        "type": ["bug", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "tauros": {
+        "id": "tauros",
+        "name": "Tauros",
+        "number": "128",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "magikarp": {
+        "id": "magikarp",
+        "name": "Magikarp",
+        "number": "129",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "gyarados": {
+        "id": "gyarados",
+        "name": "Gyarados",
+        "number": "130",
+        "region": "kanto",
+        "type": ["water", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "lapras": {
+        "id": "lapras",
+        "name": "Lapras",
+        "number": "131",
+        "region": "kanto",
+        "type": ["water", "ice"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "ditto": {
+        "id": "ditto",
+        "name": "Ditto",
+        "number": "132",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "eevee": {
+        "id": "eevee",
+        "name": "Eevee",
+        "number": "133",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "vaporeon": {
+        "id": "vaporeon",
+        "name": "Vaporeon",
+        "number": "134",
+        "region": "kanto",
+        "type": ["water", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "jolteon": {
+        "id": "jolteon",
+        "name": "Jolteon",
+        "number": "135",
+        "region": "kanto",
+        "type": ["electric", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "flareon": {
+        "id": "flareon",
+        "name": "Flareon",
+        "number": "136",
+        "region": "kanto",
+        "type": ["fire", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "porygon": {
+        "id": "porygon",
+        "name": "Porygon",
+        "number": "137",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "omanyte": {
+        "id": "omanyte",
+        "name": "Omanyte",
+        "number": "138",
+        "region": "kanto",
+        "type": ["rock", "water"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "omastar": {
+        "id": "omastar",
+        "name": "Omastar",
+        "number": "139",
+        "region": "kanto",
+        "type": ["rock", "water"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "kabuto": {
+        "id": "kabuto",
+        "name": "Kabuto",
+        "number": "140",
+        "region": "kanto",
+        "type": ["rock", "water"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "kabutops": {
+        "id": "kabutops",
+        "name": "Kabutops",
+        "number": "141",
+        "region": "kanto",
+        "type": ["rock", "water"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "aerodactyl": {
+        "id": "aerodactyl",
+        "name": "Aerodactyl",
+        "number": "142",
+        "region": "kanto",
+        "type": ["rock", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "snorlax": {
+        "id": "snorlax",
+        "name": "Snorlax",
+        "number": "143",
+        "region": "kanto",
+        "type": ["normal", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "articuno": {
+        "id": "articuno",
+        "name": "Articuno",
+        "number": "144",
+        "region": "kanto",
+        "type": ["ice", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "zapdos": {
+        "id": "zapdos",
+        "name": "Zapdos",
+        "number": "145",
+        "region": "kanto",
+        "type": ["electric", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "moltres": {
+        "id": "moltres",
+        "name": "Moltres",
+        "number": "146",
+        "region": "kanto",
+        "type": ["fire", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "dratini": {
+        "id": "dratini",
+        "name": "Dratini",
+        "number": "147",
+        "region": "kanto",
+        "type": ["dragon", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "dragonair": {
+        "id": "dragonair",
+        "name": "Dragonair",
+        "number": "148",
+        "region": "kanto",
+        "type": ["dragon", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "dragonite": {
+        "id": "dragonite",
+        "name": "Dragonite",
+        "number": "149",
+        "region": "kanto",
+        "type": ["dragon", "flying"],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "mewtwo": {
+        "id": "mewtwo",
+        "name": "Mewtwo",
+        "number": "150",
+        "region": "kanto",
+        "type": ["psychic", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "mewtwo-armored": {
+        "id": "mewtwo-armored",
+        "name": "Armored Mewtwo",
+        "number": "150",
+        "region": "kanto",
+        "type": ["psychic", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    },
+    "mew": {
+        "id": "mew",
+        "name": "Mew",
+        "number": "151",
+        "region": "kanto",
+        "type": ["psychic", null],
+        "family": null,
+        "tags": [],
+        "notes": ""
+    }
+}
