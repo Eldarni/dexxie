@@ -5,6 +5,8 @@ import cloneDeep from 'lodash.clonedeep';
 import concatUnique from '../utils/concatUnique';
 import pokemonSearch from '../utils/pokemonSearch';
 
+
+import Selectable from './Selectable';
 import PokeCard from './PokeCard';
 
 import basePokemonData from '../static/pokemon.json';
@@ -24,6 +26,13 @@ const Pokedex = (props) => {
         window.localStorage.setItem('user-data', JSON.stringify(userData));
     });
 
+    //------------------------------------------------------------------------------
+
+    const [selectedPokemon, setSelectedPokemon] = useState([]);
+    const onSelectionChangeHandler = function(selection) {
+        setSelectedPokemon(selection);
+    }
+    
     //------------------------------------------------------------------------------
 
     //merge the contents of the user's personal tags into the main tag list
@@ -71,9 +80,11 @@ const Pokedex = (props) => {
     //
     return (
         <div className="pokedex">
-            {Object.keys(filteredPokemon).map(function(key) {
-                return <PokeCard key={key} details={filteredPokemon[key]} onToggleTag={onToggleTag}></PokeCard>
-            })}
+            <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
+                {Object.keys(filteredPokemon).map(function(key) {
+                    return <PokeCard key={key} details={filteredPokemon[key]} onToggleTag={onToggleTag}></PokeCard>
+                })}
+            </Selectable>
         </div>
     );
 
