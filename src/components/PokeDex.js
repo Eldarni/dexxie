@@ -7,6 +7,7 @@ import pokemonSearch from '../utils/pokemonSearch';
 
 
 import Selectable from './Selectable';
+import PokeDexSelectionInfo from './PokeDexSelectionInfo';
 import PokeCard from './PokeCard';
 
 import basePokemonData from '../static/pokemon.json';
@@ -77,15 +78,32 @@ const Pokedex = (props) => {
 
     //------------------------------------------------------------------------------
 
+    const handleAddTags = (event) => {
+
+    };
+    
+    const handleSelectAll = (event) => {
+        setSelectedPokemon(Object.keys(filteredPokemon));
+    };
+
+    const handleClearAll = (event) => {
+        setSelectedPokemon([]);
+    };
+
+    //------------------------------------------------------------------------------
+
     //
     return (
-        <div className="pokedex">
-            <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
-                {Object.keys(filteredPokemon).map(function(key) {
-                    return <PokeCard key={key} details={filteredPokemon[key]} onToggleTag={onToggleTag}></PokeCard>
-                })}
-            </Selectable>
-        </div>
+        <React.Fragment>
+            <PokeDexSelectionInfo selectedItems={selectedPokemon} onAddTags={handleAddTags} onSelectAll={handleSelectAll} onClearAll={handleClearAll}></PokeDexSelectionInfo>
+            <div className="pokedex">
+                <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
+                    {Object.keys(filteredPokemon).map(function(key) {
+                        return <PokeCard key={key} details={filteredPokemon[key]} onToggleTag={onToggleTag}></PokeCard>
+                    })}
+                </Selectable>
+            </div>
+        </React.Fragment>
     );
 
     //------------------------------------------------------------------------------
