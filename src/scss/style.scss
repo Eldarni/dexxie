@@ -44,8 +44,8 @@ $colour-yellow : #f0dba5; // yellow
 //define some mixins to make use of this easy
 @mixin font-heading($size: false, $colour: false, $weight: false) {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    @if $size   { font-size: $size;     }    
-    @if $colour { color: $colour;       }      
+    @if $size   { font-size: $size;     }
+    @if $colour { color: $colour;       }
     @if $weight { font-weight: $weight; }
 }
 
@@ -171,14 +171,14 @@ body {
 
 //
 .control-bar {
-    
+
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 
     //
-    .control-group { 
-        
+    .control-group {
+
         display: flex;
         flex-direction: row;
 
@@ -189,7 +189,7 @@ body {
 
     //
     .control-button {
-        
+
         //
         width: 2.3em; height: 2.3em;
 
@@ -212,7 +212,7 @@ body {
 
         //
         width: 35em;
-    
+
         //
         font-size: 1.2em;
         color: $colour-background;
@@ -228,7 +228,6 @@ body {
 
 //------------------------------------------------------------------------------
 
-
 .selection-info {
     background-color: #e4c049;
     color: #000000;
@@ -236,167 +235,89 @@ body {
     margin: 1em;
 }
 
+//------------------------------------------------------------------------------
 
+.pokedex {
 
+    //
+    padding: 1em 0.5em;
 
-.pokedex { 
-
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: flex-start;
-    
-
+    //
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
-
 
     grid-column-gap: 0.7em;
     grid-row-gap: 0.7em;
 
-    padding: 1em 0.5em;
-
-
-
-
-    /*
-    .pokemon:nth-child(-n+12) {
-        background-color: #d6d6d6;
-    }
-
-    .pokemon:first-child {
-        background-color: #c4c4c4;
-    }
-
-    .pokemon:nth-child(12) {
-        background-color: #c4c4c4;
-    }*/
-
-
-
-
-
-
+    //
     .pokemon {
 
+        //
         @include relative();
 
+        //
         height: 12em;
-        
-        // border: 2px solid #BBBBBB;
-        // border-radius: 0.1em;
 
-        // box-shadow: 0.2em 0.2em #DEDEDE;
+        //
+        cursor: pointer;
 
-        // background-color: #FCFCFC;
-
+        //
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
 
+        //
         display: flex;
         align-items: center;
         justify-content: center;
 
-        &[data-selected=yes] {
-            background-color: #666666;
-            outline: 2px solid #CCCCCC !important;
+        //style the name and number indicators
+        .pokemon-name {
+            @include absolute(top 0 left 0);
+            padding: 0.1em 0.4em 0.1em 0.3em;
         }
-
 
         .pokemon-number {
-            // display: none;
             @include absolute(top 0 right 0.2em);
-            color: #BBBBBB;
-            font-weight: bold;
-
-            &::first-letter { color: #CCCCCC; font-weight: normal; }
+            &::first-letter { color: #999999; }
         }
 
-        .pokemon-name {
-            // display: none;
-
-            @include absolute(top 0 left 0);
-            background-color: rgba(255, 255, 255, 0.7);
-            border-bottom-right-radius: 0.5em;
-            padding: 0.1em 0.4em 0.1em 0.3em;
-            
-            color: #666666;
-            //font-weight: bold;
-
+        .pokemon-name, .pokemon-number {
+            opacity: 0.3;
+            color: $colour-foreground;
         }
 
-
-        .pokemon-icons {
-            @include absolute(bottom 0 right 0 left 0);
-
-            display: none;
-            align-content: stretch;
-
-            i {
-                display: block;
-                flex: 1 0 1em;
-
-                color: #666666;
-
-                text-align: center;
-                background: rgba(255, 255, 255, 0.8);
-                padding: 0.4em;
-
-                cursor: pointer;
-
-                &:hover { color: #333333; background-color: rgba(226, 226, 226, 0.842)}
-
-            }
-
-        }
-
+        //apply some hover styling
         &:hover {
 
-            // border: 1px solid #BBBBBB;
-            border-radius: 0.05em;
+            //soften the corner when hovering
+            border-radius: 0.1em;
 
-            // box-shadow: 0.2em 0.2em #DEDEDE;
+            //
+            background-color: lighten($colour-background, 5%);
 
-            background-color: #222222;
-            cursor: pointer;
+            //
+            .pokemon-name, .pokemon-number { opacity: 1; }
 
         }
 
+        //
+        &[data-selected=yes] {
 
-        // &:not(:hover) {
-        //     .pokemon-number, .pokemon-name, .pokemon-icons {
-        //         display: none;
-        //     }
-        // }
+            //
+            background-color: lighten($colour-background, 15%);
+            outline: 2px solid $colour-foreground;
 
+            //
+            .pokemon-name, .pokemon-number { opacity: 1; }
 
+            //
+            .pokemon-name {
+                color: $colour-background;
+                background-color: $colour-foreground;
+                border-bottom-right-radius: 0.5em;
+            }
 
-
-
-        //add a indicator to the "active" tags
-        &[data-tags*="user:FEMALE"] .pokemon-icons i[title="Female"] { 
-            color: #FFFFFF; background-color: #666666; 
-            &:hover { color: #BBBBBB; background-color: #333333; }
-        }
-        &[data-tags*="user:MALE"] .pokemon-icons i[title="Male"] { 
-            color: #FFFFFF; background-color: #666666; 
-            &:hover { color: #BBBBBB; background-color: #333333; }
-        }
-        &[data-tags*="user:SHINY"] .pokemon-icons i[title="Shiny"] { 
-            color: #FFFFFF; background-color: #666666; 
-            &:hover { color: #BBBBBB; background-color: #333333; }
-        }
-        &[data-tags*="user:SHADOW"] .pokemon-icons i[title="Shadow"] { 
-            color: #FFFFFF; background-color: #666666; 
-            &:hover { color: #BBBBBB; background-color: #333333; }
-        }
-        &[data-tags*="user:PURIFIED"] .pokemon-icons i[title="Purified"] { 
-            color: #FFFFFF; background-color: #666666; 
-            &:hover { color: #BBBBBB; background-color: #333333; }
-        }
-        &[data-tags*="user:LUCKY"] .pokemon-icons i[title="Lucky"] { 
-            color: #FFFFFF; background-color: #666666; 
-            &:hover { color: #BBBBBB; background-color: #333333; }
         }
 
     }
@@ -407,33 +328,11 @@ body {
         opacity: 0.7;
     }
 
-    //
-    .pokemon[data-tags*="user:FEMALE"], .pokemon[data-tags*="user:MALE"], .pokemon[data-tags*="user:SHINY"], .pokemon[data-tags*="user:SHADOW"], .pokemon[data-tags*="user:PURIFIED"], .pokemon[data-tags*="user:LUCKY"] {
-        // border-color: #71c7ec; //border-color: #8aec71;
-        // background-color: rgba(113, 199, 236, 0.1); //background-color: rgba(138, 236, 113, 0.2);
-    }
-
+    //show the golden sparkles for lucky pokemon
     .pokemon[data-tags*="user:LUCKY"] {
-        // border-color: #ffcf40;
         background-color: rgba(255, 207, 64, 0.1);
         background-image: url(/images/lucky.png);
     }
 
-    .pokemon[data-tags*="user:SHINY"] {
-        // border-color: #ffcf40;
-        // background-color: rgba(113, 199, 236, 0.1);
-        // background-image: url(/images/shiny.png);
-    }
-
-
-    // .pokemon[data-tags*="user:SHINY"] .pokemon-shiny{
-    //     @include absolute(bottom 0 right 0);
-    //     background-image: url(/images/shiny.png);
-    //     width: 64px;
-    //     height: 64px;
-    //     opacity: 0.8;
-    // }
-
-
-
 }
+
