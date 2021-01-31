@@ -9,6 +9,8 @@ import cloneDeep from 'lodash.clonedeep';
 import concatUnique from '../utils/concatUnique';
 import pokemonSearch from '../utils/pokemonSearch';
 
+//
+import ControlBar from './ControlBar';
 
 import Selectable from './Selectable';
 import PokeDexSelectionInfo from './PokeDexSelectionInfo';
@@ -49,10 +51,18 @@ const Pokedex = (props) => {
 
     //------------------------------------------------------------------------------
 
+    //
+    const [searchString, setSearchString] = useState('');
+
+    //pass the pasted html into state, this will cause the pastebox to re-render
+    const onSearch = (event) => {
+        setSearchString(event.target.value);
+    };
+
     //filter the base list of pokemon by the search string
     let filteredPokemon = pokemonData;
-    if (props.searchString !== '') {
-        filteredPokemon = pokemonSearch(pokemonData, props.searchString);
+    if (searchString !== '') {
+        filteredPokemon = pokemonSearch(pokemonData, searchString);
     } 
 
     //------------------------------------------------------------------------------
@@ -99,6 +109,9 @@ const Pokedex = (props) => {
     //
     return (
         <React.Fragment>
+
+            <ControlBar search={onSearch} searchString={searchString}></ControlBar>
+
             <PokeDexSelectionInfo selectedItems={selectedPokemon} onAddTags={handleAddTags} onSelectAll={handleSelectAll} onClearAll={handleClearAll}></PokeDexSelectionInfo>
             
             <Scrollable>
