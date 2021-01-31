@@ -149,26 +149,26 @@ body {
         overflow: hidden;
 
         //stripes
-        background: linear-gradient(135deg, 
-            rgba($colour-background, 1.0) 0%, 
-            
-            rgba($colour-background, 1.0) 19.5%, 
-            rgba(lighten($colour-background, 3%), 1.0) 20%, 
-            rgba(lighten($colour-background, 3%), 1.0) 30%, 
-            rgba($colour-background, 1.0) 30.5%, 
-            
-            rgba($colour-background, 1.0) 59.5%, 
-            rgba(lighten($colour-background, 3%), 1.0) 60%, 
-            rgba(lighten($colour-background, 3%), 1.0) 65%, 
-            rgba($colour-background, 1.0) 65.5%, 
-            
-            rgba($colour-background, 1.0) 67.5%, 
-            rgba(lighten($colour-background, 3%), 1.0) 68%, 
-            rgba(lighten($colour-background, 3%), 1.0) 78%, 
-            rgba($colour-background, 1.0) 78.5%, 
-            
+        background: linear-gradient(135deg,
+            rgba($colour-background, 1.0) 0%,
+
+            rgba($colour-background, 1.0) 19.5%,
+            rgba(lighten($colour-background, 3%), 1.0) 20%,
+            rgba(lighten($colour-background, 3%), 1.0) 30%,
+            rgba($colour-background, 1.0) 30.5%,
+
+            rgba($colour-background, 1.0) 59.5%,
+            rgba(lighten($colour-background, 3%), 1.0) 60%,
+            rgba(lighten($colour-background, 3%), 1.0) 65%,
+            rgba($colour-background, 1.0) 65.5%,
+
+            rgba($colour-background, 1.0) 67.5%,
+            rgba(lighten($colour-background, 3%), 1.0) 68%,
+            rgba(lighten($colour-background, 3%), 1.0) 78%,
+            rgba($colour-background, 1.0) 78.5%,
+
             rgba($colour-background, 1.0) 100%
-        ); 
+        );
 
         //hinges
         &::before {
