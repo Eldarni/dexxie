@@ -56,13 +56,21 @@ const Pokedex = (props) => {
 
     //------------------------------------------------------------------------------
 
+    //integrate with the scrollbar component to adda "scroll-to-top" feature
+    const ScrollRef = React.useRef(null);
+    const handleScrollToTop = (event) => {
+        ScrollRef.current.scrollToTop();
+    }
+
+    //------------------------------------------------------------------------------
+
     //
     return (
         <React.Fragment>
 
-            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll}></ControlBar>
+            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll} handleScrollToTop={handleScrollToTop}></ControlBar>
 
-            <Scrollable>
+            <Scrollable ref={ScrollRef}>
                 <div className="pokedex">
                     <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
                         {Object.keys(filteredPokemon).map(function(key) {
