@@ -67,29 +67,6 @@ const Pokedex = (props) => {
 
     //------------------------------------------------------------------------------
 
-    //add the functionality to toggle a user:TAG on a pokemon
-    const onToggleTag = function(pokemonID, tag) {
-
-        //get an array containing all the tags for a specified pokemon (or init an empty array)
-        const pokemonTags = userData[pokemonID] || [];
-        
-        //does the tag already exists in our tag list
-        const i = pokemonTags.indexOf('user:' + tag);
-
-        //add it if not, remove it if so
-        if (i === -1) {
-            pokemonTags.push('user:' + tag);
-        } else {
-            pokemonTags.splice(i, 1);
-        }
-
-        //update the state
-        setUserData(prevState => { 
-            return {...prevState, [pokemonID]: pokemonTags};
-        });
-
-    }
-
     //------------------------------------------------------------------------------
 
     const handleAddTags = (event) => {
@@ -118,7 +95,7 @@ const Pokedex = (props) => {
                 <div className="pokedex">
                     <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
                         {Object.keys(filteredPokemon).map(function(key) {
-                            return <PokeCard key={key} details={filteredPokemon[key]} onToggleTag={onToggleTag}></PokeCard>
+                            return <PokeCard key={key} details={filteredPokemon[key]}></PokeCard>
                         })}
                     </Selectable>
                 </div>
