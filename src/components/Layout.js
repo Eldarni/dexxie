@@ -3,15 +3,7 @@ import PropTypes from "prop-types"
 
 const Layout = (props) => (
     <React.Fragment>
-        <header>
-            <div className="site-title">Pokedex</div>
-        </header>
-        <main>
-            {props.children}
-        </main>
-        <footer>
-        	made by <a href="https://www.smith-net.org.uk">www.smith-net.org.uk</a>
-        </footer>
+        {props.children}
     </React.Fragment>
 );
 

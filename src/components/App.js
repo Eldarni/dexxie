@@ -15,10 +15,11 @@ function App() {
     };
 
     return (
-        <Layout>
+        <React.Fragment>
+            <h1>Pokedex</h1>
             <SearchBar search={onSearch} searchString={searchString}></SearchBar>
             <PokeDex searchString={searchString}></PokeDex>
-        </Layout>
+        </React.Fragment>
     );
 
 }

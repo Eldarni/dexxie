@@ -15,6 +15,18 @@ $primary   : #cf101a;
 $secondary : #333333;
 
 
+//
+$colour-foreground : #e7e7e6; // white
+$colour-background : #464646; // greyblack
+
+//
+$colour-blue : #6ea4bb;
+$colour-red : #c04c4b; // red
+$colour-yellow : #f0dba5; // yellow
+
+
+
+
 //------------------------------------------------------------------------------
 
 //include a reset file
@@ -53,12 +65,13 @@ $secondary : #333333;
 //------------------------------------------------------------------------------
 
 body { 
-    @include font-general($size: 16px);
+    @include font-general($size: 16px, $colour: $colour-foreground);
     line-height: 150%;
+    background-color: $colour-background;
 }
 
 @include headings() {
-	@include font-heading();
+	@include font-heading($colour: $colour-foreground);
     line-height: 120%;
 }
 
@@ -110,11 +123,27 @@ thead th { font-weight: bold; border-bottom: 2px solid $primary; }
 
 //------------------------------------------------------------------------------
 
+.searchbar {
+    margin: 0 auto;
+    max-width: 960px;
+
+}
 .searchbar input {
     font-size: 1.5em;
     width: 100%;
+    color: #000000;
 
 }
+
+
+
+.selection-info {
+    background-color: #e4c049;
+    color: #000000;
+    padding: 0.3em;
+    margin: 1em;
+}
+
 
 
 
@@ -135,18 +164,38 @@ thead th { font-weight: bold; border-bottom: 2px solid $primary; }
     padding: 1em 0.5em;
 
 
+
+
+    /*
+    .pokemon:nth-child(-n+12) {
+        background-color: #d6d6d6;
+    }
+
+    .pokemon:first-child {
+        background-color: #c4c4c4;
+    }
+
+    .pokemon:nth-child(12) {
+        background-color: #c4c4c4;
+    }*/
+
+
+
+
+
+
     .pokemon {
 
         @include relative();
 
         height: 12em;
         
-        border: 2px solid #BBBBBB;
-        border-radius: 0.1em;
+        // border: 2px solid #BBBBBB;
+        // border-radius: 0.1em;
 
-        box-shadow: 0.2em 0.2em #DEDEDE;
+        // box-shadow: 0.2em 0.2em #DEDEDE;
 
-        background-color: #FCFCFC;
+        // background-color: #FCFCFC;
 
         background-position: center center;
         background-repeat: no-repeat;
@@ -156,8 +205,14 @@ thead th { font-weight: bold; border-bottom: 2px solid $primary; }
         align-items: center;
         justify-content: center;
 
+        &[data-selected=yes] {
+            background-color: #666666;
+            outline: 2px solid #CCCCCC !important;
+        }
+
 
         .pokemon-number {
+            // display: none;
             @include absolute(top 0 right 0.2em);
             color: #BBBBBB;
             font-weight: bold;
@@ -166,6 +221,8 @@ thead th { font-weight: bold; border-bottom: 2px solid $primary; }
         }
 
         .pokemon-name {
+            // display: none;
+
             @include absolute(top 0 left 0);
             background-color: rgba(255, 255, 255, 0.7);
             border-bottom-right-radius: 0.5em;
@@ -176,10 +233,11 @@ thead th { font-weight: bold; border-bottom: 2px solid $primary; }
 
         }
 
+
         .pokemon-icons {
             @include absolute(bottom 0 right 0 left 0);
 
-            display: flex;
+            display: none;
             align-content: stretch;
 
             i {
@@ -199,6 +257,29 @@ thead th { font-weight: bold; border-bottom: 2px solid $primary; }
             }
 
         }
+
+        &:hover {
+
+            // border: 1px solid #BBBBBB;
+            border-radius: 0.05em;
+
+            // box-shadow: 0.2em 0.2em #DEDEDE;
+
+            background-color: #222222;
+            cursor: pointer;
+
+        }
+
+
+        // &:not(:hover) {
+        //     .pokemon-number, .pokemon-name, .pokemon-icons {
+        //         display: none;
+        //     }
+        // }
+
+
+
+
 
         //add a indicator to the "active" tags
         &[data-tags*="user:FEMALE"] .pokemon-icons i[title="Female"] { 
@@ -236,15 +317,22 @@ thead th { font-weight: bold; border-bottom: 2px solid $primary; }
 
     //
     .pokemon[data-tags*="user:FEMALE"], .pokemon[data-tags*="user:MALE"], .pokemon[data-tags*="user:SHINY"], .pokemon[data-tags*="user:SHADOW"], .pokemon[data-tags*="user:PURIFIED"], .pokemon[data-tags*="user:LUCKY"] {
-        border-color: #71c7ec; //border-color: #8aec71;
-        background-color: rgba(113, 199, 236, 0.1); //background-color: rgba(138, 236, 113, 0.2);
+        // border-color: #71c7ec; //border-color: #8aec71;
+        // background-color: rgba(113, 199, 236, 0.1); //background-color: rgba(138, 236, 113, 0.2);
     }
 
     .pokemon[data-tags*="user:LUCKY"] {
-        border-color: #ffcf40;
+        // border-color: #ffcf40;
         background-color: rgba(255, 207, 64, 0.1);
         background-image: url(/images/lucky.png);
     }
+
+    .pokemon[data-tags*="user:SHINY"] {
+        // border-color: #ffcf40;
+        // background-color: rgba(113, 199, 236, 0.1);
+        // background-image: url(/images/shiny.png);
+    }
+
 
     // .pokemon[data-tags*="user:SHINY"] .pokemon-shiny{
     //     @include absolute(bottom 0 right 0);
