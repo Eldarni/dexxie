@@ -14,6 +14,9 @@ $white     : #ffffff;
 $primary   : #cf101a;
 $secondary : #333333;
 
+//
+$colour-pokedex-red1: #aa3030;
+$colour-pokedex-red2: #d14444;
 
 //
 $colour-foreground : #e7e7e6; // white
@@ -23,8 +26,6 @@ $colour-background : #464646; // greyblack
 $colour-blue : #6ea4bb;
 $colour-red : #c04c4b; // red
 $colour-yellow : #f0dba5; // yellow
-
-
 
 
 //------------------------------------------------------------------------------
@@ -136,12 +137,17 @@ body {
 
         //
         border-radius: 1em;
-        border-bottom-left-radius: 6em;
+        border-bottom-left-radius: 3em;
 
         //
         background-color: $colour-background;
 
+        //
         flex: 1 1 100%;
+
+        //
+        overflow: hidden;
+
     }
 
     //
