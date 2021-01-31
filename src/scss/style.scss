@@ -170,6 +170,28 @@ body {
             rgba($colour-background, 1.0) 100%
         ); 
 
+        //hinges
+        &::before {
+
+            //
+            content: '';
+
+            //
+            position: absolute;
+            top: 12vh; right: 0; bottom: 12vh;
+
+            //
+            width: 2.04em;
+
+            //
+            border: 2.4em solid rgba(darken($colour-pokedex-red1, 35%), 0.6);
+
+            //
+            border-left: none;
+            border-right: none;
+
+        }
+
     }
 
     //
