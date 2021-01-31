@@ -148,6 +148,13 @@ body {
         //
         overflow: hidden;
 
+        //
+        display: flex;
+        flex-direction: column;
+
+        & > :last-child() { flex: 1 1 100%; }
+
+
         //stripes
         background: linear-gradient(135deg,
             rgba($colour-background, 1.0) 0%,
@@ -216,6 +223,10 @@ body {
 //
 .control-bar {
 
+    //
+    margin-bottom: 1em;
+
+    //
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -284,7 +295,7 @@ body {
 .pokedex {
 
     //
-    padding: 1em 0.5em;
+    padding: 0.2em 1em 0.2em 0.2em;
 
     //
     display: grid;
@@ -292,6 +303,9 @@ body {
 
     grid-column-gap: 0.7em;
     grid-row-gap: 0.7em;
+
+    //
+    overflow-y: hidden;
 
     //
     .pokemon {

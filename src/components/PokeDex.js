@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
+
+//
+import Scrollable from "react-scrollbars-custom";
+
 import cloneDeep from 'lodash.clonedeep';
 
 import concatUnique from '../utils/concatUnique';
@@ -96,13 +100,17 @@ const Pokedex = (props) => {
     return (
         <React.Fragment>
             <PokeDexSelectionInfo selectedItems={selectedPokemon} onAddTags={handleAddTags} onSelectAll={handleSelectAll} onClearAll={handleClearAll}></PokeDexSelectionInfo>
-            <div className="pokedex">
-                <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
-                    {Object.keys(filteredPokemon).map(function(key) {
-                        return <PokeCard key={key} details={filteredPokemon[key]} onToggleTag={onToggleTag}></PokeCard>
-                    })}
-                </Selectable>
-            </div>
+            
+            <Scrollable>
+                <div className="pokedex">
+                    <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
+                        {Object.keys(filteredPokemon).map(function(key) {
+                            return <PokeCard key={key} details={filteredPokemon[key]} onToggleTag={onToggleTag}></PokeCard>
+                        })}
+                    </Selectable>
+                </div>
+            </Scrollable>
+
         </React.Fragment>
     );
 
