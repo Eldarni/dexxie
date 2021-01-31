@@ -64,62 +64,103 @@ $colour-yellow : #f0dba5; // yellow
 
 //------------------------------------------------------------------------------
 
-body { 
+//
+body {
     @include font-general($size: 16px, $colour: $colour-foreground);
     line-height: 150%;
-    background-color: $colour-background;
 }
 
+//
 @include headings() {
 	@include font-heading($colour: $colour-foreground);
     line-height: 120%;
 }
 
-//style the main header and the main "content"
-header {
-    padding: 1em;
-    border-bottom: 0.2em solid $primary;
-    margin-bottom: 1.5em;
+//------------------------------------------------------------------------------
 
-    .site-title { 
-    	@include font-heading($size: 1.9em, $colour: $primary, $weight: 300); 
-   	}
-}
+//main design elements
+#root {
 
-main { 
-	padding: 0em 1em;
-}
+    //
+    height: 100vh;
+    width: 100vw;
 
+    //
+    display: flex;
+    flex-direction: column;
 
-footer {
-    padding: 1em 5em;
-    text-align: right;
-    @include font-heading($size: 0.8em, $weight: 300);
-    a { @include font-heading($weight: 300); }
-}
+    background-color: $colour-pokedex-red1;
 
-/* basic text styles */
-a, a:visited { font-weight: bold; color: $primary; text-decoration: none; }
-a:hover { color: lighten($primary, 20%); }
+    //
+    > header {
 
-/* basic table styles */
-table { background-color: darken($white, 1%); width: 100%; }
-table th, table td { padding: 0.5em; border-bottom: 1px dotted darken($white, 10%); vertical-align: top; }
-table th:not(:first-child), table td:not(:first-child) { border-left: 1px dotted darken($white, 10%); }
-thead th { font-weight: bold; border-bottom: 2px solid $primary; }
+        //
+        position: relative;
 
-//basic button style
-.btn {
-    border: none;
-    color: darken($white, 50%);
-    background: darken($white, 10%);
-    border-radius: 2px;
-    padding: 0.4em 1em;
+        //
+        background-color: $colour-pokedex-red2;
 
-    &:hover {
-        background: darken($white, 20%);  
+        //
+        height: 3em;
+
+        //
+        svg {
+            position: relative;
+            top: 0.4em;
+            left: 0.7em;
+        }
+
+        //
+        &::before {
+
+            //
+            position: absolute;
+            content: '';
+
+            //
+            border-top: 6em solid $colour-pokedex-red2;
+            border-right: 6em solid transparent;
+            height: 0;
+            width: 35em;
+
+        }
+
     }
+
+    //style the main "screen" area
+    > main {
+
+        //
+        margin: 1em 2em 1em 2em;
+        padding: 1.5em;
+
+        //
+        border-radius: 1em;
+        border-bottom-left-radius: 6em;
+
+        //
+        background-color: $colour-background;
+
+        flex: 1 1 100%;
+    }
+
+    //
+    > footer {
+
+        //
+        padding: 0em 5em;
+
+        //
+        @include font-heading($size: 0.8em, $weight: 300);
+        text-align: right;
+
+        //
+        background-color: $colour-pokedex-red2;
+
+    }
+
 }
+
 
 //------------------------------------------------------------------------------
 

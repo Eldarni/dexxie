@@ -1,10 +1,18 @@
+
+//
 import React, { useState } from 'react';
 
-import Layout from './Layout';
+//
+import Header  from './Header';
+import Content from './Content';
+import Footer  from './Footer';
+
+//
 import SearchBar from './SearchBar';
 import PokeDex from './PokeDex';
 
-function App() {
+//
+export default () => {
 
     //
     const [searchString, setSearchString] = useState('');
@@ -14,14 +22,16 @@ function App() {
         setSearchString(event.target.value);
     };
 
+    //
     return (
         <React.Fragment>
-            <h1>Pokedex</h1>
-            <SearchBar search={onSearch} searchString={searchString}></SearchBar>
-            <PokeDex searchString={searchString}></PokeDex>
+            <Header />
+            <Content>
+                <SearchBar search={onSearch} searchString={searchString}></SearchBar>
+                <PokeDex searchString={searchString}></PokeDex>
+            </Content>
+            <Footer />
         </React.Fragment>
     );
 
-}
-
-export default App;
+};
