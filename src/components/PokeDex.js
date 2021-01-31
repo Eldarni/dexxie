@@ -1,37 +1,25 @@
-import React, { useState, useEffect } from 'react';
+
+//
+import React, { useState } from 'react';
 
 
 //
 import Scrollable from "react-scrollbars-custom";
 
-import cloneDeep from 'lodash.clonedeep';
+//
 
-import concatUnique from '../utils/concatUnique';
 import pokemonSearch from '../utils/pokemonSearch';
 
 //
 import ControlBar from './ControlBar';
 
+//
 import Selectable from './Selectable';
 import PokeDexSelectionInfo from './PokeDexSelectionInfo';
 import PokeCard from './PokeCard';
 
-import basePokemonData from '../static/pokemon.json';
 
 const Pokedex = (props) => {
-
-    //clone the base pokemon data so we can mutate it safely
-    const pokemonData = cloneDeep(basePokemonData);
-
-    //store the user's data in state
-    const [userData, setUserData] = useState(() => {
-        return JSON.parse(window.localStorage.getItem('user-data')) || {};
-    });
-
-    //save the user's data to local storage
-    useEffect(() => {
-        window.localStorage.setItem('user-data', JSON.stringify(userData));
-    });
 
     //------------------------------------------------------------------------------
 
@@ -39,15 +27,6 @@ const Pokedex = (props) => {
     const onSelectionChangeHandler = function(selection) {
         setSelectedPokemon(selection);
     }
-    
-    //------------------------------------------------------------------------------
-
-    //merge the contents of the user's personal tags into the main tag list
-    Object.keys(userData).forEach(function(pokemon) {
-        if (pokemon in pokemonData) {
-            pokemonData[pokemon]['tags'] = concatUnique(pokemonData[pokemon]['tags'], userData[pokemon]);
-        }
-    });
 
     //------------------------------------------------------------------------------
 
@@ -60,19 +39,17 @@ const Pokedex = (props) => {
     };
 
     //filter the base list of pokemon by the search string
-    let filteredPokemon = pokemonData;
+    let filteredPokemon = props.pokemon;
     if (searchString !== '') {
-        filteredPokemon = pokemonSearch(pokemonData, searchString);
-    } 
-
-    //------------------------------------------------------------------------------
+        filteredPokemon = pokemonSearch(props.pokemon, searchString);
+    }
 
     //------------------------------------------------------------------------------
 
     const handleAddTags = (event) => {
 
     };
-    
+
     const handleSelectAll = (event) => {
         setSelectedPokemon(Object.keys(filteredPokemon));
     };
