@@ -8,7 +8,7 @@ import Content from './Content';
 import Footer  from './Footer';
 
 //
-import SearchBar from './SearchBar';
+import ControlBar from './ControlBar';
 import PokeDex from './PokeDex';
 
 //
@@ -27,7 +27,7 @@ export default () => {
         <React.Fragment>
             <Header />
             <Content>
-                <SearchBar search={onSearch} searchString={searchString}></SearchBar>
+                <ControlBar search={onSearch} searchString={searchString}></ControlBar>
                 <PokeDex searchString={searchString}></PokeDex>
             </Content>
             <Footer />

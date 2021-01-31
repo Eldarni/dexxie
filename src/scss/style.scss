@@ -167,21 +167,66 @@ body {
 
 }
 
-
 //------------------------------------------------------------------------------
 
-.searchbar {
-    margin: 0 auto;
-    max-width: 960px;
+//
+.control-bar {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    //
+    .control-group { 
+        
+        display: flex;
+        flex-direction: row;
+
+        //
+        & + .control-group { margin-left: 1em; }
+
+    }
+
+    //
+    .control-button {
+        
+        //
+        width: 2.3em; height: 2.3em;
+
+        //
+        cursor: pointer;
+        &:hover { background-color: darken($colour-background, 10%); color: #FFFFFF; }
+
+        //
+        border-radius: 0.2em;
+
+        //
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    //
+    input[type="search"] {
+
+        //
+        width: 35em;
+    
+        //
+        font-size: 1.2em;
+        color: $colour-background;
+
+        //
+        &::placeholder {
+            color: $colour-background;
+        }
+
+    }
 
 }
-.searchbar input {
-    font-size: 1.5em;
-    width: 100%;
-    color: #000000;
 
-}
-
+//------------------------------------------------------------------------------
 
 
 .selection-info {
