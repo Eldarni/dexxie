@@ -46,10 +46,6 @@ const Pokedex = (props) => {
 
     //------------------------------------------------------------------------------
 
-    const handleAddTags = (event) => {
-
-    };
-
     const handleSelectAll = (event) => {
         setSelectedPokemon(Object.keys(filteredPokemon));
     };
@@ -64,10 +60,8 @@ const Pokedex = (props) => {
     return (
         <React.Fragment>
 
-            <ControlBar search={onSearch} searchString={searchString}></ControlBar>
+            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll}></ControlBar>
 
-            <PokeDexSelectionInfo selectedItems={selectedPokemon} onAddTags={handleAddTags} onSelectAll={handleSelectAll} onClearAll={handleClearAll}></PokeDexSelectionInfo>
-            
             <Scrollable>
                 <div className="pokedex">
                     <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>

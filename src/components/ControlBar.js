@@ -17,8 +17,8 @@ export default (props) => {
         <div className="control-bar">
 
             <div className="control-group">
-                <div className="control-button" title="Select all"><FontAwesomeIcon size="lg" icon={faCheckDouble} /></div>
-                <div className="control-button" title="Clear All"><FontAwesomeIcon size="lg" icon={faTimes} /></div>
+                <div className="control-button" onClick={props.handleSelectAll} title="Select all"><FontAwesomeIcon size="lg" icon={faCheckDouble} /></div>
+                <div className="control-button" onClick={props.handleClearAll} title="Clear All"><FontAwesomeIcon size="lg" icon={faTimes} /></div>
             </div>
 
             <div className="control-group">
