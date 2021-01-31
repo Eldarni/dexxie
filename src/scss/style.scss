@@ -239,7 +239,7 @@ body {
 
         //
         cursor: pointer;
-        &:hover { background-color: darken($colour-background, 10%); color: #FFFFFF; }
+        &:hover { background-color: rgba(darken($colour-background, 30%), 0.3); color: #FFFFFF; }
 
         //
         border-radius: 0.2em;
