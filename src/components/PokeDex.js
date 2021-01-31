@@ -15,7 +15,6 @@ import ControlBar from './ControlBar';
 
 //
 import Selectable from './Selectable';
-import PokeDexSelectionInfo from './PokeDexSelectionInfo';
 import PokeCard from './PokeCard';
 
 
