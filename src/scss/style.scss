@@ -215,6 +215,72 @@ body {
 //------------------------------------------------------------------------------
 
 //
+.popup-container {
+
+    //
+    // position: absolute;
+    // top: 0; right: 0; bottom: 0; left: 0;
+
+    //
+    .popup {
+
+        //position the popup slight above center
+        @include absolute(top 0 bottom 0 left 0);
+        // transform: translate(-50%,-70%);
+
+        //
+        padding-top: 3em;
+
+        //
+        width: 40%;
+        min-width: 500px;
+
+        //
+        height: auto;
+        min-height: 30em;
+
+        //
+        background-color: rgba(darken($colour-background, 5%), 0.95);
+        box-shadow: 0.3em 0em 0.1em 0.0em rgba(darken($colour-background, 10%), 0.70);
+
+        //
+        display: flex;
+        flex-direction: column;
+
+        //
+        .popup-content {
+            flex: 1 1 100%;
+        }
+
+        //
+        .popup-footer {
+
+            //
+            padding: 1em 0.8em 1em 2em;
+
+            //
+            display: flex;
+            align-items: center;
+            gap: 0.8em;
+
+            //
+            background-color: rgba(darken($colour-background, 8%), 0.8);
+
+            //
+            .popup-title {
+                @include font-heading($size: 1.4em, $weight: 600);
+                flex: 1 1 100%;
+            }
+
+        }
+
+    }
+
+}
+
+//------------------------------------------------------------------------------
+
+//
 .control-bar {
 
     //
