@@ -218,15 +218,13 @@ body {
 .popup-container {
 
     //
-    // position: absolute;
-    // top: 0; right: 0; bottom: 0; left: 0;
-
+    @include absolute(top 0 right 0 bottom 0 left 0);    
+    
     //
     .popup {
 
         //position the popup slight above center
         @include absolute(top 0 bottom 0 left 0);
-        // transform: translate(-50%,-70%);
 
         //
         padding-top: 3em;
