@@ -97,6 +97,7 @@ body {
 
         //
         position: relative;
+        z-index: 10;
 
         //
         background-color: $colour-pokedex-red2;
@@ -132,6 +133,10 @@ body {
     > main {
 
         //
+        position: relative;
+        z-index: 0;
+
+        //
         margin: 1em 2em 1em 2em;
         padding: 1.5em;
 
@@ -154,48 +159,37 @@ body {
 
         & > :last-child() { flex: 1 1 100%; }
 
-
-        //stripes
-        background: linear-gradient(135deg,
-            rgba($colour-background, 1.0) 0%,
-
-            rgba($colour-background, 1.0) 19.5%,
-            rgba(lighten($colour-background, 3%), 1.0) 20%,
-            rgba(lighten($colour-background, 3%), 1.0) 30%,
-            rgba($colour-background, 1.0) 30.5%,
-
-            rgba($colour-background, 1.0) 59.5%,
-            rgba(lighten($colour-background, 3%), 1.0) 60%,
-            rgba(lighten($colour-background, 3%), 1.0) 65%,
-            rgba($colour-background, 1.0) 65.5%,
-
-            rgba($colour-background, 1.0) 67.5%,
-            rgba(lighten($colour-background, 3%), 1.0) 68%,
-            rgba(lighten($colour-background, 3%), 1.0) 78%,
-            rgba($colour-background, 1.0) 78.5%,
-
-            rgba($colour-background, 1.0) 100%
-        );
-
-        //hinges
-        &::before {
+        //shine
+        &::after {
 
             //
+            @include absolute(top 0 right 0 bottom 0 left 0);
             content: '';
 
-            //
-            position: absolute;
-            top: 12vh; right: 0; bottom: 12vh;
+            //make sure the layer is transparent to any mouse stuff
+            pointer-events: none;
 
             //
-            width: 2.04em;
+            background: linear-gradient(135deg,
+                transparent 0%,
 
-            //
-            border: 2.4em solid rgba(darken($colour-pokedex-red1, 35%), 0.6);
+                transparent 19.5%,
+                rgba($colour-foreground, 0.05) 20%,
+                rgba($colour-foreground, 0.05) 30%,
+                transparent 30.5%,
 
-            //
-            border-left: none;
-            border-right: none;
+                transparent 59.5%,
+                rgba($colour-foreground, 0.05) 60%,
+                rgba($colour-foreground, 0.05) 65%,
+                transparent 65.5%,
+
+                transparent 67.5%,
+                rgba($colour-foreground, 0.05) 68%,
+                rgba($colour-foreground, 0.05) 78%,
+                transparent 78.5%,
+
+                transparent 100%
+            );
 
         }
 
