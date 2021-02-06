@@ -69,15 +69,18 @@ const Pokedex = (props) => {
 
             <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll} handleScrollToTop={handleScrollToTop}></ControlBar>
 
-            <Scrollable ref={ScrollRef}>
-                <div className="pokedex">
-                    <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
-                        {Object.keys(filteredPokemon).map(function(key) {
-                            return <PokeCard key={key} details={filteredPokemon[key]}></PokeCard>
-                        })}
-                    </Selectable>
-                </div>
-            </Scrollable>
+            <div className="pokedex-outer">
+                <Scrollable ref={ScrollRef}>
+                
+                    <div className="pokedex">
+                        <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
+                            {Object.keys(filteredPokemon).map(function(key) {
+                                return <PokeCard key={key} details={filteredPokemon[key]}></PokeCard>
+                            })}
+                        </Selectable>
+                    </div>
+                </Scrollable>
+            </div>
 
         </React.Fragment>
     );

@@ -286,10 +286,38 @@ body {
 
 //------------------------------------------------------------------------------
 
+//add a soft blur to the top and bottom edged to soften the transition when scrolling
+.pokedex-outer {
+
+    //
+    position: relative;
+
+    //
+    flex: 1;
+
+    //
+    &::after {
+
+        //
+        @include absolute(top 0 right 0 bottom 0 left 0);
+        content: '';
+
+        //
+        pointer-events: none;
+
+        //
+        box-shadow: inset 0  1em 0.2em -0.5em $colour-background,
+                    inset 0 -1em 0.2em -0.5em $colour-background;
+
+    }
+
+}
+
+//
 .pokedex {
 
     //
-    padding: 0.2em 1em 0.2em 0.2em;
+    padding: 0.6em 1em 0.6em 0.2em;
 
     //
     display: grid;
@@ -297,9 +325,6 @@ body {
 
     grid-column-gap: 0.7em;
     grid-row-gap: 0.7em;
-
-    //
-    overflow-y: hidden;
 
     //
     .pokemon {
