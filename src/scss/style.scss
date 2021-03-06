@@ -480,3 +480,46 @@ body {
 
 }
 
+//------------------------------------------------------------------------------
+
+.profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    // padding-right: 0.5em;
+    // outline: 1px solid #FF0000;
+} 
+
+
+.profile {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1em;
+
+    padding: 1em;
+
+    border: 1px solid rgba($colour-foreground, 0.3);
+
+    &:hover {
+        border: 1px solid rgba($colour-foreground, 1.0);
+        cursor: pointer;
+    }
+
+    > div:first-child {
+        flex: 1 1 100%;
+    }
+
+    //show the edit button when hovering
+    > div.control-button { display: none; }
+    &:hover > div.control-button { display: block; }
+
+
+    // &[data-selected] {
+    //     > div:last-child { display: block; }
+    // }
+
+}

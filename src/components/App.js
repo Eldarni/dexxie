@@ -11,10 +11,14 @@ import Content from './Content';
 import Footer  from './Footer';
 
 //
+import Popup from './Popup';
+
+//
 import concatUnique from '../utils/concatUnique';
 
 //
 import PokeDex from './PokeDex';
+import ProfileManager from './ProfileManager';
 
 //
 import { ProfileProvider }  from '../context/ProfileContext';
@@ -38,12 +42,16 @@ export default () => {
         }
     });
 
+    //allow the visibility of the popups to be toggled
+    const [showProfilesPopop, setShowProfilesPopop] = useState(false);
+            
     //
     return (
         <ProfileProvider>
             <Header />
-            <Content>
-                <PokeDex pokemon={pokemonList}></PokeDex>
+            <Content className={((showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
+                <PokeDex pokemon={pokemonList} />
+                <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
             </Content>
             <Footer />
         </ProfileProvider>
