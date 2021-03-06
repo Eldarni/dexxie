@@ -17,6 +17,8 @@ import concatUnique from '../utils/concatUnique';
 import PokeDex from './PokeDex';
 
 //
+import { ProfileProvider }  from '../context/ProfileContext';
+//
 export default () => {
 
     //store the user's data in state
@@ -38,13 +40,13 @@ export default () => {
 
     //
     return (
-        <React.Fragment>
+        <ProfileProvider>
             <Header />
             <Content>
                 <PokeDex pokemon={pokemonList}></PokeDex>
             </Content>
             <Footer />
-        </React.Fragment>
+        </ProfileProvider>
     );
 
 };
