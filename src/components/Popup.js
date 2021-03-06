@@ -2,6 +2,10 @@
 //
 import React from 'react';
 
+
+//
+import Scrollable from "react-scrollbars-custom";
+
 //
 export default (props) => {
 
@@ -16,7 +20,11 @@ export default (props) => {
             <div className="popup">
 
                 <div className="popup-content">
-                    {props.children}
+                    <Scrollable>
+                        <div className="popup-content-inner">
+                            {props.children}
+                        </div>
+                    </Scrollable>
                 </div>
 
                 <div className="popup-footer">

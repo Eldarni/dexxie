@@ -219,15 +219,12 @@ body {
 
     //
     @include absolute(top 0 right 0 bottom 0 left 0);    
-    
+
     //
     .popup {
 
         //position the popup slight above center
         @include absolute(top 0 bottom 0 left 0);
-
-        //
-        padding-top: 3em;
 
         //
         width: 40%;
@@ -248,6 +245,12 @@ body {
         //
         .popup-content {
             flex: 1 1 100%;
+            margin-right: 0.5em;
+
+            .popup-content-inner {
+                margin: 3em 0.5em 1em 1em;
+            }
+
         }
 
         //
