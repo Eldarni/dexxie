@@ -1,0 +1,96 @@
+.menu-container {
+
+    //
+    @include relative();
+
+    //button
+    .menu-trigger {
+        background: $white;
+        border-radius: 90px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 6px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        border: none;
+        vertical-align: middle;
+        transition: box-shadow 0.4s ease;
+      }
+
+    .menu-trigger:hover {
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-trigger span {
+        font-weight: 700;
+        vertical-align: middle;
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    .menu-trigger img {
+        border-radius: 90px;
+    }
+
+    //style the menu
+    .menu {
+
+        //
+        @include absolute(top 40px right 0);
+
+        //
+        background: $white;
+        border-radius: 8px;
+
+        //
+        width: 300px;
+
+        //
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+
+        //
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+
+        //
+        transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+
+        //
+        z-index: 1;
+
+        //
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        //
+        div {
+
+            //as long as it's not the last item - add a bottom border
+            &:not(:last-child) {
+                border-bottom: 1px solid lighten($colour-background, 60%);
+            }
+
+            //if its a diveder - make something look THIC
+            &.divider {
+                border-top:    1px solid lighten($colour-background, 40%);
+                border-bottom: 2px solid lighten($colour-background, 60%);
+            }
+
+            //
+            a {
+                text-decoration: none;
+                color: #333333;
+                padding: 15px 20px;
+                display: block;
+            }
+
+        }
+
+    }
+
+}
