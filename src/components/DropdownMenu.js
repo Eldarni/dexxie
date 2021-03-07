@@ -57,13 +57,13 @@ export default (props) => {
 //
 export const DropdownMenuItem = (props) => {
     return (
-        <div><a href="/messages" onClick={props.onClick}>{props.label}</a></div>
+        <div className="menu-item"><a href="/messages" onClick={props.onClick}>{props.label}</a></div>
     );
 };
 
 //
 export const DropdownMenuDivider = (props) => {
     return (
-        <div className="divider"></div>
+        <div className="menu-divider"></div>
     );
 };
