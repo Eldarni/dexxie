@@ -9,5 +9,8 @@ import "./scss/style.scss"
 //get our "app"
 import App from './components/App';
 
+//get our app's global state provider
+import { ApplicationProvider } from './context/ApplicationContext';
+
 //
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<ApplicationProvider><App /></ApplicationProvider>, document.getElementById('root'));
