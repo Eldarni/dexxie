@@ -29,7 +29,7 @@ export default (props) => {
 
                 <div className="popup-footer">
                     <div className="popup-title">{props.title}</div>
-                    <button className="btn">Close</button>
+                    <button className="btn" onClick={props.onClose}>Close</button>
                 </div>
 
             </div>
