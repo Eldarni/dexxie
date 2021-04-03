@@ -193,6 +193,9 @@ body {
 
         }
 
+        //
+        &.blurred > *:not(.popup-container) { filter: blur(0.5em); }
+
     }
 
     //
