@@ -32,12 +32,12 @@ export default () => {
     const [ currentProfileState ] = useApplicationState();
 
     //get the user applied tags for the current profile
-    const profileTags = JSON.parse(window.localStorage.getItem('profile-' + currentProfileState)) || {};
+    const userTags = JSON.parse(window.localStorage.getItem('profile-' + currentProfileState)) || {};
 
     //merge the user's tags into the main list of pokemon
     const taggedPokemon = objectMap(pokemon, function(value) {
-        if (value.id in profileTags) {
-            return { ...value, 'tags' : [ ...value.tags, ...profileTags[value.id] ] };
+        if (value.id in userTags) {
+            return { ...value, 'tags' : [ ...value.tags, ...userTags[value.id] ] };
         }
         return value;
     });
