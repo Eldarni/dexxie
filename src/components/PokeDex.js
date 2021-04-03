@@ -38,10 +38,7 @@ const Pokedex = (props) => {
     };
 
     //filter the base list of pokemon by the search string
-    let filteredPokemon = props.pokemon;
-    if (searchString !== '') {
-        filteredPokemon = pokemonSearch(props.pokemon, searchString);
-    }
+    const filteredPokemon = ((searchString !== '') ? pokemonSearch(props.pokemon, searchString) : props.pokemon);
 
     //------------------------------------------------------------------------------
 
