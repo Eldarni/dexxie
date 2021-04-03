@@ -40,8 +40,18 @@
         @include absolute(top 40px right 0);
 
         //
+        display: flex;
+        flex-direction: column;
+
+        //
+        overflow: hidden;
+
+        //
         background: $white;
         border-radius: 8px;
+
+        //
+        color: $colour-background;
 
         //
         width: 300px;
@@ -76,11 +86,18 @@
             }
 
             //
-            a {
-                text-decoration: none;
-                color: #333333;
-                padding: 15px 20px;
-                display: block;
+            display: flex;
+            justify-content: space-between;
+
+            //
+            padding: 0.8em 1em;
+            
+            //
+            cursor: pointer;
+
+            //
+            &:hover {
+                background-color: darken($white, 5%); 
             }
 
         }

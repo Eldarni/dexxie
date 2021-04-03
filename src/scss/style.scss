@@ -216,6 +216,9 @@ body {
 @import 'dropdown';
 
 
+//
+@import 'ProfileMenuWidget';
+
 //------------------------------------------------------------------------------
 
 //
@@ -295,6 +298,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
+    //
+    gap: 0.5em;
 
     //
     .control-group {

@@ -10,11 +10,16 @@ import { faAngleUp, faAngleDown, faCheckDouble, faTimes, faTags, faCog } from '@
 import Button from './elements/Button';
 
 //
+import ProfileMenuWidget from './ProfileMenuWidget';
+
+//
 export default (props) => {
     
     //
     return (
         <div className="control-bar">
+
+            <ProfileMenuWidget currentProfile={props.currentProfile} setShowProfilesPopop={props.setShowProfilesPopop} />
 
             <div className="control-group">
                 <div className="control-button" onClick={props.handleSelectAll} title="Select all"><FontAwesomeIcon size="lg" icon={faCheckDouble} /></div>
@@ -23,7 +28,6 @@ export default (props) => {
 
             <div className="control-group">
                 <div className="control-button" title="Manage Tags"><FontAwesomeIcon size="lg" icon={faTags} /></div>
-                <div className="control-button" title="Settings"><FontAwesomeIcon size="lg" icon={faCog} /></div>
             </div>
 
             <div className="control-group">

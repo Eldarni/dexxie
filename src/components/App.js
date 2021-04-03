@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 
 //
-import pokemonList from '../static/pokemon.json';
+import pokemon from '../static/pokemon.json';
 
 //
 import usePersistedState from '../hooks/usePersistedState';
@@ -28,17 +28,18 @@ import { ProfileProvider }  from '../context/ProfileContext';
 //
 export default () => {
 
-    //what profile are we using
-    const [currentProfile, setCurrentProfile] = usePersistedState('current-profile', 'ad75aad9-5373-4581-b8e1-5819aaef283a');
+    //
+    const [ currentProfileState ] = useApplicationState();
 
-    //load the user data that's been save for the current profile
-    const [userData, setUserData] = usePersistedState('profile-' + currentProfile, {});
+    //get the user applied tags for the current profile
+    const profileTags = JSON.parse(window.localStorage.getItem('profile-' + currentProfileState)) || {};
 
-    //merge the contents of the user's personal tags into the main tag list
-    Object.keys(userData).forEach(function(pokemon) {
-        if (pokemon in pokemonList) {
-            pokemonList[pokemon]['tags'] = concatUnique(pokemonList[pokemon]['tags'], userData[pokemon]);
+    //merge the user's tags into the main list of pokemon
+    const taggedPokemon = objectMap(pokemon, function(value) {
+        if (value.id in profileTags) {
+            return { ...value, 'tags' : [ ...value.tags, ...profileTags[value.id] ] };
         }
+        return value;
     });
 
     //allow the visibility of the popups to be toggled
@@ -49,11 +50,19 @@ export default () => {
         <ProfileProvider>
             <Header />
             <Content className={((showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
-                <PokeDex pokemon={pokemonList} />
+                <PokeDex pokemon={taggedPokemon} setShowProfilesPopop={setShowProfilesPopop} />
                 <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
             </Content>
             <Footer />
         </ProfileProvider>
     );
 
+};
+
+//apply the supplied function to each property in the object and return a new object
+function objectMap(object, mapFn) {
+    return Object.keys(object).reduce(function(result, key) {
+        result[key] = mapFn(object[key])
+        return result
+    }, {})
 };
