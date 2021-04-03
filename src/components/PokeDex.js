@@ -2,12 +2,10 @@
 //
 import React, { useState } from 'react';
 
-
 //
 import Scrollable from "react-scrollbars-custom";
 
 //
-
 import pokemonSearch from '../utils/pokemonSearch';
 
 //
@@ -17,7 +15,7 @@ import ControlBar from './ControlBar';
 import Selectable from './Selectable';
 import PokeCard from './PokeCard';
 
-
+//
 const Pokedex = (props) => {
 
     //------------------------------------------------------------------------------
@@ -68,7 +66,6 @@ const Pokedex = (props) => {
 
             <div className="pokedex-outer">
                 <Scrollable ref={ScrollRef}>
-                
                     <div className="pokedex">
                         <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
                             {Object.keys(filteredPokemon).map(function(key) {
