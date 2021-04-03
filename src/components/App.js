@@ -6,7 +6,11 @@ import React, { useState, useEffect } from 'react';
 import pokemon from '../static/pokemon.json';
 
 //
-import usePersistedState from '../hooks/usePersistedState';
+import { useApplicationState }  from '../context/ApplicationContext';
+
+//
+import { ProfileProvider }  from '../context/ProfileContext';
+import { TagProvider }  from '../context/TagContext';
 
 //
 import Header  from './Header';
@@ -14,17 +18,13 @@ import Content from './Content';
 import Footer  from './Footer';
 
 //
-import Popup from './Popup';
-
-//
-import concatUnique from '../utils/concatUnique';
-
-//
 import PokeDex from './PokeDex';
-import ProfileManager from './ProfileManager';
 
 //
-import { ProfileProvider }  from '../context/ProfileContext';
+import Popup from './Popup';
+import ProfileManager from './ProfileManager';
+import TagManager from './TagManager';
+
 //
 export default () => {
 
@@ -44,16 +44,20 @@ export default () => {
 
     //allow the visibility of the popups to be toggled
     const [showProfilesPopop, setShowProfilesPopop] = useState(false);
-            
+    const [showTagsPopop,     setShowTagsPopop]     = useState(false);
+
     //
     return (
         <ProfileProvider>
-            <Header />
-            <Content className={((showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
-                <PokeDex pokemon={taggedPokemon} setShowProfilesPopop={setShowProfilesPopop} />
-                <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
-            </Content>
-            <Footer />
+            <TagProvider>
+                <Header />
+                <Content className={((showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
+                    <PokeDex pokemon={taggedPokemon} setShowProfilesPopop={setShowProfilesPopop} setShowTagsPopop={setShowTagsPopop} />
+                    <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
+                    <Popup title="Tags"     visible={showTagsPopop}     onClose={() => setShowTagsPopop(false)}><TagManager /></Popup>
+                </Content>
+                <Footer />
+            </TagProvider>
         </ProfileProvider>
     );
 

@@ -11,6 +11,7 @@ import Button from './elements/Button';
 
 //
 import ProfileMenuWidget from './ProfileMenuWidget';
+import TagMenuWidget from './TagMenuWidget';
 
 //
 export default (props) => {
@@ -20,14 +21,11 @@ export default (props) => {
         <div className="control-bar">
 
             <ProfileMenuWidget currentProfile={props.currentProfile} setShowProfilesPopop={props.setShowProfilesPopop} />
+            <TagMenuWidget setShowTagsPopop={props.setShowTagsPopop} />
 
             <div className="control-group">
                 <div className="control-button" onClick={props.handleSelectAll} title="Select all"><FontAwesomeIcon size="lg" icon={faCheckDouble} /></div>
                 <div className="control-button" onClick={props.handleClearAll} title="Clear All"><FontAwesomeIcon size="lg" icon={faTimes} /></div>
-            </div>
-
-            <div className="control-group">
-                <div className="control-button" title="Manage Tags"><FontAwesomeIcon size="lg" icon={faTags} /></div>
             </div>
 
             <div className="control-group">

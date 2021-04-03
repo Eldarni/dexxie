@@ -3,7 +3,7 @@
 import React from 'react';
 
 //
-import { useProfileState, useProfileDispatch } from '../context/ProfileContext';
+import { useTagState, useTagDispatch } from '../context/TagContext';
 
 //
 import Form from './form/Form';
@@ -19,21 +19,21 @@ import { faPencilAlt, faTimes } from '@fortawesome/free-solid-svg-icons'
 export default (props) => {
 
     //
-    const profiles = useProfileState();
+    const tags = useTagState();
 
     //
     return (
-        <div className="profiles">
-            {profiles.map((profile) => <ProfileItem key={profile.id} profile={profile} />)}
+        <div className="tags">
+            {tags.map((tag) => <TagItem key={tag.id} tag={tag} />)}
         </div>
     );
 }
 
 //
-const ProfileItem = (props) => {
+const TagItem = (props) => {
 
     //
-    const dispatch = useProfileDispatch();
+    const dispatch = useTagDispatch();
 
     //
     const [editEnabled, setEditEnabled] = React.useState(false);
@@ -41,14 +41,14 @@ const ProfileItem = (props) => {
 
     //
     const handleSubmit = (values) => {
-        dispatch({'type': 'update', 'profile' : { ...props.profile, ...values }});
+        dispatch({'type': 'update', 'tag' : { ...props.tag, ...values }});
     };
 
     //
     if (!editEnabled) {
         return (
-            <div className="profile" title={props.profile.name}>
-                <div>{props.profile.name}</div>
+            <div className="tag" title={props.tag.name}>
+                <div>{props.tag.name}</div>
                 <div className="control-button" onClick={toggleEditEnabled} title="Edit"><FontAwesomeIcon size="lg" icon={faPencilAlt} /></div>
             </div>
         );
@@ -56,11 +56,10 @@ const ProfileItem = (props) => {
 
     //
     return (
-        <div className="profile" title={props.profile.name}>
+        <div className="tag" title={props.tag.name}>
             <div>
-                <Form initialValues={props.profile} onSubmit={handleSubmit}>
+                <Form initialValues={props.tag} onSubmit={handleSubmit}>
                     <Field label="Name" type="text" name="name" ></Field>
-                    <Field label="Filter" type="text" name="filter"></Field>
                     <Submit />
                 </Form>
             </div>

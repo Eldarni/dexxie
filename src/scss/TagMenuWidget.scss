@@ -1,0 +1,17 @@
+.TagMenuWidget {
+
+    //
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    //
+    .tags-menu-footer {
+        padding: 0.5em 1em;
+        border-top: 1px solid $colour-background;
+        text-decoration: underline;
+    }
+
+
+}
