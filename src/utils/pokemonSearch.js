@@ -37,14 +37,14 @@ export default (allPokemon, searchString) => {
     let filteredPokemon = {};
 
     //decide if each pokemon should be included in our output
-    for (const [id, pokemon] of Object.entries(allPokemon)) {
+    for (const [key, value] of Object.entries(allPokemon)) {
 
         //
         let showPokemon = true;
 
         //apply the searched keywords
         for (const searchFunction of searchFunctions) {
-            if (searchFunction(searchConditions, pokemon) === false) {
+            if (searchFunction(searchConditions, value) === false) {
                 showPokemon = false;
                 break;
             }
@@ -54,7 +54,7 @@ export default (allPokemon, searchString) => {
         for (const searchedName of searchedNames) {
 
             try {
-                if ((new RegExp(searchedName.text, 'i')).test(pokemon.name) === searchedName.negated) {
+                if ((new RegExp(searchedName.text, 'i')).test(value.name) === searchedName.negated) {
                     showPokemon = false;
                     break;
                 }
@@ -66,7 +66,7 @@ export default (allPokemon, searchString) => {
 
         //
         if (showPokemon === true) {
-            filteredPokemon[pokemon.id] = allPokemon[pokemon.id]; //must pass all te
+            filteredPokemon[key] = allPokemon[key]; //must pass all te
         }
 
     };
