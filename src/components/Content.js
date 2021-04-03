@@ -7,7 +7,7 @@ export default (props) => {
 
     //
     return (
-        <main>{props.children}</main>
+        <main className={props.className}>{props.children}</main>
     );
 
 };
