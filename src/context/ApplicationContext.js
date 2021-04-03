@@ -3,9 +3,6 @@
 import React from 'react'
 
 //
-import { v4 as randomUUID } from 'uuid';
-
-//
 import createReducer from '../utils/createReducer';
 
 //

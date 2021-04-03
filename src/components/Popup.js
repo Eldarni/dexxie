@@ -10,7 +10,7 @@ import Scrollable from "react-scrollbars-custom";
 export default (props) => {
 
     //
-    if (props.visible != true) {
+    if (props.visible !== true) {
         return null;
     }
 

@@ -1,6 +1,6 @@
 
 //
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 //
 import pokemon from '../static/pokemon.json';
@@ -43,8 +43,8 @@ export default () => {
     });
 
     //allow the visibility of the popups to be toggled
-    const [showProfilesPopop, setShowProfilesPopop] = useState(false);
-    const [showTagsPopop,     setShowTagsPopop]     = useState(false);
+    const [showProfilesPopop, setShowProfilesPopop] = React.useState(false);
+    const [showTagsPopop,     setShowTagsPopop]     = React.useState(false);
 
     //
     return (

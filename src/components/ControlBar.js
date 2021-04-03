@@ -4,10 +4,7 @@ import React from 'react';
 
 //
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleUp, faAngleDown, faCheckDouble, faTimes, faTags, faCog } from '@fortawesome/free-solid-svg-icons'
-
-//
-import Button from './elements/Button';
+import { faAngleUp, faCheckDouble, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 //
 import ProfileMenuWidget from './ProfileMenuWidget';
