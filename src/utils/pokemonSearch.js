@@ -5,6 +5,11 @@ import SearchString from 'search-string';
 //
 export default (allPokemon, searchString) => {
 
+    //make sure the search string is valid-ish before starting the search process
+    if (typeof searchString !== 'string' || searchString === '') {
+        return  allPokemon;
+    }
+
     //allow for the names of the regions to be supplied as keywords
     const regions = ['kanto', 'johto', 'hoenn', 'sinnoh', 'unova', 'kalos', 'alola', 'galar', 'unknown'];
     const regionTransformer = (text) => (regions.indexOf(text) >= 0 && { key: 'region', value: text });
