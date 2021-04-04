@@ -9,10 +9,6 @@ import pokemon from '../static/pokemon.json';
 import { useApplicationState }  from '../context/ApplicationContext';
 
 //
-import { ProfileProvider }  from '../context/ProfileContext';
-import { TagProvider }  from '../context/TagContext';
-
-//
 import Header  from './Header';
 import Content from './Content';
 import Footer  from './Footer';
@@ -48,17 +44,15 @@ export default () => {
 
     //
     return (
-        <ProfileProvider>
-            <TagProvider>
-                <Header />
-                <Content className={((showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
-                    <PokeDex pokemon={taggedPokemon} setShowProfilesPopop={setShowProfilesPopop} setShowTagsPopop={setShowTagsPopop} />
-                    <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
-                    <Popup title="Tags"     visible={showTagsPopop}     onClose={() => setShowTagsPopop(false)}><TagManager /></Popup>
-                </Content>
-                <Footer />
-            </TagProvider>
-        </ProfileProvider>
+        <React.Fragment>
+            <Header />
+            <Content className={((showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
+                <PokeDex pokemon={taggedPokemon} setShowProfilesPopop={setShowProfilesPopop} setShowTagsPopop={setShowTagsPopop} />
+                <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
+                <Popup title="Tags"     visible={showTagsPopop}     onClose={() => setShowTagsPopop(false)}><TagManager /></Popup>
+            </Content>
+            <Footer />
+        </React.Fragment>
     );
 
 };
