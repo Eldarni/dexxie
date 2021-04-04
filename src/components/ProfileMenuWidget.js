@@ -41,7 +41,7 @@ export default (props) => {
                 <div className="profiles-wrapper" style={{height:'500px'}}>
                     <Scrollable>
                         <div className="profiles-inner">
-                            {profiles.map((profile) => <ProfileMenuItem key={profile.id} profile={profile} currentProfile={currentProfileState} onClick={()=>{changeProfile(profile)}} />)}
+                            {profiles.getAllProfiles().map((profile) => <ProfileMenuItem key={profile.id} profile={profile} currentProfile={currentProfileState} onClick={()=>{changeProfile(profile)}} />)}
                         </div>
                     </Scrollable>
                 </div>

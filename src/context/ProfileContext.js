@@ -3,6 +3,9 @@
 import React from 'react'
 
 //
+import { useApplicationState }  from '../context/ApplicationContext';
+
+//
 import { v4 as randomUUID } from 'uuid';
 
 //
@@ -40,6 +43,9 @@ const profileReducer = createReducer([], {
 function ProfileProvider({children}) {
 
     //
+    const [ currentProfileState ] = useApplicationState();
+
+    //
     const [state, dispatch] = React.useReducer(profileReducer, (() => {
         return JSON.parse(window.localStorage.getItem('profiles')) || [];
     })());
@@ -50,8 +56,23 @@ function ProfileProvider({children}) {
     });
 
     //
+    const getAllProfiles = () => {
+        return state;
+    };
+
+    //
+    const getProfileByID = (id) => {
+        return state.filter(profile => profile.id === id).pop();
+    };
+
+    //
+    const getCurrentProfile = (id) => {
+        return getProfileByID(currentProfileState);
+    };
+
+    //
     return (
-        <ProfileStateContext.Provider value={state}>
+        <ProfileStateContext.Provider value={{getAllProfiles, getProfileByID, getCurrentProfile}}>
             <ProfileDispatchContext.Provider value={dispatch}>
                 {children}
             </ProfileDispatchContext.Provider>

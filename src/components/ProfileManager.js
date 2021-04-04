@@ -24,7 +24,7 @@ export default (props) => {
     //
     return (
         <div className="profiles">
-            {profiles.map((profile) => <ProfileItem key={profile.id} profile={profile} />)}
+            {profiles.getAllProfiles().map((profile) => <ProfileItem key={profile.id} profile={profile} />)}
         </div>
     );
 }
