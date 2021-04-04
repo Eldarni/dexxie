@@ -57,7 +57,7 @@ export default () => {
         <React.Fragment>
             <Header />
             <Content className={((showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
-                <PokeDex pokemon={taggedPokemon} setShowProfilesPopop={setShowProfilesPopop} setShowTagsPopop={setShowTagsPopop} />
+                <PokeDex pokemon={filteredPokemon} setShowProfilesPopop={setShowProfilesPopop} setShowTagsPopop={setShowTagsPopop} />
                 <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
                 <Popup title="Tags"     visible={showTagsPopop}     onClose={() => setShowTagsPopop(false)}><TagManager /></Popup>
             </Content>
