@@ -7,6 +7,7 @@ import pokemon from '../static/pokemon.json';
 
 //
 import { useApplicationState }  from '../context/ApplicationContext';
+import { useProfileState } from '../context/ProfileContext';
 
 //
 import Header  from './Header';
@@ -15,6 +16,9 @@ import Footer  from './Footer';
 
 //
 import PokeDex from './PokeDex';
+
+//
+import pokemonSearch from '../utils/pokemonSearch';
 
 //
 import Popup from './Popup';
@@ -37,6 +41,12 @@ export default () => {
         }
         return value;
     });
+
+    //now apply the current profile filter
+    const profiles = useProfileState();
+    const currentProfile = profiles.getCurrentProfile();
+
+    const filteredPokemon = ((currentProfile.filter !== '') ? pokemonSearch(taggedPokemon, currentProfile.filter) : taggedPokemon);
 
     //allow the visibility of the popups to be toggled
     const [showProfilesPopop, setShowProfilesPopop] = React.useState(false);
