@@ -8,6 +8,11 @@ export default (props) => {
     //get the key prop for each item in the selectable zone
     const selectableItemKeys = props.children.map(child => child.key);
 
+    //cast the selection to a set, then back to an array to quickly remove duplicates
+    const onSelectionChange = (selection) => {
+        props.onSelectionChange([...new Set(selection)]);
+    }
+
     //
     const toggleSelectionHandler = function(event) {
 
@@ -39,7 +44,7 @@ export default (props) => {
                 });
 
                 //
-                props.onSelectionChange(newSelection);
+                onSelectionChange(newSelection);
                 return;
 
             } else {
@@ -50,9 +55,9 @@ export default (props) => {
 
         //ctrl adds the new items to the selection - no ctrl replaces the entire selection
         if (event.ctrlKey === true) {
-            props.onSelectionChange([...props.selectedItems, ...newSelection]);
+            onSelectionChange([...props.selectedItems, ...newSelection]);
         } else {
-            props.onSelectionChange(newSelection);
+            onSelectionChange(newSelection);
         }
 
         //...and then update it for next time?
