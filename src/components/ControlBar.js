@@ -8,7 +8,6 @@ import { faAngleUp, faCheckDouble, faTimes } from '@fortawesome/free-solid-svg-i
 
 //
 import ProfileMenuWidget from './ProfileMenuWidget';
-import TagMenuWidget from './TagMenuWidget';
 
 //
 export default (props) => {
@@ -18,7 +17,6 @@ export default (props) => {
         <div className="control-bar">
 
             <ProfileMenuWidget currentProfile={props.currentProfile} setShowProfilesPopop={props.setShowProfilesPopop} />
-            <TagMenuWidget setShowTagsPopop={props.setShowTagsPopop} />
 
             <div className="control-group">
                 <div className="control-button" onClick={props.handleSelectAll} title="Select all"><FontAwesomeIcon size="lg" icon={faCheckDouble} /></div>
