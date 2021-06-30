@@ -16,10 +16,14 @@ import Selectable from './Selectable';
 import PokeCard from './PokeCard';
 
 //
+import TagContextMenu from './TagContextMenu';
+
+//
 const Pokedex = (props) => {
 
     //------------------------------------------------------------------------------
 
+    //
     const [selectedPokemon, setSelectedPokemon] = useState([]);
     const onSelectionChangeHandler = function(selection) {
         setSelectedPokemon(selection);
@@ -75,6 +79,8 @@ const Pokedex = (props) => {
                     </div>
                 </Scrollable>
             </div>
+
+            <TagContextMenu selector='.pokemon[data-selected="yes"]' />
 
         </React.Fragment>
     );

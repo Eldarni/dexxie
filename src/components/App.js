@@ -26,11 +26,6 @@ import ProfileManager from './ProfileManager';
 import TagManager from './TagManager';
 
 //
-import ContextMenu, { ContextMenuItem, ContextMenuDivider } from './ContextMenu';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquare, faMinusSquare, faCheckSquare } from '@fortawesome/free-solid-svg-icons'
-
-//
 export default () => {
 
     //
@@ -68,14 +63,6 @@ export default () => {
                 <Popup title="Tags"     visible={showTagsPopop}     onClose={() => setShowTagsPopop(false)}><TagManager /></Popup>
             </Content>
             <Footer />
-
-            <ContextMenu selector='.pokemon[data-selected="yes"]'>
-                <ContextMenuItem><FontAwesomeIcon size="lg" icon={faSquare} /> Owned</ContextMenuItem>
-                <ContextMenuItem><FontAwesomeIcon size="lg" icon={faMinusSquare} /> Shiny</ContextMenuItem>
-                <ContextMenuItem><FontAwesomeIcon size="lg" icon={faCheckSquare} /> Lucky</ContextMenuItem>
-                <ContextMenuDivider />
-                <ContextMenuItem>Clear All Tags</ContextMenuItem>
-            </ContextMenu>
 
         </React.Fragment>
     );
