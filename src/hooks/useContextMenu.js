@@ -3,7 +3,7 @@
 import React from 'react';
 
 //
-export default () => {
+export default (selector) => {
 
     //
     const [xPos, setXPos] = React.useState('0px');
@@ -12,11 +12,17 @@ export default () => {
     //
     const [showMenu, setShowMenu] = React.useState(false);
 
-    //
+    //show the context menu when the targeted item is right clicked
     const handleContextMenu = React.useCallback((event) => {
 
         //
         event.preventDefault();
+
+        //
+        if (event.target.closest(selector || 'body') === null) {
+            setShowMenu(false);
+            return true;
+        }
 
         //
         setXPos(`${event.pageX}px`);

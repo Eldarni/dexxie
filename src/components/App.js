@@ -69,7 +69,7 @@ export default () => {
             </Content>
             <Footer />
 
-            <ContextMenu>
+            <ContextMenu selector='.pokemon[data-selected="yes"]'>
                 <ContextMenuItem><FontAwesomeIcon size="lg" icon={faSquare} /> Owned</ContextMenuItem>
                 <ContextMenuItem><FontAwesomeIcon size="lg" icon={faMinusSquare} /> Shiny</ContextMenuItem>
                 <ContextMenuItem><FontAwesomeIcon size="lg" icon={faCheckSquare} /> Lucky</ContextMenuItem>

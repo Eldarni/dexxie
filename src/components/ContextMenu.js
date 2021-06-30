@@ -9,7 +9,7 @@ import useContextMenu from "../hooks/useContextMenu";
 export default (props) => {
 
     //
-    const { xPos, yPos, showMenu } = useContextMenu();
+    const { xPos, yPos, showMenu } = useContextMenu(props.selector);
   
     //
     return (
