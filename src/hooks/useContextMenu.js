@@ -3,7 +3,7 @@
 import React from 'react';
 
 //
-export default (selector) => {
+export default (selector = 'body') => {
 
     //
     const [xPos, setXPos] = React.useState('0px');
@@ -19,7 +19,7 @@ export default (selector) => {
         event.preventDefault();
 
         //
-        if (event.target.closest(selector || 'body') === null) {
+        if (event.target.closest(selector) === null) {
             setShowMenu(false);
             return true;
         }
