@@ -8,7 +8,7 @@ export default (props) => {
     //
     return (
         <footer>
-            <h1>Pokédex</h1>
+            <h1>Dexxie</h1>
         </footer>
     );
 
