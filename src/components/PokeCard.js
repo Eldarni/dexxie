@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PokeCard = (props) => {
-    
+
     //
     let imageURL = `/icons/${props.details.number}-${props.details.id}.svg`;
     if (props.details.tags.includes('user:SHINY')) {

@@ -73,7 +73,7 @@ body {
 
 //
 @include headings() {
-	@include font-heading($colour: $colour-foreground);
+    @include font-heading($colour: $colour-foreground);
     line-height: 120%;
 }
 
@@ -230,7 +230,7 @@ body {
 .popup-container {
 
     //
-    @include absolute(top 0 right 0 bottom 0 left 0);    
+    @include absolute(top 0 right 0 bottom 0 left 0);
 
     //
     .popup {
@@ -504,7 +504,7 @@ body {
 
     // padding-right: 0.5em;
     // outline: 1px solid #FF0000;
-} 
+}
 
 
 .profile {

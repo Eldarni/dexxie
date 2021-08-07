@@ -28,7 +28,7 @@ export default (props) => {
             </div>
 
             <div className="control-group">
-                <div className="control-button" onClick={props.handleScrollToTop} title="Scroll To Top"  ><FontAwesomeIcon size="lg" icon={faAngleUp}   /></div>
+                <div className="control-button" onClick={props.handleScrollToTop} title="Scroll To Top"><FontAwesomeIcon size="lg" icon={faAngleUp} /></div>
             </div>
 
         </div>
