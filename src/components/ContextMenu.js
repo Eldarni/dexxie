@@ -7,6 +7,7 @@ import useContextMenu from "../hooks/useContextMenu";
 
 //
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 //
 export default (props) => {
@@ -24,10 +25,7 @@ export default (props) => {
 
 //
 export const ContextMenuItem = (props) => {
-    if (props.icon !== undefined) {
-        return ( <div className="ContextMenuItem">{props.children}<FontAwesomeIcon icon={props.icon} /></div> );
-    }
-    return ( <div className="ContextMenuItem">{props.children}</div> );
+    return ( <div className="ContextMenuItem">{props.children}{((props.selected === true) ? <FontAwesomeIcon icon={faCheck} /> : null)}</div> );
 };
 
 //
