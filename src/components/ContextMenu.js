@@ -6,6 +6,9 @@ import React from "react";
 import useContextMenu from "../hooks/useContextMenu";
 
 //
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+//
 export default (props) => {
 
     //
@@ -21,9 +24,10 @@ export default (props) => {
 
 //
 export const ContextMenuItem = (props) => {
-    return (
-        <div className="ContextMenuItem">{props.children}</div>
-    );
+    if (props.icon !== undefined) {
+        return ( <div className="ContextMenuItem">{props.children}<FontAwesomeIcon icon={props.icon} /></div> );
+    }
+    return ( <div className="ContextMenuItem">{props.children}</div> );
 };
 
 //
