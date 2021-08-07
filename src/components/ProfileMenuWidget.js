@@ -6,6 +6,7 @@ import React from 'react';
 import Scrollable from "react-scrollbars-custom";
 
 //
+import { useApplicationState }  from '../context/ApplicationContext';
 import { useProfileState } from '../context/ProfileContext';
 
 //
@@ -16,21 +17,18 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import DropdownMenu from './DropdownMenu';
 
 //
-import { useApplicationState, useApplicationDispatch }  from '../context/ApplicationContext';
-
-//
 export default (props) => {
 
     //
-    const [ currentProfileState ] = useApplicationState();
-    const currentProfileDispatch  = useApplicationDispatch();
+    const applicationState = useApplicationState();
+    const profileState     = useProfileState();
 
     //
-    const profiles = useProfileState();
-
+    const currentProfile = profileState.getCurrentProfile()
+    
     //
     const changeProfile = (profile) => {
-        currentProfileDispatch({'type': 'set-current-profile', 'currentProfile' : profile.id  });
+        applicationState.setCurrentProfileID(profile.id);
     }
 
     //
@@ -41,7 +39,7 @@ export default (props) => {
                 <div className="profiles-wrapper" style={{height:'500px'}}>
                     <Scrollable>
                         <div className="profiles-inner">
-                            {profiles.getAllProfiles().map((profile) => <ProfileMenuItem key={profile.id} profile={profile} currentProfile={currentProfileState} onClick={()=>{changeProfile(profile)}} />)}
+                            {profileState.getAllProfiles().map((profile) => <ProfileMenuItem key={profile.id} profile={profile} currentProfile={currentProfile} onClick={()=>{changeProfile(profile)}} />)}
                         </div>
                     </Scrollable>
                 </div>

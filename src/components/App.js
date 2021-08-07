@@ -29,10 +29,10 @@ import TagManager from './TagManager';
 export default () => {
 
     //
-    const [ currentProfileState ] = useApplicationState();
+    const applicationState = useApplicationState();
 
     //get the user applied tags for the current profile
-    const userTags = JSON.parse(window.localStorage.getItem('profile-' + currentProfileState)) || {};
+    const userTags = JSON.parse(window.localStorage.getItem('profile-' + applicationState.getCurrentProfileID())) || {};
 
     //merge the user's tags into the main list of pokemon
     const taggedPokemon = objectMap(pokemon, function(value) {

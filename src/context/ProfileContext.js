@@ -43,7 +43,7 @@ const profileReducer = createReducer([], {
 function ProfileProvider({children}) {
 
     //
-    const [ currentProfileState ] = useApplicationState();
+    const applicationState = useApplicationState();
 
     //
     const [state, dispatch] = React.useReducer(profileReducer, (() => {
@@ -67,7 +67,7 @@ function ProfileProvider({children}) {
 
     //
     const getCurrentProfile = (id) => {
-        return getProfileByID(currentProfileState);
+        return getProfileByID(applicationState.getCurrentProfileID()) || {};
     };
 
     //
