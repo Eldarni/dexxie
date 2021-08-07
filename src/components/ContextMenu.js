@@ -25,7 +25,7 @@ export default (props) => {
 
 //
 export const ContextMenuItem = (props) => {
-    return ( <div className="ContextMenuItem">{props.children}{((props.selected === true) ? <FontAwesomeIcon icon={faCheck} /> : null)}</div> );
+    return ( <div className={`ContextMenuItem ${props.className}`}>{props.children}{((props.selected === true) ? <FontAwesomeIcon icon={faCheck} /> : null)}</div> );
 };
 
 //
