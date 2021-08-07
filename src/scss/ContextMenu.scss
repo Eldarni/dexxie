@@ -26,8 +26,26 @@
 
     //
     .ContextMenuItem {
+        
+        //
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        //
+        align-items: center;
+
+        //
+        gap: 2em;
+
+        //
         &:not(:first-child) { border-top: 0.1em solid lighten($colour-background, 60%); }
-        padding: 0.3em 3em 0.2em 0.8em;
+        padding: 0.3em 0.8em 0.2em 0.8em;
+
+        //
+        &.indeterminate > svg {
+            color: rgba($colour-background, 0.3);
+        }
 
         //
         &:hover {
