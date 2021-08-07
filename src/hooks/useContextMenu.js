@@ -31,7 +31,7 @@ export default (selector = 'body') => {
         //
         setShowMenu(true);
 
-    }, [setXPos, setYPos]);
+    }, [selector, setXPos, setYPos]);
 
     //hide the context menu when we click elsewhere
     const handleClick = React.useCallback(() => {
