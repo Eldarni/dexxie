@@ -25,8 +25,8 @@ export default (selector = 'body') => {
         }
 
         //
-        setXPos(`${event.pageX}px`);
-        setYPos(`${event.pageY}px`);
+        setXPos(event.pageX);
+        setYPos(event.pageY);
 
         //
         setShowMenu(true);

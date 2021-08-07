@@ -13,11 +13,26 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 export default (props) => {
 
     //
-    const { xPos, yPos, showMenu } = useContextMenu(props.selector);
-  
+    const contextMenu = React.useRef(null);
+
+    //
+    let { xPos, yPos, showMenu } = useContextMenu(props.selector);
+    
+    //calculate the menu's offset so it renders in the correct place
+    if (contextMenu.current !== null) {
+
+        //
+        const contextMenuParentBoundingClientRect = contextMenu.current.offsetParent.getBoundingClientRect();
+
+        //
+        yPos -= contextMenuParentBoundingClientRect.top;
+        xPos -= contextMenuParentBoundingClientRect.left;
+
+    }
+
     //
     return (
-        <div className="ContextMenu" style={{ opacity: !showMenu ? 0 : 1, top: yPos, left: xPos }}>
+        <div ref={contextMenu} className="ContextMenu" style={{ opacity: !showMenu ? 0 : 1, top: `${yPos}px`, left: `${xPos}px` }}>
             {props.children}  
         </div>
     );
