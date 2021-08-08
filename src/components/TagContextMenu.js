@@ -20,17 +20,22 @@ export default (props) => {
 
     //
     tags.forEach((tag) => {
+
+        //
         const selectedPokemonWithTag = selectedPokemon.filter((pokemon) => {
             return pokemon.tags.includes(tag.label);
         });
-        tag.appears = ((selectedPokemonWithTag.length == selectedPokemon.length) ? 'all' : ((selectedPokemonWithTag.length > 0) ? 'some' : 'never'));
+
+        //
+        tag.appears = ((selectedPokemonWithTag.length === selectedPokemon.length) ? 'all' : ((selectedPokemonWithTag.length > 0) ? 'some' : 'never'));
+
     });
 
     //
     return (
         <ContextMenu selector={props.selector}>
             {tags.map((tag) => { 
-                return (<ContextMenuItem key={tag.id} className={((tag.appears == 'some') ? 'indeterminate' : null)} selected={(tag.appears == 'all' || tag.appears == 'some')}>{tag.label}</ContextMenuItem>);
+                return (<ContextMenuItem key={tag.id} className={((tag.appears === 'some') ? 'indeterminate' : null)} selected={(tag.appears === 'all' || tag.appears === 'some')}>{tag.label}</ContextMenuItem>);
             })}
             <ContextMenuDivider />
             <ContextMenuItem>Clear All Tags</ContextMenuItem>
