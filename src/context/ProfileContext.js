@@ -13,7 +13,6 @@ import createReducer from '../utils/createReducer';
 
 //
 const ProfileStateContext    = React.createContext();
-const ProfileDispatchContext = React.createContext();
 
 //
 const addProfile = (state, action) => {
@@ -40,10 +39,14 @@ const profileReducer = createReducer([], {
 });
 
 //
-function ProfileProvider({children}) {
+function ProfileProvider(props) {
+
+    //------------------------------------------------------------------------------
 
     //
     const applicationState = useApplicationState();
+
+    //------------------------------------------------------------------------------
 
     //
     const [state, dispatch] = React.useReducer(profileReducer, (() => {
@@ -55,34 +58,35 @@ function ProfileProvider({children}) {
         window.localStorage.setItem('profiles', JSON.stringify(state));
     });
 
+    //------------------------------------------------------------------------------
+
     //
-    const getAllProfiles = () => {
+    let context = {};
+
+    //
+    context.getAllProfiles = () => {
         return state;
     };
 
     //
-    const getProfileByID = (id) => {
+    context.getProfileByID = (id) => {
         return state.filter(profile => profile.id === id).pop();
     };
 
     //
-    const getCurrentProfile = (id) => {
-        return getProfileByID(applicationState.getCurrentProfileID()) || {};
+    context.getCurrentProfile = () => {
+        return context.getProfileByID(applicationState.getCurrentProfileID()) || {};
     };
+
+    //------------------------------------------------------------------------------
 
     //
     return (
-        <ProfileStateContext.Provider value={{getAllProfiles, getProfileByID, getCurrentProfile}}>
-            <ProfileDispatchContext.Provider value={dispatch}>
-                {children}
-            </ProfileDispatchContext.Provider>
+        <ProfileStateContext.Provider value={context}>
+            {props.children}
         </ProfileStateContext.Provider>
     );
-}
 
-//
-function useProfile() {
-    return [useProfileState(), useProfileDispatch()];
 }
 
 //
@@ -95,13 +99,4 @@ function useProfileState() {
 }
 
 //
-function useProfileDispatch() {
-    const context = React.useContext(ProfileDispatchContext);
-    if (context === undefined) {
-        throw new Error('useProfileDispatch must be used within a ProfileProvider');
-    }
-    return context;
-}
-
-//
-export {ProfileProvider, useProfile, useProfileState, useProfileDispatch};
+export { ProfileProvider, useProfileState };
