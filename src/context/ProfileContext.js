@@ -12,8 +12,12 @@ import { v4 as randomUUID } from 'uuid';
 import createReducer from '../utils/createReducer';
 
 //
+const initialState = [
+    { 'id': '92503e70-c4ca-42d2-9a06-9f26870e66c3', 'name': 'National Dex', 'filter': null, 'tags': {} }
+];
+
+//
 const ProfileStateContext    = React.createContext();
-const ProfileDispatchContext = React.createContext();
 
 //
 const addProfile = (state, action) => {
@@ -21,9 +25,16 @@ const addProfile = (state, action) => {
 };
 
 //
-const updateProfile = (state, action) => { 
+const updateProfile = (state, action) => {
     return state.map((value) => {
         return {...value, ...((value.id === action.profile.id) ? action.profile : {}) };
+    });
+};
+
+//
+const updateProfileTags = (state, action) => {
+    return state.map((value) => {
+        return {...value, ...((value.id === action.profile.id) ? { ...action.profile, 'tags' : action.tags } : action.profile) };
     });
 };
 
@@ -34,20 +45,25 @@ const removeProfile = (state, action) => {
 
 //
 const profileReducer = createReducer([], {
-    add:    addProfile,
-    update: updateProfile,
-    remove: removeProfile,
+    'add'           : addProfile,
+    'update'        : updateProfile,
+    'update-tags'   : updateProfileTags,
+    'remove'        : removeProfile,
 });
 
 //
-function ProfileProvider({children}) {
+function ProfileProvider(props) {
+
+    //------------------------------------------------------------------------------
 
     //
     const applicationState = useApplicationState();
 
+    //------------------------------------------------------------------------------
+
     //
     const [state, dispatch] = React.useReducer(profileReducer, (() => {
-        return JSON.parse(window.localStorage.getItem('profiles')) || [];
+        return JSON.parse(window.localStorage.getItem('profiles')) || initialState;
     })());
 
     //
@@ -55,34 +71,69 @@ function ProfileProvider({children}) {
         window.localStorage.setItem('profiles', JSON.stringify(state));
     });
 
+    //------------------------------------------------------------------------------
+
     //
-    const getAllProfiles = () => {
+    let context = {};
+
+    //
+    context.getAllProfiles = () => {
         return state;
     };
 
     //
-    const getProfileByID = (id) => {
+    context.getProfileByID = (id) => {
         return state.filter(profile => profile.id === id).pop();
     };
 
     //
-    const getCurrentProfile = (id) => {
-        return getProfileByID(applicationState.getCurrentProfileID()) || {};
+    context.getCurrentProfile = () => {
+        return context.getProfileByID(applicationState.getCurrentProfileID()) || {};
+    };
+
+    //------------------------------------------------------------------------------
+
+    //
+    context.addTagToPokemon = (pokemon, tagToAdd) => {
+
+        //
+        const currentProfile = context.getCurrentProfile();
+
+        //
+        const currentProfileNewTags = pokemon.reduce((carry, pokemon) => {
+            return { ...carry, [pokemon.id]: [...new Set([...(carry[pokemon.id] || []), tagToAdd])] };
+        }, currentProfile.tags);
+
+        //
+        dispatch({'type': 'update-tags', 'profile' : currentProfile, 'tags' : currentProfileNewTags  });
+
     };
 
     //
+    context.removeTagFromPokemon = (pokemon, tagToRemove) => {
+
+        //
+        const currentProfile = context.getCurrentProfile();
+
+        //
+        const currentProfileNewTags = pokemon.reduce((carry, pokemon) => {
+            return { ...carry, [pokemon.id]: (carry[pokemon.id] || []).filter((tag) => tag !== tagToRemove) };
+        }, currentProfile.tags)
+
+        //
+        dispatch({'type': 'update-tags', 'profile' : currentProfile, 'tags' : currentProfileNewTags  });
+
+    };
+
+    //------------------------------------------------------------------------------
+
+    //
     return (
-        <ProfileStateContext.Provider value={{getAllProfiles, getProfileByID, getCurrentProfile}}>
-            <ProfileDispatchContext.Provider value={dispatch}>
-                {children}
-            </ProfileDispatchContext.Provider>
+        <ProfileStateContext.Provider value={context}>
+            {props.children}
         </ProfileStateContext.Provider>
     );
-}
 
-//
-function useProfile() {
-    return [useProfileState(), useProfileDispatch()];
 }
 
 //
@@ -95,13 +146,4 @@ function useProfileState() {
 }
 
 //
-function useProfileDispatch() {
-    const context = React.useContext(ProfileDispatchContext);
-    if (context === undefined) {
-        throw new Error('useProfileDispatch must be used within a ProfileProvider');
-    }
-    return context;
-}
-
-//
-export {ProfileProvider, useProfile, useProfileState, useProfileDispatch};
+export { ProfileProvider, useProfileState };

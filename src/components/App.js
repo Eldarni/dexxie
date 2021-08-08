@@ -6,7 +6,6 @@ import React from 'react';
 import pokemon from '../static/pokemon.json';
 
 //
-import { useApplicationState }  from '../context/ApplicationContext';
 import { useProfileState } from '../context/ProfileContext';
 
 //
@@ -18,6 +17,11 @@ import pokemonSearch from '../utils/pokemonSearch';
 
 //
 import Popup from './Popup';
+
+//
+import WelcomePopup from './WelcomePopup';
+
+//
 import ProfileManager from './ProfileManager';
 import TagManager from './TagManager';
 
@@ -25,24 +29,25 @@ import TagManager from './TagManager';
 export default () => {
 
     //
-    const applicationState = useApplicationState();
+    const profileState = useProfileState();
 
-    //get the user applied tags for the current profile
-    const userTags = JSON.parse(window.localStorage.getItem('profile-' + applicationState.getCurrentProfileID())) || {};
+    //
+    const currentProfile     = profileState.getCurrentProfile();
+    const currentProfileTags = (currentProfile.tags || {});
 
     //merge the user's tags into the main list of pokemon
     const taggedPokemon = objectMap(pokemon, function(value) {
-        if (value.id in userTags) {
-            return { ...value, 'tags' : [ ...value.tags, ...userTags[value.id] ] };
+        if (value.id in currentProfileTags) {
+            return { ...value, 'tags' : [ ...value.tags, ...currentProfileTags[value.id] ] };
         }
         return value;
     });
 
-    //now apply the current profile filter
-    const profiles = useProfileState();
-    const currentProfile = profiles.getCurrentProfile();
-
+    //now filter the pokemon based on the profiles "filter" string
     const filteredPokemon = ((currentProfile.filter !== '') ? pokemonSearch(taggedPokemon, currentProfile.filter) : taggedPokemon);
+
+    //
+    const [showWelcomePopop, setShowWelcomePopop]   = React.useState(true);
 
     //allow the visibility of the popups to be toggled
     const [showProfilesPopop, setShowProfilesPopop] = React.useState(false);
@@ -50,8 +55,9 @@ export default () => {
 
     //
     return (
-        <Layout className={((showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
+        <Layout className={((showWelcomePopop || showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
             <PokeDex pokemon={filteredPokemon} setShowProfilesPopop={setShowProfilesPopop} setShowTagsPopop={setShowTagsPopop} />
+            <Popup title="Welcome"  visible={showWelcomePopop}  onClose={() => setShowWelcomePopop(false)}><WelcomePopup /></Popup>
             <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
             <Popup title="Tags"     visible={showTagsPopop}     onClose={() => setShowTagsPopop(false)}><TagManager /></Popup>
         </Layout>

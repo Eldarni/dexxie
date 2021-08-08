@@ -4,7 +4,7 @@ const PokeCard = (props) => {
 
     //
     let imageURL = `/icons/${props.details.number}-${props.details.id}.svg`;
-    if (props.details.tags.includes('user:SHINY')) {
+    if (props.details.tags.includes('Shiny')) {
         imageURL = `/icons/${props.details.number}-${props.details.id}-shiny.svg`;
     }
 

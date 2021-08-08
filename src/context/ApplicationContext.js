@@ -6,6 +6,9 @@ import React from 'react'
 import createReducer from '../utils/createReducer';
 
 //
+const initialState = '92503e70-c4ca-42d2-9a06-9f26870e66c3';
+
+//
 const ApplicationStateContext = React.createContext();
 
 //
@@ -23,7 +26,7 @@ function ApplicationProvider(props) {
 
     //
     const [state, dispatch] = React.useReducer(applicationProfileReducer, (() => {
-        return JSON.parse(window.localStorage.getItem('current-profile')) || ['92503e70-c4ca-42d2-9a06-9f26870e66c3'];
+        return JSON.parse(window.localStorage.getItem('current-profile')) || initialState;
     })());
 
     //

@@ -3,7 +3,7 @@
 import React from 'react';
 
 //
-import { useProfileState, useProfileDispatch } from '../context/ProfileContext';
+import { useProfileState } from '../context/ProfileContext';
 
 //
 import Form from './form/Form';
@@ -33,7 +33,7 @@ export default (props) => {
 const ProfileItem = (props) => {
 
     //
-    const dispatch = useProfileDispatch();
+    // const dispatch = useProfileDispatch();
 
     //
     const [editEnabled, setEditEnabled] = React.useState(false);
@@ -41,7 +41,7 @@ const ProfileItem = (props) => {
 
     //
     const handleSubmit = (values) => {
-        dispatch({'type': 'update', 'profile' : { ...props.profile, ...values }});
+        //dispatch({'type': 'update', 'profile' : { ...props.profile, ...values }});
     };
 
     //
