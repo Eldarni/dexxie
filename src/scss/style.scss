@@ -69,12 +69,18 @@ $colour-yellow : #f0dba5; // yellow
 body {
     @include font-general($size: 16px, $colour: $colour-foreground);
     line-height: 150%;
+
+    //
+    p { margin: 0.5em 0em; }
+    p a { color: $white; }
+
 }
 
 //
 @include headings() {
     @include font-heading($colour: $colour-foreground);
     line-height: 120%;
+    margin: 0;
 }
 
 //------------------------------------------------------------------------------
@@ -207,6 +213,8 @@ body {
         //
         @include font-heading($size: 0.8em, $weight: 300);
         text-align: right;
+
+        h1 { margin: 0.6em 0em; }
 
         //
         background-color: $colour-pokedex-red2;
