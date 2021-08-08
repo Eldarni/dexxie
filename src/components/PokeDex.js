@@ -24,14 +24,6 @@ const Pokedex = (props) => {
     //------------------------------------------------------------------------------
 
     //
-    const [selectedPokemon, setSelectedPokemon] = useState([]);
-    const onSelectionChangeHandler = function(selection) {
-        setSelectedPokemon(selection);
-    }
-
-    //------------------------------------------------------------------------------
-
-    //
     const [searchString, setSearchString] = useState('');
 
     //pass the pasted html into state, this will cause the pastebox to re-render
@@ -44,12 +36,20 @@ const Pokedex = (props) => {
 
     //------------------------------------------------------------------------------
 
+    //
+    const [selectedPokemon, setSelectedPokemon] = useState([]);
+    const onSelectionChangeHandler = function(selection) {
+        setSelectedPokemon(selection.reduce((carry, pokemon) => { 
+            return { ...carry, [pokemon] : filteredPokemon[pokemon] }
+        }, {}));
+    }
+
     const handleSelectAll = (event) => {
-        setSelectedPokemon(Object.keys(filteredPokemon));
+        setSelectedPokemon(filteredPokemon);
     };
 
     const handleClearAll = (event) => {
-        setSelectedPokemon([]);
+        setSelectedPokemon({});
     };
 
     //------------------------------------------------------------------------------
@@ -71,7 +71,7 @@ const Pokedex = (props) => {
             <div className="pokedex-outer">
                 <Scrollable ref={ScrollRef}>
                     <div className="pokedex">
-                        <Selectable selectedItems={selectedPokemon} onSelectionChange={onSelectionChangeHandler}>
+                        <Selectable selectedItems={Object.keys(selectedPokemon)} onSelectionChange={onSelectionChangeHandler}>
                             {Object.keys(filteredPokemon).map(function(key) {
                                 return <PokeCard key={key} details={filteredPokemon[key]}></PokeCard>
                             })}
@@ -80,7 +80,7 @@ const Pokedex = (props) => {
                 </Scrollable>
             </div>
 
-            <TagContextMenu selector='.pokemon[data-selected="yes"]' />
+            <TagContextMenu selector='.pokemon[data-selected="yes"]' selectedPokemon={selectedPokemon} />git
 
         </React.Fragment>
     );
