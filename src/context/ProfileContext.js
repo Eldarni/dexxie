@@ -12,6 +12,11 @@ import { v4 as randomUUID } from 'uuid';
 import createReducer from '../utils/createReducer';
 
 //
+const initialState = [
+    { 'id': '92503e70-c4ca-42d2-9a06-9f26870e66c3', 'name': 'National Dex', 'filter': null, 'tags': {} }
+];
+
+//
 const ProfileStateContext    = React.createContext();
 
 //
@@ -58,7 +63,7 @@ function ProfileProvider(props) {
 
     //
     const [state, dispatch] = React.useReducer(profileReducer, (() => {
-        return JSON.parse(window.localStorage.getItem('profiles')) || [];
+        return JSON.parse(window.localStorage.getItem('profiles')) || initialState;
     })());
 
     //

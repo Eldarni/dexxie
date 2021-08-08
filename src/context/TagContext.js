@@ -9,6 +9,13 @@ import { v4 as randomUUID } from 'uuid';
 import createReducer from '../utils/createReducer';
 
 //
+const initialState = [
+    { 'id' : 'e7242c83-34f5-4ff9-84f4-38e1d0169b3b', 'tag' : 'Owned' },
+    { 'id' : '891f5a8f-db93-4f5f-a219-f721ca8db723', 'tag' : 'Shiny' },
+    { 'id' : '279f916c-247c-4f48-ac63-205145629b95', 'tag' : 'Lucky' }
+];
+
+//
 const TagStateContext    = React.createContext();
 const TagDispatchContext = React.createContext();
 
@@ -41,7 +48,7 @@ function TagProvider({children}) {
 
     //
     const [state, dispatch] = React.useReducer(tagReducer, (() => {
-        return JSON.parse(window.localStorage.getItem('tags')) || [];
+        return JSON.parse(window.localStorage.getItem('tags')) || initialState;
     })());
 
     //
