@@ -407,7 +407,7 @@ body {
 .pokedex {
 
     //
-    padding: 0.6em 1em 0.6em 0.2em;
+    padding: 0.8em 1em 0.6em 0.2em;
 
     //
     display: grid;
@@ -490,13 +490,13 @@ body {
     }
 
     //reduce the opacity and saturation of unowned pokemon
-    .pokemon:not([data-tags*="user:FEMALE"]):not([data-tags*="user:MALE"]):not([data-tags*="user:SHINY"]):not([data-tags*="user:SHADOW"]):not([data-tags*="user:PURIFIED"]):not([data-tags*="user:LUCKY"]) img {
+    .pokemon:not([data-tags*="Owned"]) img {
         filter: saturate(0%);
         opacity: 0.7;
     }
 
     //show the golden sparkles for lucky pokemon
-    .pokemon[data-tags*="user:LUCKY"] {
+    .pokemon[data-tags*="Lucky"] {
         background-color: rgba(255, 207, 64, 0.1);
         background-image: url(/images/lucky.png);
     }

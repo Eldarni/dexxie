@@ -80,7 +80,7 @@ const Pokedex = (props) => {
                 </Scrollable>
             </div>
 
-            <TagContextMenu selector='.pokemon[data-selected="yes"]' selectedPokemon={selectedPokemon} />git
+            <TagContextMenu selector='.pokemon[data-selected="yes"]' selectedPokemon={selectedPokemon} />
 
         </React.Fragment>
     );
