@@ -20,9 +20,16 @@ const addProfile = (state, action) => {
 };
 
 //
-const updateProfile = (state, action) => { 
+const updateProfile = (state, action) => {
     return state.map((value) => {
         return {...value, ...((value.id === action.profile.id) ? action.profile : {}) };
+    });
+};
+
+//
+const updateProfileTags = (state, action) => {
+    return state.map((value) => {
+        return {...value, ...((value.id === action.profile.id) ? { ...action.profile, 'tags' : action.tags } : action.profile) };
     });
 };
 
@@ -33,9 +40,10 @@ const removeProfile = (state, action) => {
 
 //
 const profileReducer = createReducer([], {
-    add:    addProfile,
-    update: updateProfile,
-    remove: removeProfile,
+    'add'           : addProfile,
+    'update'        : updateProfile,
+    'update-tags'   : updateProfileTags,
+    'remove'        : removeProfile,
 });
 
 //
@@ -76,6 +84,40 @@ function ProfileProvider(props) {
     //
     context.getCurrentProfile = () => {
         return context.getProfileByID(applicationState.getCurrentProfileID()) || {};
+    };
+
+    //------------------------------------------------------------------------------
+
+    //
+    context.addTagToPokemon = (pokemon, tagToAdd) => {
+
+        //
+        const currentProfile = context.getCurrentProfile();
+
+        //
+        const currentProfileNewTags = pokemon.reduce((carry, pokemon) => {
+            return { ...carry, [pokemon.id]: [...new Set([...(carry[pokemon.id] || []), tagToAdd])] };
+        }, currentProfile.tags);
+
+        //
+        dispatch({'type': 'update-tags', 'profile' : currentProfile, 'tags' : currentProfileNewTags  });
+
+    };
+
+    //
+    context.removeTagFromPokemon = (pokemon, tagToRemove) => {
+
+        //
+        const currentProfile = context.getCurrentProfile();
+
+        //
+        const currentProfileNewTags = pokemon.reduce((carry, pokemon) => {
+            return { ...carry, [pokemon.id]: (carry[pokemon.id] || []).filter((tag) => tag !== tagToRemove) };
+        }, currentProfile.tags)
+
+        //
+        dispatch({'type': 'update-tags', 'profile' : currentProfile, 'tags' : currentProfileNewTags  });
+
     };
 
     //------------------------------------------------------------------------------
