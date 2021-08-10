@@ -3,7 +3,7 @@
 import React from 'react';
 
 //
-import { useTagState, useTagDispatch } from '../context/TagContext';
+import { useTagState } from '../context/TagContext';
 
 //
 import Form from './form/Form';
@@ -32,8 +32,8 @@ export default (props) => {
 //
 const TagItem = (props) => {
 
-    //
-    const dispatch = useTagDispatch();
+    // //
+    // const dispatch = useTagDispatch();
 
     //
     const [editEnabled, setEditEnabled] = React.useState(false);
@@ -41,7 +41,7 @@ const TagItem = (props) => {
 
     //
     const handleSubmit = (values) => {
-        dispatch({'type': 'update', 'tag' : { ...props.tag, ...values }});
+        // dispatch({'type': 'update', 'tag' : { ...props.tag, ...values }});
     };
 
     //

@@ -3,6 +3,9 @@
 import React, { useState } from 'react';
 
 //
+import { useTagState } from '../context/TagContext';
+
+//
 import Scrollable from "react-scrollbars-custom";
 
 //
@@ -24,6 +27,9 @@ const Pokedex = (props) => {
     //------------------------------------------------------------------------------
 
     //
+    const tagState = useTagState();
+
+    //
     const [searchString, setSearchString] = useState('');
 
     //pass the pasted html into state, this will cause the pastebox to re-render
@@ -31,8 +37,11 @@ const Pokedex = (props) => {
         setSearchString(event.target.value);
     };
 
+    //supply the user's tags to the search system, as we want to filter against these
+    const userTags = tagState.getAllTags().reduce((carry, tag) => [ ...carry, tag.tag.toLowerCase() ], []);
+
     //filter the base list of pokemon by the search string
-    const filteredPokemon = ((searchString !== '') ? pokemonSearch(props.pokemon, searchString) : props.pokemon);
+    const filteredPokemon = ((searchString !== '') ? pokemonSearch(props.pokemon, userTags, searchString) : props.pokemon);
 
     //------------------------------------------------------------------------------
 
