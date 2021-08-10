@@ -44,7 +44,7 @@ export default () => {
     });
 
     //now filter the pokemon based on the profiles "filter" string
-    const filteredPokemon = ((currentProfile.filter !== '') ? pokemonSearch(taggedPokemon, currentProfile.filter) : taggedPokemon);
+    const filteredPokemon = ((currentProfile.filter !== '') ? pokemonSearch(taggedPokemon, [], currentProfile.filter) : taggedPokemon);
 
     //
     const [showWelcomePopop, setShowWelcomePopop]   = React.useState(true);
