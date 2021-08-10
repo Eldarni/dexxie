@@ -16,8 +16,7 @@ const initialState = [
 ];
 
 //
-const TagStateContext    = React.createContext();
-const TagDispatchContext = React.createContext();
+const TagStateContext = React.createContext();
 
 //
 const addTag = (state, action) => {
@@ -44,7 +43,9 @@ const tagReducer = createReducer([], {
 });
 
 //
-function TagProvider({children}) {
+function TagProvider(props) {
+
+    //------------------------------------------------------------------------------
 
     //
     const [state, dispatch] = React.useReducer(tagReducer, (() => {
@@ -56,19 +57,30 @@ function TagProvider({children}) {
         window.localStorage.setItem('tags', JSON.stringify(state));
     });
 
+    //------------------------------------------------------------------------------
+
+    //
+    let context = {};
+
+    //
+    context.getAllTags = () => {
+        return state;
+    };
+
+    //
+    context.getTagByID = (id) => {
+        return state.filter((tag) => tag.id === id).pop();
+    };
+
+    //------------------------------------------------------------------------------
+
     //
     return (
-        <TagStateContext.Provider value={state}>
-            <TagDispatchContext.Provider value={dispatch}>
-                {children}
-            </TagDispatchContext.Provider>
+        <TagStateContext.Provider value={context}>
+            {props.children}
         </TagStateContext.Provider>
     );
-}
 
-//
-function useTag() {
-    return [useTagState(), useTagDispatch()];
 }
 
 //
@@ -81,13 +93,4 @@ function useTagState() {
 }
 
 //
-function useTagDispatch() {
-    const context = React.useContext(TagDispatchContext);
-    if (context === undefined) {
-        throw new Error('useTagDispatch must be used within a TagProvider');
-    }
-    return context;
-}
-
-//
-export {TagProvider, useTag, useTagState, useTagDispatch};
+export { TagProvider, useTagState };
