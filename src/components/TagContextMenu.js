@@ -4,6 +4,7 @@ import React from 'react';
 
 //
 import { useProfileState }  from '../context/ProfileContext';
+import { useTagState }      from '../context/TagContext';
 
 //
 import ContextMenu, { ContextMenuItem, ContextMenuDivider } from './ContextMenu';
@@ -13,34 +14,31 @@ export default (props) => {
 
     //
     const profileState = useProfileState();
+    const tagState     = useTagState();
 
     //all i need in this is a array - so lets convert our selectedPokemon into an array
     const selectedPokemon = Object.values(props.selectedPokemon);
 
-    //for now, hardcode a list of tags
-    const tags = [
-        {'id':'8c8483fc-bf64-48ae-965d-cde56e884b46', 'label': 'Owned'}, 
-        {'id':'83b729b5-14c7-436d-8a0b-d61091b5cd3e', 'label': 'Shiny'}, 
-        {'id':'457e7d10-f51d-48b2-9ede-4074c3b26872', 'label': 'Lucky'}
-    ];
-
     //
-    tags.forEach((tag) => {
+    const tags = tagState.getAllTags().map((tag) => {
 
         //
         const selectedPokemonWithTag = selectedPokemon.filter((pokemon) => {
-            return pokemon.tags.includes(tag.label);
+            return pokemon.tags.includes(tag.tag);
         });
 
         //assign an appropiate handler to update the tags on the selected pokemon (add the tag, unless all the pokemon already have the tag)
         if (selectedPokemonWithTag.length !== selectedPokemon.length) {
-            tag.updateSelectedPokemonTags = () => { profileState.addTagToPokemon(selectedPokemon, tag.label); };
+            tag.updateSelectedPokemonTags = () => { profileState.addTagToPokemon(selectedPokemon, tag.tag); };
         } else {
-            tag.updateSelectedPokemonTags = () => { profileState.removeTagFromPokemon(selectedPokemon, tag.label); };
+            tag.updateSelectedPokemonTags = () => { profileState.removeTagFromPokemon(selectedPokemon, tag.tag); };
         }
 
         //
         tag.appears = ((selectedPokemonWithTag.length === selectedPokemon.length) ? 'all' : ((selectedPokemonWithTag.length > 0) ? 'some' : 'never'));
+
+        //
+        return tag;
 
     });
 
@@ -48,7 +46,7 @@ export default (props) => {
     return (
         <ContextMenu selector={props.selector}>
             {tags.map((tag) => { 
-                return (<ContextMenuItem key={tag.id} onClick={tag.updateSelectedPokemonTags} className={((tag.appears === 'some') ? 'indeterminate' : null)} selected={(tag.appears === 'all' || tag.appears === 'some')}>{tag.label}</ContextMenuItem>);
+                return (<ContextMenuItem key={tag.id} onClick={tag.updateSelectedPokemonTags} className={((tag.appears === 'some') ? 'indeterminate' : null)} selected={(tag.appears === 'all' || tag.appears === 'some')}>{tag.tag}</ContextMenuItem>);
             })}
             <ContextMenuDivider />
             <ContextMenuItem>Clear All Tags</ContextMenuItem>
