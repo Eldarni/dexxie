@@ -75,6 +75,13 @@ function TagProvider(props) {
     //------------------------------------------------------------------------------
 
     //
+    context.updateTag = (tag) => {
+        dispatch({ 'type': 'update', 'tag' : tag });
+    };
+    
+    //------------------------------------------------------------------------------
+
+    //
     return (
         <TagStateContext.Provider value={context}>
             {props.children}
