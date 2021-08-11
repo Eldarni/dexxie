@@ -31,9 +31,9 @@ export default (props) => {
 
 //
 const TagItem = (props) => {
-
-    // //
-    // const dispatch = useTagDispatch();
+    
+    //
+    const tagState = useTagState();
 
     //
     const [editEnabled, setEditEnabled] = React.useState(false);
@@ -41,7 +41,7 @@ const TagItem = (props) => {
 
     //
     const handleSubmit = (values) => {
-        // dispatch({'type': 'update', 'tag' : { ...props.tag, ...values }});
+        tagState.updateTag({ ...props.tag, ...values });
     };
 
     //
@@ -59,7 +59,7 @@ const TagItem = (props) => {
         <div className="tag" title={props.tag.name}>
             <div>
                 <Form initialValues={props.tag} onSubmit={handleSubmit}>
-                    <Field label="Name" type="text" name="name" ></Field>
+                    <Field label="Name" type="text" name="tag" ></Field>
                     <Submit />
                 </Form>
             </div>
