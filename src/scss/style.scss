@@ -438,6 +438,9 @@ body {
         align-items: center;
         justify-content: center;
 
+        //
+        img { height: 10em; width: 10em; }
+
         //style the name and number indicators
         .pokemon-name {
             @include absolute(top 0 left 0);
