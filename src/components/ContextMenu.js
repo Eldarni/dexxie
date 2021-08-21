@@ -32,8 +32,8 @@ export default (props) => {
 
     //
     return (
-        <div ref={contextMenu} className="ContextMenu" style={{ opacity: !showMenu ? 0 : 1, top: `${yPos}px`, left: `${xPos}px` }}>
-            {props.children}  
+        <div ref={contextMenu} className="ContextMenu" style={{ top: `${yPos}px`, left: `${xPos}px` }}>
+            {((showMenu) ? props.children : null)}
         </div>
     );
 };
