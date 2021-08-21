@@ -476,7 +476,7 @@ body {
 
             //
             background-color: rgba(lighten($colour-background, 40%), 0.3);
-            outline: 2px solid $colour-foreground;
+            outline: 0.2em solid $colour-foreground;
 
             //
             .pokemon-name, .pokemon-number { opacity: 1; }
