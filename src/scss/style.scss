@@ -417,6 +417,18 @@ body {
     grid-row-gap: 0.7em;
 
     //
+    &.compact {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    //
+    &.condensed {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    //
     .pokemon {
 
         //

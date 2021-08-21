@@ -72,14 +72,19 @@ const Pokedex = (props) => {
     //------------------------------------------------------------------------------
 
     //
+    const [displayMode, setDisplayMode] = useState('standard');
+
+    //------------------------------------------------------------------------------
+
+    //
     return (
         <React.Fragment>
 
-            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll} handleScrollToTop={handleScrollToTop} currentProfile={props.currentProfile} setShowProfilesPopop={props.setShowProfilesPopop} setShowTagsPopop={props.setShowTagsPopop}></ControlBar>
+            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll} handleScrollToTop={handleScrollToTop} currentProfile={props.currentProfile} setShowProfilesPopop={props.setShowProfilesPopop} setShowTagsPopop={props.setShowTagsPopop} setDisplayMode={setDisplayMode}></ControlBar>
 
             <div className="pokedex-outer">
                 <Scrollable ref={ScrollRef}>
-                    <div className="pokedex">
+                    <div className={`pokedex ${displayMode}`}>
                         <Selectable selectedItems={Object.keys(selectedPokemon)} onSelectionChange={onSelectionChangeHandler}>
                             {Object.keys(filteredPokemon).map(function(key) {
                                 return <PokeCard key={key} details={filteredPokemon[key]}></PokeCard>
