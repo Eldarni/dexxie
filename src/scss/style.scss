@@ -38,36 +38,36 @@ $colour-yellow : #f0dba5; // yellow
 
 //------------------------------------------------------------------------------
 
-//import the font hosted via google fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500|Roboto:400,400i,700,700i|Source+Code+Pro');
+//
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,500&display=swap');
 
-//define some mixins to make use of this easy
+//
+$heading-font-stack: 'Roboto', Helvetica, Arial, sans-serif;
+$general-font-stack: 'Roboto', Helvetica, Arial, sans-serif;
+
+//
+@mixin font($family: false, $size: false, $colour: false, $weight: false) {
+    @if $family { font-family: $family; }
+    @if $size   { font-size: $size;     }
+    @if $colour { color: $colour;       }
+    @if $weight { font-weight: $weight; }
+}
+
+//
 @mixin font-heading($size: false, $colour: false, $weight: false) {
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    @if $size   { font-size: $size;     }
-    @if $colour { color: $colour;       }
-    @if $weight { font-weight: $weight; }
+    @include font($family: $heading-font-stack, $size: $size, $colour: $colour, $weight: $weight);
 }
 
+//
 @mixin font-general($size: false, $colour: false, $weight: false) {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    @if $size   { font-size: $size;     }
-    @if $colour { color: $colour;       }
-    @if $weight { font-weight: $weight; }
-}
-
-@mixin font-monospace($size: false, $colour: false, $weight: false) {
-    font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
-    @if $size   { font-size: $size;     }
-    @if $colour { color: $colour;       }
-    @if $weight { font-weight: $weight; }
+    @include font($family: $general-font-stack, $size: $size, $colour: $colour, $weight: $weight);
 }
 
 //------------------------------------------------------------------------------
 
 //
 body {
-    @include font-general($size: 16px, $colour: $colour-foreground);
+    @include font-general($size: 16px, $colour: $colour-foreground, $weight: 300);
     line-height: 150%;
 
     //
