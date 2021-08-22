@@ -46,21 +46,27 @@ $heading-font-stack: 'Roboto', Helvetica, Arial, sans-serif;
 $general-font-stack: 'Roboto', Helvetica, Arial, sans-serif;
 
 //
-@mixin font($family: false, $size: false, $colour: false, $weight: false) {
+@mixin font($family: false, $size: false, $colour: false, $weight: false, $align: false) {
+
+    //
     @if $family { font-family: $family; }
-    @if $size   { font-size: $size;     }
-    @if $colour { color: $colour;       }
+    @if $size   { font-size:   $size;   }
     @if $weight { font-weight: $weight; }
+
+    //
+    @if $colour { color:       $colour; }
+    @if $align  { text-align:  $align;  }
+
 }
 
 //
-@mixin font-heading($size: false, $colour: false, $weight: false) {
-    @include font($family: $heading-font-stack, $size: $size, $colour: $colour, $weight: $weight);
+@mixin font-heading($size: false, $colour: false, $weight: false, $align: false) {
+    @include font($family: $heading-font-stack, $size: $size, $colour: $colour, $weight: $weight, $align: $align);
 }
 
 //
-@mixin font-general($size: false, $colour: false, $weight: false) {
-    @include font($family: $general-font-stack, $size: $size, $colour: $colour, $weight: $weight);
+@mixin font-general($size: false, $colour: false, $weight: false, $align: false) {
+    @include font($family: $general-font-stack, $size: $size, $colour: $colour, $weight: $weight, $align: $align);
 }
 
 //------------------------------------------------------------------------------
