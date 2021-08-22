@@ -1,0 +1,65 @@
+.SearchBar {
+
+    //
+    display: grid;
+
+    //
+    grid-template-columns: max-content auto;
+    grid-template-rows: auto;
+
+    //
+    grid-template-areas: "ProfileSwitcher SearchBar";
+
+    //
+    width: 55em;
+
+    //
+    background-color: $white;
+    @include font($size: 1.2em, $colour: $colour-background);
+
+    //
+    align-items: center;
+
+    //
+    &:focus-within {
+        outline: 0.2em solid $colour-red;
+    }
+
+    .ProfileSwitcher {
+
+        //
+        grid-area: ProfileSwitcher;
+
+        //
+        padding: 0em 0.8em;
+        margin-right: 0.5em;
+
+        //
+        border-right: 0.1em solid mix($colour-foreground, $colour-background, 70%);
+
+        //
+        svg { color: mix($colour-foreground, $colour-background, 30%); }
+
+    }
+
+    //
+    input[type="search"] {
+
+        grid-area: SearchBar;
+
+        //
+        outline: none;
+        border: none;
+
+        //
+        background-color: $white;
+        @include font($size: 1em, $colour: $colour-background);
+
+        //
+        &::placeholder {
+            @include font($size: 0.6em, $colour: $colour-background, $align: center);
+        }
+
+    }
+
+}

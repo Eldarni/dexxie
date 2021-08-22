@@ -237,6 +237,7 @@ body {
 @import 'ProfileMenuWidget';
 @import 'TagMenuWidget';
 @import 'ContextMenu';
+@import 'SearchBar';
 
 //------------------------------------------------------------------------------
 
@@ -349,23 +350,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-
-    }
-
-    //
-    input[type="search"] {
-
-        //
-        width: 35em;
-
-        //
-        font-size: 1.2em;
-        color: $colour-background;
-
-        //
-        &::placeholder {
-            color: $colour-background;
-        }
 
     }
 
