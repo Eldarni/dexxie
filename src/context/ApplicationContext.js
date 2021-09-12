@@ -26,6 +26,8 @@ const applicationReducer = createReducer([], {
 //
 function ApplicationProvider(props) {
 
+    //------------------------------------------------------------------------------
+
     //
     const [state, dispatch] = React.useReducer(applicationReducer, (() => {
         return JSON.parse(window.localStorage.getItem('application')) || initialState;
@@ -35,6 +37,8 @@ function ApplicationProvider(props) {
     React.useEffect(() => {
         window.localStorage.setItem('application', JSON.stringify(state));
     }, [state]);
+
+    //------------------------------------------------------------------------------
 
     //
     let context = {};
@@ -48,12 +52,16 @@ function ApplicationProvider(props) {
         dispatch({'type': 'set-current-profile', 'currentProfile' : profileID });
     };
 
+    //------------------------------------------------------------------------------
+
     //
     return (
         <ApplicationStateContext.Provider value={context}>
             {props.children}
         </ApplicationStateContext.Provider>
     );
+
+    //------------------------------------------------------------------------------
 }
 
 //
