@@ -7,7 +7,8 @@ import createReducer from '../utils/createReducer';
 
 //
 const initialState = {
-    'currentProfile' : '92503e70-c4ca-42d2-9a06-9f26870e66c3'
+    'currentProfile' : '92503e70-c4ca-42d2-9a06-9f26870e66c3',
+    'displayMode'    : 'standard'
 };
 
 //
@@ -19,8 +20,14 @@ const setCurrentProfile = (state, action) => {
 };
 
 //
+const setDisplayMode = (state, action) => {
+    return { ...state, 'displayMode' : action.displayMode };
+};
+
+//
 const applicationReducer = createReducer([], {
-    'set-current-profile': setCurrentProfile,
+    'set-current-profile' : setCurrentProfile,
+    'set-display-mode'    : setDisplayMode,
 });
 
 //
@@ -48,8 +55,19 @@ function ApplicationProvider(props) {
         return state.currentProfile;
     };
 
+    //
     context.changeProfile = (profileID) => {
         dispatch({'type': 'set-current-profile', 'currentProfile' : profileID });
+    };
+
+    //
+    context.getCurrentDisplayMode = () => {
+        return state.displayMode;
+    };
+
+    //
+    context.changeDisplayMode = (displayMode) => {
+        dispatch({'type': 'set-display-mode', 'displayMode' : displayMode });
     };
 
     //------------------------------------------------------------------------------
