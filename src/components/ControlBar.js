@@ -3,6 +3,12 @@
 import React from 'react';
 
 //
+import { useProfileState } from '../context/ProfileContext';
+
+//
+import ProfileSelectionMenu from './ProfileSelectionMenu';
+
+//
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp, faCheckDouble, faTimes, faTh, faThLarge, faSquare, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,7 +16,15 @@ import { faAngleUp, faCheckDouble, faTimes, faTh, faThLarge, faSquare, faCaretDo
 export default (props) => {
 
     //
+    const [showProfileSwitcherMenu, setShowProfileSwitcherMenu] = React.useState(false);
+
+    //
+    const profileState   = useProfileState();
+    const currentProfile = profileState.getCurrentProfile();
+
+    //
     return (
+
         <div className="control-bar">
 
             <div className="control-group">
@@ -19,9 +33,14 @@ export default (props) => {
             </div>
 
             <div className="control-group">
-                <div class="SearchBar">
-                    <div class="ProfileSwitcher">National Dex <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></div>
-                    <input type="search" onChange={props.search} value={props.searchString} placeholder="Search: e.g. kanto grass" />
+                <div className="SearchBar">
+                    <div className="SearchBarInner">
+                        <div className="ProfileSwitcher" onClick={()=>setShowProfileSwitcherMenu(!showProfileSwitcherMenu)}>{currentProfile.name} <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></div>
+                        <input type="search" onChange={props.search} value={props.searchString} placeholder="Search: e.g. kanto grass" />
+                    </div>
+                    <div className="ProfileMenu" style={{ 'display': ((showProfileSwitcherMenu) ? 'grid' : 'none') }}>
+                        <ProfileSelectionMenu />
+                    </div>
                 </div>
             </div>
 
@@ -36,6 +55,7 @@ export default (props) => {
             </div>
 
         </div>
+
     );
 
 }

@@ -6,18 +6,20 @@ import React from 'react'
 import createReducer from '../utils/createReducer';
 
 //
-const initialState = '92503e70-c4ca-42d2-9a06-9f26870e66c3';
+const initialState = {
+    'currentProfile' : '92503e70-c4ca-42d2-9a06-9f26870e66c3'
+};
 
 //
 const ApplicationStateContext = React.createContext();
 
 //
 const setCurrentProfile = (state, action) => {
-    return [ action.currentProfile ];
+    return { ...state, 'currentProfile' : action.currentProfile };
 };
 
 //
-const applicationProfileReducer = createReducer([], {
+const applicationReducer = createReducer([], {
     'set-current-profile': setCurrentProfile,
 });
 
@@ -25,13 +27,13 @@ const applicationProfileReducer = createReducer([], {
 function ApplicationProvider(props) {
 
     //
-    const [state, dispatch] = React.useReducer(applicationProfileReducer, (() => {
-        return JSON.parse(window.localStorage.getItem('current-profile')) || initialState;
+    const [state, dispatch] = React.useReducer(applicationReducer, (() => {
+        return JSON.parse(window.localStorage.getItem('application')) || initialState;
     })());
 
     //
     React.useEffect(() => {
-        window.localStorage.setItem('current-profile', JSON.stringify(state));
+        window.localStorage.setItem('application', JSON.stringify(state));
     }, [state]);
 
     //
@@ -39,11 +41,11 @@ function ApplicationProvider(props) {
 
     //
     context.getCurrentProfileID = () => {
-        return state;
+        return state.currentProfile;
     };
 
-    context.setCurrentProfileID = (profileID) => {
-        dispatch('set-current-profile', profileID)
+    context.changeProfile = (profileID) => {
+        dispatch({'type': 'set-current-profile', 'currentProfile' : profileID });
     };
 
     //
