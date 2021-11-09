@@ -503,7 +503,7 @@ body {
     //show the golden sparkles for lucky pokemon
     .pokemon[data-tags*="Lucky"] {
         background-color: rgba(255, 207, 64, 0.1);
-        background-image: url(/images/lucky.png);
+        // background-image: url(/images/lucky.png);
     }
 
 }
