@@ -80,3 +80,21 @@ export const currentProfileDataState = selector({
         return set(userProfilesState(get(currentProfileState)), newValue)
     },
 });
+
+//
+export const selectedPokemonState = atom({
+    'key'     : 'selectedPokemon',
+    'default' : [],
+});
+
+//
+export const selectedPokemonTagsState = selector({
+    'key': 'selectedPokemonTags',
+    'get': ({get}) => {
+        const currentProfile  = get(currentProfileDataState);
+        const selectedPokemon = get(selectedPokemonState);
+        return selectedPokemon.reduce((previous, pokemon) => {
+            return { ...previous, [pokemon]: ((currentProfile.tags.hasOwnProperty(pokemon) ) ? currentProfile.tags[pokemon] : [])}
+        }, {});
+    },
+});

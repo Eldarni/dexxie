@@ -1,10 +1,10 @@
 
 //
 import React, { useState } from 'react';
-import { useRecoilValue } from 'recoil';
+import { useRecoilValue, useRecoilState } from 'recoil';
 
 //
-import { displayModeState } from '../store';
+import { displayModeState, selectedPokemonState } from '../store';
 
 //
 import Scrollable from "react-scrollbars-custom";
@@ -43,20 +43,17 @@ const Pokedex = (props) => {
 
     //------------------------------------------------------------------------------
 
+    //store the selected pokemon in an atom
+    const [selectedPokemon, setSelectedPokemon] = useRecoilState(selectedPokemonState);
+    
     //
-    const [selectedPokemon, setSelectedPokemon] = useState([]);
-    const onSelectionChangeHandler = function(selection) {
-        setSelectedPokemon(selection.reduce((carry, pokemon) => { 
-            return { ...carry, [pokemon] : filteredPokemon[pokemon] }
-        }, {}));
-    }
-
     const handleSelectAll = (event) => {
-        setSelectedPokemon(filteredPokemon);
+        setSelectedPokemon(Object.keys(filteredPokemon));
     };
 
+    //
     const handleClearAll = (event) => {
-        setSelectedPokemon({});
+        setSelectedPokemon([]);
     };
 
     //------------------------------------------------------------------------------
@@ -78,7 +75,7 @@ const Pokedex = (props) => {
             <div className="pokedex-outer">
                 <Scrollable ref={ScrollRef}>
                     <div className={`pokedex ${displayMode}`}>
-                        <Selectable selectedItems={Object.keys(selectedPokemon)} onSelectionChange={onSelectionChangeHandler}>
+                        <Selectable selectedItems={selectedPokemon} onSelectionChange={setSelectedPokemon}>
                             {Object.keys(filteredPokemon).map(function(key) {
                                 return <PokeCard key={key} details={filteredPokemon[key]}></PokeCard>
                             })}
@@ -87,7 +84,7 @@ const Pokedex = (props) => {
                 </Scrollable>
             </div>
 
-            <TagContextMenu selector='.pokemon[data-selected="yes"]' selectedPokemon={selectedPokemon} />
+            <TagContextMenu selector='.pokemon[data-selected="yes"]' />
 
         </React.Fragment>
     );

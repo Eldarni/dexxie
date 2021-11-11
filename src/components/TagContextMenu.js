@@ -4,7 +4,7 @@ import React from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
 //
-import { currentProfileDataState, userTagsState } from '../store';
+import { currentProfileDataState, userTagsState, selectedPokemonTagsState } from '../store';
 
 //
 import ContextMenu, { ContextMenuItem, ContextMenuDivider } from './ContextMenu';
@@ -16,19 +16,19 @@ export default (props) => {
     const [currentProfile, setCurrentProfile] = useRecoilState(currentProfileDataState);
     const userTags = useRecoilValue(userTagsState);
 
-    //all i need in this is a array - so lets convert our selectedPokemon into an array
-    const selectedPokemon = Object.values(props.selectedPokemon);
+    //get the selected pokemon's tags
+    const selectedPokemon = useRecoilValue(selectedPokemonTagsState);
 
     //
     const tags = userTags.map((tag) => {
 
         //
-        const selectedPokemonWithTag = selectedPokemon.filter((pokemon) => {
-            return pokemon.tags.includes(tag.tag);
+        const selectedPokemonWithTag = Object.values(selectedPokemon).filter((pokemon) => {
+            return pokemon.includes(tag.tag);
         });
 
         //merge in an flag to indicate if this tag appears none of the time, some of the time or all of the time
-        return { ...tag, 'appears': ((selectedPokemonWithTag.length === selectedPokemon.length) ? 'all' : ((selectedPokemonWithTag.length > 0) ? 'some' : 'none')) };
+        return { ...tag, 'appears': ((selectedPokemonWithTag.length === Object.values(selectedPokemon).length) ? 'all' : ((selectedPokemonWithTag.length > 0) ? 'some' : 'none')) };
 
     });
 
@@ -39,11 +39,11 @@ export default (props) => {
         let newTagData = {};
 
         //do this with no mutation!
-        Object.keys(props.selectedPokemon).map((pokemon) => {
-            if (!props.selectedPokemon[pokemon].tags.includes(tag)) {
-                newTagData[pokemon] = [ ...props.selectedPokemon[pokemon].tags, tag ];
+        Object.keys(selectedPokemon).map((pokemon) => {
+            if (!selectedPokemon[pokemon].includes(tag)) {
+                newTagData[pokemon] = [ ...selectedPokemon[pokemon], tag ];
             } else {
-                newTagData[pokemon] = props.selectedPokemon[pokemon].tags;
+                newTagData[pokemon] = selectedPokemon[pokemon];
             }
         });
 
@@ -59,8 +59,8 @@ export default (props) => {
         let newTagData = {};
 
         //do this with no mutation!
-        Object.keys(props.selectedPokemon).map((pokemon) => {
-            newTagData[pokemon] = props.selectedPokemon[pokemon].tags.filter((v) => v !== tag);
+        Object.keys(selectedPokemon).map((pokemon) => {
+            newTagData[pokemon] = selectedPokemon[pokemon].filter((v) => v !== tag);
         });
 
         //
