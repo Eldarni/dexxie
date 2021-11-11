@@ -3,12 +3,19 @@
 import SearchString from 'search-string';
 
 //
-export default (allPokemon, userTags, searchString) => {
+export default (allPokemon, searchString) => {
 
     //make sure the search string is valid-ish before starting the search process
     if (typeof searchString !== 'string' || searchString === '') {
         return allPokemon;
     }
+
+    //extract a unique list of tags from the "allPokemon" data, make sure they are all lowercase then make a transformer for the search system
+    const tags = [...new Set(Object.values(allPokemon).reduce((previous, pokemon) => {
+        return [ ...previous, ...pokemon.tags ]
+    }, []))].map((v) => v.toLowerCase());
+
+    const tagTransformer = (text) => (tags.indexOf(text) >= 0 && { key: 'tag', value: text });
 
     //allow for the names of the regions to be supplied as keywords
     const regions = ['kanto', 'johto', 'hoenn', 'sinnoh', 'unova', 'kalos', 'alola', 'galar', 'unknown'];
@@ -18,11 +25,8 @@ export default (allPokemon, userTags, searchString) => {
     const types = ['bug', 'dark', 'dragon', 'electric', 'fairy', 'fighting', 'fire', 'flying', 'ghost', 'grass', 'ground', 'ice', 'normal', 'poison', 'psychic', 'rock', 'steel', 'water'];
     const typeTransformer = (text) => (types.indexOf(text) >= 0 && { key: 'type', value: text });
 
-    //get a list of all the user's tags and make a tag transformer for them
-    const tagTransformer = (text) => (userTags.indexOf(text) >= 0 && { key: 'tag', value: text });
-
     //parse the search string and tokenize it
-    const search = SearchString.parse(searchString.toLowerCase(), [regionTransformer, typeTransformer, tagTransformer]);
+    const search = SearchString.parse(searchString.toLowerCase(), [tagTransformer, regionTransformer, typeTransformer]);
 
     //==============================================================================
 
