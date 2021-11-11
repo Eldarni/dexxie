@@ -39,7 +39,7 @@ export default (props) => {
         let newTagData = {};
 
         //do this with no mutation!
-        Object.keys(selectedPokemon).map((pokemon) => {
+        Object.keys(selectedPokemon).forEach((pokemon) => {
             if (!selectedPokemon[pokemon].includes(tag)) {
                 newTagData[pokemon] = [ ...selectedPokemon[pokemon], tag ];
             } else {
@@ -59,7 +59,7 @@ export default (props) => {
         let newTagData = {};
 
         //do this with no mutation!
-        Object.keys(selectedPokemon).map((pokemon) => {
+        Object.keys(selectedPokemon).forEach((pokemon) => {
             newTagData[pokemon] = selectedPokemon[pokemon].filter((v) => v !== tag);
         });
 
