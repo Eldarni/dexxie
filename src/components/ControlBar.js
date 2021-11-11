@@ -27,9 +27,6 @@ export default (props) => {
     const currentProfile = profileState.getCurrentProfile();
 
     //
-    const [displayMode, setDisplayMode] = useRecoilState(displayModeState);
-
-    //
     return (
 
         <div className="control-bar">
@@ -52,9 +49,9 @@ export default (props) => {
             </div>
 
             <div className="control-group">
-                <div className="control-button" onClick={() => setDisplayMode('compact')}   title="Compact"><FontAwesomeIcon size="lg" icon={faTh} /></div>
-                <div className="control-button" onClick={() => setDisplayMode('condensed')} title="Condensed"><FontAwesomeIcon size="lg" icon={faThLarge} /></div>
-                <div className="control-button" onClick={() => setDisplayMode('standard')}  title="Standard"><FontAwesomeIcon size="lg" icon={faSquare} /></div>
+                <DisplayModeButton icon={faTh}      title="Compact"   value="compact"   />
+                <DisplayModeButton icon={faThLarge} title="Condensed" value="condensed" />
+                <DisplayModeButton icon={faSquare}  title="Standard"  value="standard"  />
             </div>
 
             <div className="control-group">
@@ -63,6 +60,19 @@ export default (props) => {
 
         </div>
 
+    );
+
+}
+
+//
+function DisplayModeButton(props) {
+
+    //
+    const [displayMode, setDisplayMode] = useRecoilState(displayModeState);
+
+    //
+    return (
+        <button className={`control-button ${((displayMode === props.value) ? 'active' : '')}`} onClick={() => setDisplayMode(props.value)} title={`Change the display to a "${props.title}" mode`}><FontAwesomeIcon size="lg" icon={props.icon} /></button>
     );
 
 }

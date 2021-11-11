@@ -327,6 +327,7 @@ body {
 
         display: flex;
         flex-direction: row;
+        gap: 0.5em;
 
         //
         & + .control-group { margin-left: 1em; }
@@ -335,6 +336,13 @@ body {
 
     //
     .control-button {
+
+        //remove the native button styles
+        margin: 0; padding: 0; border: 0;
+        background-color: transparent;
+
+        //
+        color: $colour-foreground;
 
         //
         width: 2.3em; height: 2.3em;
@@ -350,6 +358,10 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &.active {
+            background-color: mix($colour-foreground, $colour-background, 10%);
+        }
 
     }
 
