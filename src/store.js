@@ -3,11 +3,11 @@
 import { atom } from 'recoil';
 
 //
-const localStorageEffect = (key) => {
-    return ({setSelf, onSet}) => {
+const localStorageEffect = () => {
+    return ({node, setSelf, onSet}) => {
 
         //
-        const savedValue = localStorage.getItem(key)
+        const savedValue = localStorage.getItem(node.key)
         if (savedValue != null) {
             setSelf(JSON.parse(savedValue));
         }
@@ -15,9 +15,9 @@ const localStorageEffect = (key) => {
         //
         onSet((newValue, oldValue, isReset) => {
             if (isReset) {
-                localStorage.removeItem(key);
+                localStorage.removeItem(node.key);
             } else {
-                localStorage.setItem(key, JSON.stringify(newValue));
+                localStorage.setItem(node.key, JSON.stringify(newValue));
             }
         });
 
@@ -29,7 +29,7 @@ export const displayModeState = atom({
     'key'     : 'displayMode',
     'default' : 'standard',
     effects_UNSTABLE: [
-        localStorageEffect('displayMode'),
+        localStorageEffect(),
     ]
 });
 
@@ -38,7 +38,7 @@ export const currentProfileState = atom({
     'key'     : 'currentProfile',
     'default' : '92503e70-c4ca-42d2-9a06-9f26870e66c3',
     effects_UNSTABLE: [
-        localStorageEffect('currentProfile'),
+        localStorageEffect(),
     ]
 });
 
@@ -54,6 +54,6 @@ export const userTagsState = atom({
     'key'     : 'userTags',
     'default' : userTagsInitialState,
     effects_UNSTABLE: [
-        localStorageEffect('userTags'),
+        localStorageEffect(),
     ]
 });
