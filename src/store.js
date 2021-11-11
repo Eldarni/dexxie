@@ -1,6 +1,6 @@
 
 //
-import { atom } from 'recoil';
+import { atom, atomFamily, selector } from 'recoil';
 
 //
 const localStorageEffect = () => {
@@ -56,4 +56,27 @@ export const userTagsState = atom({
     effects_UNSTABLE: [
         localStorageEffect(),
     ]
+});
+
+//
+const userProfilesInitialState = { 'icon': '/icons/151-mew.svg', 'name': 'National Dex', 'filter': null, 'tags': {} };
+
+//
+export const userProfilesState = atomFamily({
+    'key'     : 'userProfiles',
+    'default' : userProfilesInitialState,
+    effects_UNSTABLE: [
+        localStorageEffect(),
+    ]
+});
+
+//
+export const currentProfileDataState = selector({
+    'key': 'currentUserProfile',
+    'get': ({get}) => {
+        return get(userProfilesState(get(currentProfileState)));
+    },
+    'set': ({set, get}, newValue) => {
+        return set(userProfilesState(get(currentProfileState)), newValue)
+    },
 });

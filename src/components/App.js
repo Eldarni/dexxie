@@ -1,12 +1,13 @@
 
 //
 import React from 'react';
+import { useRecoilValue } from 'recoil';
 
 //
 import pokemon from '../static/pokemon.json';
 
 //
-import { useProfileState } from '../context/ProfileContext';
+import { currentProfileDataState } from '../store';
 
 //
 import Layout  from './Layout';
@@ -25,10 +26,7 @@ import WelcomePopup from './WelcomePopup';
 export default () => {
 
     //
-    const profileState = useProfileState();
-
-    //
-    const currentProfile     = profileState.getCurrentProfile();
+    const currentProfile = useRecoilValue(currentProfileDataState);
     const currentProfileTags = (currentProfile.tags || {});
 
     //merge the user's tags into the main list of pokemon
