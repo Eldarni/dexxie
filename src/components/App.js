@@ -23,10 +23,6 @@ import Popup from './Popup';
 import WelcomePopup from './WelcomePopup';
 
 //
-import ProfileManager from './ProfileManager';
-import TagManager from './TagManager';
-
-//
 export default () => {
 
     //
@@ -50,18 +46,12 @@ export default () => {
     //
     const [showWelcomePopop, setShowWelcomePopop]   = React.useState(!(process.env.NODE_ENV === 'development'));
 
-    //allow the visibility of the popups to be toggled
-    const [showProfilesPopop, setShowProfilesPopop] = React.useState(false);
-    const [showTagsPopop,     setShowTagsPopop]     = React.useState(false);
-
     //
     return (
         <RecoilRoot>
-            <Layout className={((showWelcomePopop || showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
-                <PokeDex pokemon={filteredPokemon} setShowProfilesPopop={setShowProfilesPopop} setShowTagsPopop={setShowTagsPopop} />
+            <Layout className={((showWelcomePopop) ? 'blurred' : '')}>
+                <PokeDex pokemon={filteredPokemon} />
                 <Popup title="Welcome"  visible={showWelcomePopop}  onClose={() => setShowWelcomePopop(false)}><WelcomePopup /></Popup>
-                <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
-                <Popup title="Tags"     visible={showTagsPopop}     onClose={() => setShowTagsPopop(false)}><TagManager /></Popup>
             </Layout>
         </RecoilRoot>
     );
