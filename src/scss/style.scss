@@ -46,21 +46,27 @@ $heading-font-stack: 'Roboto', Helvetica, Arial, sans-serif;
 $general-font-stack: 'Roboto', Helvetica, Arial, sans-serif;
 
 //
-@mixin font($family: false, $size: false, $colour: false, $weight: false) {
+@mixin font($family: false, $size: false, $colour: false, $weight: false, $align: false) {
+
+    //
     @if $family { font-family: $family; }
-    @if $size   { font-size: $size;     }
-    @if $colour { color: $colour;       }
+    @if $size   { font-size:   $size;   }
     @if $weight { font-weight: $weight; }
+
+    //
+    @if $colour { color:       $colour; }
+    @if $align  { text-align:  $align;  }
+
 }
 
 //
-@mixin font-heading($size: false, $colour: false, $weight: false) {
-    @include font($family: $heading-font-stack, $size: $size, $colour: $colour, $weight: $weight);
+@mixin font-heading($size: false, $colour: false, $weight: false, $align: false) {
+    @include font($family: $heading-font-stack, $size: $size, $colour: $colour, $weight: $weight, $align: $align);
 }
 
 //
-@mixin font-general($size: false, $colour: false, $weight: false) {
-    @include font($family: $general-font-stack, $size: $size, $colour: $colour, $weight: $weight);
+@mixin font-general($size: false, $colour: false, $weight: false, $align: false) {
+    @include font($family: $general-font-stack, $size: $size, $colour: $colour, $weight: $weight, $align: $align);
 }
 
 //------------------------------------------------------------------------------
@@ -228,9 +234,8 @@ body {
 
 
 //
-@import 'ProfileMenuWidget';
-@import 'TagMenuWidget';
 @import 'ContextMenu';
+@import 'SearchBar';
 
 //------------------------------------------------------------------------------
 
@@ -320,6 +325,7 @@ body {
 
         display: flex;
         flex-direction: row;
+        gap: 0.5em;
 
         //
         & + .control-group { margin-left: 1em; }
@@ -328,6 +334,13 @@ body {
 
     //
     .control-button {
+
+        //remove the native button styles
+        margin: 0; padding: 0; border: 0;
+        background-color: transparent;
+
+        //
+        color: $colour-foreground;
 
         //
         width: 2.3em; height: 2.3em;
@@ -344,21 +357,8 @@ body {
         justify-content: center;
         align-items: center;
 
-    }
-
-    //
-    input[type="search"] {
-
-        //
-        width: 35em;
-
-        //
-        font-size: 1.2em;
-        color: $colour-background;
-
-        //
-        &::placeholder {
-            color: $colour-background;
+        &.active {
+            background-color: mix($colour-foreground, $colour-background, 10%);
         }
 
     }
@@ -513,7 +513,7 @@ body {
     //show the golden sparkles for lucky pokemon
     .pokemon[data-tags*="Lucky"] {
         background-color: rgba(255, 207, 64, 0.1);
-        background-image: url(/images/lucky.png);
+        // background-image: url(/images/lucky.png);
     }
 
 }

@@ -9,22 +9,19 @@ import "./scss/style.scss"
 //get our "app"
 import App from './components/App';
 
-//get our app's global state provider
-import { ApplicationProvider } from './context/ApplicationContext';
+//
+import { RecoilRoot } from 'recoil';
 
 //get our other context providers
 import { ProfileProvider }  from './context/ProfileContext';
-import { TagProvider }  from './context/TagContext';
 
 //
 const Application = (
-    <ApplicationProvider>
+    <RecoilRoot>
         <ProfileProvider>
-            <TagProvider>
-                <App />
-            </TagProvider>
+            <App />
         </ProfileProvider>
-    </ApplicationProvider>
+    </RecoilRoot>
 );
 
 //

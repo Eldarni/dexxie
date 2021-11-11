@@ -1,9 +1,10 @@
 
 //
 import React, { useState } from 'react';
+import { useRecoilValue, useRecoilState } from 'recoil';
 
 //
-import { useTagState } from '../context/TagContext';
+import { displayModeState, selectedPokemonState } from '../store';
 
 //
 import Scrollable from "react-scrollbars-custom";
@@ -27,7 +28,7 @@ const Pokedex = (props) => {
     //------------------------------------------------------------------------------
 
     //
-    const tagState = useTagState();
+    const displayMode = useRecoilValue(displayModeState);
 
     //
     const [searchString, setSearchString] = useState('');
@@ -37,28 +38,22 @@ const Pokedex = (props) => {
         setSearchString(event.target.value);
     };
 
-    //supply the user's tags to the search system, as we want to filter against these
-    const userTags = tagState.getAllTags().reduce((carry, tag) => [ ...carry, tag.tag.toLowerCase() ], []);
-
     //filter the base list of pokemon by the search string
-    const filteredPokemon = ((searchString !== '') ? pokemonSearch(props.pokemon, userTags, searchString) : props.pokemon);
+    const filteredPokemon = ((searchString !== '') ? pokemonSearch(props.pokemon, searchString) : props.pokemon);
 
     //------------------------------------------------------------------------------
 
+    //store the selected pokemon in an atom
+    const [selectedPokemon, setSelectedPokemon] = useRecoilState(selectedPokemonState);
+    
     //
-    const [selectedPokemon, setSelectedPokemon] = useState([]);
-    const onSelectionChangeHandler = function(selection) {
-        setSelectedPokemon(selection.reduce((carry, pokemon) => { 
-            return { ...carry, [pokemon] : filteredPokemon[pokemon] }
-        }, {}));
-    }
-
     const handleSelectAll = (event) => {
-        setSelectedPokemon(filteredPokemon);
+        setSelectedPokemon(Object.keys(filteredPokemon));
     };
 
+    //
     const handleClearAll = (event) => {
-        setSelectedPokemon({});
+        setSelectedPokemon([]);
     };
 
     //------------------------------------------------------------------------------
@@ -72,20 +67,15 @@ const Pokedex = (props) => {
     //------------------------------------------------------------------------------
 
     //
-    const [displayMode, setDisplayMode] = useState('standard');
-
-    //------------------------------------------------------------------------------
-
-    //
     return (
         <React.Fragment>
 
-            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll} handleScrollToTop={handleScrollToTop} currentProfile={props.currentProfile} setShowProfilesPopop={props.setShowProfilesPopop} setShowTagsPopop={props.setShowTagsPopop} setDisplayMode={setDisplayMode}></ControlBar>
+            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll} handleScrollToTop={handleScrollToTop} currentProfile={props.currentProfile}></ControlBar>
 
             <div className="pokedex-outer">
                 <Scrollable ref={ScrollRef}>
                     <div className={`pokedex ${displayMode}`}>
-                        <Selectable selectedItems={Object.keys(selectedPokemon)} onSelectionChange={onSelectionChangeHandler}>
+                        <Selectable selectedItems={selectedPokemon} onSelectionChange={setSelectedPokemon}>
                             {Object.keys(filteredPokemon).map(function(key) {
                                 return <PokeCard key={key} details={filteredPokemon[key]}></PokeCard>
                             })}
@@ -94,7 +84,7 @@ const Pokedex = (props) => {
                 </Scrollable>
             </div>
 
-            <TagContextMenu selector='.pokemon[data-selected="yes"]' selectedPokemon={selectedPokemon} />
+            <TagContextMenu selector='.pokemon[data-selected="yes"]' />
 
         </React.Fragment>
     );

@@ -1,9 +1,10 @@
 
 //
 import React from 'react'
+import { useRecoilValue } from 'recoil';
 
 //
-import { useApplicationState }  from '../context/ApplicationContext';
+import { currentProfileState } from '../store';
 
 //
 import { v4 as randomUUID } from 'uuid';
@@ -13,7 +14,7 @@ import createReducer from '../utils/createReducer';
 
 //
 const initialState = [
-    { 'id': '92503e70-c4ca-42d2-9a06-9f26870e66c3', 'name': 'National Dex', 'filter': null, 'tags': {} }
+    { 'id': '92503e70-c4ca-42d2-9a06-9f26870e66c3', 'icon': '/icons/151-mew.svg', 'name': 'National Dex', 'filter': null, 'tags': {} }
 ];
 
 //
@@ -57,7 +58,7 @@ function ProfileProvider(props) {
     //------------------------------------------------------------------------------
 
     //
-    const applicationState = useApplicationState();
+    const currentProfile = useRecoilValue(currentProfileState);
 
     //------------------------------------------------------------------------------
 
@@ -88,7 +89,7 @@ function ProfileProvider(props) {
 
     //
     context.getCurrentProfile = () => {
-        return context.getProfileByID(applicationState.getCurrentProfileID()) || {};
+        return context.getProfileByID(currentProfile) || {};
     };
 
     //------------------------------------------------------------------------------
