@@ -1,7 +1,6 @@
 
 //
 import React from 'react';
-import { RecoilRoot } from 'recoil';
 
 //
 import pokemon from '../static/pokemon.json';
@@ -48,12 +47,10 @@ export default () => {
 
     //
     return (
-        <RecoilRoot>
-            <Layout className={((showWelcomePopop) ? 'blurred' : '')}>
-                <PokeDex pokemon={filteredPokemon} />
-                <Popup title="Welcome"  visible={showWelcomePopop}  onClose={() => setShowWelcomePopop(false)}><WelcomePopup /></Popup>
-            </Layout>
-        </RecoilRoot>
+        <Layout className={((showWelcomePopop) ? 'blurred' : '')}>
+            <PokeDex pokemon={filteredPokemon} />
+            <Popup title="Welcome"  visible={showWelcomePopop}  onClose={() => setShowWelcomePopop(false)}><WelcomePopup /></Popup>
+        </Layout>
     );
 
 };
