@@ -72,7 +72,7 @@ export const userProfilesState = atomFamily({
 
 //
 export const currentProfileDataState = selector({
-    'key': 'currentUserProfile',
+    'key': 'currentProfileData',
     'get': ({get}) => {
         return get(userProfilesState(get(currentProfileState)));
     },
