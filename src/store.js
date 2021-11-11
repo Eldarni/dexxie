@@ -32,3 +32,19 @@ export const displayModeState = atom({
         localStorageEffect('displayMode'),
     ]
 });
+
+//
+const userTagsInitialState = [
+    { 'id' : 'e7242c83-34f5-4ff9-84f4-38e1d0169b3b', 'tag' : 'Owned' },
+    { 'id' : '891f5a8f-db93-4f5f-a219-f721ca8db723', 'tag' : 'Shiny' },
+    { 'id' : '279f916c-247c-4f48-ac63-205145629b95', 'tag' : 'Lucky' }
+];
+
+//
+export const userTagsState = atom({
+    'key'     : 'userTags',
+    'default' : userTagsInitialState,
+    effects_UNSTABLE: [
+        localStorageEffect('userTags'),
+    ]
+});
