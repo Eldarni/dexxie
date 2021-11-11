@@ -1,6 +1,7 @@
 
 //
 import React from 'react';
+import { RecoilRoot } from 'recoil';
 
 //
 import pokemon from '../static/pokemon.json';
@@ -55,12 +56,14 @@ export default () => {
 
     //
     return (
-        <Layout className={((showWelcomePopop || showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
-            <PokeDex pokemon={filteredPokemon} setShowProfilesPopop={setShowProfilesPopop} setShowTagsPopop={setShowTagsPopop} />
-            <Popup title="Welcome"  visible={showWelcomePopop}  onClose={() => setShowWelcomePopop(false)}><WelcomePopup /></Popup>
-            <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
-            <Popup title="Tags"     visible={showTagsPopop}     onClose={() => setShowTagsPopop(false)}><TagManager /></Popup>
-        </Layout>
+        <RecoilRoot>
+            <Layout className={((showWelcomePopop || showProfilesPopop || showTagsPopop) ? 'blurred' : '')}>
+                <PokeDex pokemon={filteredPokemon} setShowProfilesPopop={setShowProfilesPopop} setShowTagsPopop={setShowTagsPopop} />
+                <Popup title="Welcome"  visible={showWelcomePopop}  onClose={() => setShowWelcomePopop(false)}><WelcomePopup /></Popup>
+                <Popup title="Profiles" visible={showProfilesPopop} onClose={() => setShowProfilesPopop(false)}><ProfileManager /></Popup>
+                <Popup title="Tags"     visible={showTagsPopop}     onClose={() => setShowTagsPopop(false)}><TagManager /></Popup>
+            </Layout>
+        </RecoilRoot>
     );
 
 };

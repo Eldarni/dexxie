@@ -1,6 +1,10 @@
 
 //
 import React, { useState } from 'react';
+import { useRecoilValue } from 'recoil';
+
+//
+import { displayModeState } from '../store';
 
 //
 import { useApplicationState } from '../context/ApplicationContext';
@@ -26,6 +30,9 @@ import TagContextMenu from './TagContextMenu';
 const Pokedex = (props) => {
 
     //------------------------------------------------------------------------------
+
+    //
+    const displayMode = useRecoilValue(displayModeState);
 
     //
     const applicationState = useApplicationState();
@@ -77,11 +84,11 @@ const Pokedex = (props) => {
     return (
         <React.Fragment>
 
-            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll} handleScrollToTop={handleScrollToTop} currentProfile={props.currentProfile} setShowProfilesPopop={props.setShowProfilesPopop} setShowTagsPopop={props.setShowTagsPopop} setDisplayMode={applicationState.changeDisplayMode}></ControlBar>
+            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll} handleScrollToTop={handleScrollToTop} currentProfile={props.currentProfile} setShowProfilesPopop={props.setShowProfilesPopop} setShowTagsPopop={props.setShowTagsPopop}></ControlBar>
 
             <div className="pokedex-outer">
                 <Scrollable ref={ScrollRef}>
-                    <div className={`pokedex ${applicationState.getCurrentDisplayMode()}`}>
+                    <div className={`pokedex ${displayMode}`}>
                         <Selectable selectedItems={Object.keys(selectedPokemon)} onSelectionChange={onSelectionChangeHandler}>
                             {Object.keys(filteredPokemon).map(function(key) {
                                 return <PokeCard key={key} details={filteredPokemon[key]}></PokeCard>

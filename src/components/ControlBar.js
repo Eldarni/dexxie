@@ -1,6 +1,10 @@
 
 //
 import React from 'react';
+import { useRecoilState } from 'recoil';
+
+//
+import { displayModeState } from '../store';
 
 //
 import { useProfileState } from '../context/ProfileContext';
@@ -21,6 +25,9 @@ export default (props) => {
     //
     const profileState   = useProfileState();
     const currentProfile = profileState.getCurrentProfile();
+
+    //
+    const [displayMode, setDisplayMode] = useRecoilState(displayModeState);
 
     //
     return (
@@ -45,9 +52,9 @@ export default (props) => {
             </div>
 
             <div className="control-group">
-                <div className="control-button" onClick={() => props.setDisplayMode('compact')}   title="Compact"><FontAwesomeIcon size="lg" icon={faTh} /></div>
-                <div className="control-button" onClick={() => props.setDisplayMode('condensed')} title="Condensed"><FontAwesomeIcon size="lg" icon={faThLarge} /></div>
-                <div className="control-button" onClick={() => props.setDisplayMode('standard')}  title="Standard"><FontAwesomeIcon size="lg" icon={faSquare} /></div>
+                <div className="control-button" onClick={() => setDisplayMode('compact')}   title="Compact"><FontAwesomeIcon size="lg" icon={faTh} /></div>
+                <div className="control-button" onClick={() => setDisplayMode('condensed')} title="Condensed"><FontAwesomeIcon size="lg" icon={faThLarge} /></div>
+                <div className="control-button" onClick={() => setDisplayMode('standard')}  title="Standard"><FontAwesomeIcon size="lg" icon={faSquare} /></div>
             </div>
 
             <div className="control-group">
