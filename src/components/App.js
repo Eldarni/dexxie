@@ -48,7 +48,7 @@ export default () => {
     const filteredPokemon = ((currentProfile.filter !== '') ? pokemonSearch(taggedPokemon, [], currentProfile.filter) : taggedPokemon);
 
     //
-    const [showWelcomePopop, setShowWelcomePopop]   = React.useState(true);
+    const [showWelcomePopop, setShowWelcomePopop]   = React.useState(!(process.env.NODE_ENV === 'development'));
 
     //allow the visibility of the popups to be toggled
     const [showProfilesPopop, setShowProfilesPopop] = React.useState(false);
