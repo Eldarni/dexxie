@@ -1,13 +1,10 @@
 
 //
 import React from 'react';
-import { useRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue } from 'recoil';
 
 //
-import { displayModeState } from '../store';
-
-//
-import { useProfileState } from '../context/ProfileContext';
+import { currentProfileDataState, displayModeState } from '../store';
 
 //
 import ProfileSelectionMenu from './ProfileSelectionMenu';
@@ -21,10 +18,7 @@ export default (props) => {
 
     //
     const [showProfileSwitcherMenu, setShowProfileSwitcherMenu] = React.useState(false);
-
-    //
-    const profileState   = useProfileState();
-    const currentProfile = profileState.getCurrentProfile();
+    const currentProfile = useRecoilValue(currentProfileDataState);
 
     //
     return (
