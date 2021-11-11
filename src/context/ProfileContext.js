@@ -1,9 +1,10 @@
 
 //
 import React from 'react'
+import { useRecoilValue } from 'recoil';
 
 //
-import { useApplicationState }  from '../context/ApplicationContext';
+import { currentProfileState } from '../store';
 
 //
 import { v4 as randomUUID } from 'uuid';
@@ -57,7 +58,7 @@ function ProfileProvider(props) {
     //------------------------------------------------------------------------------
 
     //
-    const applicationState = useApplicationState();
+    const currentProfile = useRecoilValue(currentProfileState);
 
     //------------------------------------------------------------------------------
 
@@ -88,7 +89,7 @@ function ProfileProvider(props) {
 
     //
     context.getCurrentProfile = () => {
-        return context.getProfileByID(applicationState.getCurrentProfileID()) || {};
+        return context.getProfileByID(currentProfile) || {};
     };
 
     //------------------------------------------------------------------------------

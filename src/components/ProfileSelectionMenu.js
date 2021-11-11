@@ -1,9 +1,12 @@
 
 //
 import React from 'react';
+import { useSetRecoilState } from 'recoil';
 
 //
-import { useApplicationState } from '../context/ApplicationContext';
+import { currentProfileState } from '../store';
+
+//
 import { useProfileState } from '../context/ProfileContext';
 
 //
@@ -14,7 +17,9 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 export default (props) => {
 
     //
-    const applicationState = useApplicationState();
+    const setCurrentProfile = useSetRecoilState(currentProfileState);
+
+    //
     const profileState     = useProfileState();
 
     //
@@ -23,7 +28,7 @@ export default (props) => {
                         
             {profileState.getAllProfiles().map(function(profile, i){
                 return (
-                    <div className="ProfileMenuCard" key={profile.id} onClick={()=>{applicationState.changeProfile(profile.id)}}>
+                    <div className="ProfileMenuCard" key={profile.id} onClick={()=>{setCurrentProfile(profile.id)}}>
                         <img src={profile.icon} alt={profile.name} title={profile.name} />
                         <span>{profile.name}</span>
                     </div>

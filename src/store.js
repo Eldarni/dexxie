@@ -34,6 +34,15 @@ export const displayModeState = atom({
 });
 
 //
+export const currentProfileState = atom({
+    'key'     : 'currentProfile',
+    'default' : '92503e70-c4ca-42d2-9a06-9f26870e66c3',
+    effects_UNSTABLE: [
+        localStorageEffect('currentProfile'),
+    ]
+});
+
+//
 const userTagsInitialState = [
     { 'id' : 'e7242c83-34f5-4ff9-84f4-38e1d0169b3b', 'tag' : 'Owned' },
     { 'id' : '891f5a8f-db93-4f5f-a219-f721ca8db723', 'tag' : 'Shiny' },
