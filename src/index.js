@@ -14,15 +14,12 @@ import { ApplicationProvider } from './context/ApplicationContext';
 
 //get our other context providers
 import { ProfileProvider }  from './context/ProfileContext';
-import { TagProvider }  from './context/TagContext';
 
 //
 const Application = (
     <ApplicationProvider>
         <ProfileProvider>
-            <TagProvider>
-                <App />
-            </TagProvider>
+            <App />
         </ProfileProvider>
     </ApplicationProvider>
 );
