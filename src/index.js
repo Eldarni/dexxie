@@ -12,15 +12,10 @@ import App from './components/App';
 //
 import { RecoilRoot } from 'recoil';
 
-//get our other context providers
-import { ProfileProvider }  from './context/ProfileContext';
-
 //
 const Application = (
     <RecoilRoot>
-        <ProfileProvider>
-            <App />
-        </ProfileProvider>
+        <App />
     </RecoilRoot>
 );
 
