@@ -88,11 +88,16 @@
         padding: 1em;
 
         //
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
-        gap: 1em;
+        display: flex;
+        flex-wrap: wrap;
 
-        // width: 20em;
+        //
+        gap: 1.5em;
+
+        //
+        justify-content: center;
+    
+        //
         width: 55em;
 
         //
@@ -102,32 +107,35 @@
         .ProfileMenuCard {
 
             //
-            width: 8em; height: 8em;
-
-            //
-            border: 0.2em solid $colour-background;
-
-            //
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
 
             //
             border-radius: 0.5em;
 
             //
-            img { width: 5em; height: 5em; }
-            svg { font-size: 3em; margin-bottom: 0.3em; }
-
-            //
-            span { text-align: center; }
+            img { width: 5em; height: 5em; padding: 0.3em; background-color: mix($colour-foreground, $colour-background, 99%); border-radius: 50%; }
+            
+            //tweak the "add profile" icon
+            svg { font-size: 3em; }
 
             //
             cursor: pointer;
-            &:hover {
-                border: 0.2em solid $colour-red;
+
+            //
+            &:hover img {
+                background-color: mix($colour-foreground, $colour-background, 80%); 
+                @media (prefers-reduced-motion: no-preference) {
+                    transform: scale(1.1);
+                    transition: transform 50ms;
+                }
             }
+
+            //
+            &:hover svg {
+                color: mix($colour-foreground, $colour-background, 30%); 
+            }
+
 
         }
 

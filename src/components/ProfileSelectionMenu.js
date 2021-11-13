@@ -30,16 +30,14 @@ export default (props) => {
                         
             {profiles.map(function(profile, i){
                 return (
-                    <div className="ProfileMenuCard" key={profile.id} onClick={()=>{setCurrentProfile(profile.id)}}>
-                        <img src={profile.icon} alt={profile.name} title={profile.name} />
-                        <span>{profile.name}</span>
+                    <div className="ProfileMenuCard" key={profile.id} onClick={()=>{setCurrentProfile(profile.id)}} title={profile.name}>
+                        <img src={profile.icon} alt={profile.name}  />
                     </div>
                 );
             })}
 
-            <div className="ProfileMenuCard">
+            <div className="ProfileMenuCard" title="Add Profile">
                 <FontAwesomeIcon size="lg" icon={faPlus} />
-                <span>New Profile</span>
             </div>
 
         </React.Fragment>

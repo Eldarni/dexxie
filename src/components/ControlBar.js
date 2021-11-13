@@ -61,7 +61,7 @@ export default (props) => {
                         <div className="ProfileSwitcher" onClick={()=>setShowProfileSwitcherMenu(!showProfileSwitcherMenu)}>{currentProfile.name} <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon></div>
                         <input type="search" onChange={props.search} value={props.searchString} placeholder="Search: e.g. kanto grass" />
                     </div>
-                    <div ref={profileSwitcherMenu} className="ProfileMenu" style={{ 'display': ((showProfileSwitcherMenu) ? 'grid' : 'none') }}>
+                    <div ref={profileSwitcherMenu} className="ProfileMenu" style={{ 'display': ((showProfileSwitcherMenu) ? 'flex' : 'none') }}>
                         <ProfileSelectionMenu />
                     </div>
                 </div>
