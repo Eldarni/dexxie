@@ -25,8 +25,11 @@ export default (allPokemon, searchString) => {
     const types = ['bug', 'dark', 'dragon', 'electric', 'fairy', 'fighting', 'fire', 'flying', 'ghost', 'grass', 'ground', 'ice', 'normal', 'poison', 'psychic', 'rock', 'steel', 'water'];
     const typeTransformer = (text) => (types.indexOf(text) >= 0 && { key: 'type', value: text });
 
+    //use the "+" prefix to support searching by family so +pichu or +pikachu would be the same result
+    const familyTransformer = (text) => ( text.length > 2 && text.substring(0, 1) == '+' && { key: 'family', value: text.substring(1) });
+
     //parse the search string and tokenize it
-    const search = SearchString.parse(searchString.toLowerCase(), [tagTransformer, regionTransformer, typeTransformer]);
+    const search = SearchString.parse(searchString.toLowerCase(), [tagTransformer, regionTransformer, typeTransformer, familyTransformer]);
 
     //==============================================================================
 
@@ -40,7 +43,7 @@ export default (allPokemon, searchString) => {
 
     //define a list of search functions that will take our search conditions and apply it
     const searchFunctions = [
-        regionFilter, typeFilter, tagFilter
+        regionFilter, typeFilter, tagFilter, tagFamily
     ];
 
     //==============================================================================
@@ -135,6 +138,23 @@ function tagFilter(searchConditions, pokemon) {
 
     if (typeof searchConditions.exclude.tag !== 'undefined') {
         if (searchConditions.exclude.tag.some(item => pokemon.tags.map((tag) => tag.toLowerCase()).includes(item))) {
+            return false;
+        }
+    }
+
+}
+
+//check to see if the pokemon belongs to the relevent family
+function tagFamily(searchConditions, pokemon) {
+
+    if (typeof searchConditions.family !== 'undefined') {
+        if (!searchConditions.family.some(item => pokemon.family.map((family) => family.toLowerCase()).includes(item))) {
+            return false;
+        }
+    }
+
+    if (typeof searchConditions.exclude.family !== 'undefined') {
+        if (searchConditions.exclude.family.some(item => pokemon.family.map((family) => family.toLowerCase()).includes(item))) {
             return false;
         }
     }
