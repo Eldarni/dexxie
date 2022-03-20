@@ -38,13 +38,13 @@ export default () => {
     const filteredPokemon = ((currentProfile.filter !== '') ? pokemonSearch(taggedPokemon, currentProfile.filter) : taggedPokemon);
 
     //
-    const [showWelcomePopop, setShowWelcomePopop]   = React.useState(!(process.env.NODE_ENV === 'development'));
+    const [showWelcomePopop, setShowWelcomePopop] = React.useState(!(process.env.NODE_ENV === 'development'));
 
     //
     return (
         <Layout className={((showWelcomePopop) ? 'blurred' : '')}>
             <PokeDex pokemon={filteredPokemon} />
-            <Popup title="Welcome"  visible={showWelcomePopop}  onClose={() => setShowWelcomePopop(false)}><WelcomePopup /></Popup>
+            <Popup title="Welcome" visible={showWelcomePopop} onClose={() => setShowWelcomePopop(false)}><WelcomePopup /></Popup>
         </Layout>
     );
 
