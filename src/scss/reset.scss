@@ -1,14 +1,69 @@
-html, body { margin: 0; border: 0; user-select: none; }
+//The new CSS Reset - version 1.4.1 (last updated 23.11.2021)
+//https://github.com/elad2412/the-new-css-reset
 
-*, *:before, *:after {
+//remove all the styles of the "user-agent-stylesheet", except for the 'display' property - the "symbol *" part is to solve firefox svg sprite bug
+*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+//preferred box-sizing value
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-//make everything unselectable, as most of the stuff i do is "apps"
-body { user-select: none; }
+//reapply the pointer cursor for anchor tags
+a, button {
+    cursor: revert;
+}
 
-//reverse the previous decision for general "content"
-h1, h2, h3, h4, h5, h6, p, table, ul, ol, dl { user-select: text; }
+//remove list styles (bullets/numbers)
+ol, ul, menu {
+    list-style: none;
+}
 
-//
-button { cursor: pointer; }
+//for images to not be able to exceed their container
+img {
+    max-width: 100%;
+}
+
+//removes spacing between cells in tables
+table {
+    border-collapse: collapse;
+}
+
+//revert the 'white-space' property for textarea elements on safari
+textarea {
+    white-space: revert;
+}
+
+//minimum style to allow to style meter element
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+//reset default text opacity of input placeholder
+::placeholder {
+    color: unset;
+}
+
+//fix the feature of 'hidden' attribute - display:revert; revert to element instead of attribute
+:where([hidden]) {
+    display: none;
+}
+
+//revert for bug in chromium browsers - fix for the content editable attribute will work properly
+:where([contenteditable]) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+}
+
+//apply back the draggable feature - exists only in chromium and safari
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
