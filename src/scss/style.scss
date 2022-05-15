@@ -71,6 +71,13 @@ $general-font-stack: 'Roboto', Helvetica, Arial, sans-serif;
 
 //------------------------------------------------------------------------------
 
+//make everything unselectable, except for elements that a priciply for "text"
+*:where(:not(h1, h2, h3, h4, h5, h6, p, table, ul, ol, dl)) {
+    user-select: none;
+}
+
+//------------------------------------------------------------------------------
+
 //
 body {
     @include font-general($size: 16px, $colour: $colour-foreground, $weight: 300);
