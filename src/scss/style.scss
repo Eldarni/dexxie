@@ -35,6 +35,7 @@ $colour-yellow : #f0dba5; // yellow
 
 //mixins
 @import 'mixins/position';
+@import 'mixins/pseudo';
 
 //------------------------------------------------------------------------------
 
@@ -122,27 +123,44 @@ body {
         background-color: $colour-pokedex-red2;
 
         //
-        height: 3em;
+        height: 1.5em;
 
         //
         svg {
-            position: relative;
-            top: 0.4em;
-            left: 0.7em;
+
+            //
+            @include relative($top: 0.2em, $left: 0.5em);
+
+            //
+            transform-origin: top left;
+            transform: scale(0.5);
+
         }
 
         //
-        &::before {
+        @include before() {
 
             //
-            position: absolute;
-            content: '';
-
-            //
-            border-top: 6em solid $colour-pokedex-red2;
-            border-right: 6em solid transparent;
+            border-top: 3em solid $colour-pokedex-red2;
+            border-right: 3em solid transparent;
             height: 0;
-            width: 35em;
+
+            
+            min-width: 12em;
+            width: 20%;
+
+        };
+
+        //make everything bigger on large screens
+        @media only screen and (min-width: 600px) {
+            height: 3em;
+
+            svg { transform: scale(1.0);}
+
+            &::before {
+                border-top-width: 6em;
+                border-right-width: 6em;
+            }
 
         }
 
@@ -156,8 +174,12 @@ body {
         z-index: 0;
 
         //
-        margin: 1em 2em 1em 2em;
-        padding: 1.5em;
+        margin: 0.5em;
+        padding: 0.5em;
+        @media only screen and (min-width: 600px) {
+            margin: 1em;
+            padding: 1.5em;
+        }
 
         //
         border-radius: 1em;
@@ -178,12 +200,8 @@ body {
 
         & > :last-child() { flex: 1 1 100%; }
 
-        //shine
-        &::after {
-
-            //
-            @include absolute(top 0 right 0 bottom 0 left 0);
-            content: '';
+        //add a shine effect over the screen
+        @include after($inset: 0) {
 
             //make sure the layer is transparent to any mouse stuff
             pointer-events: none;
@@ -250,13 +268,13 @@ body {
 .popup-container {
 
     //
-    @include absolute(top 0 right 0 bottom 0 left 0);
+    @include absolute($top: 0, $right: 0, $bottom: 0, $left: 0);
 
     //
     .popup {
 
         //position the popup slight above center
-        @include absolute(top 0 bottom 0 left 0);
+        @include absolute($top: 0, $bottom: 0, $left: 0);
 
         //
         width: 40%;
@@ -396,7 +414,7 @@ body {
     &::after {
 
         //
-        @include absolute(top 0 right 0 bottom 0 left 0);
+        @include absolute($top: 0, $right: 0, $bottom: 0, $left: 0);
         content: '';
 
         //
@@ -462,12 +480,12 @@ body {
 
         //style the name and number indicators
         .pokemon-name {
-            @include absolute(top 0 left 0);
+            @include absolute($top: 0, $left: 0);
             padding: 0.1em 0.4em 0.1em 0.3em;
         }
 
         .pokemon-number {
-            @include absolute(top 0 right 0.2em);
+            @include absolute($top: 0, $right: 0.2em);
             &::first-letter { color: #999999; }
         }
 
