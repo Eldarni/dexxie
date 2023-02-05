@@ -3,11 +3,14 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
 
+//read in the exclusions list to remove certain mons from the main dex (e.g. mega/gmax evolutions etc)
+import exclusions from './exclusions.json' assert { type: 'json' };
+
 //define connection to the pokeapi - this will locally cache the response, to allow us to be more "dumb" later
 let previousRequests = {};
 const fetchFromPokeAPI = async function(resource) {
     if (previousRequests[resource] === undefined) {
-        previousRequests[resource] = await fetch(resource).then(response => response.json());
+        previousRequests[resource] = await fetch(`http://localhost:8080/${resource}`).then(response => response.json());
     }
     return previousRequests[resource];
 }
@@ -36,6 +39,11 @@ for (const pokemon of nationalDex.pokemon_entries) {
         //get the details for the current specfic one, oh - but how do we know alola rat is alolan?
         const pokemonVariety = await fetchFromPokeAPI(variety.pokemon.url);
         
+        //filter out any exlusions
+        if (exclusions.includes(pokemonVariety.name)) {
+            continue;
+        }
+
         //
         outputData[pokemonVariety.name] = { ...pokemonSchema, ...{
             'id'     : getPokemonID(pokemonVariety),
