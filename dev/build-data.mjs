@@ -64,13 +64,11 @@ for (const families of Object.values(pokemonFamilies)) {
 }
 
 //
-fs.writeFile('./src/static/pokemon.json', JSON.stringify(outputData, null, 4), (error) => {
+fs.writeFile('../src/static/pokemon.json', JSON.stringify(outputData, null, 4), (error) => {
     if (error) console.error(error);
 });
 
 //=============================================================
-
-//use functions to process the raw data and resolve the final value (where possible)
 
 //id
 function getPokemonID(pokemonSpecies) {
