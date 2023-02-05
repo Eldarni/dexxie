@@ -39,13 +39,13 @@ for (const pokemon of nationalDex.pokemon_entries) {
         //
         outputData[pokemonVariety.name] = { ...pokemonSchema, ...{
             'id'     : getPokemonID(pokemonVariety),
-            'name'   : getPokemonName(pokemonVariety), 
+            'name'   : getPokemonName(pokemonSpecies), 
             'number' : getPokemonNumber(pokemonSpecies),
             'region' : getPokemonRegion(pokemonSpecies),
             'type'   : getPokemonTypes(pokemonVariety), 
         }};
 
-        //prepare this poke in a "famalies" datastructure to properly handle the evolution chain mechanics later
+        //prepare this poke in a "families" datastructure to properly handle the evolution chain mechanics later
         if (pokemonFamilies[pokemonSpecies.evolution_chain.url] === undefined) {
             pokemonFamilies[pokemonSpecies.evolution_chain.url] = [pokemonVariety.name];
         } else {
@@ -77,7 +77,9 @@ function getPokemonID(pokemonSpecies) {
 
 //name
 function getPokemonName(pokemonSpecies) {
-    return pokemonSpecies.name;
+    return pokemonSpecies.names.find((name) => {
+        return name.language.name == 'en';
+    })['name'];
 }
 
 //number
