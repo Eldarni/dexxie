@@ -293,8 +293,7 @@
             "rattata",
             "rattata-alola",
             "raticate",
-            "raticate-alola",
-            "raticate-totem-alola"
+            "raticate-alola"
         ]
     },
     "rattata-alola": {
@@ -311,8 +310,7 @@
             "rattata",
             "rattata-alola",
             "raticate",
-            "raticate-alola",
-            "raticate-totem-alola"
+            "raticate-alola"
         ]
     },
     "raticate": {
@@ -328,8 +326,7 @@
             "rattata",
             "rattata-alola",
             "raticate",
-            "raticate-alola",
-            "raticate-totem-alola"
+            "raticate-alola"
         ]
     },
     "raticate-alola": {
@@ -346,26 +343,7 @@
             "rattata",
             "rattata-alola",
             "raticate",
-            "raticate-alola",
-            "raticate-totem-alola"
-        ]
-    },
-    "raticate-totem-alola": {
-        "id": 10093,
-        "name": "Raticate",
-        "number": "020",
-        "region": "generation-i",
-        "type": [
-            "dark",
-            "normal"
-        ],
-        "tags": [],
-        "family": [
-            "rattata",
-            "rattata-alola",
-            "raticate",
-            "raticate-alola",
-            "raticate-totem-alola"
+            "raticate-alola"
         ]
     },
     "spearow": {
@@ -2116,8 +2094,7 @@
         "family": [
             "cubone",
             "marowak",
-            "marowak-alola",
-            "marowak-totem"
+            "marowak-alola"
         ]
     },
     "marowak": {
@@ -2132,8 +2109,7 @@
         "family": [
             "cubone",
             "marowak",
-            "marowak-alola",
-            "marowak-totem"
+            "marowak-alola"
         ]
     },
     "marowak-alola": {
@@ -2149,25 +2125,7 @@
         "family": [
             "cubone",
             "marowak",
-            "marowak-alola",
-            "marowak-totem"
-        ]
-    },
-    "marowak-totem": {
-        "id": 10149,
-        "name": "Marowak",
-        "number": "105",
-        "region": "generation-i",
-        "type": [
-            "fire",
-            "ghost"
-        ],
-        "tags": [],
-        "family": [
-            "cubone",
-            "marowak",
-            "marowak-alola",
-            "marowak-totem"
+            "marowak-alola"
         ]
     },
     "hitmonlee": {
@@ -12940,8 +12898,7 @@
         "tags": [],
         "family": [
             "yungoos",
-            "gumshoos",
-            "gumshoos-totem"
+            "gumshoos"
         ]
     },
     "gumshoos": {
@@ -12955,23 +12912,7 @@
         "tags": [],
         "family": [
             "yungoos",
-            "gumshoos",
-            "gumshoos-totem"
-        ]
-    },
-    "gumshoos-totem": {
-        "id": 10121,
-        "name": "Gumshoos",
-        "number": "735",
-        "region": "generation-vii",
-        "type": [
-            "normal"
-        ],
-        "tags": [],
-        "family": [
-            "yungoos",
-            "gumshoos",
-            "gumshoos-totem"
+            "gumshoos"
         ]
     },
     "grubbin": {
@@ -12986,8 +12927,7 @@
         "family": [
             "grubbin",
             "charjabug",
-            "vikavolt",
-            "vikavolt-totem"
+            "vikavolt"
         ]
     },
     "charjabug": {
@@ -13003,8 +12943,7 @@
         "family": [
             "grubbin",
             "charjabug",
-            "vikavolt",
-            "vikavolt-totem"
+            "vikavolt"
         ]
     },
     "vikavolt": {
@@ -13020,25 +12959,7 @@
         "family": [
             "grubbin",
             "charjabug",
-            "vikavolt",
-            "vikavolt-totem"
-        ]
-    },
-    "vikavolt-totem": {
-        "id": 10122,
-        "name": "Vikavolt",
-        "number": "738",
-        "region": "generation-vii",
-        "type": [
-            "bug",
-            "electric"
-        ],
-        "tags": [],
-        "family": [
-            "grubbin",
-            "charjabug",
-            "vikavolt",
-            "vikavolt-totem"
+            "vikavolt"
         ]
     },
     "crabrawler": {
@@ -13150,8 +13071,7 @@
         "tags": [],
         "family": [
             "cutiefly",
-            "ribombee",
-            "ribombee-totem"
+            "ribombee"
         ]
     },
     "ribombee": {
@@ -13166,24 +13086,7 @@
         "tags": [],
         "family": [
             "cutiefly",
-            "ribombee",
-            "ribombee-totem"
-        ]
-    },
-    "ribombee-totem": {
-        "id": 10150,
-        "name": "Ribombee",
-        "number": "743",
-        "region": "generation-vii",
-        "type": [
-            "bug",
-            "fairy"
-        ],
-        "tags": [],
-        "family": [
-            "cutiefly",
-            "ribombee",
-            "ribombee-totem"
+            "ribombee"
         ]
     },
     "rockruff": {
@@ -13369,8 +13272,7 @@
         "tags": [],
         "family": [
             "dewpider",
-            "araquanid",
-            "araquanid-totem"
+            "araquanid"
         ]
     },
     "araquanid": {
@@ -13385,24 +13287,7 @@
         "tags": [],
         "family": [
             "dewpider",
-            "araquanid",
-            "araquanid-totem"
-        ]
-    },
-    "araquanid-totem": {
-        "id": 10153,
-        "name": "Araquanid",
-        "number": "752",
-        "region": "generation-vii",
-        "type": [
-            "water",
-            "bug"
-        ],
-        "tags": [],
-        "family": [
-            "dewpider",
-            "araquanid",
-            "araquanid-totem"
+            "araquanid"
         ]
     },
     "fomantis": {
@@ -13416,8 +13301,7 @@
         "tags": [],
         "family": [
             "fomantis",
-            "lurantis",
-            "lurantis-totem"
+            "lurantis"
         ]
     },
     "lurantis": {
@@ -13431,23 +13315,7 @@
         "tags": [],
         "family": [
             "fomantis",
-            "lurantis",
-            "lurantis-totem"
-        ]
-    },
-    "lurantis-totem": {
-        "id": 10128,
-        "name": "Lurantis",
-        "number": "754",
-        "region": "generation-vii",
-        "type": [
-            "grass"
-        ],
-        "tags": [],
-        "family": [
-            "fomantis",
-            "lurantis",
-            "lurantis-totem"
+            "lurantis"
         ]
     },
     "morelull": {
@@ -13492,8 +13360,7 @@
         "tags": [],
         "family": [
             "salandit",
-            "salazzle",
-            "salazzle-totem"
+            "salazzle"
         ]
     },
     "salazzle": {
@@ -13508,24 +13375,7 @@
         "tags": [],
         "family": [
             "salandit",
-            "salazzle",
-            "salazzle-totem"
-        ]
-    },
-    "salazzle-totem": {
-        "id": 10129,
-        "name": "Salazzle",
-        "number": "758",
-        "region": "generation-vii",
-        "type": [
-            "poison",
-            "fire"
-        ],
-        "tags": [],
-        "family": [
-            "salandit",
-            "salazzle",
-            "salazzle-totem"
+            "salazzle"
         ]
     },
     "stufful": {
@@ -14160,23 +14010,7 @@
         ],
         "tags": [],
         "family": [
-            "togedemaru",
-            "togedemaru-totem"
-        ]
-    },
-    "togedemaru-totem": {
-        "id": 10154,
-        "name": "Togedemaru",
-        "number": "777",
-        "region": "generation-vii",
-        "type": [
-            "electric",
-            "steel"
-        ],
-        "tags": [],
-        "family": [
-            "togedemaru",
-            "togedemaru-totem"
+            "togedemaru"
         ]
     },
     "mimikyu-disguised": {
@@ -14191,9 +14025,7 @@
         "tags": [],
         "family": [
             "mimikyu-disguised",
-            "mimikyu-busted",
-            "mimikyu-totem-disguised",
-            "mimikyu-totem-busted"
+            "mimikyu-busted"
         ]
     },
     "mimikyu-busted": {
@@ -14208,43 +14040,7 @@
         "tags": [],
         "family": [
             "mimikyu-disguised",
-            "mimikyu-busted",
-            "mimikyu-totem-disguised",
-            "mimikyu-totem-busted"
-        ]
-    },
-    "mimikyu-totem-disguised": {
-        "id": 10144,
-        "name": "Mimikyu",
-        "number": "778",
-        "region": "generation-vii",
-        "type": [
-            "ghost",
-            "fairy"
-        ],
-        "tags": [],
-        "family": [
-            "mimikyu-disguised",
-            "mimikyu-busted",
-            "mimikyu-totem-disguised",
-            "mimikyu-totem-busted"
-        ]
-    },
-    "mimikyu-totem-busted": {
-        "id": 10145,
-        "name": "Mimikyu",
-        "number": "778",
-        "region": "generation-vii",
-        "type": [
-            "ghost",
-            "fairy"
-        ],
-        "tags": [],
-        "family": [
-            "mimikyu-disguised",
-            "mimikyu-busted",
-            "mimikyu-totem-disguised",
-            "mimikyu-totem-busted"
+            "mimikyu-busted"
         ]
     },
     "bruxish": {
