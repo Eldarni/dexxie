@@ -3,9 +3,9 @@ import React from 'react';
 const PokeCard = (props) => {
 
     //
-    let imageURL = `/icons/${parseInt(props.details.number, 10)}.webp`;
+    let imageURL = `/icons/${props.details.id}.webp`;
     if (props.details.tags.includes('Shiny')) {
-        imageURL = `/icons/${parseInt(props.details.number, 10)}-shiny.webp`;
+        imageURL = `/icons/${props.details.id}-shiny.webp`;
     }
 
     //
