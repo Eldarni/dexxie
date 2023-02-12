@@ -1,6 +1,7 @@
 
 //
 import fs from 'fs';
+import fetch from 'node-fetch';
 import sharp from 'sharp';
 import AdmZip from 'adm-zip';
 
