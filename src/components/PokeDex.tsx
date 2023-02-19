@@ -34,7 +34,7 @@ const Pokedex = (props) => {
     const [searchString, setSearchString] = useState('');
 
     //pass the pasted html into state, this will cause the pastebox to re-render
-    const onSearch = (event) => {
+    const onSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchString(event.target.value);
     };
 
@@ -47,22 +47,22 @@ const Pokedex = (props) => {
     const [selectedPokemon, setSelectedPokemon] = useRecoilState(selectedPokemonState);
     
     //
-    const handleSelectAll = (event) => {
+    const handleSelectAll = () => {
         setSelectedPokemon(Object.keys(filteredPokemon));
     };
 
     //
-    const handleClearAll = (event) => {
+    const handleClearAll = () => {
         setSelectedPokemon([]);
     };
 
     //------------------------------------------------------------------------------
 
-    //integrate with the scrollbar component to adda "scroll-to-top" feature
-    const ScrollRef = React.useRef(null);
-    const handleScrollToTop = (event) => {
-        ScrollRef.current.scrollToTop();
-    }
+    // //integrate with the scrollbar component to adda "scroll-to-top" feature
+    // const ScrollRef = React.useRef<HTMLDivElement>(null);
+    // const handleScrollToTop = (event) => {
+    //     ScrollRef.current.scrollToTop();
+    // }
 
     //------------------------------------------------------------------------------
 
@@ -70,10 +70,10 @@ const Pokedex = (props) => {
     return (
         <React.Fragment>
 
-            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll} handleScrollToTop={handleScrollToTop} currentProfile={props.currentProfile}></ControlBar>
+            <ControlBar search={onSearch} searchString={searchString} handleSelectAll={handleSelectAll} handleClearAll={handleClearAll} currentProfile={props.currentProfile}></ControlBar>
 
             <div className="pokedex-outer">
-                <Scrollable ref={ScrollRef}>
+                {/* <Scrollable> */}
                     <div className={`pokedex ${displayMode}`}>
                         <Selectable selectedItems={selectedPokemon} onSelectionChange={setSelectedPokemon}>
                             {Object.keys(filteredPokemon).map(function(key) {
@@ -81,7 +81,7 @@ const Pokedex = (props) => {
                             })}
                         </Selectable>
                     </div>
-                </Scrollable>
+                {/* </Scrollable> */}
             </div>
 
             <TagContextMenu selector='.pokemon[data-selected="yes"]' />

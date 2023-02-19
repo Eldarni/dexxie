@@ -13,7 +13,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 export default (props) => {
 
     //
-    const contextMenu = React.useRef(null);
+    const contextMenu = React.useRef<HTMLDivElement>(null);
 
     //
     let { xPos, yPos, showMenu } = useContextMenu(props.selector);

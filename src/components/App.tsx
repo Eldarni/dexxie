@@ -1,26 +1,26 @@
 
 //
-import React from 'react';
-import { useRecoilValue } from 'recoil';
+import React from 'react'
+import { useRecoilValue } from 'recoil'
 
 //
-import pokemon from '../static/pokemon.json';
+import pokemon from '../static/pokemon.json'
 
 //
-import { currentProfileDataState } from '../store';
+import { currentProfileDataState } from '../store'
 
 //
-import Layout  from './Layout';
-import PokeDex from './PokeDex';
+import Layout  from './Layout'
+import PokeDex from './PokeDex'
 
 //
-import pokemonSearch from '../utils/pokemonSearch';
+import pokemonSearch from '../utils/pokemonSearch'
 
 //
-import Popup from './Popup';
+import Popup from './Popup'
 
 //
-import WelcomePopup from './WelcomePopup';
+import WelcomePopup from './WelcomePopup'
 
 //
 export default () => {
@@ -37,14 +37,25 @@ export default () => {
     //now filter the pokemon based on the profiles "filter" string
     const filteredPokemon = ((currentProfile.filter !== '') ? pokemonSearch(taggedPokemon, currentProfile.filter) : taggedPokemon);
 
+
+
+
+
+
+
+
+
+
+    
     //
-    const [showWelcomePopop, setShowWelcomePopop] = React.useState(!(process.env.NODE_ENV === 'development'));
+    // const [showWelcomePopop, setShowWelcomePopop] = React.useState(!(process.env.NODE_ENV === 'development'));
 
     //
     return (
-        <Layout className={((showWelcomePopop) ? 'blurred' : '')}>
+        // <Layout className={((showWelcomePopop) ? 'blurred' : '')}>
+        <Layout>
             <PokeDex pokemon={filteredPokemon} />
-            <Popup title="Welcome" visible={showWelcomePopop} onClose={() => setShowWelcomePopop(false)}><WelcomePopup /></Popup>
+            {/* <Popup title="Welcome" visible={showWelcomePopop} onClose={() => setShowWelcomePopop(false)}><WelcomePopup /></Popup> */}
         </Layout>
     );
 

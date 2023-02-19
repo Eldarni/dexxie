@@ -9,7 +9,7 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 export default (props) => {
 
     //
-    const dropdown = useRef(null);
+    const dropdown = useRef<HTMLDivElement>(null);
 
     //
     const [isActive, setIsActive] = useState(false);

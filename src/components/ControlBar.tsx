@@ -20,7 +20,7 @@ export default (props) => {
     const currentProfile = useRecoilValue(currentProfileDataState);
 
     //
-    const profileSwitcherMenu = React.useRef(null);
+    const profileSwitcherMenu = React.useRef<HTMLDivElement>(null);
     const [showProfileSwitcherMenu, setShowProfileSwitcherMenu] = React.useState(false);
 
     //

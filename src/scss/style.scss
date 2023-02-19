@@ -442,6 +442,10 @@ body {
     grid-row-gap: 0.7em;
 
     //
+    overflow-y: scroll;
+    max-height: 85vh;
+
+    //
     &.compact {
         font-size: 10px;
         line-height: 16px;
