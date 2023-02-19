@@ -9,6 +9,8 @@ import pokemon from '../static/pokemon.json'
 //
 import { currentProfileDataState } from '../store'
 
+import { displayModeState } from '../store'
+
 //
 import Layout  from './Layout'
 import PokeDex from './PokeDex'
@@ -39,8 +41,8 @@ export default () => {
 
 
 
-
-
+    // const displayMode = useRecoilValue(displayModeState) || 'foo';
+    // alert(JSON.stringify(filteredPokemon, null, 4));
 
 
 
