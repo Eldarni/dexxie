@@ -10,6 +10,9 @@ import { before, after } from '../mixins/pseudo';
 import position from '../mixins/position';
 
 //
+import { useTranslation } from "react-i18next";
+
+//
 const Wrapper = styled.div`
 
     //
@@ -134,25 +137,32 @@ const Footer = styled.main`
 `;
 
 //
-export default (props) => (
-    <Wrapper>
+export default (props) => {
+    
+    //
+    const { t } = useTranslation();
+    
+    //
+    return (
+        <Wrapper>
 
-        <Header>
-            <svg>
-                <circle style={{ 'fill' : "#6894cc", 'stroke' : "#ffffff", 'strokeWidth' : "8px" }} cx="40"  cy="40" r="28" />
-                <circle style={{ 'fill' : "#f94848", 'stroke' : "#333333", 'strokeWidth' : "4px" }} cx="105" cy="21" r="12" />
-                <circle style={{ 'fill' : "#fcab1d", 'stroke' : "#333333", 'strokeWidth' : "4px" }} cx="150" cy="21" r="12" />
-                <circle style={{ 'fill' : "#87c13a", 'stroke' : "#333333", 'strokeWidth' : "4px" }} cx="195" cy="21" r="12" />
-            </svg>
-        </Header>
+            <Header>
+                <svg>
+                    <circle style={{ 'fill' : "#6894cc", 'stroke' : "#ffffff", 'strokeWidth' : "8px" }} cx="40"  cy="40" r="28" />
+                    <circle style={{ 'fill' : "#f94848", 'stroke' : "#333333", 'strokeWidth' : "4px" }} cx="105" cy="21" r="12" />
+                    <circle style={{ 'fill' : "#fcab1d", 'stroke' : "#333333", 'strokeWidth' : "4px" }} cx="150" cy="21" r="12" />
+                    <circle style={{ 'fill' : "#87c13a", 'stroke' : "#333333", 'strokeWidth' : "4px" }} cx="195" cy="21" r="12" />
+                </svg>
+            </Header>
 
-        <Screen className={props.className}>
-            {props.children}
-        </Screen>
+            <Screen className={props.className}>
+                {props.children}
+            </Screen>
 
-        <Footer>
-            <h1>Dexxie</h1>
-        </Footer>
+            <Footer>
+                <h1>{t('dexxie')}</h1>
+            </Footer>
 
-    </Wrapper>
-);
+        </Wrapper>
+    );
+}
