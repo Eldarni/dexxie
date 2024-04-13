@@ -130,8 +130,8 @@ const Footer = styled.main`
     //
     h1 { 
         margin: 0.1em 0em 0.5em;
-        opacity: 0.5;
-        color: var(--colour-background);
+        opacity: 0.8;
+        color: var(--colour-foreground);
     }
 
 `;
