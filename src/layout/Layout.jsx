@@ -90,11 +90,16 @@ const Screen = styled.main`
 
     //
     margin: 1em;
-    padding: 1.5em;
+    padding: 0.5em;
 
     //
     border-radius: 1em;
-    border-end-start-radius: 3em;
+
+    //
+    @media only screen and (min-width: 600px) {
+        padding: 1.5em;
+        border-end-start-radius: 3em;
+    }
 
     //
     background-color: var(--colour-background);
@@ -130,7 +135,7 @@ const Footer = styled.main`
     //
     h1 { 
         margin: 0.1em 0em 0.5em;
-        opacity: 0.8;
+        opacity: 0.9;
         color: var(--colour-foreground);
     }
 
@@ -165,4 +170,5 @@ export default (props) => {
 
         </Wrapper>
     );
+
 }
