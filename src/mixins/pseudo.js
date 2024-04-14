@@ -13,7 +13,7 @@ export const pseudo = ({ display, position, content, inset, insetBlockStart, ins
     position: ${position || 'absolute'};
 
     //
-    content: ${position || '\'\''};
+    content: ${((content  !== undefined) ? `'${content}'` : `''`)};
 
     //
     ${inset !== undefined && `inset: ${inset};`}
