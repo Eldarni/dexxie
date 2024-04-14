@@ -6,9 +6,10 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 //
-import { styled } from 'styled-components'
+import { styled, css } from 'styled-components'
 
 //
+import { after } from '../mixins/pseudo'
 import { absolute } from '../mixins/position'
 
 //
@@ -79,15 +80,23 @@ const PokemonCard = styled.div`
         opacity: 1;
     }
 
-    //reduce the opacity and saturation of unowned pokemon
+    //if the user owns the pokemon then display it in full colour
     &[data-tags*="owned"] img {
         filter: saturate(100%);
         opacity: 1.0;
     }
 
+    //show the sparkles for a shiny pokemon
+    &[data-tags*="shiny"] {
+        ${after({ 'inset': '0'}, () => css`
+            background: url('icons/shiny.png') no-repeat center center;
+        `)}
+    }
+
     //show the golden sparkles for lucky pokemon
     &[data-tags*="lucky"] {
         background-color: rgba(255, 207, 64, 0.1);
+        background-image: url('icons/lucky.png');
     }
 
 `
