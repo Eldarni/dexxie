@@ -6,7 +6,7 @@
   "cspell": {
     "language": "en-GB",
     "words": [
-        "dexxie"
+        "dexxie", "dexie"
     ],
     "ignorePaths": [
         "/public/locales/*/translation.json",
@@ -21,6 +21,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dexie": "^4.0.4",
+    "dexie-react-hooks": "^1.1.7",
     "i18next": "^23.10.1",
     "i18next-http-backend": "^2.5.0",
     "react": "^18.2.0",
