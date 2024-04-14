@@ -29,6 +29,19 @@ const PokemonNumber = styled.div`
 `
 
 //
+const PokemonImage = styled.img`
+
+    //
+    height: 10em;
+    width: 10em;
+
+    //
+    filter: saturate(0%);
+    opacity: 0.7;
+
+`
+
+//
 const PokemonCard = styled.div`
 
     //
@@ -66,6 +79,17 @@ const PokemonCard = styled.div`
         opacity: 1;
     }
 
+    //reduce the opacity and saturation of unowned pokemon
+    &[data-tags*="owned"] img {
+        filter: saturate(100%);
+        opacity: 1.0;
+    }
+
+    //show the golden sparkles for lucky pokemon
+    &[data-tags*="lucky"] {
+        background-color: rgba(255, 207, 64, 0.1);
+    }
+
 `
 
 //
@@ -76,9 +100,10 @@ export default (props: Pokemon) => {
 
     //
     return (
-        <PokemonCard data-number={props.number} title={t(props.id)}>
+        <PokemonCard data-number={props.number} title={t(props.id)} data-tags={props.tags?.join(':')}>
             <PokemonName>{t(props.id)}</PokemonName>
             <PokemonNumber>#{props.number}</PokemonNumber>
+            <PokemonImage src={`/images/${props.number}-${props.id}${((props.tags?.includes('shiny')) ? '-shiny' : '')}.svg`} />
         </PokemonCard>
     )
 
