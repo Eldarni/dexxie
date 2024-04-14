@@ -13,6 +13,10 @@ import { useTranslation } from 'react-i18next'
 import Layout from './layout/Layout'
 
 //
+import Pokedex from './components/Pokedex'
+import PokedexEntry from './components/PokedexEntry'
+
+//
 export default function() {
 
     //
@@ -29,10 +33,9 @@ export default function() {
     //
     return (
         <Layout>
-            <h1>Dexxie</h1>
-            <ul>
-                {pokemon?.map(p => <li key={p.id}>{t(p.id)}.</li>)}
-            </ul>
+            <Pokedex>
+                {pokemon?.map(pokemon => <PokedexEntry key={pokemon.id}  {...pokemon} />)}
+            </Pokedex>
         </Layout>
     )
 
