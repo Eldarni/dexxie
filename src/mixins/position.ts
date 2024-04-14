@@ -3,7 +3,7 @@
 import { css } from 'styled-components'
 
 //
-const position = ({ position, inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd } : { position?: string, inset?: string, insetBlockStart?: string, insetInlineStart?: string, insetBlockEnd?: string, insetInlineEnd?: string }) => css`
+export const position = ({ position, inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd }: { position?: string, inset?: string, insetBlockStart?: string, insetInlineStart?: string, insetBlockEnd?: string, insetInlineEnd?: string }) => css`
 
     //
     position: ${position};
@@ -20,21 +20,18 @@ const position = ({ position, inset, insetBlockStart, insetInlineStart, insetBlo
 `
 
 
-const relative = ({ inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd }: { inset?: string, insetBlockStart?: string, insetInlineStart?: string, insetBlockEnd?: string, insetInlineEnd?: string }) => css`
-    ${position({ position : 'relative', inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd })}
+export const relative = ({ inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd }: { inset?: string, insetBlockStart?: string, insetInlineStart?: string, insetBlockEnd?: string, insetInlineEnd?: string }) => css`
+    ${position({ 'position' : 'relative', inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd })}
 `
 
-const absolute = ({ inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd }: { inset?: string, insetBlockStart?: string, insetInlineStart?: string, insetBlockEnd?: string, insetInlineEnd?: string }) => css`
-    ${position({ position : 'absolute', inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd })}
+export const absolute = ({ inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd }: { inset?: string, insetBlockStart?: string, insetInlineStart?: string, insetBlockEnd?: string, insetInlineEnd?: string }) => css`
+    ${position({ 'position' : 'absolute', inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd })}
 `
 
-const fixed = ({ inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd }: { inset?: string, insetBlockStart?: string, insetInlineStart?: string, insetBlockEnd?: string, insetInlineEnd?: string }) => css`
-    ${position({ position : 'fixed', inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd })}
+export const fixed = ({ inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd }: { inset?: string, insetBlockStart?: string, insetInlineStart?: string, insetBlockEnd?: string, insetInlineEnd?: string }) => css`
+    ${position({ 'position' : 'fixed', inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd })}
 `
 
-const sticky = ({ inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd }: { inset?: string, insetBlockStart?: string, insetInlineStart?: string, insetBlockEnd?: string, insetInlineEnd?: string }) => css`
-    ${position({ position : 'sticky', inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd })}
+export const sticky = ({ inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd }: { inset?: string, insetBlockStart?: string, insetInlineStart?: string, insetBlockEnd?: string, insetInlineEnd?: string }) => css`
+    ${position({ 'position' : 'sticky', inset, insetBlockStart, insetInlineStart, insetBlockEnd, insetInlineEnd })}
 `
-
-//
-export default { position, relative, absolute, fixed, sticky }

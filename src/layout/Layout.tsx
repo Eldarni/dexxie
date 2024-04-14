@@ -7,7 +7,7 @@ import { styled, css } from 'styled-components'
 
 //
 import { before, after } from '../mixins/pseudo'
-import position from '../mixins/position'
+import { relative } from '../mixins/position'
 
 //
 import { useTranslation } from 'react-i18next'
@@ -55,7 +55,7 @@ const Header = styled.header`
     svg {
 
         //
-        ${position.relative({ 'insetBlockStart' : '0.2em', 'insetInlineStart': '0.5em' })}
+        ${relative({ 'insetBlockStart' : '0.2em', 'insetInlineStart': '0.5em' })}
 
         //
         transform-origin: top left;

@@ -39,6 +39,3 @@ export const after = ({ display, position, content, inset, insetBlockStart, inse
         ${typeof contents == 'function' && contents()}
     }
 `
-
-//
-export default { pseudo, before, after }
