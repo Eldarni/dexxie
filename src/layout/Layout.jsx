@@ -122,7 +122,7 @@ const Screen = styled.main`
 `;
 
 //style the main "footer" area
-const Footer = styled.main`
+const Footer = styled.footer`
 
     //
     padding: 0em 5em;
