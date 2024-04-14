@@ -32,7 +32,15 @@ export class Dexxie extends Dexie {
 
             //populate the pokemon table
             for (const pokemon of allPokemon) {
+
+                //until we get something better we can set some random tags
+                if (Math.floor(Math.random() * 2) == 1) {
+                    pokemon.tags = [ 'owned', ...((Math.floor(Math.random() * 3) == 1) ? ['shiny'] : []), ...((Math.floor(Math.random() * 4) == 1) ? ['lucky'] : []) ]
+                }
+
+                //
                 this.pokemon.add({ ...pokemon })
+
             }
 
             //populate the tags table with some default tags
