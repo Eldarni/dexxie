@@ -9,7 +9,8 @@
         "dexxie"
     ],
     "ignorePaths": [
-        "/public/locales/*/translation.json"
+        "/public/locales/*/translation.json",
+        "/public/pokemon.json"
     ],
     "useGitignore": true
   },
