@@ -1,6 +1,6 @@
 
 //
-import React from "react"
+import React, { useEffect } from "react"
 
 //
 import { db } from "./db";
@@ -17,6 +17,9 @@ export default function() {
 
     //
     const { t } = useTranslation();
+
+    //update the title
+    useEffect(() => { document.title = t('dexxie') }, []);
 
     //
     const pokemon = useLiveQuery(async () => {
