@@ -1,16 +1,16 @@
 
 //
-import React from "react"
+import React from 'react'
 
 //
-import { styled, css } from 'styled-components';
+import { styled, css } from 'styled-components'
 
 //
-import { before, after } from '../mixins/pseudo';
-import position from '../mixins/position';
+import { before, after } from '../mixins/pseudo'
+import position from '../mixins/position'
 
 //
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 //
 const Wrapper = styled.div`
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
     //
     background-color: var(--colour-pokedex-red);
 
-`;
+`
 
 //
 const Header = styled.header`
@@ -55,7 +55,7 @@ const Header = styled.header`
     svg {
 
         //
-        ${position.relative({ insetBlockStart : '0.2em', insetInlineStart: '0.5em'})}
+        ${position.relative({ 'insetBlockStart' : '0.2em', 'insetInlineStart': '0.5em' })}
 
         //
         transform-origin: top left;
@@ -80,7 +80,7 @@ const Header = styled.header`
 
     }
 
-`;
+`
 
 //style the main "screen" area
 const Screen = styled.main`
@@ -108,8 +108,8 @@ const Screen = styled.main`
     flex: 0 1 100%;
 
     //add a shine effect over the screen
-    ${after({ inset: '0px' }, () => css`
-    
+    ${after({ 'inset': '0px' }, () => css`
+
         //make sure the layer is transparent to any mouse stuff
         pointer-events: none;
 
@@ -118,8 +118,8 @@ const Screen = styled.main`
         background: linear-gradient(120deg, transparent 0%, ${[[25, 10], [65, 4], [75, 10]].map((v) => { const b = v[0] - (v[1] / 2), e = v[0] + (v[1] / 2), f = 1; return css` transparent ${b-f}%, var(--shine-colour) ${b}%, var(--shine-colour) ${e}%,transparent ${e+f}%, `})} transparent 100%);
 
     `)}
-    
-`;
+
+`
 
 //style the main "footer" area
 const Footer = styled.footer`
@@ -133,20 +133,20 @@ const Footer = styled.footer`
     text-align: right;
 
     //
-    h1 { 
+    h1 {
         margin: 0.1em 0em 0.5em;
         opacity: 0.9;
         color: var(--colour-foreground);
     }
 
-`;
+`
 
 //
 export default (props) => {
-    
+
     //
-    const { t } = useTranslation();
-    
+    const { t } = useTranslation()
+
     //
     return (
         <Wrapper>
@@ -169,6 +169,6 @@ export default (props) => {
             </Footer>
 
         </Wrapper>
-    );
+    )
 
 }

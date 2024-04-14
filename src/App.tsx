@@ -1,13 +1,13 @@
 
 //
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react'
 
 //
-import { db } from "./db";
-import { useLiveQuery } from "dexie-react-hooks";
+import { db } from './db'
+import { useLiveQuery } from 'dexie-react-hooks'
 
 //
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 //
 import Layout from './layout/Layout'
@@ -16,10 +16,10 @@ import Layout from './layout/Layout'
 export default function() {
 
     //
-    const { t } = useTranslation();
+    const { t } = useTranslation()
 
     //update the title
-    useEffect(() => { document.title = t('dexxie') }, []);
+    useEffect(() => { document.title = t('dexxie') }, [])
 
     //
     const pokemon = useLiveQuery(async () => {
