@@ -1,0 +1,3177 @@
+[
+    {
+        "id": "bulbasaur",
+        "number": 1,
+        "image": 1,
+        "name": "Bulbasaur",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "bulbasaur",
+            "ivysaur",
+            "venusaur"
+        ]
+    },
+    {
+        "id": "ivysaur",
+        "number": 2,
+        "image": 2,
+        "name": "Ivysaur",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "bulbasaur",
+            "ivysaur",
+            "venusaur"
+        ]
+    },
+    {
+        "id": "venusaur",
+        "number": 3,
+        "image": 3,
+        "name": "Venusaur",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "bulbasaur",
+            "ivysaur",
+            "venusaur"
+        ]
+    },
+    {
+        "id": "charmander",
+        "number": 4,
+        "image": 4,
+        "name": "Charmander",
+        "region": "generation-i",
+        "type": [
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "charmander",
+            "charmeleon",
+            "charizard"
+        ]
+    },
+    {
+        "id": "charmeleon",
+        "number": 5,
+        "image": 5,
+        "name": "Charmeleon",
+        "region": "generation-i",
+        "type": [
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "charmander",
+            "charmeleon",
+            "charizard"
+        ]
+    },
+    {
+        "id": "charizard",
+        "number": 6,
+        "image": 6,
+        "name": "Charizard",
+        "region": "generation-i",
+        "type": [
+            "fire",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "charmander",
+            "charmeleon",
+            "charizard"
+        ]
+    },
+    {
+        "id": "squirtle",
+        "number": 7,
+        "image": 7,
+        "name": "Squirtle",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "squirtle",
+            "wartortle",
+            "blastoise"
+        ]
+    },
+    {
+        "id": "wartortle",
+        "number": 8,
+        "image": 8,
+        "name": "Wartortle",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "squirtle",
+            "wartortle",
+            "blastoise"
+        ]
+    },
+    {
+        "id": "blastoise",
+        "number": 9,
+        "image": 9,
+        "name": "Blastoise",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "squirtle",
+            "wartortle",
+            "blastoise"
+        ]
+    },
+    {
+        "id": "caterpie",
+        "number": 10,
+        "image": 10,
+        "name": "Caterpie",
+        "region": "generation-i",
+        "type": [
+            "bug"
+        ],
+        "tags": [],
+        "family": [
+            "caterpie",
+            "metapod",
+            "butterfree"
+        ]
+    },
+    {
+        "id": "metapod",
+        "number": 11,
+        "image": 11,
+        "name": "Metapod",
+        "region": "generation-i",
+        "type": [
+            "bug"
+        ],
+        "tags": [],
+        "family": [
+            "caterpie",
+            "metapod",
+            "butterfree"
+        ]
+    },
+    {
+        "id": "butterfree",
+        "number": 12,
+        "image": 12,
+        "name": "Butterfree",
+        "region": "generation-i",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "caterpie",
+            "metapod",
+            "butterfree"
+        ]
+    },
+    {
+        "id": "weedle",
+        "number": 13,
+        "image": 13,
+        "name": "Weedle",
+        "region": "generation-i",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "weedle",
+            "kakuna",
+            "beedrill"
+        ]
+    },
+    {
+        "id": "kakuna",
+        "number": 14,
+        "image": 14,
+        "name": "Kakuna",
+        "region": "generation-i",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "weedle",
+            "kakuna",
+            "beedrill"
+        ]
+    },
+    {
+        "id": "beedrill",
+        "number": 15,
+        "image": 15,
+        "name": "Beedrill",
+        "region": "generation-i",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "weedle",
+            "kakuna",
+            "beedrill"
+        ]
+    },
+    {
+        "id": "pidgey",
+        "number": 16,
+        "image": 16,
+        "name": "Pidgey",
+        "region": "generation-i",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "pidgey",
+            "pidgeotto",
+            "pidgeot"
+        ]
+    },
+    {
+        "id": "pidgeotto",
+        "number": 17,
+        "image": 17,
+        "name": "Pidgeotto",
+        "region": "generation-i",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "pidgey",
+            "pidgeotto",
+            "pidgeot"
+        ]
+    },
+    {
+        "id": "pidgeot",
+        "number": 18,
+        "image": 18,
+        "name": "Pidgeot",
+        "region": "generation-i",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "pidgey",
+            "pidgeotto",
+            "pidgeot"
+        ]
+    },
+    {
+        "id": "rattata",
+        "number": 19,
+        "image": 19,
+        "name": "Rattata",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "rattata",
+            "rattata-alola",
+            "raticate",
+            "raticate-alola"
+        ]
+    },
+    {
+        "id": "rattata-alola",
+        "number": 19,
+        "image": 10091,
+        "name": "Rattata",
+        "region": "generation-i",
+        "type": [
+            "dark",
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "rattata",
+            "rattata-alola",
+            "raticate",
+            "raticate-alola"
+        ]
+    },
+    {
+        "id": "raticate",
+        "number": 20,
+        "image": 20,
+        "name": "Raticate",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "rattata",
+            "rattata-alola",
+            "raticate",
+            "raticate-alola"
+        ]
+    },
+    {
+        "id": "raticate-alola",
+        "number": 20,
+        "image": 10092,
+        "name": "Raticate",
+        "region": "generation-i",
+        "type": [
+            "dark",
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "rattata",
+            "rattata-alola",
+            "raticate",
+            "raticate-alola"
+        ]
+    },
+    {
+        "id": "spearow",
+        "number": 21,
+        "image": 21,
+        "name": "Spearow",
+        "region": "generation-i",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "spearow",
+            "fearow"
+        ]
+    },
+    {
+        "id": "fearow",
+        "number": 22,
+        "image": 22,
+        "name": "Fearow",
+        "region": "generation-i",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "spearow",
+            "fearow"
+        ]
+    },
+    {
+        "id": "ekans",
+        "number": 23,
+        "image": 23,
+        "name": "Ekans",
+        "region": "generation-i",
+        "type": [
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "ekans",
+            "arbok"
+        ]
+    },
+    {
+        "id": "arbok",
+        "number": 24,
+        "image": 24,
+        "name": "Arbok",
+        "region": "generation-i",
+        "type": [
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "ekans",
+            "arbok"
+        ]
+    },
+    {
+        "id": "pikachu",
+        "number": 25,
+        "image": 25,
+        "name": "Pikachu",
+        "region": "generation-i",
+        "type": [
+            "electric"
+        ],
+        "tags": [],
+        "family": [
+            "pikachu",
+            "raichu",
+            "raichu-alola",
+            "pichu"
+        ]
+    },
+    {
+        "id": "raichu",
+        "number": 26,
+        "image": 26,
+        "name": "Raichu",
+        "region": "generation-i",
+        "type": [
+            "electric"
+        ],
+        "tags": [],
+        "family": [
+            "pikachu",
+            "raichu",
+            "raichu-alola",
+            "pichu"
+        ]
+    },
+    {
+        "id": "raichu-alola",
+        "number": 26,
+        "image": 10100,
+        "name": "Raichu",
+        "region": "generation-i",
+        "type": [
+            "electric",
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "pikachu",
+            "raichu",
+            "raichu-alola",
+            "pichu"
+        ]
+    },
+    {
+        "id": "sandshrew",
+        "number": 27,
+        "image": 27,
+        "name": "Sandshrew",
+        "region": "generation-i",
+        "type": [
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "sandshrew",
+            "sandshrew-alola",
+            "sandslash",
+            "sandslash-alola"
+        ]
+    },
+    {
+        "id": "sandshrew-alola",
+        "number": 27,
+        "image": 10101,
+        "name": "Sandshrew",
+        "region": "generation-i",
+        "type": [
+            "ice",
+            "steel"
+        ],
+        "tags": [],
+        "family": [
+            "sandshrew",
+            "sandshrew-alola",
+            "sandslash",
+            "sandslash-alola"
+        ]
+    },
+    {
+        "id": "sandslash",
+        "number": 28,
+        "image": 28,
+        "name": "Sandslash",
+        "region": "generation-i",
+        "type": [
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "sandshrew",
+            "sandshrew-alola",
+            "sandslash",
+            "sandslash-alola"
+        ]
+    },
+    {
+        "id": "sandslash-alola",
+        "number": 28,
+        "image": 10102,
+        "name": "Sandslash",
+        "region": "generation-i",
+        "type": [
+            "ice",
+            "steel"
+        ],
+        "tags": [],
+        "family": [
+            "sandshrew",
+            "sandshrew-alola",
+            "sandslash",
+            "sandslash-alola"
+        ]
+    },
+    {
+        "id": "nidoran-f",
+        "number": 29,
+        "image": 29,
+        "name": "Nidoran♀",
+        "region": "generation-i",
+        "type": [
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "nidoran-f",
+            "nidorina",
+            "nidoqueen"
+        ]
+    },
+    {
+        "id": "nidorina",
+        "number": 30,
+        "image": 30,
+        "name": "Nidorina",
+        "region": "generation-i",
+        "type": [
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "nidoran-f",
+            "nidorina",
+            "nidoqueen"
+        ]
+    },
+    {
+        "id": "nidoqueen",
+        "number": 31,
+        "image": 31,
+        "name": "Nidoqueen",
+        "region": "generation-i",
+        "type": [
+            "poison",
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "nidoran-f",
+            "nidorina",
+            "nidoqueen"
+        ]
+    },
+    {
+        "id": "nidoran-m",
+        "number": 32,
+        "image": 32,
+        "name": "Nidoran♂",
+        "region": "generation-i",
+        "type": [
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "nidoran-m",
+            "nidorino",
+            "nidoking"
+        ]
+    },
+    {
+        "id": "nidorino",
+        "number": 33,
+        "image": 33,
+        "name": "Nidorino",
+        "region": "generation-i",
+        "type": [
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "nidoran-m",
+            "nidorino",
+            "nidoking"
+        ]
+    },
+    {
+        "id": "nidoking",
+        "number": 34,
+        "image": 34,
+        "name": "Nidoking",
+        "region": "generation-i",
+        "type": [
+            "poison",
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "nidoran-m",
+            "nidorino",
+            "nidoking"
+        ]
+    },
+    {
+        "id": "clefairy",
+        "number": 35,
+        "image": 35,
+        "name": "Clefairy",
+        "region": "generation-i",
+        "type": [
+            "fairy"
+        ],
+        "tags": [],
+        "family": [
+            "clefairy",
+            "clefable",
+            "cleffa"
+        ]
+    },
+    {
+        "id": "clefable",
+        "number": 36,
+        "image": 36,
+        "name": "Clefable",
+        "region": "generation-i",
+        "type": [
+            "fairy"
+        ],
+        "tags": [],
+        "family": [
+            "clefairy",
+            "clefable",
+            "cleffa"
+        ]
+    },
+    {
+        "id": "vulpix",
+        "number": 37,
+        "image": 37,
+        "name": "Vulpix",
+        "region": "generation-i",
+        "type": [
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "vulpix",
+            "vulpix-alola",
+            "ninetales",
+            "ninetales-alola"
+        ]
+    },
+    {
+        "id": "vulpix-alola",
+        "number": 37,
+        "image": 10103,
+        "name": "Vulpix",
+        "region": "generation-i",
+        "type": [
+            "ice"
+        ],
+        "tags": [],
+        "family": [
+            "vulpix",
+            "vulpix-alola",
+            "ninetales",
+            "ninetales-alola"
+        ]
+    },
+    {
+        "id": "ninetales",
+        "number": 38,
+        "image": 38,
+        "name": "Ninetales",
+        "region": "generation-i",
+        "type": [
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "vulpix",
+            "vulpix-alola",
+            "ninetales",
+            "ninetales-alola"
+        ]
+    },
+    {
+        "id": "ninetales-alola",
+        "number": 38,
+        "image": 10104,
+        "name": "Ninetales",
+        "region": "generation-i",
+        "type": [
+            "ice",
+            "fairy"
+        ],
+        "tags": [],
+        "family": [
+            "vulpix",
+            "vulpix-alola",
+            "ninetales",
+            "ninetales-alola"
+        ]
+    },
+    {
+        "id": "jigglypuff",
+        "number": 39,
+        "image": 39,
+        "name": "Jigglypuff",
+        "region": "generation-i",
+        "type": [
+            "normal",
+            "fairy"
+        ],
+        "tags": [],
+        "family": [
+            "jigglypuff",
+            "wigglytuff",
+            "igglybuff"
+        ]
+    },
+    {
+        "id": "wigglytuff",
+        "number": 40,
+        "image": 40,
+        "name": "Wigglytuff",
+        "region": "generation-i",
+        "type": [
+            "normal",
+            "fairy"
+        ],
+        "tags": [],
+        "family": [
+            "jigglypuff",
+            "wigglytuff",
+            "igglybuff"
+        ]
+    },
+    {
+        "id": "zubat",
+        "number": 41,
+        "image": 41,
+        "name": "Zubat",
+        "region": "generation-i",
+        "type": [
+            "poison",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "zubat",
+            "golbat",
+            "crobat"
+        ]
+    },
+    {
+        "id": "golbat",
+        "number": 42,
+        "image": 42,
+        "name": "Golbat",
+        "region": "generation-i",
+        "type": [
+            "poison",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "zubat",
+            "golbat",
+            "crobat"
+        ]
+    },
+    {
+        "id": "oddish",
+        "number": 43,
+        "image": 43,
+        "name": "Oddish",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "oddish",
+            "gloom",
+            "vileplume",
+            "bellossom"
+        ]
+    },
+    {
+        "id": "gloom",
+        "number": 44,
+        "image": 44,
+        "name": "Gloom",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "oddish",
+            "gloom",
+            "vileplume",
+            "bellossom"
+        ]
+    },
+    {
+        "id": "vileplume",
+        "number": 45,
+        "image": 45,
+        "name": "Vileplume",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "oddish",
+            "gloom",
+            "vileplume",
+            "bellossom"
+        ]
+    },
+    {
+        "id": "paras",
+        "number": 46,
+        "image": 46,
+        "name": "Paras",
+        "region": "generation-i",
+        "type": [
+            "bug",
+            "grass"
+        ],
+        "tags": [],
+        "family": [
+            "paras",
+            "parasect"
+        ]
+    },
+    {
+        "id": "parasect",
+        "number": 47,
+        "image": 47,
+        "name": "Parasect",
+        "region": "generation-i",
+        "type": [
+            "bug",
+            "grass"
+        ],
+        "tags": [],
+        "family": [
+            "paras",
+            "parasect"
+        ]
+    },
+    {
+        "id": "venonat",
+        "number": 48,
+        "image": 48,
+        "name": "Venonat",
+        "region": "generation-i",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "venonat",
+            "venomoth"
+        ]
+    },
+    {
+        "id": "venomoth",
+        "number": 49,
+        "image": 49,
+        "name": "Venomoth",
+        "region": "generation-i",
+        "type": [
+            "bug",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "venonat",
+            "venomoth"
+        ]
+    },
+    {
+        "id": "diglett",
+        "number": 50,
+        "image": 50,
+        "name": "Diglett",
+        "region": "generation-i",
+        "type": [
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "diglett",
+            "diglett-alola",
+            "dugtrio",
+            "dugtrio-alola"
+        ]
+    },
+    {
+        "id": "diglett-alola",
+        "number": 50,
+        "image": 10105,
+        "name": "Diglett",
+        "region": "generation-i",
+        "type": [
+            "ground",
+            "steel"
+        ],
+        "tags": [],
+        "family": [
+            "diglett",
+            "diglett-alola",
+            "dugtrio",
+            "dugtrio-alola"
+        ]
+    },
+    {
+        "id": "dugtrio",
+        "number": 51,
+        "image": 51,
+        "name": "Dugtrio",
+        "region": "generation-i",
+        "type": [
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "diglett",
+            "diglett-alola",
+            "dugtrio",
+            "dugtrio-alola"
+        ]
+    },
+    {
+        "id": "dugtrio-alola",
+        "number": 51,
+        "image": 10106,
+        "name": "Dugtrio",
+        "region": "generation-i",
+        "type": [
+            "ground",
+            "steel"
+        ],
+        "tags": [],
+        "family": [
+            "diglett",
+            "diglett-alola",
+            "dugtrio",
+            "dugtrio-alola"
+        ]
+    },
+    {
+        "id": "meowth",
+        "number": 52,
+        "image": 52,
+        "name": "Meowth",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "meowth",
+            "meowth-alola",
+            "meowth-galar",
+            "persian",
+            "persian-alola",
+            "perrserker"
+        ]
+    },
+    {
+        "id": "meowth-alola",
+        "number": 52,
+        "image": 10107,
+        "name": "Meowth",
+        "region": "generation-i",
+        "type": [
+            "dark"
+        ],
+        "tags": [],
+        "family": [
+            "meowth",
+            "meowth-alola",
+            "meowth-galar",
+            "persian",
+            "persian-alola",
+            "perrserker"
+        ]
+    },
+    {
+        "id": "meowth-galar",
+        "number": 52,
+        "image": 10161,
+        "name": "Meowth",
+        "region": "generation-i",
+        "type": [
+            "steel"
+        ],
+        "tags": [],
+        "family": [
+            "meowth",
+            "meowth-alola",
+            "meowth-galar",
+            "persian",
+            "persian-alola",
+            "perrserker"
+        ]
+    },
+    {
+        "id": "persian",
+        "number": 53,
+        "image": 53,
+        "name": "Persian",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "meowth",
+            "meowth-alola",
+            "meowth-galar",
+            "persian",
+            "persian-alola",
+            "perrserker"
+        ]
+    },
+    {
+        "id": "persian-alola",
+        "number": 53,
+        "image": 10108,
+        "name": "Persian",
+        "region": "generation-i",
+        "type": [
+            "dark"
+        ],
+        "tags": [],
+        "family": [
+            "meowth",
+            "meowth-alola",
+            "meowth-galar",
+            "persian",
+            "persian-alola",
+            "perrserker"
+        ]
+    },
+    {
+        "id": "psyduck",
+        "number": 54,
+        "image": 54,
+        "name": "Psyduck",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "psyduck",
+            "golduck"
+        ]
+    },
+    {
+        "id": "golduck",
+        "number": 55,
+        "image": 55,
+        "name": "Golduck",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "psyduck",
+            "golduck"
+        ]
+    },
+    {
+        "id": "mankey",
+        "number": 56,
+        "image": 56,
+        "name": "Mankey",
+        "region": "generation-i",
+        "type": [
+            "fighting"
+        ],
+        "tags": [],
+        "family": [
+            "mankey",
+            "primeape",
+            "annihilape"
+        ]
+    },
+    {
+        "id": "primeape",
+        "number": 57,
+        "image": 57,
+        "name": "Primeape",
+        "region": "generation-i",
+        "type": [
+            "fighting"
+        ],
+        "tags": [],
+        "family": [
+            "mankey",
+            "primeape",
+            "annihilape"
+        ]
+    },
+    {
+        "id": "growlithe",
+        "number": 58,
+        "image": 58,
+        "name": "Growlithe",
+        "region": "generation-i",
+        "type": [
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "growlithe",
+            "growlithe-hisui",
+            "arcanine",
+            "arcanine-hisui"
+        ]
+    },
+    {
+        "id": "growlithe-hisui",
+        "number": 58,
+        "image": 10229,
+        "name": "Growlithe",
+        "region": "generation-i",
+        "type": [
+            "fire",
+            "rock"
+        ],
+        "tags": [],
+        "family": [
+            "growlithe",
+            "growlithe-hisui",
+            "arcanine",
+            "arcanine-hisui"
+        ]
+    },
+    {
+        "id": "arcanine",
+        "number": 59,
+        "image": 59,
+        "name": "Arcanine",
+        "region": "generation-i",
+        "type": [
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "growlithe",
+            "growlithe-hisui",
+            "arcanine",
+            "arcanine-hisui"
+        ]
+    },
+    {
+        "id": "arcanine-hisui",
+        "number": 59,
+        "image": 10230,
+        "name": "Arcanine",
+        "region": "generation-i",
+        "type": [
+            "fire",
+            "rock"
+        ],
+        "tags": [],
+        "family": [
+            "growlithe",
+            "growlithe-hisui",
+            "arcanine",
+            "arcanine-hisui"
+        ]
+    },
+    {
+        "id": "poliwag",
+        "number": 60,
+        "image": 60,
+        "name": "Poliwag",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "poliwag",
+            "poliwhirl",
+            "poliwrath",
+            "politoed"
+        ]
+    },
+    {
+        "id": "poliwhirl",
+        "number": 61,
+        "image": 61,
+        "name": "Poliwhirl",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "poliwag",
+            "poliwhirl",
+            "poliwrath",
+            "politoed"
+        ]
+    },
+    {
+        "id": "poliwrath",
+        "number": 62,
+        "image": 62,
+        "name": "Poliwrath",
+        "region": "generation-i",
+        "type": [
+            "water",
+            "fighting"
+        ],
+        "tags": [],
+        "family": [
+            "poliwag",
+            "poliwhirl",
+            "poliwrath",
+            "politoed"
+        ]
+    },
+    {
+        "id": "abra",
+        "number": 63,
+        "image": 63,
+        "name": "Abra",
+        "region": "generation-i",
+        "type": [
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "abra",
+            "kadabra",
+            "alakazam"
+        ]
+    },
+    {
+        "id": "kadabra",
+        "number": 64,
+        "image": 64,
+        "name": "Kadabra",
+        "region": "generation-i",
+        "type": [
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "abra",
+            "kadabra",
+            "alakazam"
+        ]
+    },
+    {
+        "id": "alakazam",
+        "number": 65,
+        "image": 65,
+        "name": "Alakazam",
+        "region": "generation-i",
+        "type": [
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "abra",
+            "kadabra",
+            "alakazam"
+        ]
+    },
+    {
+        "id": "machop",
+        "number": 66,
+        "image": 66,
+        "name": "Machop",
+        "region": "generation-i",
+        "type": [
+            "fighting"
+        ],
+        "tags": [],
+        "family": [
+            "machop",
+            "machoke",
+            "machamp"
+        ]
+    },
+    {
+        "id": "machoke",
+        "number": 67,
+        "image": 67,
+        "name": "Machoke",
+        "region": "generation-i",
+        "type": [
+            "fighting"
+        ],
+        "tags": [],
+        "family": [
+            "machop",
+            "machoke",
+            "machamp"
+        ]
+    },
+    {
+        "id": "machamp",
+        "number": 68,
+        "image": 68,
+        "name": "Machamp",
+        "region": "generation-i",
+        "type": [
+            "fighting"
+        ],
+        "tags": [],
+        "family": [
+            "machop",
+            "machoke",
+            "machamp"
+        ]
+    },
+    {
+        "id": "bellsprout",
+        "number": 69,
+        "image": 69,
+        "name": "Bellsprout",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "bellsprout",
+            "weepinbell",
+            "victreebel"
+        ]
+    },
+    {
+        "id": "weepinbell",
+        "number": 70,
+        "image": 70,
+        "name": "Weepinbell",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "bellsprout",
+            "weepinbell",
+            "victreebel"
+        ]
+    },
+    {
+        "id": "victreebel",
+        "number": 71,
+        "image": 71,
+        "name": "Victreebel",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "bellsprout",
+            "weepinbell",
+            "victreebel"
+        ]
+    },
+    {
+        "id": "tentacool",
+        "number": 72,
+        "image": 72,
+        "name": "Tentacool",
+        "region": "generation-i",
+        "type": [
+            "water",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "tentacool",
+            "tentacruel"
+        ]
+    },
+    {
+        "id": "tentacruel",
+        "number": 73,
+        "image": 73,
+        "name": "Tentacruel",
+        "region": "generation-i",
+        "type": [
+            "water",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "tentacool",
+            "tentacruel"
+        ]
+    },
+    {
+        "id": "geodude",
+        "number": 74,
+        "image": 74,
+        "name": "Geodude",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "geodude",
+            "geodude-alola",
+            "graveler",
+            "graveler-alola",
+            "golem",
+            "golem-alola"
+        ]
+    },
+    {
+        "id": "geodude-alola",
+        "number": 74,
+        "image": 10109,
+        "name": "Geodude",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "electric"
+        ],
+        "tags": [],
+        "family": [
+            "geodude",
+            "geodude-alola",
+            "graveler",
+            "graveler-alola",
+            "golem",
+            "golem-alola"
+        ]
+    },
+    {
+        "id": "graveler",
+        "number": 75,
+        "image": 75,
+        "name": "Graveler",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "geodude",
+            "geodude-alola",
+            "graveler",
+            "graveler-alola",
+            "golem",
+            "golem-alola"
+        ]
+    },
+    {
+        "id": "graveler-alola",
+        "number": 75,
+        "image": 10110,
+        "name": "Graveler",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "electric"
+        ],
+        "tags": [],
+        "family": [
+            "geodude",
+            "geodude-alola",
+            "graveler",
+            "graveler-alola",
+            "golem",
+            "golem-alola"
+        ]
+    },
+    {
+        "id": "golem",
+        "number": 76,
+        "image": 76,
+        "name": "Golem",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "geodude",
+            "geodude-alola",
+            "graveler",
+            "graveler-alola",
+            "golem",
+            "golem-alola"
+        ]
+    },
+    {
+        "id": "golem-alola",
+        "number": 76,
+        "image": 10111,
+        "name": "Golem",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "electric"
+        ],
+        "tags": [],
+        "family": [
+            "geodude",
+            "geodude-alola",
+            "graveler",
+            "graveler-alola",
+            "golem",
+            "golem-alola"
+        ]
+    },
+    {
+        "id": "ponyta",
+        "number": 77,
+        "image": 77,
+        "name": "Ponyta",
+        "region": "generation-i",
+        "type": [
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "ponyta",
+            "ponyta-galar",
+            "rapidash",
+            "rapidash-galar"
+        ]
+    },
+    {
+        "id": "ponyta-galar",
+        "number": 77,
+        "image": 10162,
+        "name": "Ponyta",
+        "region": "generation-i",
+        "type": [
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "ponyta",
+            "ponyta-galar",
+            "rapidash",
+            "rapidash-galar"
+        ]
+    },
+    {
+        "id": "rapidash",
+        "number": 78,
+        "image": 78,
+        "name": "Rapidash",
+        "region": "generation-i",
+        "type": [
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "ponyta",
+            "ponyta-galar",
+            "rapidash",
+            "rapidash-galar"
+        ]
+    },
+    {
+        "id": "rapidash-galar",
+        "number": 78,
+        "image": 10163,
+        "name": "Rapidash",
+        "region": "generation-i",
+        "type": [
+            "psychic",
+            "fairy"
+        ],
+        "tags": [],
+        "family": [
+            "ponyta",
+            "ponyta-galar",
+            "rapidash",
+            "rapidash-galar"
+        ]
+    },
+    {
+        "id": "slowpoke",
+        "number": 79,
+        "image": 79,
+        "name": "Slowpoke",
+        "region": "generation-i",
+        "type": [
+            "water",
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "slowpoke",
+            "slowpoke-galar",
+            "slowbro",
+            "slowbro-galar",
+            "slowking",
+            "slowking-galar"
+        ]
+    },
+    {
+        "id": "slowpoke-galar",
+        "number": 79,
+        "image": 10164,
+        "name": "Slowpoke",
+        "region": "generation-i",
+        "type": [
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "slowpoke",
+            "slowpoke-galar",
+            "slowbro",
+            "slowbro-galar",
+            "slowking",
+            "slowking-galar"
+        ]
+    },
+    {
+        "id": "slowbro",
+        "number": 80,
+        "image": 80,
+        "name": "Slowbro",
+        "region": "generation-i",
+        "type": [
+            "water",
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "slowpoke",
+            "slowpoke-galar",
+            "slowbro",
+            "slowbro-galar",
+            "slowking",
+            "slowking-galar"
+        ]
+    },
+    {
+        "id": "slowbro-galar",
+        "number": 80,
+        "image": 10165,
+        "name": "Slowbro",
+        "region": "generation-i",
+        "type": [
+            "poison",
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "slowpoke",
+            "slowpoke-galar",
+            "slowbro",
+            "slowbro-galar",
+            "slowking",
+            "slowking-galar"
+        ]
+    },
+    {
+        "id": "magnemite",
+        "number": 81,
+        "image": 81,
+        "name": "Magnemite",
+        "region": "generation-i",
+        "type": [
+            "electric",
+            "steel"
+        ],
+        "tags": [],
+        "family": [
+            "magnemite",
+            "magneton",
+            "magnezone"
+        ]
+    },
+    {
+        "id": "magneton",
+        "number": 82,
+        "image": 82,
+        "name": "Magneton",
+        "region": "generation-i",
+        "type": [
+            "electric",
+            "steel"
+        ],
+        "tags": [],
+        "family": [
+            "magnemite",
+            "magneton",
+            "magnezone"
+        ]
+    },
+    {
+        "id": "farfetchd",
+        "number": 83,
+        "image": 83,
+        "name": "Farfetch’d",
+        "region": "generation-i",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "farfetchd",
+            "farfetchd-galar",
+            "sirfetchd"
+        ]
+    },
+    {
+        "id": "farfetchd-galar",
+        "number": 83,
+        "image": 10166,
+        "name": "Farfetch’d",
+        "region": "generation-i",
+        "type": [
+            "fighting"
+        ],
+        "tags": [],
+        "family": [
+            "farfetchd",
+            "farfetchd-galar",
+            "sirfetchd"
+        ]
+    },
+    {
+        "id": "doduo",
+        "number": 84,
+        "image": 84,
+        "name": "Doduo",
+        "region": "generation-i",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "doduo",
+            "dodrio"
+        ]
+    },
+    {
+        "id": "dodrio",
+        "number": 85,
+        "image": 85,
+        "name": "Dodrio",
+        "region": "generation-i",
+        "type": [
+            "normal",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "doduo",
+            "dodrio"
+        ]
+    },
+    {
+        "id": "seel",
+        "number": 86,
+        "image": 86,
+        "name": "Seel",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "seel",
+            "dewgong"
+        ]
+    },
+    {
+        "id": "dewgong",
+        "number": 87,
+        "image": 87,
+        "name": "Dewgong",
+        "region": "generation-i",
+        "type": [
+            "water",
+            "ice"
+        ],
+        "tags": [],
+        "family": [
+            "seel",
+            "dewgong"
+        ]
+    },
+    {
+        "id": "grimer",
+        "number": 88,
+        "image": 88,
+        "name": "Grimer",
+        "region": "generation-i",
+        "type": [
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "grimer",
+            "grimer-alola",
+            "muk",
+            "muk-alola"
+        ]
+    },
+    {
+        "id": "grimer-alola",
+        "number": 88,
+        "image": 10112,
+        "name": "Grimer",
+        "region": "generation-i",
+        "type": [
+            "poison",
+            "dark"
+        ],
+        "tags": [],
+        "family": [
+            "grimer",
+            "grimer-alola",
+            "muk",
+            "muk-alola"
+        ]
+    },
+    {
+        "id": "muk",
+        "number": 89,
+        "image": 89,
+        "name": "Muk",
+        "region": "generation-i",
+        "type": [
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "grimer",
+            "grimer-alola",
+            "muk",
+            "muk-alola"
+        ]
+    },
+    {
+        "id": "muk-alola",
+        "number": 89,
+        "image": 10113,
+        "name": "Muk",
+        "region": "generation-i",
+        "type": [
+            "poison",
+            "dark"
+        ],
+        "tags": [],
+        "family": [
+            "grimer",
+            "grimer-alola",
+            "muk",
+            "muk-alola"
+        ]
+    },
+    {
+        "id": "shellder",
+        "number": 90,
+        "image": 90,
+        "name": "Shellder",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "shellder",
+            "cloyster"
+        ]
+    },
+    {
+        "id": "cloyster",
+        "number": 91,
+        "image": 91,
+        "name": "Cloyster",
+        "region": "generation-i",
+        "type": [
+            "water",
+            "ice"
+        ],
+        "tags": [],
+        "family": [
+            "shellder",
+            "cloyster"
+        ]
+    },
+    {
+        "id": "gastly",
+        "number": 92,
+        "image": 92,
+        "name": "Gastly",
+        "region": "generation-i",
+        "type": [
+            "ghost",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "gastly",
+            "haunter",
+            "gengar"
+        ]
+    },
+    {
+        "id": "haunter",
+        "number": 93,
+        "image": 93,
+        "name": "Haunter",
+        "region": "generation-i",
+        "type": [
+            "ghost",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "gastly",
+            "haunter",
+            "gengar"
+        ]
+    },
+    {
+        "id": "gengar",
+        "number": 94,
+        "image": 94,
+        "name": "Gengar",
+        "region": "generation-i",
+        "type": [
+            "ghost",
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "gastly",
+            "haunter",
+            "gengar"
+        ]
+    },
+    {
+        "id": "onix",
+        "number": 95,
+        "image": 95,
+        "name": "Onix",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "onix",
+            "steelix"
+        ]
+    },
+    {
+        "id": "drowzee",
+        "number": 96,
+        "image": 96,
+        "name": "Drowzee",
+        "region": "generation-i",
+        "type": [
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "drowzee",
+            "hypno"
+        ]
+    },
+    {
+        "id": "hypno",
+        "number": 97,
+        "image": 97,
+        "name": "Hypno",
+        "region": "generation-i",
+        "type": [
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "drowzee",
+            "hypno"
+        ]
+    },
+    {
+        "id": "krabby",
+        "number": 98,
+        "image": 98,
+        "name": "Krabby",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "krabby",
+            "kingler"
+        ]
+    },
+    {
+        "id": "kingler",
+        "number": 99,
+        "image": 99,
+        "name": "Kingler",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "krabby",
+            "kingler"
+        ]
+    },
+    {
+        "id": "voltorb",
+        "number": 100,
+        "image": 100,
+        "name": "Voltorb",
+        "region": "generation-i",
+        "type": [
+            "electric"
+        ],
+        "tags": [],
+        "family": [
+            "voltorb",
+            "voltorb-hisui",
+            "electrode",
+            "electrode-hisui"
+        ]
+    },
+    {
+        "id": "voltorb-hisui",
+        "number": 100,
+        "image": 10231,
+        "name": "Voltorb",
+        "region": "generation-i",
+        "type": [
+            "electric",
+            "grass"
+        ],
+        "tags": [],
+        "family": [
+            "voltorb",
+            "voltorb-hisui",
+            "electrode",
+            "electrode-hisui"
+        ]
+    },
+    {
+        "id": "electrode",
+        "number": 101,
+        "image": 101,
+        "name": "Electrode",
+        "region": "generation-i",
+        "type": [
+            "electric"
+        ],
+        "tags": [],
+        "family": [
+            "voltorb",
+            "voltorb-hisui",
+            "electrode",
+            "electrode-hisui"
+        ]
+    },
+    {
+        "id": "electrode-hisui",
+        "number": 101,
+        "image": 10232,
+        "name": "Electrode",
+        "region": "generation-i",
+        "type": [
+            "electric",
+            "grass"
+        ],
+        "tags": [],
+        "family": [
+            "voltorb",
+            "voltorb-hisui",
+            "electrode",
+            "electrode-hisui"
+        ]
+    },
+    {
+        "id": "exeggcute",
+        "number": 102,
+        "image": 102,
+        "name": "Exeggcute",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "exeggcute",
+            "exeggutor",
+            "exeggutor-alola"
+        ]
+    },
+    {
+        "id": "exeggutor",
+        "number": 103,
+        "image": 103,
+        "name": "Exeggutor",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "exeggcute",
+            "exeggutor",
+            "exeggutor-alola"
+        ]
+    },
+    {
+        "id": "exeggutor-alola",
+        "number": 103,
+        "image": 10114,
+        "name": "Exeggutor",
+        "region": "generation-i",
+        "type": [
+            "grass",
+            "dragon"
+        ],
+        "tags": [],
+        "family": [
+            "exeggcute",
+            "exeggutor",
+            "exeggutor-alola"
+        ]
+    },
+    {
+        "id": "cubone",
+        "number": 104,
+        "image": 104,
+        "name": "Cubone",
+        "region": "generation-i",
+        "type": [
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "cubone",
+            "marowak",
+            "marowak-alola"
+        ]
+    },
+    {
+        "id": "marowak",
+        "number": 105,
+        "image": 105,
+        "name": "Marowak",
+        "region": "generation-i",
+        "type": [
+            "ground"
+        ],
+        "tags": [],
+        "family": [
+            "cubone",
+            "marowak",
+            "marowak-alola"
+        ]
+    },
+    {
+        "id": "marowak-alola",
+        "number": 105,
+        "image": 10115,
+        "name": "Marowak",
+        "region": "generation-i",
+        "type": [
+            "fire",
+            "ghost"
+        ],
+        "tags": [],
+        "family": [
+            "cubone",
+            "marowak",
+            "marowak-alola"
+        ]
+    },
+    {
+        "id": "hitmonlee",
+        "number": 106,
+        "image": 106,
+        "name": "Hitmonlee",
+        "region": "generation-i",
+        "type": [
+            "fighting"
+        ],
+        "tags": [],
+        "family": [
+            "hitmonlee",
+            "hitmonchan",
+            "tyrogue",
+            "hitmontop"
+        ]
+    },
+    {
+        "id": "hitmonchan",
+        "number": 107,
+        "image": 107,
+        "name": "Hitmonchan",
+        "region": "generation-i",
+        "type": [
+            "fighting"
+        ],
+        "tags": [],
+        "family": [
+            "hitmonlee",
+            "hitmonchan",
+            "tyrogue",
+            "hitmontop"
+        ]
+    },
+    {
+        "id": "lickitung",
+        "number": 108,
+        "image": 108,
+        "name": "Lickitung",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "lickitung",
+            "lickilicky"
+        ]
+    },
+    {
+        "id": "koffing",
+        "number": 109,
+        "image": 109,
+        "name": "Koffing",
+        "region": "generation-i",
+        "type": [
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "koffing",
+            "weezing",
+            "weezing-galar"
+        ]
+    },
+    {
+        "id": "weezing",
+        "number": 110,
+        "image": 110,
+        "name": "Weezing",
+        "region": "generation-i",
+        "type": [
+            "poison"
+        ],
+        "tags": [],
+        "family": [
+            "koffing",
+            "weezing",
+            "weezing-galar"
+        ]
+    },
+    {
+        "id": "weezing-galar",
+        "number": 110,
+        "image": 10167,
+        "name": "Weezing",
+        "region": "generation-i",
+        "type": [
+            "poison",
+            "fairy"
+        ],
+        "tags": [],
+        "family": [
+            "koffing",
+            "weezing",
+            "weezing-galar"
+        ]
+    },
+    {
+        "id": "rhyhorn",
+        "number": 111,
+        "image": 111,
+        "name": "Rhyhorn",
+        "region": "generation-i",
+        "type": [
+            "ground",
+            "rock"
+        ],
+        "tags": [],
+        "family": [
+            "rhyhorn",
+            "rhydon",
+            "rhyperior"
+        ]
+    },
+    {
+        "id": "rhydon",
+        "number": 112,
+        "image": 112,
+        "name": "Rhydon",
+        "region": "generation-i",
+        "type": [
+            "ground",
+            "rock"
+        ],
+        "tags": [],
+        "family": [
+            "rhyhorn",
+            "rhydon",
+            "rhyperior"
+        ]
+    },
+    {
+        "id": "chansey",
+        "number": 113,
+        "image": 113,
+        "name": "Chansey",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "chansey",
+            "blissey",
+            "happiny"
+        ]
+    },
+    {
+        "id": "tangela",
+        "number": 114,
+        "image": 114,
+        "name": "Tangela",
+        "region": "generation-i",
+        "type": [
+            "grass"
+        ],
+        "tags": [],
+        "family": [
+            "tangela",
+            "tangrowth"
+        ]
+    },
+    {
+        "id": "kangaskhan",
+        "number": 115,
+        "image": 115,
+        "name": "Kangaskhan",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "kangaskhan"
+        ]
+    },
+    {
+        "id": "horsea",
+        "number": 116,
+        "image": 116,
+        "name": "Horsea",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "horsea",
+            "seadra",
+            "kingdra"
+        ]
+    },
+    {
+        "id": "seadra",
+        "number": 117,
+        "image": 117,
+        "name": "Seadra",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "horsea",
+            "seadra",
+            "kingdra"
+        ]
+    },
+    {
+        "id": "goldeen",
+        "number": 118,
+        "image": 118,
+        "name": "Goldeen",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "goldeen",
+            "seaking"
+        ]
+    },
+    {
+        "id": "seaking",
+        "number": 119,
+        "image": 119,
+        "name": "Seaking",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "goldeen",
+            "seaking"
+        ]
+    },
+    {
+        "id": "staryu",
+        "number": 120,
+        "image": 120,
+        "name": "Staryu",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "staryu",
+            "starmie"
+        ]
+    },
+    {
+        "id": "starmie",
+        "number": 121,
+        "image": 121,
+        "name": "Starmie",
+        "region": "generation-i",
+        "type": [
+            "water",
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "staryu",
+            "starmie"
+        ]
+    },
+    {
+        "id": "mr-mime",
+        "number": 122,
+        "image": 122,
+        "name": "Mr. Mime",
+        "region": "generation-i",
+        "type": [
+            "psychic",
+            "fairy"
+        ],
+        "tags": [],
+        "family": [
+            "mr-mime",
+            "mr-mime-galar",
+            "mime-jr",
+            "mr-rime"
+        ]
+    },
+    {
+        "id": "mr-mime-galar",
+        "number": 122,
+        "image": 10168,
+        "name": "Mr. Mime",
+        "region": "generation-i",
+        "type": [
+            "ice",
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "mr-mime",
+            "mr-mime-galar",
+            "mime-jr",
+            "mr-rime"
+        ]
+    },
+    {
+        "id": "scyther",
+        "number": 123,
+        "image": 123,
+        "name": "Scyther",
+        "region": "generation-i",
+        "type": [
+            "bug",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "scyther",
+            "scizor",
+            "kleavor"
+        ]
+    },
+    {
+        "id": "jynx",
+        "number": 124,
+        "image": 124,
+        "name": "Jynx",
+        "region": "generation-i",
+        "type": [
+            "ice",
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "jynx",
+            "smoochum"
+        ]
+    },
+    {
+        "id": "electabuzz",
+        "number": 125,
+        "image": 125,
+        "name": "Electabuzz",
+        "region": "generation-i",
+        "type": [
+            "electric"
+        ],
+        "tags": [],
+        "family": [
+            "electabuzz",
+            "elekid",
+            "electivire"
+        ]
+    },
+    {
+        "id": "magmar",
+        "number": 126,
+        "image": 126,
+        "name": "Magmar",
+        "region": "generation-i",
+        "type": [
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "magmar",
+            "magby",
+            "magmortar"
+        ]
+    },
+    {
+        "id": "pinsir",
+        "number": 127,
+        "image": 127,
+        "name": "Pinsir",
+        "region": "generation-i",
+        "type": [
+            "bug"
+        ],
+        "tags": [],
+        "family": [
+            "pinsir"
+        ]
+    },
+    {
+        "id": "tauros",
+        "number": 128,
+        "image": 128,
+        "name": "Tauros",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "tauros",
+            "tauros-paldea-combat-breed",
+            "tauros-paldea-blaze-breed",
+            "tauros-paldea-aqua-breed"
+        ]
+    },
+    {
+        "id": "tauros-paldea-combat-breed",
+        "number": 128,
+        "image": 10250,
+        "name": "Tauros",
+        "region": "generation-i",
+        "type": [
+            "fighting"
+        ],
+        "tags": [],
+        "family": [
+            "tauros",
+            "tauros-paldea-combat-breed",
+            "tauros-paldea-blaze-breed",
+            "tauros-paldea-aqua-breed"
+        ]
+    },
+    {
+        "id": "tauros-paldea-blaze-breed",
+        "number": 128,
+        "image": 10251,
+        "name": "Tauros",
+        "region": "generation-i",
+        "type": [
+            "fighting",
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "tauros",
+            "tauros-paldea-combat-breed",
+            "tauros-paldea-blaze-breed",
+            "tauros-paldea-aqua-breed"
+        ]
+    },
+    {
+        "id": "tauros-paldea-aqua-breed",
+        "number": 128,
+        "image": 10252,
+        "name": "Tauros",
+        "region": "generation-i",
+        "type": [
+            "fighting",
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "tauros",
+            "tauros-paldea-combat-breed",
+            "tauros-paldea-blaze-breed",
+            "tauros-paldea-aqua-breed"
+        ]
+    },
+    {
+        "id": "magikarp",
+        "number": 129,
+        "image": 129,
+        "name": "Magikarp",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "magikarp",
+            "gyarados"
+        ]
+    },
+    {
+        "id": "gyarados",
+        "number": 130,
+        "image": 130,
+        "name": "Gyarados",
+        "region": "generation-i",
+        "type": [
+            "water",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "magikarp",
+            "gyarados"
+        ]
+    },
+    {
+        "id": "lapras",
+        "number": 131,
+        "image": 131,
+        "name": "Lapras",
+        "region": "generation-i",
+        "type": [
+            "water",
+            "ice"
+        ],
+        "tags": [],
+        "family": [
+            "lapras"
+        ]
+    },
+    {
+        "id": "ditto",
+        "number": 132,
+        "image": 132,
+        "name": "Ditto",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "ditto"
+        ]
+    },
+    {
+        "id": "eevee",
+        "number": 133,
+        "image": 133,
+        "name": "Eevee",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "eevee",
+            "eevee-starter",
+            "vaporeon",
+            "jolteon",
+            "flareon",
+            "espeon",
+            "umbreon",
+            "leafeon",
+            "glaceon",
+            "sylveon"
+        ]
+    },
+    {
+        "id": "eevee-starter",
+        "number": 133,
+        "image": 10159,
+        "name": "Eevee",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "eevee",
+            "eevee-starter",
+            "vaporeon",
+            "jolteon",
+            "flareon",
+            "espeon",
+            "umbreon",
+            "leafeon",
+            "glaceon",
+            "sylveon"
+        ]
+    },
+    {
+        "id": "vaporeon",
+        "number": 134,
+        "image": 134,
+        "name": "Vaporeon",
+        "region": "generation-i",
+        "type": [
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "eevee",
+            "eevee-starter",
+            "vaporeon",
+            "jolteon",
+            "flareon",
+            "espeon",
+            "umbreon",
+            "leafeon",
+            "glaceon",
+            "sylveon"
+        ]
+    },
+    {
+        "id": "jolteon",
+        "number": 135,
+        "image": 135,
+        "name": "Jolteon",
+        "region": "generation-i",
+        "type": [
+            "electric"
+        ],
+        "tags": [],
+        "family": [
+            "eevee",
+            "eevee-starter",
+            "vaporeon",
+            "jolteon",
+            "flareon",
+            "espeon",
+            "umbreon",
+            "leafeon",
+            "glaceon",
+            "sylveon"
+        ]
+    },
+    {
+        "id": "flareon",
+        "number": 136,
+        "image": 136,
+        "name": "Flareon",
+        "region": "generation-i",
+        "type": [
+            "fire"
+        ],
+        "tags": [],
+        "family": [
+            "eevee",
+            "eevee-starter",
+            "vaporeon",
+            "jolteon",
+            "flareon",
+            "espeon",
+            "umbreon",
+            "leafeon",
+            "glaceon",
+            "sylveon"
+        ]
+    },
+    {
+        "id": "porygon",
+        "number": 137,
+        "image": 137,
+        "name": "Porygon",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "porygon",
+            "porygon2",
+            "porygon-z"
+        ]
+    },
+    {
+        "id": "omanyte",
+        "number": 138,
+        "image": 138,
+        "name": "Omanyte",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "omanyte",
+            "omastar"
+        ]
+    },
+    {
+        "id": "omastar",
+        "number": 139,
+        "image": 139,
+        "name": "Omastar",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "omanyte",
+            "omastar"
+        ]
+    },
+    {
+        "id": "kabuto",
+        "number": 140,
+        "image": 140,
+        "name": "Kabuto",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "kabuto",
+            "kabutops"
+        ]
+    },
+    {
+        "id": "kabutops",
+        "number": 141,
+        "image": 141,
+        "name": "Kabutops",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "water"
+        ],
+        "tags": [],
+        "family": [
+            "kabuto",
+            "kabutops"
+        ]
+    },
+    {
+        "id": "aerodactyl",
+        "number": 142,
+        "image": 142,
+        "name": "Aerodactyl",
+        "region": "generation-i",
+        "type": [
+            "rock",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "aerodactyl"
+        ]
+    },
+    {
+        "id": "snorlax",
+        "number": 143,
+        "image": 143,
+        "name": "Snorlax",
+        "region": "generation-i",
+        "type": [
+            "normal"
+        ],
+        "tags": [],
+        "family": [
+            "snorlax",
+            "munchlax"
+        ]
+    },
+    {
+        "id": "articuno",
+        "number": 144,
+        "image": 144,
+        "name": "Articuno",
+        "region": "generation-i",
+        "type": [
+            "ice",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "articuno",
+            "articuno-galar"
+        ]
+    },
+    {
+        "id": "articuno-galar",
+        "number": 144,
+        "image": 10169,
+        "name": "Articuno",
+        "region": "generation-i",
+        "type": [
+            "psychic",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "articuno",
+            "articuno-galar"
+        ]
+    },
+    {
+        "id": "zapdos",
+        "number": 145,
+        "image": 145,
+        "name": "Zapdos",
+        "region": "generation-i",
+        "type": [
+            "electric",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "zapdos",
+            "zapdos-galar"
+        ]
+    },
+    {
+        "id": "zapdos-galar",
+        "number": 145,
+        "image": 10170,
+        "name": "Zapdos",
+        "region": "generation-i",
+        "type": [
+            "fighting",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "zapdos",
+            "zapdos-galar"
+        ]
+    },
+    {
+        "id": "moltres",
+        "number": 146,
+        "image": 146,
+        "name": "Moltres",
+        "region": "generation-i",
+        "type": [
+            "fire",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "moltres",
+            "moltres-galar"
+        ]
+    },
+    {
+        "id": "moltres-galar",
+        "number": 146,
+        "image": 10171,
+        "name": "Moltres",
+        "region": "generation-i",
+        "type": [
+            "dark",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "moltres",
+            "moltres-galar"
+        ]
+    },
+    {
+        "id": "dratini",
+        "number": 147,
+        "image": 147,
+        "name": "Dratini",
+        "region": "generation-i",
+        "type": [
+            "dragon"
+        ],
+        "tags": [],
+        "family": [
+            "dratini",
+            "dragonair",
+            "dragonite"
+        ]
+    },
+    {
+        "id": "dragonair",
+        "number": 148,
+        "image": 148,
+        "name": "Dragonair",
+        "region": "generation-i",
+        "type": [
+            "dragon"
+        ],
+        "tags": [],
+        "family": [
+            "dratini",
+            "dragonair",
+            "dragonite"
+        ]
+    },
+    {
+        "id": "dragonite",
+        "number": 149,
+        "image": 149,
+        "name": "Dragonite",
+        "region": "generation-i",
+        "type": [
+            "dragon",
+            "flying"
+        ],
+        "tags": [],
+        "family": [
+            "dratini",
+            "dragonair",
+            "dragonite"
+        ]
+    },
+    {
+        "id": "mewtwo",
+        "number": 150,
+        "image": 150,
+        "name": "Mewtwo",
+        "region": "generation-i",
+        "type": [
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "mewtwo"
+        ]
+    },
+    {
+        "id": "mew",
+        "number": 151,
+        "image": 151,
+        "name": "Mew",
+        "region": "generation-i",
+        "type": [
+            "psychic"
+        ],
+        "tags": [],
+        "family": [
+            "mew"
+        ]
+    }
+]
