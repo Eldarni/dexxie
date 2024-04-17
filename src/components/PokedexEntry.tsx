@@ -99,17 +99,39 @@ const PokemonCard = styled.div`
         background-image: url('icons/lucky.png');
     }
 
+    //tweak the style when it's "selected"
+    &[data-selected="true"] {
+
+        //
+        outline: 3px solid var(--colour-foreground);
+        background-color: #ffffff33;
+
+        //
+        & ${PokemonName}, & ${PokemonNumber} {
+            opacity: 1;
+        }
+
+        //
+        & ${PokemonName} {
+            color: var(--colour-background);
+            background-color: var(--colour-foreground);
+            border-bottom-right-radius: 0.5em;
+            inset-block-start: -2px;
+        }
+
+    }
+
 `
 
 //
-export default (props: Pokemon) => {
+export default (props: Pokemon & { onMouseDown: React.MouseEventHandler, onMouseUp: React.MouseEventHandler, selected: boolean }) => {
 
     //
     const { t } = useTranslation()
 
     //
     return (
-        <PokemonCard data-number={props.number} title={t(props.id)} data-tags={props.tags?.join(':')}>
+        <PokemonCard data-number={props.number} title={t(props.id)} data-tags={props.tags?.join(':')} onMouseDown={props.onMouseDown} onMouseUp={props.onMouseUp} data-selected={props.selected}>
             <PokemonName>{t(props.id)}</PokemonName>
             <PokemonNumber>#{props.number}</PokemonNumber>
             <PokemonImage src={`/images/${props.number}-${props.id}${((props.tags?.includes('shiny')) ? '-shiny' : '')}.svg`} />

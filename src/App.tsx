@@ -1,6 +1,6 @@
 
 //
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 //
 import { db } from './db'
@@ -17,10 +17,16 @@ import Pokedex from './components/Pokedex'
 import PokedexEntry from './components/PokedexEntry'
 
 //
+import Selectable from './components/Selectable'
+
+//
 export default function() {
 
     //
     const { t } = useTranslation()
+
+    //store the selected pokemon in an atom
+    const [selectedPokemon, setSelectedPokemon] = useState([]);
 
     //update the title
     useEffect(() => { document.title = t('dexxie') }, [])
@@ -34,7 +40,9 @@ export default function() {
     return (
         <Layout>
             <Pokedex>
-                {pokemon?.map(pokemon => <PokedexEntry key={pokemon.id}  {...pokemon} />)}
+                <Selectable selectedItems={selectedPokemon} onSelectionChange={setSelectedPokemon}>
+                    {pokemon?.map(pokemon => <PokedexEntry key={pokemon.id}  {...pokemon} />)}
+                </Selectable>
             </Pokedex>
         </Layout>
     )
