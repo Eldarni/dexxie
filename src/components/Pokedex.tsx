@@ -15,6 +15,12 @@ const Outer = styled.div`
     position: relative;
 
     //
+    margin-inline: 0.5em;
+    @media only screen and (min-width: 600px) {
+        margin-inline: 1.5em;
+    }
+
+    //
     flex: 1;
 
     //

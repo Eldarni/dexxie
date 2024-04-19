@@ -90,14 +90,10 @@ const Screen = styled.main`
 
     //
     margin: 1em;
-    padding: 0.5em;
 
     //
     border-radius: 1em;
-
-    //
     @media only screen and (min-width: 600px) {
-        padding: 1.5em;
         border-end-start-radius: 3em;
     }
 

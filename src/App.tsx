@@ -13,11 +13,11 @@ import { useTranslation } from 'react-i18next'
 import Layout from './layout/Layout'
 
 //
+import TopBar from './components/TopBar'
 import Pokedex from './components/Pokedex'
-import PokedexEntry from './components/PokedexEntry'
-
-//
 import Selectable from './components/Selectable'
+import PokedexEntry from './components/PokedexEntry'
+import BottomBar from './components/BottomBar'
 
 //
 export default function() {
@@ -36,11 +36,13 @@ export default function() {
     //
     return (
         <Layout>
+            <TopBar />
             <Pokedex>
                 <Selectable>
                     {pokemon?.map(pokemon => <PokedexEntry key={pokemon.id}  {...pokemon} />)}
                 </Selectable>
             </Pokedex>
+            <BottomBar />
         </Layout>
     )
 
