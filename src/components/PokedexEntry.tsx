@@ -58,9 +58,6 @@ const PokemonCard = styled.div`
     cursor: pointer;
 
     //
-    user-select: none;
-
-    //
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -134,7 +131,7 @@ export default (props: Pokemon & { onMouseDown?: React.MouseEventHandler, onMous
 
     //
     return (
-        <PokemonCard data-number={props.number} title={t(props.id)} data-tags={props.tags?.join(':')} onMouseDown={props.onMouseDown} onMouseUp={props.onMouseUp} data-selected={props.selected} draggable={false}>
+        <PokemonCard data-number={props.number} title={t(props.id)} data-tags={props.tags?.join(':')} onMouseDown={props.onMouseDown} onMouseUp={props.onMouseUp} data-selected={props.selected}>
             <PokemonName>{t(props.id)}</PokemonName>
             <PokemonNumber>#{props.number}</PokemonNumber>
             <PokemonImage src={`/images/${props.number}-${props.id}${((props.tags?.includes('shiny')) ? '-shiny' : '')}.svg`} />

@@ -23,6 +23,9 @@ const Wrapper = styled.div`
     flex-direction: column;
 
     //
+    user-select: none;
+
+    //
     background-color: var(--colour-pokedex-red);
 
 `
@@ -145,7 +148,7 @@ export default (props) => {
 
     //
     return (
-        <Wrapper>
+        <Wrapper draggable={false}>
 
             <Header>
                 <svg>
