@@ -127,7 +127,7 @@ const PokemonCard = styled.div`
 `
 
 //
-export default (props: Pokemon & { onMouseDown: React.MouseEventHandler, onMouseUp: React.MouseEventHandler, selected: boolean }) => {
+export default (props: Pokemon & { onMouseDown?: React.MouseEventHandler, onMouseUp?: React.MouseEventHandler, selected?: boolean }) => {
 
     //
     const { t } = useTranslation()
