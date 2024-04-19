@@ -3,13 +3,16 @@
 import React from 'react';
 
 //
-import { useAtom, selectionModeAtom } from '../store'
+import { useAtom, selectedItemsAtom, selectionModeAtom } from '../store'
 
 //
 export default (props) => {
 
     //store the index of the item that was select last - used as the origin point for a shift-select
     const [lastSelectedItem, setLastSelectedItem] = React.useState();
+
+    //store the selected items in an atom
+    const [selectedItems, setSelectedItems] = useAtom(selectedItemsAtom);
 
     //selection mode (if a long press is detected the future single clicks will be handled as a selection), once all items have been unselected the selection mode will reset
     const [selectionMode, setSelectionMode] = useAtom(selectionModeAtom)
@@ -29,7 +32,7 @@ export default (props) => {
         }
 
         //
-        props.onSelectionChange([...new Set(selection)]);
+        setSelectedItems([...new Set<string>(selection)]);
 
     }
 
@@ -40,12 +43,12 @@ export default (props) => {
         if (selectionMode === 'quick') {
 
             //if the item has already been selected, then remove it from the selection
-            if (props.selectedItems.includes(this.key)) {
-                onSelectionChange(props.selectedItems.filter((value) => {
+            if (selectedItems.includes(this.key)) {
+                onSelectionChange(selectedItems.filter((value) => {
                     return value !== this.key;
                 }));
             } else {
-                onSelectionChange([...props.selectedItems, ...[this.key]]);
+                onSelectionChange([...selectedItems, ...[this.key]]);
             }
 
             //
@@ -75,8 +78,8 @@ export default (props) => {
         if (event.ctrlKey === true) {
 
             //if the item has already been selected, then remove it from the selection, and call it done
-            if (props.selectedItems.includes(this.key)) {
-                onSelectionChange(props.selectedItems.filter((value) => {
+            if (selectedItems.includes(this.key)) {
+                onSelectionChange(selectedItems.filter((value) => {
                     return value !== this.key;
                 }));
                 return;
@@ -88,7 +91,7 @@ export default (props) => {
 
         //ctrl adds the new items to the selection - no ctrl replaces the entire selection
         if (event.ctrlKey === true) {
-            onSelectionChange([...props.selectedItems, ...newSelection]);
+            onSelectionChange([...selectedItems, ...newSelection]);
         } else {
             onSelectionChange(newSelection);
         }
@@ -114,7 +117,7 @@ export default (props) => {
     return (
         <React.Fragment>
             {props.children?.map(child => {
-                return React.cloneElement(child, { 'selected' : (props.selectedItems.includes(child.key)), 'onMouseDown' : onMouseDownHandler.bind(child), 'onMouseUp' : onMouseUpHandler.bind(child) });
+                return React.cloneElement(child, { 'selected' : (selectedItems.includes(child.key)), 'onMouseDown' : onMouseDownHandler.bind(child), 'onMouseUp' : onMouseUpHandler.bind(child) });
             })}
         </React.Fragment>
     );

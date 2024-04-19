@@ -25,9 +25,6 @@ export default function() {
     //
     const { t } = useTranslation()
 
-    //store the selected pokemon in an atom
-    const [selectedPokemon, setSelectedPokemon] = useState([]);
-
     //update the title
     useEffect(() => { document.title = t('dexxie') }, [])
 
@@ -40,7 +37,7 @@ export default function() {
     return (
         <Layout>
             <Pokedex>
-                <Selectable selectedItems={selectedPokemon} onSelectionChange={setSelectedPokemon}>
+                <Selectable>
                     {pokemon?.map(pokemon => <PokedexEntry key={pokemon.id}  {...pokemon} />)}
                 </Selectable>
             </Pokedex>
