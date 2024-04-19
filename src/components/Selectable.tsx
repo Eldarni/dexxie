@@ -1,13 +1,20 @@
+
+//
 import React from 'react';
 
+//
+import { useAtom, selectionModeAtom } from '../store'
+
+//
 export default (props) => {
 
     //store the index of the item that was select last - used as the origin point for a shift-select
     const [lastSelectedItem, setLastSelectedItem] = React.useState();
 
     //selection mode (if a long press is detected the future single clicks will be handled as a selection), once all items have been unselected the selection mode will reset
-    const [selectionMode, setSelectionMode] = React.useState('normal'); //'normal' or 'quick'
+    const [selectionMode, setSelectionMode] = useAtom(selectionModeAtom)
 
+    //
     const longPressTimerRef = React.useRef<number>();
 
     //get the key prop for each item in the selectable zone
