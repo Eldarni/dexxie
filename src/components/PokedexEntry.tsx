@@ -134,7 +134,7 @@ export default (props: Pokemon & { onMouseDown: React.MouseEventHandler, onMouse
 
     //
     return (
-        <PokemonCard data-number={props.number} title={t(props.id)} data-tags={props.tags?.join(':')} onMouseDown={props.onMouseDown} onMouseUp={props.onMouseUp} data-selected={props.selected}>
+        <PokemonCard data-number={props.number} title={t(props.id)} data-tags={props.tags?.join(':')} onMouseDown={props.onMouseDown} onMouseUp={props.onMouseUp} data-selected={props.selected} draggable={false}>
             <PokemonName>{t(props.id)}</PokemonName>
             <PokemonNumber>#{props.number}</PokemonNumber>
             <PokemonImage src={`/images/${props.number}-${props.id}${((props.tags?.includes('shiny')) ? '-shiny' : '')}.svg`} />
