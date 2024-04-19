@@ -33,6 +33,9 @@ const PokemonNumber = styled.div`
 const PokemonImage = styled.img`
 
     //
+    pointer-events: none;
+
+    //
     height: 10em;
     width: 10em;
 
