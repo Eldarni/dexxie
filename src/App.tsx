@@ -29,7 +29,7 @@ export default function() {
     useEffect(() => { document.title = t('dexxie') }, [])
 
     //
-    const pokemon = useLiveQuery(async () => {
+    const pokemon = useLiveQuery<Pokemon[]>(async () => {
         return await db.pokemon.orderBy('number').toArray()
     });
 
