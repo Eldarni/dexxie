@@ -50,8 +50,7 @@ const Header = styled.header`
         border-top: 3em solid var(--colour-pokedex-light-red);
         border-right: 3em solid transparent;
         height: 0;
-        min-width: 12em;
-        width: 20%;
+        width: 10em;
     `)}
 
     //
@@ -79,6 +78,9 @@ const Header = styled.header`
         ${before({}, () => css`
             border-top-width: 6em;
             border-right-width: 6em;
+            min-width: 12em;
+            max-width: 20em;
+            width: 20vw;
         `)}
 
     }
@@ -99,6 +101,9 @@ const Screen = styled.main`
     @media only screen and (min-width: 600px) {
         border-end-start-radius: 3em;
     }
+
+    //
+    overflow: hidden;
 
     //
     background-color: var(--colour-background);

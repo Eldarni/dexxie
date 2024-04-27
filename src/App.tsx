@@ -36,7 +36,7 @@ export default function() {
     //
     return (
         <Layout>
-            <TopBar />
+            <TopBar pokemon={pokemon} />
             <Pokedex>
                 <Selectable>
                     {pokemon?.map(pokemon => <PokedexEntry key={pokemon.id}  {...pokemon} />)}

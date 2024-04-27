@@ -1,5 +1,7 @@
 {
     "dexxie": "Dexxie",
+    "selectedPokemon": "{{count, number}} out of {{total, number}} selected",
+    "selectAll": "Select all",
     "bulbasaur": "Bulbasaur",
     "ivysaur": "Ivysaur",
     "venusaur": "Venusaur",

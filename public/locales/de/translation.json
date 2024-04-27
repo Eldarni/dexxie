@@ -1,5 +1,7 @@
 {
     "dexxie": "Dexxie",
+    "selectedPokemon": "{{count, number}} von {{total, number}} ausgewählt",
+    "selectAll": "Alle auswaehlen",
     "bulbasaur": "Bisasam",
     "ivysaur": "Bisaknosp",
     "venusaur": "Bisaflor",
