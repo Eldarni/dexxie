@@ -16,3 +16,16 @@ interface Tag {
     name?:   string
     styles?: string
 }
+
+//
+interface SelectableProps {
+    selected: boolean;
+    events:   SelectableEvents;
+}
+
+interface SelectableEvents {
+    onMouseDown:  React.MouseEventHandler;
+    onMouseUp:    React.MouseEventHandler;  
+    onTouchStart: React.TouchEventHandler;
+    onTouchEnd:   React.TouchEventHandler;
+}

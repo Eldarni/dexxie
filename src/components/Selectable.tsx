@@ -117,7 +117,36 @@ export default (props) => {
     return (
         <React.Fragment>
             {props.children?.map(child => {
-                return React.cloneElement(child, { 'selected' : (selectedItems.includes(child.key)), 'onMouseDown' : onMouseDownHandler.bind(child), 'onMouseUp' : onMouseUpHandler.bind(child) });
+
+                //
+                const boundOnMouseDownHandler = onMouseDownHandler.bind(child);
+                const boundOnMouseUpHandler = onMouseUpHandler.bind(child);
+
+                //
+                const onMouseDown = (event) => { 
+                    boundOnMouseDownHandler(event)
+                }
+                
+                //
+                const onMouseUp = (event) => { 
+                    boundOnMouseUpHandler(event)
+                }
+                
+                //
+                const onTouchStart = (event) => {
+                    event.preventDefault();
+                    boundOnMouseDownHandler(event)
+                }
+                
+                //
+                const onTouchEnd = (event) => {
+                    event.preventDefault();
+                    boundOnMouseUpHandler(event)
+                }
+
+                //
+                return React.cloneElement(child, { 'selected' : (selectedItems.includes(child.key)), 'events': { onMouseDown, onMouseUp, onTouchStart, onTouchEnd } });
+
             })}
         </React.Fragment>
     );

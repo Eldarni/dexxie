@@ -124,14 +124,14 @@ const PokemonCard = styled.div`
 `
 
 //
-export default (props: Pokemon & { onMouseDown?: React.MouseEventHandler, onMouseUp?: React.MouseEventHandler, selected?: boolean }) => {
+export default (props: Pokemon & SelectableProps) => {
 
     //
     const { t } = useTranslation()
 
     //
     return (
-        <PokemonCard data-number={props.number} title={t(props.id)} data-tags={props.tags?.join(':')} onMouseDown={props.onMouseDown} onMouseUp={props.onMouseUp} data-selected={props.selected}>
+        <PokemonCard data-number={props.number} title={t(props.id)} data-tags={props.tags?.join(':')} data-selected={props.selected} {...props.events}>
             <PokemonName>{t(props.id)}</PokemonName>
             <PokemonNumber>#{props.number}</PokemonNumber>
             <PokemonImage src={`/images/${props.number}-${props.id}${((props.tags?.includes('shiny')) ? '-shiny' : '')}.svg`} />
