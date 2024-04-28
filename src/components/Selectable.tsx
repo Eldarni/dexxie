@@ -112,7 +112,7 @@ export default (props) => {
                 navigator.vibrate(10);
             }
 
-        }, 500);
+        }, 200);
     
     }
 
