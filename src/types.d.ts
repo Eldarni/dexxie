@@ -19,8 +19,8 @@ interface Tag {
 
 //
 interface SelectableProps {
-    selected: boolean;
-    events:   SelectableEvents;
+    selected?: boolean;
+    events?:   SelectableEvents;
 }
 
 interface SelectableEvents {
