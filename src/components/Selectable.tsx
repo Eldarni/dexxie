@@ -103,7 +103,15 @@ export default (props) => {
 
         //if the mouse is held down then set the selection mode to quick - this allows the selection to be updated by clicking or tapping on items
         longPressTimerRef.current = setTimeout(() => {
+
+            //
             setSelectionMode('quick');
+
+            //for devices that support it, add some haptic feedback
+            if ('vibrate' in navigator) {
+                navigator.vibrate(10);
+            }
+
         }, 500);
     
     }
