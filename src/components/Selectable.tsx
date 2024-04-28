@@ -112,6 +112,12 @@ export default (props) => {
                 navigator.vibrate(10)
             }
 
+            //add a quick shimmy for better affordability - this is a bit hacky, but it works
+            event.target.setAttribute('data-shimmy', 'true')
+            setTimeout(() => {
+                event.target.removeAttribute('data-shimmy')
+            }, 200)
+
         }, 200)
 
     }

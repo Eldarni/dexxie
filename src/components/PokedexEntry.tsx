@@ -6,11 +6,26 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 //
-import { styled, css } from 'styled-components'
+import { keyframes, styled, css } from 'styled-components'
 
 //
 import { after } from '../mixins/pseudo'
 import { absolute } from '../mixins/position'
+
+
+const shimmy = keyframes`
+	0%   { transform: translate(0);          }
+	10%  { transform: translate(-2px, -2px); }
+	20%  { transform: translate(2px, -2px);  }
+	30%  { transform: translate(-2px, 2px);  }
+	40%  { transform: translate(2px, 2px);   }
+	50%  { transform: translate(-2px, -2px); }
+	60%  { transform: translate(2px, -2px);  }
+	70%  { transform: translate(-2px, 2px);  }
+	80%  { transform: translate(-2px, -2px); }
+	90%  { transform: translate(2px, -2px);  }
+	100% { transform: translate(0);          }
+`
 
 //
 const PokemonName = styled.div`
@@ -119,6 +134,11 @@ const PokemonCard = styled.div`
             inset-block-start: -2px;
         }
 
+    }
+
+    //
+    &[data-shimmy="true"] {
+        animation: ${shimmy} 0.2s ease 0s 1;
     }
 
 `
