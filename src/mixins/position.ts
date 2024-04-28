@@ -7,7 +7,7 @@ export const position = ({ position, inset, insetBlockStart, insetInlineStart, i
 
     //
     position: ${position};
-    
+
     //
     ${inset !== undefined && `inset: ${inset};`}
 

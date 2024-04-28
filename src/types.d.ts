@@ -25,7 +25,7 @@ interface SelectableProps {
 
 interface SelectableEvents {
     onMouseDown:  React.MouseEventHandler;
-    onMouseUp:    React.MouseEventHandler;  
+    onMouseUp:    React.MouseEventHandler;
     onTouchStart: React.TouchEventHandler;
     onTouchEnd:   React.TouchEventHandler;
 }

@@ -113,7 +113,7 @@ export default (props) => {
             }
 
         }, 200);
-    
+
     }
 
     //
@@ -131,21 +131,21 @@ export default (props) => {
                 const boundOnMouseUpHandler = onMouseUpHandler.bind(child);
 
                 //
-                const onMouseDown = (event) => { 
+                const onMouseDown = (event) => {
                     boundOnMouseDownHandler(event)
                 }
-                
+
                 //
-                const onMouseUp = (event) => { 
+                const onMouseUp = (event) => {
                     boundOnMouseUpHandler(event)
                 }
-                
+
                 //
                 const onTouchStart = (event) => {
                     event.preventDefault();
                     boundOnMouseDownHandler(event)
                 }
-                
+
                 //
                 const onTouchEnd = (event) => {
                     event.preventDefault();
