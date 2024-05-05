@@ -43,14 +43,14 @@ const Header = styled.header`
     background-color: var(--colour-pokedex-light-red);
 
     //
-    height: 1.5em;
+    height: 1em;
 
     //
     ${before({}, () => css`
-        border-top: 3em solid var(--colour-pokedex-light-red);
-        border-right: 3em solid transparent;
+        border-top: 2.9em solid var(--colour-pokedex-light-red);
+        border-right: 2em solid transparent;
         height: 0;
-        width: 10em;
+        width: 8.5em;
     `)}
 
     //
@@ -69,18 +69,16 @@ const Header = styled.header`
     @media only screen and (min-width: 600px) {
 
         //
-        height: 3em;
+        height: 3.5em;
 
         //
         svg { transform: scale(1.0); }
 
         //
         ${before({}, () => css`
-            border-top-width: 6em;
-            border-right-width: 6em;
-            min-width: 12em;
-            max-width: 20em;
-            width: 20vw;
+            border-top-width: 5.5em;
+            border-right-width: 4em;
+            width: 16em;
         `)}
 
     }
@@ -158,9 +156,9 @@ export default (props) => {
             <Header>
                 <svg>
                     <circle style={{ 'fill' : "#6894cc", 'stroke' : "#ffffff", 'strokeWidth' : "8px" }} cx="40"  cy="40" r="28" />
-                    <circle style={{ 'fill' : "#f94848", 'stroke' : "#333333", 'strokeWidth' : "4px" }} cx="105" cy="21" r="12" />
-                    <circle style={{ 'fill' : "#fcab1d", 'stroke' : "#333333", 'strokeWidth' : "4px" }} cx="150" cy="21" r="12" />
-                    <circle style={{ 'fill' : "#87c13a", 'stroke' : "#333333", 'strokeWidth' : "4px" }} cx="195" cy="21" r="12" />
+                    <circle style={{ 'fill' : "#f94848", 'stroke' : "#333333", 'strokeWidth' : "3px" }} cx="100" cy="25" r="12" />
+                    <circle style={{ 'fill' : "#fcab1d", 'stroke' : "#333333", 'strokeWidth' : "3px" }} cx="135" cy="25" r="12" />
+                    <circle style={{ 'fill' : "#87c13a", 'stroke' : "#333333", 'strokeWidth' : "3px" }} cx="170" cy="25" r="12" />
                 </svg>
             </Header>
 

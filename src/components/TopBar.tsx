@@ -18,12 +18,22 @@ import { after } from '../mixins/pseudo'
 const TopBar = styled.div`
 
     //
-    height: 3em;
+    height: 4em;
 
     //
-    padding: 0.5em 1em;
+    padding: 1em;
+    padding-block-end: 0em;
+
+    //
     @media only screen and (min-width: 600px) {
-        padding-inline-start: 10vw;
+
+        //
+        height: 3em;
+
+        //
+        padding-block: 0.5em;
+        padding-inline: 13em 1.5em;
+
     }
 
     //
