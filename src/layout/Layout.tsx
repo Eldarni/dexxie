@@ -57,6 +57,9 @@ const Header = styled.header`
     svg {
 
         //
+        pointer-events: none;
+
+        //
         ${relative({ 'insetBlockStart' : '0.2em', 'insetInlineStart': '0.5em' })}
 
         //
