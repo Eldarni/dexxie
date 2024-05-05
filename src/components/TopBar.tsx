@@ -47,18 +47,21 @@ const TopBar = styled.div`
 `
 
 //
-const IconButton = styled.button`
-    padding: 0.1em;
-    line-height: 0;
+const Button = styled.button`
+    padding: 0.1em 0.5em;
     border: none;
     background-color: #ffffff33;
+    border-radius: 0.1em;
+    &:hover {
+        cursor: pointer;
+        background-color: #ffffff22;
+    }
 `
 
 //
-const Button = styled.button`
-    padding: 0.1em 0.3em;
-    border: none;
-    background-color: #ffffff33;
+const IconButton = styled(Button)`
+    padding: 0.1em;
+    line-height: 0;
 `
 
 //
