@@ -9,11 +9,7 @@ import { useTranslation } from 'react-i18next'
 import { styled, css } from 'styled-components'
 
 //
-import TopBarSearch from './TopBarSearch'
-import TopBarSelection from './TopBarSelection'
-
-//
-import X from '../icons/CloseIcon'
+import CloseIcon from '../icons/CloseIcon'
 
 //
 import { after } from '../mixins/pseudo'
@@ -82,9 +78,7 @@ export default (props: { pokemon?: Pokemon[] }) => {
 
     //if nothing is selected then...
     if (selectedItems.length == 0) {
-        return (
-            <TopBarSearch />
-        )
+        return (<TopBar></TopBar>)
     }
 
     //
@@ -106,7 +100,7 @@ export default (props: { pokemon?: Pokemon[] }) => {
     return (
         <TopBar>
             <IconButton onClick={unselectAllHandler}>
-                <X />
+                <CloseIcon />
             </IconButton>
             <div>{t('selectedPokemon', { count: selectedItems.length, total: props.pokemon?.length })}</div>
             <Button onClick={selectAllHandler}>{t('selectAll')}</Button>
