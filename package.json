@@ -1,21 +1,15 @@
 {
-  "name": "dexxie-mvp-2",
-  "version": "1.0.0",
-  "description": "",
-  "source": "src/index.html",
+  "name": "dexxie",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.15.4",
-    "parcel": "^2.15.4",
-    "parcel-reporter-static-files-copy": "^1.5.3"
-  },
-  "staticFiles": {
-    "staticPath": "public"
+    "sass-embedded": "^1.89.2",
+    "vite": "^7.0.4"
   }
 }

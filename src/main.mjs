@@ -1,5 +1,8 @@
 
 //
+import './style.scss';
+
+//
 import pokemonData from './pokemon.json';
 
 //
