@@ -15,7 +15,7 @@ npm install
 ### Development
 To start the development server:
 ```bash
-npm start
+npm run dev
 ```
 
 ### Build
