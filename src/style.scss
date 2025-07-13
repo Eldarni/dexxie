@@ -1,0 +1,358 @@
+
+//
+@use 'position.scss' as *;
+@use 'pseudo.scss' as *;
+
+//
+@use 'background.scss' as *;
+
+//
+:root {
+
+    // general font settings
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    // general colour scheme settings
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    // tidy up some font rendering
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    // define some "colours"
+    --black     : #000000;
+    --white     : #ffffff;
+
+    // define more colours
+    --primary   : #cf101a;
+    --secondary : #333333;
+
+    //
+    --colour-pokedex-red: #aa3030;
+    --colour-pokedex-light-red: #d14444;
+
+    //
+    --colour-foreground : #e7e7e6;
+    --colour-background : #464646;
+
+    //
+    --colour-blue : #6ea4bb;
+    --colour-red : #c04c4b;
+    --colour-yellow : #f0dba5;
+
+}
+
+// box sizing rules
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+// remove default margin
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+// prevent font size inflation
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+// remove default margin in favour of better control in authored css
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin-block-end: 0;
+}
+
+// remove list styles on ul, ol elements with a list role, which suggests default styling will be removed
+ul[role='list'], ol[role='list'] {
+    list-style: none;
+}
+
+// set core body defaults
+body {
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+// set shorter line heights on headings and interactive elements
+h1, h2, h3, h4, button, input, label {
+    line-height: 1.1;
+}
+
+// balance text wrapping on headings
+h1, h2, h3, h4 {
+    text-wrap: balance;
+}
+
+// anchor elements that don't have a class get default styles
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+// make images easier to work with
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+// inherit fonts for inputs and buttons
+input, button, textarea, select {
+    font: inherit;
+}
+
+// anything that has been anchored to should have extra scroll margin
+:target {
+    scroll-margin-block: 5ex;
+}
+
+// main background
+body {
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    user-select: none;
+
+    background-color: var(--colour-pokedex-red);
+
+}
+
+// header
+header {
+
+    //
+    position: relative;
+
+    //
+    z-index: 10;
+
+    //
+    background-color: var(--colour-pokedex-light-red);
+
+    //
+    height: 1rem;
+
+    //
+    @include before() {
+        border-top: 2.9rem solid var(--colour-pokedex-light-red);
+        border-right: 2rem solid transparent;
+        height: 0;
+        width: 8.5rem;
+    }
+
+    //
+    svg {
+
+        //
+        pointer-events: none;
+
+        //
+        @include relative($inset-block-start: 0.2rem, $inset-inline-start: 0.5rem);
+
+        //
+        transform-origin: top left;
+        transform: scale(0.5);
+
+    }
+
+    // make everything bigger on large screens
+    @media only screen and (min-width: 600px) {
+
+        //
+        height: 3.5rem;
+
+        //
+        svg { transform: scale(1.0); }
+
+        //
+        @include before() {
+            border-top-width: 5.5rem;
+            border-right-width: 4rem;
+            width: 16rem;
+        }
+
+    }
+
+}
+
+// the main "screen"
+main {
+
+    //
+    position: relative;
+
+    //
+    margin: 1rem;
+
+    //
+    border-radius: 1rem;
+    @media only screen and (min-width: 600px) {
+        border-end-start-radius: 3rem;
+    }
+
+    //
+    overflow: hidden;
+
+    //
+    background-color: var(--colour-background);
+
+    //
+    flex: 0 1 100%;
+
+    // add a shine effect over the screen
+    @include after($inset: 0px) {
+
+        //make sure the layer is transparent to any mouse stuff
+        pointer-events: none;
+
+        //create an effect that looks like bands of light across a glass screen
+        --stripe-colour: rgb(from var(--colour-foreground) r g b / 3%);
+        background: linear-gradient(
+            120deg, transparent 0%, #{generate-stripes(((25, 10), (65, 4), (75, 10)))}, transparent 100%
+        );
+
+    }
+
+    //
+    padding: 1rem 2.5rem 3rem 2.5rem;
+
+    //
+    .controls {
+
+        //
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0.5rem;
+
+        //
+        margin-block-end: 1rem;
+
+    }
+
+    //
+    .search {
+
+        //
+        input {
+            width:100%;
+            margin-bottom:1em;
+            padding:0.5em;
+        }
+
+    }
+
+    //
+    #app {
+
+        //
+        display: grid;
+        grid-template-columns: min-content 10rem auto;
+        grid-auto-rows: auto;
+
+        //
+        align-items: center;
+
+        //
+        column-gap: 1rem;
+        row-gap: 0.5rem;
+
+        //
+        overflow-y: scroll;
+
+        //
+        max-height: calc(100% - 5rem);
+
+        //
+        padding-inline: 1rem;
+
+        // hide the "pokemon" wrapper from the grid
+        .pokemon {
+            display: contents;
+        }
+
+        //
+        .pokemon .number span { font-weight: 600; opacity: 0.1; }
+        .pokemon .name { font-weight: 600; }
+
+        //
+        .pokemon .buttons {
+
+            //
+            display: flex;
+            gap: 0.5rem;
+
+            //
+            button {
+
+                //
+                padding: 0.3rem 1rem;
+                border-radius: 0.3rem;
+                border: 0.05rem solid #bdbdbd;
+                background: #464646;
+                color: var(--colour-foreground);
+                font-size: 0.95em;
+                font-weight: 500;
+                cursor: pointer;
+                transition: 0.1s;
+
+                //
+                &:hover {
+                    background: #767676;
+                    border-color: #bdbdbd;
+                }
+
+            }
+
+            //
+            button[data-state="1"] {
+
+                //
+                background: #4caf50;
+                border-color: #388e3c;
+
+                //
+                &:hover {
+                    background: #388e3c;
+                    border-color: #4caf50;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+//footer
+footer {
+
+    //
+    padding: 0rem 5rem;
+
+    //
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: right;
+
+    //
+    h1 {
+        margin: 0.1rem 0rem 0.5rem;
+        opacity: 0.9;
+        color: var(--colour-foreground);
+    }
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel SPA</title>
+    <link rel="stylesheet" href="./style.scss">
+</head>
+<body>
+
+    <header id="header">
+        <svg>
+            <circle style="fill:#6894cc;stroke:#ffffff;stroke-width:8px" cx="40"  cy="40" r="28" />
+            <circle style="fill:#f94848;stroke:#333333;stroke-width:3px" cx="100" cy="25" r="12" />
+            <circle style="fill:#fcab1d;stroke:#333333;stroke-width:3px" cx="135" cy="25" r="12" />
+            <circle style="fill:#87c13a;stroke:#333333;stroke-width:3px" cx="170" cy="25" r="12" />
+        </svg>
+    </header>
+
+    <main>
+
+        <div class="controls">
+            <button type="button" data-action="export-tags">Export Data</button>
+            <button type="button" data-action="import-tags">Import Data</button>
+            <button type="button" data-action="copy-list">Copy List</button>
+        </div>
+
+        <div class="search">
+            <input id="search-bar" type="text" placeholder="Search...">
+        </div>
+
+        <div id="app"></div>
+
+    </main>
+
+    <footer id="footer">
+        <h1>Dexxie</h1>
+    </footer>
+
+    <script type="module" src="./index.mjs"></script>
+
+</body>
+</html>

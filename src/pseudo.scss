@@ -1,0 +1,53 @@
+
+//
+@mixin pseudo($display: block, $position: absolute, $content: '', $inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+
+    //
+    display: $display;
+    position: $position;
+
+    //
+    content: $content;
+
+    //
+    @if $inset != null {
+        inset: #{$inset};
+    }
+
+    //
+    @if $inset-block-start != null {
+        inset-block-start: #{$inset-block-start};
+    }
+
+    //
+    @if $inset-inline-start != null {
+        inset-inline-start: #{$inset-inline-start};
+    }
+
+    //
+    @if $inset-block-end != null {
+        inset-block-end: #{$inset-block-end};
+    }
+
+    //
+    @if $inset-inline-end != null {
+        inset-inline-end: #{$inset-inline-end};
+    }
+
+}
+
+//
+@mixin before($display: block, $position: absolute, $content: '', $inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+    &::before {
+        @include pseudo($display, $position, $content, $inset, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
+        @content;
+    }
+}
+
+//
+@mixin after($display: block, $position: absolute, $content: '', $inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+    &::after {
+        @include pseudo($display, $position, $content, $inset, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
+        @content;
+    }
+}

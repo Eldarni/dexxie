@@ -1,0 +1,29 @@
+
+//
+@use 'sass:list';
+
+//
+@function shine-stop($center, $width, $blend: 1) {
+    $b: $center - ($width / 2);
+    $e: $center + ($width / 2);
+    @return "transparent #{($b - $blend)}%, var(--stripe-colour) #{$b}%, var(--stripe-colour) #{$e}%, transparent #{($e + $blend)}%";
+}
+
+//
+@function generate-stripes($list) {
+
+    //
+    $shine-stops: ();
+    $shine-values: ( (25, 10), (65, 4), (75, 10) );
+
+    //
+    @each $pair in $shine-values {
+        $center: nth($pair, 1);
+        $width: nth($pair, 2);
+        $shine-stops: list.append($shine-stops, shine-stop($center, $width, 1), comma);
+    }
+
+    //
+    @return transparent 0%, #{$shine-stops}, transparent 100%;
+
+}
