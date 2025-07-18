@@ -245,6 +245,26 @@ main {
         //
         margin-block-end: 1rem;
 
+        //
+        button {
+
+            //
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            //
+            cursor: pointer;
+
+        }
+
+        //
+        button svg {
+            width: 1.2rem;
+            height: 1.2rem;
+            fill: var(--colour-foreground);
+        }
+
     }
 
     //

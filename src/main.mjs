@@ -28,7 +28,6 @@ document.getElementById('search-bar').addEventListener('input', debounceTrailing
 //
 function renderPokemonList(searchString = null) {
 
-
     //
     const taggedPokemon = getLocalStorageJSON('pokemon', {});
 
@@ -129,14 +128,13 @@ document.querySelector('button[data-action="copy-list"').addEventListener('click
 
     //
     if (!lastFilteredPokemon || lastFilteredPokemon.length === 0) {
-        alert('No Pokémon to copy!');
         return;
     }
 
     // Copy names as a newline-separated list
     const text = lastFilteredPokemon.map(p => p.name).join(', ');
     navigator.clipboard.writeText(text).then(() => {
-        alert('Pokémon list copied to clipboard!');
+        toast(`Copied!`, 'success', 3000);
     });
 
 });
