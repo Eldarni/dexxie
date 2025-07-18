@@ -6,6 +6,9 @@ import './style.scss';
 import pokemonData from './pokemon.json';
 
 //
+import { toast } from '../utilities/toaster.mjs';
+
+//
 import { getLocalStorageJSON, setLocalStorageJSON } from '../utilities/storage.mjs';
 import { exportPokemonData, importPokemonData } from './dataManager.mjs';
 import { debounceLeading, debounceTrailing } from '../utilities/debounce.mjs';

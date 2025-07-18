@@ -1,0 +1,144 @@
+
+//
+@use 'pseudo.scss' as *;
+
+//
+.toaster {
+
+    //options
+    --width: 35rem;
+    --height: 4.5rem;
+
+    //
+    position: absolute;
+
+    //
+    inset-block-end: 6rem;
+    inset-inline-end: 4.5rem;
+
+    //
+    &:has(:hover) .toast {
+        transform: translateY(calc(((var(--height) + 1rem) * -1) * var(--toasts-before))) scaleX(1);
+    }
+
+}
+
+//
+.toast {
+
+    //
+    position: absolute;
+    inset-inline-end: 0;
+
+    //
+    width: var(--width);
+    height: var(--height);
+
+    //
+    font-size: 1.5rem;
+
+    //
+    border: 0.1rem solid #767676;
+    border-radius: 0.1rem;
+
+    //
+    background: var(--colour-background);
+    color: var(--colour-foreground);
+
+    //
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    //
+    padding-inline: 1.5rem 0.7rem;
+
+    //
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+
+    //
+    transition: 300ms ease-out;
+
+    //calculate the offset and scale stuff so it appears that that head into the distance
+    transform: translateY(calc((-1rem) * var(--toasts-before))) scaleX(calc(-1 * var(--toasts-before) * 0.05 + 1));
+
+    //
+    @include before() {
+        inset-inline: 0;
+        inset-block-start: -1rem;
+        height: 1rem;
+    };
+
+    //
+    @include after() {
+        background-color: red;
+        inset-inline-start: 0;
+        inset-block-end: 0;
+        height: 0.2rem;
+        width: var(--progress);
+    };
+
+    //
+    .close {
+
+        //
+        all: unset;
+
+        //
+        opacity: 0;
+
+        //
+        cursor: pointer;
+
+        //
+        padding-inline: 1rem;
+
+        //
+        font-size: 2rem;
+
+        //
+        &:hover {
+            background-color: color-mix(in srgb, var(--colour-foreground), transparent 80%);
+        }
+
+    }
+
+    //
+    :is(&:not([data-duration]), &:hover) .close {
+        opacity: 1;
+    }
+
+}
+
+//toast variations
+.toast.default {
+    background: #323232;
+    border-color: #222;
+    @include after() {
+        background-color: #bdbdbd;
+    }
+}
+
+.toast.info {
+    background: #1976d2;
+    border-color: #0d47a1;
+    @include after() {
+        background-color: #64b5f6;
+    }
+}
+
+.toast.success {
+    background: #2e7d32;
+    border-color: #1b5e20;
+    @include after() {
+        background-color: #66bb6a;
+    }
+}
+
+.toast.error {
+    background: #c62828;
+    border-color: #8e0000;
+    @include after() {
+        background-color: #ef5350;
+    }
+}
