@@ -1,6 +1,6 @@
 
 //
-@mixin position($position: null, $inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+@mixin position($position: null, $inset: null, $inset-block: null, $inset-inline: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
 
     //
     @if $position != null {
@@ -10,6 +10,16 @@
     //
     @if $inset != null {
         inset: #{$inset};
+    }
+
+    //
+    @if $inset-block != null {
+        inset-block: #{$inset-block};
+    }
+
+    //
+    @if $inset-inline != null {
+        inset-inline: #{$inset-inline};
     }
 
     //
@@ -35,21 +45,21 @@
 }
 
 //
-@mixin relative($inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
-    @include position(relative, $inset, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
+@mixin relative($inset: null, $inset-block: null, $inset-inline: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+    @include position(relative, $inset, $inset-block, $inset-inline, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
 }
 
 //
-@mixin absolute($inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
-    @include position(absolute, $inset, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
+@mixin absolute($inset: null, $inset-block: null, $inset-inline: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+    @include position(absolute, $inset, $inset-block, $inset-inline, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
 }
 
 //
-@mixin fixed($inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
-    @include position(fixed, $inset, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
+@mixin fixed($inset: null, $inset-block: null, $inset-inline: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+    @include position(fixed, $inset, $inset-block, $inset-inline, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
 }
 
 //
-@mixin sticky($inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
-    @include position(sticky, $inset, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
+@mixin sticky($inset: null, $inset-block: null, $inset-inline: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+    @include position(sticky, $inset, $inset-block, $inset-inline, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
 }

@@ -1,6 +1,6 @@
 
 //
-@mixin pseudo($display: block, $position: absolute, $content: '', $inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+@mixin pseudo($display: block, $position: absolute, $content: '', $inset: null, $inset-block: null, $inset-inline: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
 
     //
     display: $display;
@@ -12,6 +12,16 @@
     //
     @if $inset != null {
         inset: #{$inset};
+    }
+
+    //
+    @if $inset-block != null {
+        inset-block: #{$inset-block};
+    }
+
+    //
+    @if $inset-inline != null {
+        inset-inline: #{$inset-inline};
     }
 
     //
@@ -37,17 +47,17 @@
 }
 
 //
-@mixin before($display: block, $position: absolute, $content: '', $inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+@mixin before($display: block, $position: absolute, $content: '', $inset: null, $inset-block: null, $inset-inline: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
     &::before {
-        @include pseudo($display, $position, $content, $inset, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
+        @include pseudo($display, $position, $content, $inset, $inset-block, $inset-inline, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
         @content;
     }
 }
 
 //
-@mixin after($display: block, $position: absolute, $content: '', $inset: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
+@mixin after($display: block, $position: absolute, $content: '', $inset: null, $inset-block: null, $inset-inline: null, $inset-block-start: null, $inset-inline-start: null, $inset-block-end: null, $inset-inline-end: null) {
     &::after {
-        @include pseudo($display, $position, $content, $inset, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
+        @include pseudo($display, $position, $content, $inset, $inset-block, $inset-inline, $inset-block-start, $inset-inline-start, $inset-block-end, $inset-inline-end);
         @content;
     }
 }
