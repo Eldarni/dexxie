@@ -15,7 +15,7 @@ import { debounceLeading, debounceTrailing } from '../utilities/debounce.mjs';
 import { filterPokemonBySearchString } from './pokemonFilter.mjs';
 
 //
-const app = document.getElementById('app');
+const grid = document.querySelector('.grid');
 
 //
 let lastFilteredPokemon = [];
@@ -47,7 +47,7 @@ function renderPokemonList(searchString = null) {
 
     //
     if (!filteredPokemon || !Array.isArray(filteredPokemon) || filteredPokemon.length === 0) {
-        app.innerHTML = '<p>No Pokémon found.</p>';
+        grid.innerHTML = '<p>No Pokémon found.</p>';
         return;
     }
 
@@ -55,7 +55,7 @@ function renderPokemonList(searchString = null) {
     const tags = getLocalStorageJSON('tags', ["owned", "shiny", "lucky", "nundo", "hundo", "shundo"]);
 
     //
-    app.innerText = '';
+    grid.innerText = '';
 
     //
     filteredPokemon.forEach(p => {
@@ -105,7 +105,7 @@ function renderPokemonList(searchString = null) {
         });
 
         //
-        app.append(wrapper);
+        grid.append(wrapper);
 
     });
 
@@ -140,7 +140,7 @@ document.querySelector('button[data-action="copy-list"').addEventListener('click
 });
 
 //
-app.addEventListener('click', debounceLeading(300, (event) => {
+grid.addEventListener('click', debounceLeading(300, (event) => {
 
     //
     if (event.target.dataset.action != 'toggle-tag') {
