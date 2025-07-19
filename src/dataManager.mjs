@@ -1,6 +1,7 @@
 
 //
 import { getLocalStorageJSON, setLocalStorageJSON } from '../utilities/storage.mjs';
+import { toast } from '../utilities/toaster.mjs';
 
 //
 export function exportPokemonData() {
@@ -66,10 +67,19 @@ export async function importPokemonData() {
                     setLocalStorageJSON('pokemon', importData);
 
                     //
+                    toast('Import successful!', 'success', 3000);
+
+                    //
                     resolve(true);
 
                 } catch (error) {
+
+                    //
+                    toast('Import failed.', 'error', -1);
+
+                    //
                     resolve(false);
+
                 } finally {
                     document.body.removeChild(input);
                 }
