@@ -3,16 +3,19 @@
 import './style.scss';
 
 //
-import pokemonData from './pokemon.json';
+import { toast } from '../utilities/toaster.mjs';
 
 //
-import { toast } from '../utilities/toaster.mjs';
+import { initializeAndMigrateStores, getCollections, getTags, getPokemon } from './store.mjs';
 
 //
 import { getLocalStorageJSON, setLocalStorageJSON } from '../utilities/storage.mjs';
 import { exportPokemonData, importPokemonData } from './dataManager.mjs';
 import { debounceLeading, debounceTrailing } from '../utilities/debounce.mjs';
 import { filterPokemonBySearchString } from './pokemonFilter.mjs';
+
+//
+initializeAndMigrateStores();
 
 //
 const grid = document.querySelector('.grid');
@@ -23,61 +26,6 @@ let currentCollection = 'national';
 //
 let lastFilteredPokemon = [];
 
-// Initialize default collections if they don't exist
-function initializeCollections() {
-    const collections = getLocalStorageJSON('collections', {
-        'national': {
-            name: 'National Dex',
-            description: 'All Pokémon in the National Pokédex',
-            searchString: ''
-        },
-        'kanto': {
-            name: 'Kanto (Red/Blue)',
-            description: 'Original 151 Pokémon from Kanto region',
-            searchString: 'kanto'
-        },
-        'johto': {
-            name: 'Johto (Gold/Silver)',
-            description: 'Pokémon from the Johto region',
-            searchString: 'johto'
-        },
-        'hoenn': {
-            name: 'Hoenn (Ruby/Sapphire)',
-            description: 'Pokémon from the Hoenn region',
-            searchString: 'hoenn'
-        },
-        'sinnoh': {
-            name: 'Sinnoh (Diamond/Pearl)',
-            description: 'Pokémon from the Sinnoh region',
-            searchString: 'sinnoh'
-        },
-        'paldea': {
-            name: 'Paldea (Scarlet/Violet)',
-            description: 'Pokémon from the Paldea region',
-            searchString: 'paldea'
-        },
-        'starters': {
-            name: 'Starters',
-            description: 'All starter Pokémon from every generation',
-            searchString: 'bulbasaur or charmander or squirtle or chikorita or cyndaquil or totodile or treecko or torchic or mudkip or turtwig or chimchar or piplup'
-        },
-        'legendaries': {
-            name: 'Legendaries',
-            description: 'Legendary or mythical Pokémon',
-            searchString: 'mewtwo or mew or lugia or ho-oh or celebi or kyogre or groudon or rayquaza or dialga or palkia or arceus or reshiram or zekrom or kyurem or xerneas or yveltal or zacian or zamazenta or koraidon or miraidon'
-        },
-        'favorites': {
-            name: 'My Favorites',
-            description: 'Your favorite Pokémon (customizable)',
-            searchString: 'pikachu or charizard or lucario'
-        }
-    });
-    return collections;
-}
-
-//
-initializeCollections();
-
 //
 document.getElementById('search-bar').addEventListener('input', debounceTrailing(300, (event) => {
     renderPokemonList(event.target.value);
@@ -86,28 +34,17 @@ document.getElementById('search-bar').addEventListener('input', debounceTrailing
 //
 function renderPokemonList(searchString = null) {
 
-    //
-    const taggedPokemon = getLocalStorageJSON('pokemon', {});
-
-    //
-    const allPokemon = pokemonData.map((pokemon) => {
-        if (taggedPokemon.hasOwnProperty(pokemon.name) && taggedPokemon[pokemon.name].length > 0) {
-            return { ...pokemon, "tags" : [ ...pokemon.tags, ...taggedPokemon[pokemon.name]]}
-        }
-        return pokemon;
-    });
-
     // Filter by collection first
-    let collectionFilteredPokemon = allPokemon;
+    let collectionFilteredPokemon = getPokemon();
 
-            //
-            const collections = getLocalStorageJSON('collections', {});
-            const currentCollectionData = collections[currentCollection];
+    //
+    const collections = getCollections();
+    const currentCollectionData = collections[currentCollection];
 
-            if (currentCollectionData && currentCollectionData.searchString) {
-                const searchString = currentCollectionData.searchString.toLowerCase();
-                collectionFilteredPokemon = filterPokemonBySearchString(collectionFilteredPokemon, searchString);
-            }
+    if (currentCollectionData && currentCollectionData.searchString) {
+        const searchString = currentCollectionData.searchString.toLowerCase();
+        collectionFilteredPokemon = filterPokemonBySearchString(collectionFilteredPokemon, searchString);
+    }
 
     //time to make the search
     const filteredPokemon = filterPokemonBySearchString(collectionFilteredPokemon, searchString);
@@ -122,7 +59,7 @@ function renderPokemonList(searchString = null) {
     }
 
     //
-    const tags = getLocalStorageJSON('tags', ["owned", "shiny", "lucky", "nundo", "hundo", "shundo"]);
+    const tags = getTags();
 
     //
     grid.innerText = '';
@@ -233,7 +170,7 @@ document.addEventListener('click', (e) => {
 dropdownMenu.addEventListener('click', (e) => {
     if (e.target.classList.contains('dropdown-item')) {
         const collection = e.target.dataset.collection;
-        const collections = getLocalStorageJSON('collections', {});
+        const collections = getCollections();
         const collectionData = collections[collection];
 
         if (collectionData) {
@@ -259,7 +196,7 @@ dropdownMenu.addEventListener('click', (e) => {
 
 // Function to populate dropdown with collections
 function populateDropdown() {
-    const collections = getLocalStorageJSON('collections', {});
+    const collections = getCollections();
     const dropdownMenu = document.querySelector('.dropdown-menu');
 
     // Clear existing items
@@ -278,7 +215,7 @@ function populateDropdown() {
 
 
 // Initialize collections and populate dropdown
-const collections = initializeCollections();
+const collections = getCollections();
 populateDropdown();
 
 // Set initial dropdown text
