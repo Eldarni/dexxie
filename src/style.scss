@@ -293,43 +293,6 @@ main {
         background-color: #4c4c4c;
 
         //
-        button {
-
-            //
-            @include relative();
-
-            //
-            height: 2.5em;
-
-            //
-            background-color: transparent;
-            border: none;
-
-            //
-            cursor: pointer;
-
-            //
-            margin: 0;
-            padding-inline-start: 2rem;
-
-            //add the caret
-            @include before($inset-inline-start: 0.4rem) {
-                content: '☰';
-            }
-
-            //
-            @include after($inset-block: 0, $inset-inline-end: -0.4rem) {
-                border-inline-end: 0.15rem solid #767676;
-            }
-
-            //
-            &:hover {
-                background-color: color-mix(in srgb, var(--colour-foreground), transparent 90%);
-            }
-
-        }
-
-        //
         input[type="search"] {
 
             //
@@ -351,6 +314,124 @@ main {
             font-size: 1.2em;
             color: var(--colour-foreground);
 
+        }
+
+        //
+        .dropdown {
+
+            //
+            position: relative;
+
+            //
+            .dropdown-toggle {
+
+                //
+                all: unset;
+
+                //
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                //
+                cursor: pointer;
+
+                //
+                padding: 0.5rem 1rem;
+
+                //
+                color: var(--colour-foreground);
+
+                //
+                transition: 0.1s;
+
+                //
+                .dropdown-arrow {
+                    fill: var(--colour-foreground);
+                }
+
+                //
+                &.active, &:hover {
+                    background-color: color-mix(in srgb, var(--colour-foreground), transparent 90%);
+                }
+
+            }
+
+            //
+            .dropdown-menu {
+
+                //
+                @include absolute($inset-block-start: 100%, $inset-inline-end: 0);
+
+                //
+                z-index: 1000;
+
+                //
+                background-color: var(--colour-background);
+
+                //
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border: 0.15rem solid #767676;
+                border-radius: 0.2rem;
+
+                //
+                opacity: 0;
+                visibility: hidden;
+
+                //
+                transform: translateY(-0.5rem);
+                transition: all 0.2s ease;
+
+                //
+                &.show {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+
+                //
+                .dropdown-item {
+
+                    //
+                    padding: 0.75rem 1rem;
+
+                    //
+                    color: var(--colour-foreground);
+
+                    //
+                    cursor: pointer;
+
+                    //
+                    border-bottom: 0.05rem solid #767676;
+
+                    //
+                    transition: background-color 0.1s ease;
+
+                    //
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    //
+                    &:hover {
+                        background-color: color-mix(in srgb, var(--colour-foreground), transparent 90%);
+                    }
+
+                    //
+                    &.active {
+
+                        //
+                        background-color: var(--colour-pokedex-red);
+                        color: var(--white);
+
+                        //
+                        &:hover {
+                            background-color: color-mix(in srgb, var(--colour-pokedex-red), var(--colour-foreground) 10%);
+                        }
+
+                    }
+                }
+            }
         }
 
     }
