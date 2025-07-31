@@ -6,7 +6,7 @@ import './style.scss';
 import { toast } from '../utilities/toaster.mjs';
 
 //
-import { initializeAndMigrateStores, getCollections, getTags, getPokemon, getCurrentCollection, setCurrentCollection } from './store.mjs';
+import { initializeAndMigrateStores, getCollections, getTags, getPokemon, getCurrentCollection, setCurrentCollection } from './common/store.mjs';
 
 //
 import { subscribe, emit } from '../utilities/events.mjs';
@@ -15,7 +15,7 @@ import { subscribe, emit } from '../utilities/events.mjs';
 import { getLocalStorageJSON, setLocalStorageJSON } from '../utilities/storage.mjs';
 import { exportPokemonData, importPokemonData } from './dataManager.mjs';
 import { debounceLeading, debounceTrailing } from '../utilities/debounce.mjs';
-import { filterPokemonBySearchString } from './pokemonFilter.mjs';
+import { filterPokemonBySearchString } from './common/pokemonFilter.mjs';
 
 //
 initializeAndMigrateStores();

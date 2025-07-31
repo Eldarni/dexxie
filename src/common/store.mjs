@@ -1,14 +1,14 @@
 //
-import { getLocalStorageJSON, setLocalStorageJSON } from '../utilities/storage.mjs';
+import { getLocalStorageJSON, setLocalStorageJSON } from '../../utilities/storage.mjs';
 
 //
-import { emit } from '../utilities/events.mjs';
+import { emit } from '../../utilities/events.mjs';
 
 //
 import { filterPokemonBySearchString } from './pokemonFilter.mjs';
 
 //
-import pokemonData from './pokemon.json';
+import pokemonData from '../pokemon.json';
 
 //
 let currentCollection = 'national';
@@ -69,7 +69,6 @@ export function initializeAndMigrateStores() {
 export function getCollections() {
     return getLocalStorageJSON('collections', {});
 }
-
 
 //
 export function setCurrentCollection(collection) {
