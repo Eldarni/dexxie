@@ -6,7 +6,10 @@ import './style.scss';
 import { toast } from '../utilities/toaster.mjs';
 
 //
-import { initializeAndMigrateStores, getCollections, getTags, getPokemon } from './store.mjs';
+import { initializeAndMigrateStores, getCollections, getTags, getPokemon, getCurrentCollection, setCurrentCollection } from './store.mjs';
+
+//
+import { subscribe, emit } from '../utilities/events.mjs';
 
 //
 import { getLocalStorageJSON, setLocalStorageJSON } from '../utilities/storage.mjs';
@@ -16,6 +19,9 @@ import { filterPokemonBySearchString } from './pokemonFilter.mjs';
 
 //
 initializeAndMigrateStores();
+
+//
+subscribe('pokemon-list-updated', () => renderPokemonList());
 
 //
 const grid = document.querySelector('.grid');
@@ -169,28 +175,29 @@ document.addEventListener('click', (e) => {
 // Handle collection selection
 dropdownMenu.addEventListener('click', (e) => {
     if (e.target.classList.contains('dropdown-item')) {
+
+        //
         const collection = e.target.dataset.collection;
-        const collections = getCollections();
-        const collectionData = collections[collection];
 
-        if (collectionData) {
-            // Update current collection
-            currentCollection = collection;
-            dropdownText.textContent = collectionData.name;
+        //
+        setCurrentCollection(collection);
 
-            // Update active state
-            dropdownMenu.querySelectorAll('.dropdown-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            e.target.classList.add('active');
+        //
+        const collectionData = getCurrentCollection();
 
-            // Close dropdown
-            dropdownToggle.classList.remove('active');
-            dropdownMenu.classList.remove('show');
+        // Update current collection
+        dropdownText.textContent = collectionData?.name;
 
-            // Re-render the list with new collection
-            renderPokemonList();
-        }
+        // Update active state
+        dropdownMenu.querySelectorAll('.dropdown-item').forEach(item => {
+            item.classList.remove('active');
+        });
+        e.target.classList.add('active');
+
+        // Close dropdown
+        dropdownToggle.classList.remove('active');
+        dropdownMenu.classList.remove('show');
+
     }
 });
 

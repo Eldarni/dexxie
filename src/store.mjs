@@ -2,6 +2,9 @@
 import { getLocalStorageJSON, setLocalStorageJSON } from '../utilities/storage.mjs';
 
 //
+import { emit } from '../utilities/events.mjs';
+
+//
 import { filterPokemonBySearchString } from './pokemonFilter.mjs';
 
 //
@@ -67,6 +70,18 @@ export function getCollections() {
     return getLocalStorageJSON('collections', {});
 }
 
+
+//
+export function setCurrentCollection(collection) {
+    currentCollection = collection;
+    emit('pokemon-list-updated', currentCollection);
+}
+
+//
+export function getCurrentCollection() {
+    return getCollections()[currentCollection];
+}
+
 //
 export function getTags() {
     return getLocalStorageJSON('tags', []);
@@ -87,6 +102,9 @@ export function getPokemon() {
     });
 
     //
-    return filterPokemonBySearchString(pokemon, '');
+    const currentCollectionData = getCurrentCollection();
+
+    //
+    return filterPokemonBySearchString(pokemon, currentCollectionData?.searchString);
 
 }
