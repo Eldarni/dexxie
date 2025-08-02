@@ -86,11 +86,42 @@ export function getTags() {
     return getLocalStorageJSON('tags', []);
 }
 
+//get the pokemon from the current collection
+export function togglePokemonTag(name, tag) {
+
+    //
+    const pokemon = getLocalStorageJSON(`${currentCollection}:pokemon`, {});
+
+    //
+    if (!pokemon[name]) {
+        pokemon[name] = [];
+    }
+
+    //
+    if (pokemon[name].includes(tag)) {
+        pokemon[name] = pokemon[name].filter(t => t !== tag);
+    } else {
+        pokemon[name].push(tag);
+    }
+
+    //
+    if (pokemon[name].length === 0) {
+        delete pokemon[name];
+    }
+
+    //
+    setLocalStorageJSON(`${currentCollection}:pokemon`, pokemon);
+
+    //
+    return pokemon[name]?.includes(tag);
+
+}
+
 //
 export function getPokemon() {
 
     //
-    const taggedPokemon = getLocalStorageJSON('pokemon', {});
+    const taggedPokemon = getLocalStorageJSON(`${currentCollection}:pokemon`, {});
 
     //
     const pokemon = pokemonData.map((pokemon) => {

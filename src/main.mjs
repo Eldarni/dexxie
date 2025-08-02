@@ -6,13 +6,12 @@ import './style.scss';
 import { toast } from '../utilities/toaster.mjs';
 
 //
-import { initializeAndMigrateStores, getCollections, getTags, getPokemon, getCurrentCollection, setCurrentCollection } from './common/store.mjs';
+import { initializeAndMigrateStores, getCollections, getCurrentCollection, setCurrentCollection, togglePokemonTag } from './common/store.mjs';
 
 //
 import { subscribe, emit } from '../utilities/events.mjs';
 
 //
-import { getLocalStorageJSON, setLocalStorageJSON } from '../utilities/storage.mjs';
 import { exportPokemonData, importPokemonData } from './dataManager.mjs';
 import { debounceLeading, debounceTrailing } from '../utilities/debounce.mjs';
 
@@ -38,7 +37,6 @@ let lastFilteredPokemon = [];
 document.getElementById('search-bar').addEventListener('input', debounceTrailing(300, (event) => {
     renderPokemonList(event.target.value);
 }));
-
 
 //
 renderPokemonList();
@@ -163,32 +161,14 @@ grid.addEventListener('click', debounceLeading(300, (event) => {
 
     //
     const name = event.target.closest('.pokemon').dataset.name;
+
+    //
     const tag = event.target.dataset.tag;
 
     //
-    const pokemon = getLocalStorageJSON('pokemon', {});
+    const isTagged = togglePokemonTag(name, tag);
 
     //
-    if (!pokemon[name]) {
-        pokemon[name] = [];
-    }
-
-    //
-    if (pokemon[name].includes(tag)) {
-        pokemon[name] = pokemon[name].filter(t => t !== tag);
-    } else {
-        pokemon[name].push(tag);
-    }
-
-    //
-    if (pokemon[name].length === 0) {
-        delete pokemon[name];
-    }
-
-    //
-    setLocalStorageJSON('pokemon', pokemon);
-
-    //
-    event.target.setAttribute('data-state', ((pokemon[name]?.includes(tag)) ? 1 : 0));
+    event.target.setAttribute('data-state', (isTagged ? 1 : 0));
 
 }));
