@@ -5,7 +5,7 @@ import { getLocalStorageJSON, setLocalStorageJSON } from '../../utilities/storag
 import { emit } from '../../utilities/events.mjs';
 
 //
-import { filterPokemonBySearchString } from './pokemonFilter.mjs';
+import { filterPokemonBySearchString } from './filterPokemonBySearchString.mjs';
 
 //
 import pokemonData from '../pokemon.json';

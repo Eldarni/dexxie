@@ -3,7 +3,7 @@
 import { getTags, getPokemon } from './store.mjs';
 
 //
-import { filterPokemonBySearchString } from './pokemonFilter.mjs';
+import { filterPokemonBySearchString } from './filterPokemonBySearchString.mjs';
 
 //
 export function renderPokemonList(searchString = null) {
