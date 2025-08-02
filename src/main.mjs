@@ -6,13 +6,15 @@ import './style.scss';
 import { toast } from '../utilities/toaster.mjs';
 
 //
-import { initializeAndMigrateStores, getCollections, getCurrentCollection, setCurrentCollection, togglePokemonTag } from './common/store.mjs';
+import { initializeAndMigrateStores, getCollections, getCurrentCollectionData, setCurrentCollection, togglePokemonTag } from './common/store.mjs';
 
 //
 import { subscribe, emit } from '../utilities/events.mjs';
 
 //
-import { exportPokemonData, importPokemonData } from './dataManager.mjs';
+import { exportPokemonData } from './common/exportPokemonData.mjs';
+import { importPokemonData } from './common/importPokemonData.mjs';
+
 import { debounceLeading, debounceTrailing } from '../utilities/debounce.mjs';
 
 //
@@ -43,12 +45,7 @@ renderPokemonList();
 
 // Handle export and import buttons
 document.querySelector('button[data-action="export-tags"').addEventListener('click', exportPokemonData);
-document.querySelector('button[data-action="import-tags"').addEventListener('click', async () => {
-    const didImport = await importPokemonData();
-    if (didImport) {
-        renderPokemonList();
-    }
-});
+document.querySelector('button[data-action="import-tags"').addEventListener('click', importPokemonData);
 
 // Handle copy list button
 document.querySelector('button[data-action="copy-list"').addEventListener('click', () => {

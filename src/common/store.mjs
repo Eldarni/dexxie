@@ -71,13 +71,18 @@ export function getCollections() {
 }
 
 //
+export function getCurrentCollection() {
+    return currentCollection;
+}
+
+//
 export function setCurrentCollection(collection) {
     currentCollection = collection;
     emit('pokemon-list-updated', currentCollection);
 }
 
 //
-export function getCurrentCollection() {
+export function getCurrentCollectionData() {
     return getCollections()[currentCollection];
 }
 
