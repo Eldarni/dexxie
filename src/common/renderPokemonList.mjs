@@ -21,16 +21,16 @@ export function renderPokemonList(searchString = null) {
     const tags = getTags();
 
     //
-    const grid = document.querySelector('.grid');
+    const results = document.querySelector('[data-name="pokemon-results"]');
 
     //
     if (!filteredPokemon || !Array.isArray(filteredPokemon) || filteredPokemon.length === 0) {
-        grid.innerHTML = '<p>No Pokémon found.</p>';
+        results.innerHTML = '<p>No Pokémon found.</p>';
         return;
     }
 
     //
-    grid.innerText = '';
+    results.innerText = '';
 
     //
     filteredPokemon.forEach(p => {
@@ -80,7 +80,7 @@ export function renderPokemonList(searchString = null) {
         });
 
         //
-        grid.append(wrapper);
+        results.append(wrapper);
 
     });
 

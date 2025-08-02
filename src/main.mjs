@@ -27,9 +27,6 @@ initializeAndMigrateStores();
 subscribe('pokemon-list-updated', () => renderPokemonList());
 
 //
-const grid = document.querySelector('.grid');
-
-//
 let currentCollection = 'national';
 
 //
@@ -149,7 +146,7 @@ if (initialActiveItem) {
 }
 
 //
-grid.addEventListener('click', debounceLeading(300, (event) => {
+document.querySelector('[data-name="pokemon-results"]').addEventListener('click', debounceLeading(300, (event) => {
 
     //
     if (event.target.dataset.action != 'toggle-tag') {
