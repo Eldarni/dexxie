@@ -38,7 +38,7 @@ export function renderPokemonList(searchString = null) {
         //
         const wrapper = document.createElement('div');
         wrapper.className = 'pokemon';
-        wrapper.dataset.name = p.name;
+        wrapper.dataset.id = p.id;
 
         //
         const number = document.createElement('div');
@@ -48,7 +48,7 @@ export function renderPokemonList(searchString = null) {
         //
         const name = document.createElement('div');
         name.className = 'name';
-        name.textContent = p.name;
+        name.textContent = p.name.en;
 
         //
         const buttons = document.createElement('div');

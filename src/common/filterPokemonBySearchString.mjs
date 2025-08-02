@@ -120,7 +120,7 @@ function evalBooleanExpr(node, pokemon) {
         case 'family':
             return node.value.includes(pokemon.family);
         case 'name':
-            return pokemon.name.startsWith(node.value);
+            return pokemon.name.en.toLowerCase().startsWith(node.value.toLowerCase());
         case 'and':
             return evalBooleanExpr(node.left, pokemon) && evalBooleanExpr(node.right, pokemon);
         case 'or':
@@ -149,8 +149,7 @@ export function filterPokemonBySearchString(pokemon, searchString) {
     const tokens = getTokens(searchString, tags).map((token) => {
         if (token.type === 'family') {
             return { ...token, value: Array.from(pokemon.reduce((a, c) => {
-                if (c.name.toLowerCase().startsWith(token.value)) {
-                    console.log(c.family);
+                if (c.name.en.toLowerCase().startsWith(token.value.toLowerCase())) {
                     a.add(c.family);
                 }
                 return a;

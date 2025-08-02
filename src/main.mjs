@@ -53,7 +53,7 @@ document.querySelector('button[data-action="copy-list"').addEventListener('click
     }
 
     // Copy names as a newline-separated list
-    const text = lastFilteredPokemon.map(p => p.name).join(', ');
+    const text = lastFilteredPokemon.map(p => p.id).join(', ');
     navigator.clipboard.writeText(text).then(() => {
         toast(`Copied!`, 'success', 3000);
     });
@@ -154,13 +154,13 @@ document.querySelector('[data-name="pokemon-results"]').addEventListener('click'
     }
 
     //
-    const name = event.target.closest('.pokemon').dataset.name;
+    const id = event.target.closest('.pokemon').dataset.id;
 
     //
     const tag = event.target.dataset.tag;
 
     //
-    const isTagged = togglePokemonTag(name, tag);
+    const isTagged = togglePokemonTag(id, tag);
 
     //
     event.target.setAttribute('data-state', (isTagged ? 1 : 0));
