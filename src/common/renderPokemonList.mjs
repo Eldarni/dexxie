@@ -43,7 +43,7 @@ export function renderPokemonList(searchString = null) {
         //
         const number = document.createElement('div');
         number.className = 'number';
-        number.innerHTML = `<span>#${'0'.repeat(4 - String(p.nationalDex).length)}</span>${p.nationalDex}`;
+        number.innerHTML = `<span>#${'0'.repeat(4 - String(p.number).length)}</span>${p.number}`;
 
         //
         const name = document.createElement('div');
