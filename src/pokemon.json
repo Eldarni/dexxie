@@ -6,7 +6,9 @@
       "en": "Bulbasaur"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "poison"
     ],
     "family": "bulbasaur"
   },
@@ -17,7 +19,9 @@
       "en": "Ivysaur"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "poison"
     ],
     "family": "bulbasaur"
   },
@@ -28,7 +32,9 @@
       "en": "Venusaur"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "poison"
     ],
     "family": "bulbasaur"
   },
@@ -39,6 +45,7 @@
       "en": "Charmander"
     },
     "tags": [
+      "fire",
       "kanto"
     ],
     "family": "charmander"
@@ -50,6 +57,7 @@
       "en": "Charmeleon"
     },
     "tags": [
+      "fire",
       "kanto"
     ],
     "family": "charmander"
@@ -61,6 +69,8 @@
       "en": "Charizard"
     },
     "tags": [
+      "fire",
+      "flying",
       "kanto"
     ],
     "family": "charmander"
@@ -72,7 +82,8 @@
       "en": "Squirtle"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "squirtle"
   },
@@ -83,7 +94,8 @@
       "en": "Wartortle"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "squirtle"
   },
@@ -94,7 +106,8 @@
       "en": "Blastoise"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "squirtle"
   },
@@ -105,6 +118,7 @@
       "en": "Caterpie"
     },
     "tags": [
+      "bug",
       "kanto"
     ],
     "family": "caterpie"
@@ -116,6 +130,7 @@
       "en": "Metapod"
     },
     "tags": [
+      "bug",
       "kanto"
     ],
     "family": "caterpie"
@@ -127,6 +142,8 @@
       "en": "Butterfree"
     },
     "tags": [
+      "bug",
+      "flying",
       "kanto"
     ],
     "family": "caterpie"
@@ -138,7 +155,9 @@
       "en": "Weedle"
     },
     "tags": [
-      "kanto"
+      "bug",
+      "kanto",
+      "poison"
     ],
     "family": "weedle"
   },
@@ -149,7 +168,9 @@
       "en": "Kakuna"
     },
     "tags": [
-      "kanto"
+      "bug",
+      "kanto",
+      "poison"
     ],
     "family": "weedle"
   },
@@ -160,7 +181,9 @@
       "en": "Beedrill"
     },
     "tags": [
-      "kanto"
+      "bug",
+      "kanto",
+      "poison"
     ],
     "family": "weedle"
   },
@@ -171,7 +194,9 @@
       "en": "Pidgey"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "normal"
     ],
     "family": "pidgey"
   },
@@ -182,7 +207,9 @@
       "en": "Pidgeotto"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "normal"
     ],
     "family": "pidgey"
   },
@@ -193,7 +220,9 @@
       "en": "Pidgeot"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "normal"
     ],
     "family": "pidgey"
   },
@@ -204,7 +233,8 @@
       "en": "Rattata"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "rattata"
   },
@@ -215,7 +245,8 @@
       "en": "Raticate"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "rattata"
   },
@@ -226,7 +257,9 @@
       "en": "Spearow"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "normal"
     ],
     "family": "spearow"
   },
@@ -237,7 +270,9 @@
       "en": "Fearow"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "normal"
     ],
     "family": "spearow"
   },
@@ -248,7 +283,8 @@
       "en": "Ekans"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison"
     ],
     "family": "ekans"
   },
@@ -259,7 +295,8 @@
       "en": "Arbok"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison"
     ],
     "family": "ekans"
   },
@@ -270,6 +307,7 @@
       "en": "Pikachu"
     },
     "tags": [
+      "electric",
       "kanto"
     ],
     "family": "pichu"
@@ -281,6 +319,7 @@
       "en": "Raichu"
     },
     "tags": [
+      "electric",
       "kanto"
     ],
     "family": "pichu"
@@ -292,6 +331,7 @@
       "en": "Sandshrew"
     },
     "tags": [
+      "ground",
       "kanto"
     ],
     "family": "sandshrew"
@@ -303,6 +343,7 @@
       "en": "Sandslash"
     },
     "tags": [
+      "ground",
       "kanto"
     ],
     "family": "sandshrew"
@@ -311,12 +352,13 @@
     "id": "nidoran-f",
     "number": 29,
     "name": {
-      "en": "Nidoran ♀"
+      "en": "Nidoran♀"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison"
     ],
-    "family": "nidoranf"
+    "family": "nidoran-f"
   },
   {
     "id": "nidorina",
@@ -325,9 +367,10 @@
       "en": "Nidorina"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison"
     ],
-    "family": "nidoranf"
+    "family": "nidoran-f"
   },
   {
     "id": "nidoqueen",
@@ -336,20 +379,23 @@
       "en": "Nidoqueen"
     },
     "tags": [
-      "kanto"
+      "ground",
+      "kanto",
+      "poison"
     ],
-    "family": "nidoranf"
+    "family": "nidoran-f"
   },
   {
     "id": "nidoran-m",
     "number": 32,
     "name": {
-      "en": "Nidoran ♂"
+      "en": "Nidoran♂"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison"
     ],
-    "family": "nidoranm"
+    "family": "nidoran-m"
   },
   {
     "id": "nidorino",
@@ -358,9 +404,10 @@
       "en": "Nidorino"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison"
     ],
-    "family": "nidoranm"
+    "family": "nidoran-m"
   },
   {
     "id": "nidoking",
@@ -369,9 +416,11 @@
       "en": "Nidoking"
     },
     "tags": [
-      "kanto"
+      "ground",
+      "kanto",
+      "poison"
     ],
-    "family": "nidoranm"
+    "family": "nidoran-m"
   },
   {
     "id": "clefairy",
@@ -380,6 +429,7 @@
       "en": "Clefairy"
     },
     "tags": [
+      "fairy",
       "kanto"
     ],
     "family": "cleffa"
@@ -391,6 +441,7 @@
       "en": "Clefable"
     },
     "tags": [
+      "fairy",
       "kanto"
     ],
     "family": "cleffa"
@@ -402,6 +453,7 @@
       "en": "Vulpix"
     },
     "tags": [
+      "fire",
       "kanto"
     ],
     "family": "vulpix"
@@ -413,6 +465,7 @@
       "en": "Ninetales"
     },
     "tags": [
+      "fire",
       "kanto"
     ],
     "family": "vulpix"
@@ -424,7 +477,9 @@
       "en": "Jigglypuff"
     },
     "tags": [
-      "kanto"
+      "fairy",
+      "kanto",
+      "normal"
     ],
     "family": "igglybuff"
   },
@@ -435,7 +490,9 @@
       "en": "Wigglytuff"
     },
     "tags": [
-      "kanto"
+      "fairy",
+      "kanto",
+      "normal"
     ],
     "family": "igglybuff"
   },
@@ -446,7 +503,9 @@
       "en": "Zubat"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "poison"
     ],
     "family": "zubat"
   },
@@ -457,7 +516,9 @@
       "en": "Golbat"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "poison"
     ],
     "family": "zubat"
   },
@@ -468,7 +529,9 @@
       "en": "Oddish"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "poison"
     ],
     "family": "oddish"
   },
@@ -479,7 +542,9 @@
       "en": "Gloom"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "poison"
     ],
     "family": "oddish"
   },
@@ -490,7 +555,9 @@
       "en": "Vileplume"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "poison"
     ],
     "family": "oddish"
   },
@@ -501,6 +568,8 @@
       "en": "Paras"
     },
     "tags": [
+      "bug",
+      "grass",
       "kanto"
     ],
     "family": "paras"
@@ -512,6 +581,8 @@
       "en": "Parasect"
     },
     "tags": [
+      "bug",
+      "grass",
       "kanto"
     ],
     "family": "paras"
@@ -523,7 +594,9 @@
       "en": "Venonat"
     },
     "tags": [
-      "kanto"
+      "bug",
+      "kanto",
+      "poison"
     ],
     "family": "venonat"
   },
@@ -534,7 +607,9 @@
       "en": "Venomoth"
     },
     "tags": [
-      "kanto"
+      "bug",
+      "kanto",
+      "poison"
     ],
     "family": "venonat"
   },
@@ -545,6 +620,7 @@
       "en": "Diglett"
     },
     "tags": [
+      "ground",
       "kanto"
     ],
     "family": "diglett"
@@ -556,6 +632,7 @@
       "en": "Dugtrio"
     },
     "tags": [
+      "ground",
       "kanto"
     ],
     "family": "diglett"
@@ -567,7 +644,8 @@
       "en": "Meowth"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "meowth"
   },
@@ -578,7 +656,8 @@
       "en": "Persian"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "meowth"
   },
@@ -589,7 +668,8 @@
       "en": "Psyduck"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "psyduck"
   },
@@ -600,7 +680,8 @@
       "en": "Golduck"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "psyduck"
   },
@@ -611,6 +692,7 @@
       "en": "Mankey"
     },
     "tags": [
+      "fighting",
       "kanto"
     ],
     "family": "mankey"
@@ -622,6 +704,7 @@
       "en": "Primeape"
     },
     "tags": [
+      "fighting",
       "kanto"
     ],
     "family": "mankey"
@@ -633,6 +716,7 @@
       "en": "Growlithe"
     },
     "tags": [
+      "fire",
       "kanto"
     ],
     "family": "growlithe"
@@ -644,6 +728,7 @@
       "en": "Arcanine"
     },
     "tags": [
+      "fire",
       "kanto"
     ],
     "family": "growlithe"
@@ -655,7 +740,8 @@
       "en": "Poliwag"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "poliwag"
   },
@@ -666,7 +752,8 @@
       "en": "Poliwhirl"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "poliwag"
   },
@@ -677,7 +764,9 @@
       "en": "Poliwrath"
     },
     "tags": [
-      "kanto"
+      "fighting",
+      "kanto",
+      "water"
     ],
     "family": "poliwag"
   },
@@ -688,7 +777,8 @@
       "en": "Abra"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "psychic"
     ],
     "family": "abra"
   },
@@ -699,7 +789,8 @@
       "en": "Kadabra"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "psychic"
     ],
     "family": "abra"
   },
@@ -710,7 +801,8 @@
       "en": "Alakazam"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "psychic"
     ],
     "family": "abra"
   },
@@ -721,6 +813,7 @@
       "en": "Machop"
     },
     "tags": [
+      "fighting",
       "kanto"
     ],
     "family": "machop"
@@ -732,6 +825,7 @@
       "en": "Machoke"
     },
     "tags": [
+      "fighting",
       "kanto"
     ],
     "family": "machop"
@@ -743,6 +837,7 @@
       "en": "Machamp"
     },
     "tags": [
+      "fighting",
       "kanto"
     ],
     "family": "machop"
@@ -754,7 +849,9 @@
       "en": "Bellsprout"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "poison"
     ],
     "family": "bellsprout"
   },
@@ -765,7 +862,9 @@
       "en": "Weepinbell"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "poison"
     ],
     "family": "bellsprout"
   },
@@ -776,7 +875,9 @@
       "en": "Victreebel"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "poison"
     ],
     "family": "bellsprout"
   },
@@ -787,7 +888,9 @@
       "en": "Tentacool"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison",
+      "water"
     ],
     "family": "tentacool"
   },
@@ -798,7 +901,9 @@
       "en": "Tentacruel"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison",
+      "water"
     ],
     "family": "tentacool"
   },
@@ -809,7 +914,9 @@
       "en": "Geodude"
     },
     "tags": [
-      "kanto"
+      "ground",
+      "kanto",
+      "rock"
     ],
     "family": "geodude"
   },
@@ -820,7 +927,9 @@
       "en": "Graveler"
     },
     "tags": [
-      "kanto"
+      "ground",
+      "kanto",
+      "rock"
     ],
     "family": "geodude"
   },
@@ -831,7 +940,9 @@
       "en": "Golem"
     },
     "tags": [
-      "kanto"
+      "ground",
+      "kanto",
+      "rock"
     ],
     "family": "geodude"
   },
@@ -842,6 +953,7 @@
       "en": "Ponyta"
     },
     "tags": [
+      "fire",
       "kanto"
     ],
     "family": "ponyta"
@@ -853,6 +965,7 @@
       "en": "Rapidash"
     },
     "tags": [
+      "fire",
       "kanto"
     ],
     "family": "ponyta"
@@ -864,7 +977,9 @@
       "en": "Slowpoke"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "psychic",
+      "water"
     ],
     "family": "slowpoke"
   },
@@ -875,7 +990,9 @@
       "en": "Slowbro"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "psychic",
+      "water"
     ],
     "family": "slowpoke"
   },
@@ -886,7 +1003,9 @@
       "en": "Magnemite"
     },
     "tags": [
-      "kanto"
+      "electric",
+      "kanto",
+      "steel"
     ],
     "family": "magnemite"
   },
@@ -897,7 +1016,9 @@
       "en": "Magneton"
     },
     "tags": [
-      "kanto"
+      "electric",
+      "kanto",
+      "steel"
     ],
     "family": "magnemite"
   },
@@ -905,10 +1026,12 @@
     "id": "farfetchd",
     "number": 83,
     "name": {
-      "en": "Farfetchd"
+      "en": "Farfetch’d"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "normal"
     ],
     "family": "farfetchd"
   },
@@ -919,7 +1042,9 @@
       "en": "Doduo"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "normal"
     ],
     "family": "doduo"
   },
@@ -930,7 +1055,9 @@
       "en": "Dodrio"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "normal"
     ],
     "family": "doduo"
   },
@@ -941,7 +1068,8 @@
       "en": "Seel"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "seel"
   },
@@ -952,7 +1080,9 @@
       "en": "Dewgong"
     },
     "tags": [
-      "kanto"
+      "ice",
+      "kanto",
+      "water"
     ],
     "family": "seel"
   },
@@ -963,7 +1093,8 @@
       "en": "Grimer"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison"
     ],
     "family": "grimer"
   },
@@ -974,7 +1105,8 @@
       "en": "Muk"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison"
     ],
     "family": "grimer"
   },
@@ -985,7 +1117,8 @@
       "en": "Shellder"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "shellder"
   },
@@ -996,7 +1129,9 @@
       "en": "Cloyster"
     },
     "tags": [
-      "kanto"
+      "ice",
+      "kanto",
+      "water"
     ],
     "family": "shellder"
   },
@@ -1007,7 +1142,9 @@
       "en": "Gastly"
     },
     "tags": [
-      "kanto"
+      "ghost",
+      "kanto",
+      "poison"
     ],
     "family": "gastly"
   },
@@ -1018,7 +1155,9 @@
       "en": "Haunter"
     },
     "tags": [
-      "kanto"
+      "ghost",
+      "kanto",
+      "poison"
     ],
     "family": "gastly"
   },
@@ -1029,7 +1168,9 @@
       "en": "Gengar"
     },
     "tags": [
-      "kanto"
+      "ghost",
+      "kanto",
+      "poison"
     ],
     "family": "gastly"
   },
@@ -1040,7 +1181,9 @@
       "en": "Onix"
     },
     "tags": [
-      "kanto"
+      "ground",
+      "kanto",
+      "rock"
     ],
     "family": "onix"
   },
@@ -1051,7 +1194,8 @@
       "en": "Drowzee"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "psychic"
     ],
     "family": "drowzee"
   },
@@ -1062,7 +1206,8 @@
       "en": "Hypno"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "psychic"
     ],
     "family": "drowzee"
   },
@@ -1073,7 +1218,8 @@
       "en": "Krabby"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "krabby"
   },
@@ -1084,7 +1230,8 @@
       "en": "Kingler"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "krabby"
   },
@@ -1095,6 +1242,7 @@
       "en": "Voltorb"
     },
     "tags": [
+      "electric",
       "kanto"
     ],
     "family": "voltorb"
@@ -1106,6 +1254,7 @@
       "en": "Electrode"
     },
     "tags": [
+      "electric",
       "kanto"
     ],
     "family": "voltorb"
@@ -1117,7 +1266,9 @@
       "en": "Exeggcute"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "psychic"
     ],
     "family": "exeggcute"
   },
@@ -1128,7 +1279,9 @@
       "en": "Exeggutor"
     },
     "tags": [
-      "kanto"
+      "grass",
+      "kanto",
+      "psychic"
     ],
     "family": "exeggcute"
   },
@@ -1139,6 +1292,7 @@
       "en": "Cubone"
     },
     "tags": [
+      "ground",
       "kanto"
     ],
     "family": "cubone"
@@ -1150,6 +1304,7 @@
       "en": "Marowak"
     },
     "tags": [
+      "ground",
       "kanto"
     ],
     "family": "cubone"
@@ -1161,6 +1316,7 @@
       "en": "Hitmonlee"
     },
     "tags": [
+      "fighting",
       "kanto"
     ],
     "family": "tyrogue"
@@ -1172,6 +1328,7 @@
       "en": "Hitmonchan"
     },
     "tags": [
+      "fighting",
       "kanto"
     ],
     "family": "tyrogue"
@@ -1183,7 +1340,8 @@
       "en": "Lickitung"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "lickitung"
   },
@@ -1194,7 +1352,8 @@
       "en": "Koffing"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison"
     ],
     "family": "koffing"
   },
@@ -1205,7 +1364,8 @@
       "en": "Weezing"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "poison"
     ],
     "family": "koffing"
   },
@@ -1216,7 +1376,9 @@
       "en": "Rhyhorn"
     },
     "tags": [
-      "kanto"
+      "ground",
+      "kanto",
+      "rock"
     ],
     "family": "rhyhorn"
   },
@@ -1227,7 +1389,9 @@
       "en": "Rhydon"
     },
     "tags": [
-      "kanto"
+      "ground",
+      "kanto",
+      "rock"
     ],
     "family": "rhyhorn"
   },
@@ -1238,7 +1402,8 @@
       "en": "Chansey"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "happiny"
   },
@@ -1249,6 +1414,7 @@
       "en": "Tangela"
     },
     "tags": [
+      "grass",
       "kanto"
     ],
     "family": "tangela"
@@ -1260,7 +1426,8 @@
       "en": "Kangaskhan"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "kangaskhan"
   },
@@ -1271,7 +1438,8 @@
       "en": "Horsea"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "horsea"
   },
@@ -1282,7 +1450,8 @@
       "en": "Seadra"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "horsea"
   },
@@ -1293,7 +1462,8 @@
       "en": "Goldeen"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "goldeen"
   },
@@ -1304,7 +1474,8 @@
       "en": "Seaking"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "goldeen"
   },
@@ -1315,7 +1486,8 @@
       "en": "Staryu"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "staryu"
   },
@@ -1326,7 +1498,9 @@
       "en": "Starmie"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "psychic",
+      "water"
     ],
     "family": "staryu"
   },
@@ -1334,12 +1508,14 @@
     "id": "mr-mime",
     "number": 122,
     "name": {
-      "en": "Mr Mime"
+      "en": "Mr. Mime"
     },
     "tags": [
-      "kanto"
+      "fairy",
+      "kanto",
+      "psychic"
     ],
-    "family": "mimejr"
+    "family": "mime-jr"
   },
   {
     "id": "scyther",
@@ -1348,6 +1524,8 @@
       "en": "Scyther"
     },
     "tags": [
+      "bug",
+      "flying",
       "kanto"
     ],
     "family": "scyther"
@@ -1359,7 +1537,9 @@
       "en": "Jynx"
     },
     "tags": [
-      "kanto"
+      "ice",
+      "kanto",
+      "psychic"
     ],
     "family": "smoochum"
   },
@@ -1370,6 +1550,7 @@
       "en": "Electabuzz"
     },
     "tags": [
+      "electric",
       "kanto"
     ],
     "family": "elekid"
@@ -1381,6 +1562,7 @@
       "en": "Magmar"
     },
     "tags": [
+      "fire",
       "kanto"
     ],
     "family": "magby"
@@ -1392,6 +1574,7 @@
       "en": "Pinsir"
     },
     "tags": [
+      "bug",
       "kanto"
     ],
     "family": "pinsir"
@@ -1403,7 +1586,8 @@
       "en": "Tauros"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "tauros"
   },
@@ -1414,7 +1598,8 @@
       "en": "Magikarp"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "magikarp"
   },
@@ -1425,7 +1610,9 @@
       "en": "Gyarados"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "water"
     ],
     "family": "magikarp"
   },
@@ -1436,7 +1623,9 @@
       "en": "Lapras"
     },
     "tags": [
-      "kanto"
+      "ice",
+      "kanto",
+      "water"
     ],
     "family": "lapras"
   },
@@ -1447,7 +1636,8 @@
       "en": "Ditto"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "ditto"
   },
@@ -1458,7 +1648,8 @@
       "en": "Eevee"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "eevee"
   },
@@ -1469,7 +1660,8 @@
       "en": "Vaporeon"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "water"
     ],
     "family": "eevee"
   },
@@ -1480,6 +1672,7 @@
       "en": "Jolteon"
     },
     "tags": [
+      "electric",
       "kanto"
     ],
     "family": "eevee"
@@ -1491,6 +1684,7 @@
       "en": "Flareon"
     },
     "tags": [
+      "fire",
       "kanto"
     ],
     "family": "eevee"
@@ -1502,7 +1696,8 @@
       "en": "Porygon"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "porygon"
   },
@@ -1513,7 +1708,9 @@
       "en": "Omanyte"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "rock",
+      "water"
     ],
     "family": "omanyte"
   },
@@ -1524,7 +1721,9 @@
       "en": "Omastar"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "rock",
+      "water"
     ],
     "family": "omanyte"
   },
@@ -1535,7 +1734,9 @@
       "en": "Kabuto"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "rock",
+      "water"
     ],
     "family": "kabuto"
   },
@@ -1546,7 +1747,9 @@
       "en": "Kabutops"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "rock",
+      "water"
     ],
     "family": "kabuto"
   },
@@ -1557,7 +1760,9 @@
       "en": "Aerodactyl"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "kanto",
+      "rock"
     ],
     "family": "aerodactyl"
   },
@@ -1568,7 +1773,8 @@
       "en": "Snorlax"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "normal"
     ],
     "family": "munchlax"
   },
@@ -1579,7 +1785,10 @@
       "en": "Articuno"
     },
     "tags": [
-      "kanto"
+      "flying",
+      "ice",
+      "kanto",
+      "legendary"
     ],
     "family": "articuno"
   },
@@ -1590,7 +1799,10 @@
       "en": "Zapdos"
     },
     "tags": [
-      "kanto"
+      "electric",
+      "flying",
+      "kanto",
+      "legendary"
     ],
     "family": "zapdos"
   },
@@ -1601,7 +1813,10 @@
       "en": "Moltres"
     },
     "tags": [
-      "kanto"
+      "fire",
+      "flying",
+      "kanto",
+      "legendary"
     ],
     "family": "moltres"
   },
@@ -1612,6 +1827,7 @@
       "en": "Dratini"
     },
     "tags": [
+      "dragon",
       "kanto"
     ],
     "family": "dratini"
@@ -1623,6 +1839,7 @@
       "en": "Dragonair"
     },
     "tags": [
+      "dragon",
       "kanto"
     ],
     "family": "dratini"
@@ -1634,6 +1851,8 @@
       "en": "Dragonite"
     },
     "tags": [
+      "dragon",
+      "flying",
       "kanto"
     ],
     "family": "dratini"
@@ -1645,7 +1864,9 @@
       "en": "Mewtwo"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "legendary",
+      "psychic"
     ],
     "family": "mewtwo"
   },
@@ -1656,7 +1877,9 @@
       "en": "Mew"
     },
     "tags": [
-      "kanto"
+      "kanto",
+      "mythical",
+      "psychic"
     ],
     "family": "mew"
   },
@@ -1667,6 +1890,7 @@
       "en": "Chikorita"
     },
     "tags": [
+      "grass",
       "johto"
     ],
     "family": "chikorita"
@@ -1678,6 +1902,7 @@
       "en": "Bayleef"
     },
     "tags": [
+      "grass",
       "johto"
     ],
     "family": "chikorita"
@@ -1689,6 +1914,7 @@
       "en": "Meganium"
     },
     "tags": [
+      "grass",
       "johto"
     ],
     "family": "chikorita"
@@ -1700,6 +1926,7 @@
       "en": "Cyndaquil"
     },
     "tags": [
+      "fire",
       "johto"
     ],
     "family": "cyndaquil"
@@ -1711,6 +1938,7 @@
       "en": "Quilava"
     },
     "tags": [
+      "fire",
       "johto"
     ],
     "family": "cyndaquil"
@@ -1722,6 +1950,7 @@
       "en": "Typhlosion"
     },
     "tags": [
+      "fire",
       "johto"
     ],
     "family": "cyndaquil"
@@ -1733,7 +1962,8 @@
       "en": "Totodile"
     },
     "tags": [
-      "johto"
+      "johto",
+      "water"
     ],
     "family": "totodile"
   },
@@ -1744,7 +1974,8 @@
       "en": "Croconaw"
     },
     "tags": [
-      "johto"
+      "johto",
+      "water"
     ],
     "family": "totodile"
   },
@@ -1755,7 +1986,8 @@
       "en": "Feraligatr"
     },
     "tags": [
-      "johto"
+      "johto",
+      "water"
     ],
     "family": "totodile"
   },
@@ -1766,7 +1998,8 @@
       "en": "Sentret"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "sentret"
   },
@@ -1777,7 +2010,8 @@
       "en": "Furret"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "sentret"
   },
@@ -1788,7 +2022,9 @@
       "en": "Hoothoot"
     },
     "tags": [
-      "johto"
+      "flying",
+      "johto",
+      "normal"
     ],
     "family": "hoothoot"
   },
@@ -1799,7 +2035,9 @@
       "en": "Noctowl"
     },
     "tags": [
-      "johto"
+      "flying",
+      "johto",
+      "normal"
     ],
     "family": "hoothoot"
   },
@@ -1810,6 +2048,8 @@
       "en": "Ledyba"
     },
     "tags": [
+      "bug",
+      "flying",
       "johto"
     ],
     "family": "ledyba"
@@ -1821,6 +2061,8 @@
       "en": "Ledian"
     },
     "tags": [
+      "bug",
+      "flying",
       "johto"
     ],
     "family": "ledyba"
@@ -1832,7 +2074,9 @@
       "en": "Spinarak"
     },
     "tags": [
-      "johto"
+      "bug",
+      "johto",
+      "poison"
     ],
     "family": "spinarak"
   },
@@ -1843,7 +2087,9 @@
       "en": "Ariados"
     },
     "tags": [
-      "johto"
+      "bug",
+      "johto",
+      "poison"
     ],
     "family": "spinarak"
   },
@@ -1854,7 +2100,9 @@
       "en": "Crobat"
     },
     "tags": [
-      "johto"
+      "flying",
+      "johto",
+      "poison"
     ],
     "family": "zubat"
   },
@@ -1865,7 +2113,9 @@
       "en": "Chinchou"
     },
     "tags": [
-      "johto"
+      "electric",
+      "johto",
+      "water"
     ],
     "family": "chinchou"
   },
@@ -1876,7 +2126,9 @@
       "en": "Lanturn"
     },
     "tags": [
-      "johto"
+      "electric",
+      "johto",
+      "water"
     ],
     "family": "chinchou"
   },
@@ -1887,6 +2139,7 @@
       "en": "Pichu"
     },
     "tags": [
+      "electric",
       "johto"
     ],
     "family": "pichu"
@@ -1898,6 +2151,7 @@
       "en": "Cleffa"
     },
     "tags": [
+      "fairy",
       "johto"
     ],
     "family": "cleffa"
@@ -1909,7 +2163,9 @@
       "en": "Igglybuff"
     },
     "tags": [
-      "johto"
+      "fairy",
+      "johto",
+      "normal"
     ],
     "family": "igglybuff"
   },
@@ -1920,6 +2176,7 @@
       "en": "Togepi"
     },
     "tags": [
+      "fairy",
       "johto"
     ],
     "family": "togepi"
@@ -1931,6 +2188,8 @@
       "en": "Togetic"
     },
     "tags": [
+      "fairy",
+      "flying",
       "johto"
     ],
     "family": "togepi"
@@ -1942,7 +2201,9 @@
       "en": "Natu"
     },
     "tags": [
-      "johto"
+      "flying",
+      "johto",
+      "psychic"
     ],
     "family": "natu"
   },
@@ -1953,7 +2214,9 @@
       "en": "Xatu"
     },
     "tags": [
-      "johto"
+      "flying",
+      "johto",
+      "psychic"
     ],
     "family": "natu"
   },
@@ -1964,6 +2227,7 @@
       "en": "Mareep"
     },
     "tags": [
+      "electric",
       "johto"
     ],
     "family": "mareep"
@@ -1975,6 +2239,7 @@
       "en": "Flaaffy"
     },
     "tags": [
+      "electric",
       "johto"
     ],
     "family": "mareep"
@@ -1986,6 +2251,7 @@
       "en": "Ampharos"
     },
     "tags": [
+      "electric",
       "johto"
     ],
     "family": "mareep"
@@ -1997,6 +2263,7 @@
       "en": "Bellossom"
     },
     "tags": [
+      "grass",
       "johto"
     ],
     "family": "oddish"
@@ -2008,7 +2275,9 @@
       "en": "Marill"
     },
     "tags": [
-      "johto"
+      "fairy",
+      "johto",
+      "water"
     ],
     "family": "azurill"
   },
@@ -2019,7 +2288,9 @@
       "en": "Azumarill"
     },
     "tags": [
-      "johto"
+      "fairy",
+      "johto",
+      "water"
     ],
     "family": "azurill"
   },
@@ -2030,7 +2301,8 @@
       "en": "Sudowoodo"
     },
     "tags": [
-      "johto"
+      "johto",
+      "rock"
     ],
     "family": "bonsly"
   },
@@ -2041,7 +2313,8 @@
       "en": "Politoed"
     },
     "tags": [
-      "johto"
+      "johto",
+      "water"
     ],
     "family": "poliwag"
   },
@@ -2052,6 +2325,8 @@
       "en": "Hoppip"
     },
     "tags": [
+      "flying",
+      "grass",
       "johto"
     ],
     "family": "hoppip"
@@ -2063,6 +2338,8 @@
       "en": "Skiploom"
     },
     "tags": [
+      "flying",
+      "grass",
       "johto"
     ],
     "family": "hoppip"
@@ -2074,6 +2351,8 @@
       "en": "Jumpluff"
     },
     "tags": [
+      "flying",
+      "grass",
       "johto"
     ],
     "family": "hoppip"
@@ -2085,7 +2364,8 @@
       "en": "Aipom"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "aipom"
   },
@@ -2096,6 +2376,7 @@
       "en": "Sunkern"
     },
     "tags": [
+      "grass",
       "johto"
     ],
     "family": "sunkern"
@@ -2107,6 +2388,7 @@
       "en": "Sunflora"
     },
     "tags": [
+      "grass",
       "johto"
     ],
     "family": "sunkern"
@@ -2118,6 +2400,8 @@
       "en": "Yanma"
     },
     "tags": [
+      "bug",
+      "flying",
       "johto"
     ],
     "family": "yanma"
@@ -2129,7 +2413,9 @@
       "en": "Wooper"
     },
     "tags": [
-      "johto"
+      "ground",
+      "johto",
+      "water"
     ],
     "family": "wooper"
   },
@@ -2140,7 +2426,9 @@
       "en": "Quagsire"
     },
     "tags": [
-      "johto"
+      "ground",
+      "johto",
+      "water"
     ],
     "family": "wooper"
   },
@@ -2151,7 +2439,8 @@
       "en": "Espeon"
     },
     "tags": [
-      "johto"
+      "johto",
+      "psychic"
     ],
     "family": "eevee"
   },
@@ -2162,6 +2451,7 @@
       "en": "Umbreon"
     },
     "tags": [
+      "dark",
       "johto"
     ],
     "family": "eevee"
@@ -2173,6 +2463,8 @@
       "en": "Murkrow"
     },
     "tags": [
+      "dark",
+      "flying",
       "johto"
     ],
     "family": "murkrow"
@@ -2184,7 +2476,9 @@
       "en": "Slowking"
     },
     "tags": [
-      "johto"
+      "johto",
+      "psychic",
+      "water"
     ],
     "family": "slowpoke"
   },
@@ -2195,6 +2489,7 @@
       "en": "Misdreavus"
     },
     "tags": [
+      "ghost",
       "johto"
     ],
     "family": "misdreavus"
@@ -2206,7 +2501,8 @@
       "en": "Unown"
     },
     "tags": [
-      "johto"
+      "johto",
+      "psychic"
     ],
     "family": "unown"
   },
@@ -2217,7 +2513,8 @@
       "en": "Wobbuffet"
     },
     "tags": [
-      "johto"
+      "johto",
+      "psychic"
     ],
     "family": "wynaut"
   },
@@ -2228,7 +2525,9 @@
       "en": "Girafarig"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal",
+      "psychic"
     ],
     "family": "girafarig"
   },
@@ -2239,6 +2538,7 @@
       "en": "Pineco"
     },
     "tags": [
+      "bug",
       "johto"
     ],
     "family": "pineco"
@@ -2250,7 +2550,9 @@
       "en": "Forretress"
     },
     "tags": [
-      "johto"
+      "bug",
+      "johto",
+      "steel"
     ],
     "family": "pineco"
   },
@@ -2261,7 +2563,8 @@
       "en": "Dunsparce"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "dunsparce"
   },
@@ -2272,6 +2575,8 @@
       "en": "Gligar"
     },
     "tags": [
+      "flying",
+      "ground",
       "johto"
     ],
     "family": "gligar"
@@ -2283,7 +2588,9 @@
       "en": "Steelix"
     },
     "tags": [
-      "johto"
+      "ground",
+      "johto",
+      "steel"
     ],
     "family": "onix"
   },
@@ -2294,6 +2601,7 @@
       "en": "Snubbull"
     },
     "tags": [
+      "fairy",
       "johto"
     ],
     "family": "snubbull"
@@ -2305,6 +2613,7 @@
       "en": "Granbull"
     },
     "tags": [
+      "fairy",
       "johto"
     ],
     "family": "snubbull"
@@ -2316,7 +2625,9 @@
       "en": "Qwilfish"
     },
     "tags": [
-      "johto"
+      "johto",
+      "poison",
+      "water"
     ],
     "family": "qwilfish"
   },
@@ -2327,7 +2638,9 @@
       "en": "Scizor"
     },
     "tags": [
-      "johto"
+      "bug",
+      "johto",
+      "steel"
     ],
     "family": "scyther"
   },
@@ -2338,7 +2651,9 @@
       "en": "Shuckle"
     },
     "tags": [
-      "johto"
+      "bug",
+      "johto",
+      "rock"
     ],
     "family": "shuckle"
   },
@@ -2349,6 +2664,8 @@
       "en": "Heracross"
     },
     "tags": [
+      "bug",
+      "fighting",
       "johto"
     ],
     "family": "heracross"
@@ -2360,6 +2677,8 @@
       "en": "Sneasel"
     },
     "tags": [
+      "dark",
+      "ice",
       "johto"
     ],
     "family": "sneasel"
@@ -2371,7 +2690,8 @@
       "en": "Teddiursa"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "teddiursa"
   },
@@ -2382,7 +2702,8 @@
       "en": "Ursaring"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "teddiursa"
   },
@@ -2393,6 +2714,7 @@
       "en": "Slugma"
     },
     "tags": [
+      "fire",
       "johto"
     ],
     "family": "slugma"
@@ -2404,7 +2726,9 @@
       "en": "Magcargo"
     },
     "tags": [
-      "johto"
+      "fire",
+      "johto",
+      "rock"
     ],
     "family": "slugma"
   },
@@ -2415,6 +2739,8 @@
       "en": "Swinub"
     },
     "tags": [
+      "ground",
+      "ice",
       "johto"
     ],
     "family": "swinub"
@@ -2426,6 +2752,8 @@
       "en": "Piloswine"
     },
     "tags": [
+      "ground",
+      "ice",
       "johto"
     ],
     "family": "swinub"
@@ -2437,7 +2765,9 @@
       "en": "Corsola"
     },
     "tags": [
-      "johto"
+      "johto",
+      "rock",
+      "water"
     ],
     "family": "corsola"
   },
@@ -2448,7 +2778,8 @@
       "en": "Remoraid"
     },
     "tags": [
-      "johto"
+      "johto",
+      "water"
     ],
     "family": "remoraid"
   },
@@ -2459,7 +2790,8 @@
       "en": "Octillery"
     },
     "tags": [
-      "johto"
+      "johto",
+      "water"
     ],
     "family": "remoraid"
   },
@@ -2470,6 +2802,8 @@
       "en": "Delibird"
     },
     "tags": [
+      "flying",
+      "ice",
       "johto"
     ],
     "family": "delibird"
@@ -2481,7 +2815,9 @@
       "en": "Mantine"
     },
     "tags": [
-      "johto"
+      "flying",
+      "johto",
+      "water"
     ],
     "family": "mantyke"
   },
@@ -2492,7 +2828,9 @@
       "en": "Skarmory"
     },
     "tags": [
-      "johto"
+      "flying",
+      "johto",
+      "steel"
     ],
     "family": "skarmory"
   },
@@ -2503,6 +2841,8 @@
       "en": "Houndour"
     },
     "tags": [
+      "dark",
+      "fire",
       "johto"
     ],
     "family": "houndour"
@@ -2514,6 +2854,8 @@
       "en": "Houndoom"
     },
     "tags": [
+      "dark",
+      "fire",
       "johto"
     ],
     "family": "houndour"
@@ -2525,7 +2867,9 @@
       "en": "Kingdra"
     },
     "tags": [
-      "johto"
+      "dragon",
+      "johto",
+      "water"
     ],
     "family": "horsea"
   },
@@ -2536,6 +2880,7 @@
       "en": "Phanpy"
     },
     "tags": [
+      "ground",
       "johto"
     ],
     "family": "phanpy"
@@ -2547,6 +2892,7 @@
       "en": "Donphan"
     },
     "tags": [
+      "ground",
       "johto"
     ],
     "family": "phanpy"
@@ -2558,7 +2904,8 @@
       "en": "Porygon2"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "porygon"
   },
@@ -2569,7 +2916,8 @@
       "en": "Stantler"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "stantler"
   },
@@ -2580,7 +2928,8 @@
       "en": "Smeargle"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "smeargle"
   },
@@ -2591,6 +2940,7 @@
       "en": "Tyrogue"
     },
     "tags": [
+      "fighting",
       "johto"
     ],
     "family": "tyrogue"
@@ -2602,6 +2952,7 @@
       "en": "Hitmontop"
     },
     "tags": [
+      "fighting",
       "johto"
     ],
     "family": "tyrogue"
@@ -2613,7 +2964,9 @@
       "en": "Smoochum"
     },
     "tags": [
-      "johto"
+      "ice",
+      "johto",
+      "psychic"
     ],
     "family": "smoochum"
   },
@@ -2624,6 +2977,7 @@
       "en": "Elekid"
     },
     "tags": [
+      "electric",
       "johto"
     ],
     "family": "elekid"
@@ -2635,6 +2989,7 @@
       "en": "Magby"
     },
     "tags": [
+      "fire",
       "johto"
     ],
     "family": "magby"
@@ -2646,7 +3001,8 @@
       "en": "Miltank"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "miltank"
   },
@@ -2657,7 +3013,8 @@
       "en": "Blissey"
     },
     "tags": [
-      "johto"
+      "johto",
+      "normal"
     ],
     "family": "happiny"
   },
@@ -2668,7 +3025,9 @@
       "en": "Raikou"
     },
     "tags": [
-      "johto"
+      "electric",
+      "johto",
+      "legendary"
     ],
     "family": "raikou"
   },
@@ -2679,7 +3038,9 @@
       "en": "Entei"
     },
     "tags": [
-      "johto"
+      "fire",
+      "johto",
+      "legendary"
     ],
     "family": "entei"
   },
@@ -2690,7 +3051,9 @@
       "en": "Suicune"
     },
     "tags": [
-      "johto"
+      "johto",
+      "legendary",
+      "water"
     ],
     "family": "suicune"
   },
@@ -2701,7 +3064,9 @@
       "en": "Larvitar"
     },
     "tags": [
-      "johto"
+      "ground",
+      "johto",
+      "rock"
     ],
     "family": "larvitar"
   },
@@ -2712,7 +3077,9 @@
       "en": "Pupitar"
     },
     "tags": [
-      "johto"
+      "ground",
+      "johto",
+      "rock"
     ],
     "family": "larvitar"
   },
@@ -2723,7 +3090,9 @@
       "en": "Tyranitar"
     },
     "tags": [
-      "johto"
+      "dark",
+      "johto",
+      "rock"
     ],
     "family": "larvitar"
   },
@@ -2734,7 +3103,10 @@
       "en": "Lugia"
     },
     "tags": [
-      "johto"
+      "flying",
+      "johto",
+      "legendary",
+      "psychic"
     ],
     "family": "lugia"
   },
@@ -2742,12 +3114,15 @@
     "id": "ho-oh",
     "number": 250,
     "name": {
-      "en": "Ho-oh"
+      "en": "Ho-Oh"
     },
     "tags": [
-      "johto"
+      "fire",
+      "flying",
+      "johto",
+      "legendary"
     ],
-    "family": "hooh"
+    "family": "ho-oh"
   },
   {
     "id": "celebi",
@@ -2756,7 +3131,10 @@
       "en": "Celebi"
     },
     "tags": [
-      "johto"
+      "grass",
+      "johto",
+      "mythical",
+      "psychic"
     ],
     "family": "celebi"
   },
@@ -2767,6 +3145,7 @@
       "en": "Treecko"
     },
     "tags": [
+      "grass",
       "hoenn"
     ],
     "family": "treecko"
@@ -2778,6 +3157,7 @@
       "en": "Grovyle"
     },
     "tags": [
+      "grass",
       "hoenn"
     ],
     "family": "treecko"
@@ -2789,6 +3169,7 @@
       "en": "Sceptile"
     },
     "tags": [
+      "grass",
       "hoenn"
     ],
     "family": "treecko"
@@ -2800,6 +3181,7 @@
       "en": "Torchic"
     },
     "tags": [
+      "fire",
       "hoenn"
     ],
     "family": "torchic"
@@ -2811,6 +3193,8 @@
       "en": "Combusken"
     },
     "tags": [
+      "fighting",
+      "fire",
       "hoenn"
     ],
     "family": "torchic"
@@ -2822,6 +3206,8 @@
       "en": "Blaziken"
     },
     "tags": [
+      "fighting",
+      "fire",
       "hoenn"
     ],
     "family": "torchic"
@@ -2833,7 +3219,8 @@
       "en": "Mudkip"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "water"
     ],
     "family": "mudkip"
   },
@@ -2844,7 +3231,9 @@
       "en": "Marshtomp"
     },
     "tags": [
-      "hoenn"
+      "ground",
+      "hoenn",
+      "water"
     ],
     "family": "mudkip"
   },
@@ -2855,7 +3244,9 @@
       "en": "Swampert"
     },
     "tags": [
-      "hoenn"
+      "ground",
+      "hoenn",
+      "water"
     ],
     "family": "mudkip"
   },
@@ -2866,6 +3257,7 @@
       "en": "Poochyena"
     },
     "tags": [
+      "dark",
       "hoenn"
     ],
     "family": "poochyena"
@@ -2877,6 +3269,7 @@
       "en": "Mightyena"
     },
     "tags": [
+      "dark",
       "hoenn"
     ],
     "family": "poochyena"
@@ -2888,7 +3281,8 @@
       "en": "Zigzagoon"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "zigzagoon"
   },
@@ -2899,7 +3293,8 @@
       "en": "Linoone"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "zigzagoon"
   },
@@ -2910,6 +3305,7 @@
       "en": "Wurmple"
     },
     "tags": [
+      "bug",
       "hoenn"
     ],
     "family": "wurmple"
@@ -2921,6 +3317,7 @@
       "en": "Silcoon"
     },
     "tags": [
+      "bug",
       "hoenn"
     ],
     "family": "wurmple"
@@ -2932,6 +3329,8 @@
       "en": "Beautifly"
     },
     "tags": [
+      "bug",
+      "flying",
       "hoenn"
     ],
     "family": "wurmple"
@@ -2943,6 +3342,7 @@
       "en": "Cascoon"
     },
     "tags": [
+      "bug",
       "hoenn"
     ],
     "family": "wurmple"
@@ -2954,7 +3354,9 @@
       "en": "Dustox"
     },
     "tags": [
-      "hoenn"
+      "bug",
+      "hoenn",
+      "poison"
     ],
     "family": "wurmple"
   },
@@ -2965,7 +3367,9 @@
       "en": "Lotad"
     },
     "tags": [
-      "hoenn"
+      "grass",
+      "hoenn",
+      "water"
     ],
     "family": "lotad"
   },
@@ -2976,7 +3380,9 @@
       "en": "Lombre"
     },
     "tags": [
-      "hoenn"
+      "grass",
+      "hoenn",
+      "water"
     ],
     "family": "lotad"
   },
@@ -2987,7 +3393,9 @@
       "en": "Ludicolo"
     },
     "tags": [
-      "hoenn"
+      "grass",
+      "hoenn",
+      "water"
     ],
     "family": "lotad"
   },
@@ -2998,6 +3406,7 @@
       "en": "Seedot"
     },
     "tags": [
+      "grass",
       "hoenn"
     ],
     "family": "seedot"
@@ -3009,6 +3418,8 @@
       "en": "Nuzleaf"
     },
     "tags": [
+      "dark",
+      "grass",
       "hoenn"
     ],
     "family": "seedot"
@@ -3020,6 +3431,8 @@
       "en": "Shiftry"
     },
     "tags": [
+      "dark",
+      "grass",
       "hoenn"
     ],
     "family": "seedot"
@@ -3031,7 +3444,9 @@
       "en": "Taillow"
     },
     "tags": [
-      "hoenn"
+      "flying",
+      "hoenn",
+      "normal"
     ],
     "family": "taillow"
   },
@@ -3042,7 +3457,9 @@
       "en": "Swellow"
     },
     "tags": [
-      "hoenn"
+      "flying",
+      "hoenn",
+      "normal"
     ],
     "family": "taillow"
   },
@@ -3053,7 +3470,9 @@
       "en": "Wingull"
     },
     "tags": [
-      "hoenn"
+      "flying",
+      "hoenn",
+      "water"
     ],
     "family": "wingull"
   },
@@ -3064,7 +3483,9 @@
       "en": "Pelipper"
     },
     "tags": [
-      "hoenn"
+      "flying",
+      "hoenn",
+      "water"
     ],
     "family": "wingull"
   },
@@ -3075,7 +3496,9 @@
       "en": "Ralts"
     },
     "tags": [
-      "hoenn"
+      "fairy",
+      "hoenn",
+      "psychic"
     ],
     "family": "ralts"
   },
@@ -3086,7 +3509,9 @@
       "en": "Kirlia"
     },
     "tags": [
-      "hoenn"
+      "fairy",
+      "hoenn",
+      "psychic"
     ],
     "family": "ralts"
   },
@@ -3097,7 +3522,9 @@
       "en": "Gardevoir"
     },
     "tags": [
-      "hoenn"
+      "fairy",
+      "hoenn",
+      "psychic"
     ],
     "family": "ralts"
   },
@@ -3108,7 +3535,9 @@
       "en": "Surskit"
     },
     "tags": [
-      "hoenn"
+      "bug",
+      "hoenn",
+      "water"
     ],
     "family": "surskit"
   },
@@ -3119,6 +3548,8 @@
       "en": "Masquerain"
     },
     "tags": [
+      "bug",
+      "flying",
       "hoenn"
     ],
     "family": "surskit"
@@ -3130,6 +3561,7 @@
       "en": "Shroomish"
     },
     "tags": [
+      "grass",
       "hoenn"
     ],
     "family": "shroomish"
@@ -3141,6 +3573,8 @@
       "en": "Breloom"
     },
     "tags": [
+      "fighting",
+      "grass",
       "hoenn"
     ],
     "family": "shroomish"
@@ -3152,7 +3586,8 @@
       "en": "Slakoth"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "slakoth"
   },
@@ -3163,7 +3598,8 @@
       "en": "Vigoroth"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "slakoth"
   },
@@ -3174,7 +3610,8 @@
       "en": "Slaking"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "slakoth"
   },
@@ -3185,6 +3622,8 @@
       "en": "Nincada"
     },
     "tags": [
+      "bug",
+      "ground",
       "hoenn"
     ],
     "family": "nincada"
@@ -3196,6 +3635,8 @@
       "en": "Ninjask"
     },
     "tags": [
+      "bug",
+      "flying",
       "hoenn"
     ],
     "family": "nincada"
@@ -3207,6 +3648,8 @@
       "en": "Shedinja"
     },
     "tags": [
+      "bug",
+      "ghost",
       "hoenn"
     ],
     "family": "nincada"
@@ -3218,7 +3661,8 @@
       "en": "Whismur"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "whismur"
   },
@@ -3229,7 +3673,8 @@
       "en": "Loudred"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "whismur"
   },
@@ -3240,7 +3685,8 @@
       "en": "Exploud"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "whismur"
   },
@@ -3251,6 +3697,7 @@
       "en": "Makuhita"
     },
     "tags": [
+      "fighting",
       "hoenn"
     ],
     "family": "makuhita"
@@ -3262,6 +3709,7 @@
       "en": "Hariyama"
     },
     "tags": [
+      "fighting",
       "hoenn"
     ],
     "family": "makuhita"
@@ -3273,7 +3721,9 @@
       "en": "Azurill"
     },
     "tags": [
-      "hoenn"
+      "fairy",
+      "hoenn",
+      "normal"
     ],
     "family": "azurill"
   },
@@ -3284,7 +3734,8 @@
       "en": "Nosepass"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "rock"
     ],
     "family": "nosepass"
   },
@@ -3295,7 +3746,8 @@
       "en": "Skitty"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "skitty"
   },
@@ -3306,7 +3758,8 @@
       "en": "Delcatty"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "skitty"
   },
@@ -3317,6 +3770,8 @@
       "en": "Sableye"
     },
     "tags": [
+      "dark",
+      "ghost",
       "hoenn"
     ],
     "family": "sableye"
@@ -3328,7 +3783,9 @@
       "en": "Mawile"
     },
     "tags": [
-      "hoenn"
+      "fairy",
+      "hoenn",
+      "steel"
     ],
     "family": "mawile"
   },
@@ -3339,7 +3796,9 @@
       "en": "Aron"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "rock",
+      "steel"
     ],
     "family": "aron"
   },
@@ -3350,7 +3809,9 @@
       "en": "Lairon"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "rock",
+      "steel"
     ],
     "family": "aron"
   },
@@ -3361,7 +3822,9 @@
       "en": "Aggron"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "rock",
+      "steel"
     ],
     "family": "aron"
   },
@@ -3372,7 +3835,9 @@
       "en": "Meditite"
     },
     "tags": [
-      "hoenn"
+      "fighting",
+      "hoenn",
+      "psychic"
     ],
     "family": "meditite"
   },
@@ -3383,7 +3848,9 @@
       "en": "Medicham"
     },
     "tags": [
-      "hoenn"
+      "fighting",
+      "hoenn",
+      "psychic"
     ],
     "family": "meditite"
   },
@@ -3394,6 +3861,7 @@
       "en": "Electrike"
     },
     "tags": [
+      "electric",
       "hoenn"
     ],
     "family": "electrike"
@@ -3405,6 +3873,7 @@
       "en": "Manectric"
     },
     "tags": [
+      "electric",
       "hoenn"
     ],
     "family": "electrike"
@@ -3416,6 +3885,7 @@
       "en": "Plusle"
     },
     "tags": [
+      "electric",
       "hoenn"
     ],
     "family": "plusle"
@@ -3427,6 +3897,7 @@
       "en": "Minun"
     },
     "tags": [
+      "electric",
       "hoenn"
     ],
     "family": "minun"
@@ -3438,6 +3909,7 @@
       "en": "Volbeat"
     },
     "tags": [
+      "bug",
       "hoenn"
     ],
     "family": "volbeat"
@@ -3449,6 +3921,7 @@
       "en": "Illumise"
     },
     "tags": [
+      "bug",
       "hoenn"
     ],
     "family": "illumise"
@@ -3460,7 +3933,9 @@
       "en": "Roselia"
     },
     "tags": [
-      "hoenn"
+      "grass",
+      "hoenn",
+      "poison"
     ],
     "family": "budew"
   },
@@ -3471,7 +3946,8 @@
       "en": "Gulpin"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "poison"
     ],
     "family": "gulpin"
   },
@@ -3482,7 +3958,8 @@
       "en": "Swalot"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "poison"
     ],
     "family": "gulpin"
   },
@@ -3493,7 +3970,9 @@
       "en": "Carvanha"
     },
     "tags": [
-      "hoenn"
+      "dark",
+      "hoenn",
+      "water"
     ],
     "family": "carvanha"
   },
@@ -3504,7 +3983,9 @@
       "en": "Sharpedo"
     },
     "tags": [
-      "hoenn"
+      "dark",
+      "hoenn",
+      "water"
     ],
     "family": "carvanha"
   },
@@ -3515,7 +3996,8 @@
       "en": "Wailmer"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "water"
     ],
     "family": "wailmer"
   },
@@ -3526,7 +4008,8 @@
       "en": "Wailord"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "water"
     ],
     "family": "wailmer"
   },
@@ -3537,6 +4020,8 @@
       "en": "Numel"
     },
     "tags": [
+      "fire",
+      "ground",
       "hoenn"
     ],
     "family": "numel"
@@ -3548,6 +4033,8 @@
       "en": "Camerupt"
     },
     "tags": [
+      "fire",
+      "ground",
       "hoenn"
     ],
     "family": "numel"
@@ -3559,6 +4046,7 @@
       "en": "Torkoal"
     },
     "tags": [
+      "fire",
       "hoenn"
     ],
     "family": "torkoal"
@@ -3570,7 +4058,8 @@
       "en": "Spoink"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "psychic"
     ],
     "family": "spoink"
   },
@@ -3581,7 +4070,8 @@
       "en": "Grumpig"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "psychic"
     ],
     "family": "spoink"
   },
@@ -3592,7 +4082,8 @@
       "en": "Spinda"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "spinda"
   },
@@ -3603,6 +4094,7 @@
       "en": "Trapinch"
     },
     "tags": [
+      "ground",
       "hoenn"
     ],
     "family": "trapinch"
@@ -3614,6 +4106,8 @@
       "en": "Vibrava"
     },
     "tags": [
+      "dragon",
+      "ground",
       "hoenn"
     ],
     "family": "trapinch"
@@ -3625,6 +4119,8 @@
       "en": "Flygon"
     },
     "tags": [
+      "dragon",
+      "ground",
       "hoenn"
     ],
     "family": "trapinch"
@@ -3636,6 +4132,7 @@
       "en": "Cacnea"
     },
     "tags": [
+      "grass",
       "hoenn"
     ],
     "family": "cacnea"
@@ -3647,6 +4144,8 @@
       "en": "Cacturne"
     },
     "tags": [
+      "dark",
+      "grass",
       "hoenn"
     ],
     "family": "cacnea"
@@ -3658,7 +4157,9 @@
       "en": "Swablu"
     },
     "tags": [
-      "hoenn"
+      "flying",
+      "hoenn",
+      "normal"
     ],
     "family": "swablu"
   },
@@ -3669,6 +4170,8 @@
       "en": "Altaria"
     },
     "tags": [
+      "dragon",
+      "flying",
       "hoenn"
     ],
     "family": "swablu"
@@ -3680,7 +4183,8 @@
       "en": "Zangoose"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "zangoose"
   },
@@ -3691,7 +4195,8 @@
       "en": "Seviper"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "poison"
     ],
     "family": "seviper"
   },
@@ -3702,7 +4207,9 @@
       "en": "Lunatone"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "psychic",
+      "rock"
     ],
     "family": "lunatone"
   },
@@ -3713,7 +4220,9 @@
       "en": "Solrock"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "psychic",
+      "rock"
     ],
     "family": "solrock"
   },
@@ -3724,7 +4233,9 @@
       "en": "Barboach"
     },
     "tags": [
-      "hoenn"
+      "ground",
+      "hoenn",
+      "water"
     ],
     "family": "barboach"
   },
@@ -3735,7 +4246,9 @@
       "en": "Whiscash"
     },
     "tags": [
-      "hoenn"
+      "ground",
+      "hoenn",
+      "water"
     ],
     "family": "barboach"
   },
@@ -3746,7 +4259,8 @@
       "en": "Corphish"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "water"
     ],
     "family": "corphish"
   },
@@ -3757,7 +4271,9 @@
       "en": "Crawdaunt"
     },
     "tags": [
-      "hoenn"
+      "dark",
+      "hoenn",
+      "water"
     ],
     "family": "corphish"
   },
@@ -3768,7 +4284,9 @@
       "en": "Baltoy"
     },
     "tags": [
-      "hoenn"
+      "ground",
+      "hoenn",
+      "psychic"
     ],
     "family": "baltoy"
   },
@@ -3779,7 +4297,9 @@
       "en": "Claydol"
     },
     "tags": [
-      "hoenn"
+      "ground",
+      "hoenn",
+      "psychic"
     ],
     "family": "baltoy"
   },
@@ -3790,7 +4310,9 @@
       "en": "Lileep"
     },
     "tags": [
-      "hoenn"
+      "grass",
+      "hoenn",
+      "rock"
     ],
     "family": "lileep"
   },
@@ -3801,7 +4323,9 @@
       "en": "Cradily"
     },
     "tags": [
-      "hoenn"
+      "grass",
+      "hoenn",
+      "rock"
     ],
     "family": "lileep"
   },
@@ -3812,7 +4336,9 @@
       "en": "Anorith"
     },
     "tags": [
-      "hoenn"
+      "bug",
+      "hoenn",
+      "rock"
     ],
     "family": "anorith"
   },
@@ -3823,7 +4349,9 @@
       "en": "Armaldo"
     },
     "tags": [
-      "hoenn"
+      "bug",
+      "hoenn",
+      "rock"
     ],
     "family": "anorith"
   },
@@ -3834,7 +4362,8 @@
       "en": "Feebas"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "water"
     ],
     "family": "feebas"
   },
@@ -3845,7 +4374,8 @@
       "en": "Milotic"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "water"
     ],
     "family": "feebas"
   },
@@ -3856,7 +4386,8 @@
       "en": "Castform"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "castform"
   },
@@ -3867,7 +4398,8 @@
       "en": "Kecleon"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "normal"
     ],
     "family": "kecleon"
   },
@@ -3878,6 +4410,7 @@
       "en": "Shuppet"
     },
     "tags": [
+      "ghost",
       "hoenn"
     ],
     "family": "shuppet"
@@ -3889,6 +4422,7 @@
       "en": "Banette"
     },
     "tags": [
+      "ghost",
       "hoenn"
     ],
     "family": "shuppet"
@@ -3900,6 +4434,7 @@
       "en": "Duskull"
     },
     "tags": [
+      "ghost",
       "hoenn"
     ],
     "family": "duskull"
@@ -3911,6 +4446,7 @@
       "en": "Dusclops"
     },
     "tags": [
+      "ghost",
       "hoenn"
     ],
     "family": "duskull"
@@ -3922,6 +4458,8 @@
       "en": "Tropius"
     },
     "tags": [
+      "flying",
+      "grass",
       "hoenn"
     ],
     "family": "tropius"
@@ -3933,7 +4471,8 @@
       "en": "Chimecho"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "psychic"
     ],
     "family": "chingling"
   },
@@ -3944,6 +4483,7 @@
       "en": "Absol"
     },
     "tags": [
+      "dark",
       "hoenn"
     ],
     "family": "absol"
@@ -3955,7 +4495,8 @@
       "en": "Wynaut"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "psychic"
     ],
     "family": "wynaut"
   },
@@ -3966,7 +4507,8 @@
       "en": "Snorunt"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "ice"
     ],
     "family": "snorunt"
   },
@@ -3977,7 +4519,8 @@
       "en": "Glalie"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "ice"
     ],
     "family": "snorunt"
   },
@@ -3988,7 +4531,9 @@
       "en": "Spheal"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "ice",
+      "water"
     ],
     "family": "spheal"
   },
@@ -3999,7 +4544,9 @@
       "en": "Sealeo"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "ice",
+      "water"
     ],
     "family": "spheal"
   },
@@ -4010,7 +4557,9 @@
       "en": "Walrein"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "ice",
+      "water"
     ],
     "family": "spheal"
   },
@@ -4021,7 +4570,8 @@
       "en": "Clamperl"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "water"
     ],
     "family": "clamperl"
   },
@@ -4032,7 +4582,8 @@
       "en": "Huntail"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "water"
     ],
     "family": "clamperl"
   },
@@ -4043,7 +4594,8 @@
       "en": "Gorebyss"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "water"
     ],
     "family": "clamperl"
   },
@@ -4054,7 +4606,9 @@
       "en": "Relicanth"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "rock",
+      "water"
     ],
     "family": "relicanth"
   },
@@ -4065,7 +4619,8 @@
       "en": "Luvdisc"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "water"
     ],
     "family": "luvdisc"
   },
@@ -4076,6 +4631,7 @@
       "en": "Bagon"
     },
     "tags": [
+      "dragon",
       "hoenn"
     ],
     "family": "bagon"
@@ -4087,6 +4643,7 @@
       "en": "Shelgon"
     },
     "tags": [
+      "dragon",
       "hoenn"
     ],
     "family": "bagon"
@@ -4098,6 +4655,8 @@
       "en": "Salamence"
     },
     "tags": [
+      "dragon",
+      "flying",
       "hoenn"
     ],
     "family": "bagon"
@@ -4109,7 +4668,9 @@
       "en": "Beldum"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "psychic",
+      "steel"
     ],
     "family": "beldum"
   },
@@ -4120,7 +4681,9 @@
       "en": "Metang"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "psychic",
+      "steel"
     ],
     "family": "beldum"
   },
@@ -4131,7 +4694,9 @@
       "en": "Metagross"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "psychic",
+      "steel"
     ],
     "family": "beldum"
   },
@@ -4142,7 +4707,9 @@
       "en": "Regirock"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "legendary",
+      "rock"
     ],
     "family": "regirock"
   },
@@ -4153,7 +4720,9 @@
       "en": "Regice"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "ice",
+      "legendary"
     ],
     "family": "regice"
   },
@@ -4164,7 +4733,9 @@
       "en": "Registeel"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "legendary",
+      "steel"
     ],
     "family": "registeel"
   },
@@ -4175,7 +4746,10 @@
       "en": "Latias"
     },
     "tags": [
-      "hoenn"
+      "dragon",
+      "hoenn",
+      "legendary",
+      "psychic"
     ],
     "family": "latias"
   },
@@ -4186,7 +4760,10 @@
       "en": "Latios"
     },
     "tags": [
-      "hoenn"
+      "dragon",
+      "hoenn",
+      "legendary",
+      "psychic"
     ],
     "family": "latios"
   },
@@ -4197,7 +4774,9 @@
       "en": "Kyogre"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "legendary",
+      "water"
     ],
     "family": "kyogre"
   },
@@ -4208,7 +4787,9 @@
       "en": "Groudon"
     },
     "tags": [
-      "hoenn"
+      "ground",
+      "hoenn",
+      "legendary"
     ],
     "family": "groudon"
   },
@@ -4219,7 +4800,10 @@
       "en": "Rayquaza"
     },
     "tags": [
-      "hoenn"
+      "dragon",
+      "flying",
+      "hoenn",
+      "legendary"
     ],
     "family": "rayquaza"
   },
@@ -4230,7 +4814,10 @@
       "en": "Jirachi"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "mythical",
+      "psychic",
+      "steel"
     ],
     "family": "jirachi"
   },
@@ -4241,7 +4828,9 @@
       "en": "Deoxys"
     },
     "tags": [
-      "hoenn"
+      "hoenn",
+      "mythical",
+      "psychic"
     ],
     "family": "deoxys"
   },
@@ -4252,6 +4841,7 @@
       "en": "Turtwig"
     },
     "tags": [
+      "grass",
       "sinnoh"
     ],
     "family": "turtwig"
@@ -4263,6 +4853,7 @@
       "en": "Grotle"
     },
     "tags": [
+      "grass",
       "sinnoh"
     ],
     "family": "turtwig"
@@ -4274,6 +4865,8 @@
       "en": "Torterra"
     },
     "tags": [
+      "grass",
+      "ground",
       "sinnoh"
     ],
     "family": "turtwig"
@@ -4285,6 +4878,7 @@
       "en": "Chimchar"
     },
     "tags": [
+      "fire",
       "sinnoh"
     ],
     "family": "chimchar"
@@ -4296,6 +4890,8 @@
       "en": "Monferno"
     },
     "tags": [
+      "fighting",
+      "fire",
       "sinnoh"
     ],
     "family": "chimchar"
@@ -4307,6 +4903,8 @@
       "en": "Infernape"
     },
     "tags": [
+      "fighting",
+      "fire",
       "sinnoh"
     ],
     "family": "chimchar"
@@ -4318,7 +4916,8 @@
       "en": "Piplup"
     },
     "tags": [
-      "sinnoh"
+      "sinnoh",
+      "water"
     ],
     "family": "piplup"
   },
@@ -4329,7 +4928,8 @@
       "en": "Prinplup"
     },
     "tags": [
-      "sinnoh"
+      "sinnoh",
+      "water"
     ],
     "family": "piplup"
   },
@@ -4340,7 +4940,9 @@
       "en": "Empoleon"
     },
     "tags": [
-      "sinnoh"
+      "sinnoh",
+      "steel",
+      "water"
     ],
     "family": "piplup"
   },
@@ -4351,6 +4953,8 @@
       "en": "Starly"
     },
     "tags": [
+      "flying",
+      "normal",
       "sinnoh"
     ],
     "family": "starly"
@@ -4362,6 +4966,8 @@
       "en": "Staravia"
     },
     "tags": [
+      "flying",
+      "normal",
       "sinnoh"
     ],
     "family": "starly"
@@ -4373,6 +4979,8 @@
       "en": "Staraptor"
     },
     "tags": [
+      "flying",
+      "normal",
       "sinnoh"
     ],
     "family": "starly"
@@ -4384,6 +4992,7 @@
       "en": "Bidoof"
     },
     "tags": [
+      "normal",
       "sinnoh"
     ],
     "family": "bidoof"
@@ -4395,7 +5004,9 @@
       "en": "Bibarel"
     },
     "tags": [
-      "sinnoh"
+      "normal",
+      "sinnoh",
+      "water"
     ],
     "family": "bidoof"
   },
@@ -4406,6 +5017,7 @@
       "en": "Kricketot"
     },
     "tags": [
+      "bug",
       "sinnoh"
     ],
     "family": "kricketot"
@@ -4417,6 +5029,7 @@
       "en": "Kricketune"
     },
     "tags": [
+      "bug",
       "sinnoh"
     ],
     "family": "kricketot"
@@ -4428,6 +5041,7 @@
       "en": "Shinx"
     },
     "tags": [
+      "electric",
       "sinnoh"
     ],
     "family": "shinx"
@@ -4439,6 +5053,7 @@
       "en": "Luxio"
     },
     "tags": [
+      "electric",
       "sinnoh"
     ],
     "family": "shinx"
@@ -4450,6 +5065,7 @@
       "en": "Luxray"
     },
     "tags": [
+      "electric",
       "sinnoh"
     ],
     "family": "shinx"
@@ -4461,6 +5077,8 @@
       "en": "Budew"
     },
     "tags": [
+      "grass",
+      "poison",
       "sinnoh"
     ],
     "family": "budew"
@@ -4472,6 +5090,8 @@
       "en": "Roserade"
     },
     "tags": [
+      "grass",
+      "poison",
       "sinnoh"
     ],
     "family": "budew"
@@ -4483,6 +5103,7 @@
       "en": "Cranidos"
     },
     "tags": [
+      "rock",
       "sinnoh"
     ],
     "family": "cranidos"
@@ -4494,6 +5115,7 @@
       "en": "Rampardos"
     },
     "tags": [
+      "rock",
       "sinnoh"
     ],
     "family": "cranidos"
@@ -4505,7 +5127,9 @@
       "en": "Shieldon"
     },
     "tags": [
-      "sinnoh"
+      "rock",
+      "sinnoh",
+      "steel"
     ],
     "family": "shieldon"
   },
@@ -4516,7 +5140,9 @@
       "en": "Bastiodon"
     },
     "tags": [
-      "sinnoh"
+      "rock",
+      "sinnoh",
+      "steel"
     ],
     "family": "shieldon"
   },
@@ -4527,6 +5153,7 @@
       "en": "Burmy"
     },
     "tags": [
+      "bug",
       "sinnoh"
     ],
     "family": "burmy"
@@ -4538,6 +5165,8 @@
       "en": "Wormadam"
     },
     "tags": [
+      "bug",
+      "grass",
       "sinnoh"
     ],
     "family": "burmy"
@@ -4549,6 +5178,8 @@
       "en": "Mothim"
     },
     "tags": [
+      "bug",
+      "flying",
       "sinnoh"
     ],
     "family": "burmy"
@@ -4560,6 +5191,8 @@
       "en": "Combee"
     },
     "tags": [
+      "bug",
+      "flying",
       "sinnoh"
     ],
     "family": "combee"
@@ -4571,6 +5204,8 @@
       "en": "Vespiquen"
     },
     "tags": [
+      "bug",
+      "flying",
       "sinnoh"
     ],
     "family": "combee"
@@ -4582,6 +5217,7 @@
       "en": "Pachirisu"
     },
     "tags": [
+      "electric",
       "sinnoh"
     ],
     "family": "pachirisu"
@@ -4593,7 +5229,8 @@
       "en": "Buizel"
     },
     "tags": [
-      "sinnoh"
+      "sinnoh",
+      "water"
     ],
     "family": "buizel"
   },
@@ -4604,7 +5241,8 @@
       "en": "Floatzel"
     },
     "tags": [
-      "sinnoh"
+      "sinnoh",
+      "water"
     ],
     "family": "buizel"
   },
@@ -4615,6 +5253,7 @@
       "en": "Cherubi"
     },
     "tags": [
+      "grass",
       "sinnoh"
     ],
     "family": "cherubi"
@@ -4626,6 +5265,7 @@
       "en": "Cherrim"
     },
     "tags": [
+      "grass",
       "sinnoh"
     ],
     "family": "cherubi"
@@ -4637,7 +5277,8 @@
       "en": "Shellos"
     },
     "tags": [
-      "sinnoh"
+      "sinnoh",
+      "water"
     ],
     "family": "shellos"
   },
@@ -4648,7 +5289,9 @@
       "en": "Gastrodon"
     },
     "tags": [
-      "sinnoh"
+      "ground",
+      "sinnoh",
+      "water"
     ],
     "family": "shellos"
   },
@@ -4659,6 +5302,7 @@
       "en": "Ambipom"
     },
     "tags": [
+      "normal",
       "sinnoh"
     ],
     "family": "aipom"
@@ -4670,6 +5314,8 @@
       "en": "Drifloon"
     },
     "tags": [
+      "flying",
+      "ghost",
       "sinnoh"
     ],
     "family": "drifloon"
@@ -4681,6 +5327,8 @@
       "en": "Drifblim"
     },
     "tags": [
+      "flying",
+      "ghost",
       "sinnoh"
     ],
     "family": "drifloon"
@@ -4692,6 +5340,7 @@
       "en": "Buneary"
     },
     "tags": [
+      "normal",
       "sinnoh"
     ],
     "family": "buneary"
@@ -4703,6 +5352,7 @@
       "en": "Lopunny"
     },
     "tags": [
+      "normal",
       "sinnoh"
     ],
     "family": "buneary"
@@ -4714,6 +5364,7 @@
       "en": "Mismagius"
     },
     "tags": [
+      "ghost",
       "sinnoh"
     ],
     "family": "misdreavus"
@@ -4725,6 +5376,8 @@
       "en": "Honchkrow"
     },
     "tags": [
+      "dark",
+      "flying",
       "sinnoh"
     ],
     "family": "murkrow"
@@ -4736,6 +5389,7 @@
       "en": "Glameow"
     },
     "tags": [
+      "normal",
       "sinnoh"
     ],
     "family": "glameow"
@@ -4747,6 +5401,7 @@
       "en": "Purugly"
     },
     "tags": [
+      "normal",
       "sinnoh"
     ],
     "family": "glameow"
@@ -4758,6 +5413,7 @@
       "en": "Chingling"
     },
     "tags": [
+      "psychic",
       "sinnoh"
     ],
     "family": "chingling"
@@ -4769,6 +5425,8 @@
       "en": "Stunky"
     },
     "tags": [
+      "dark",
+      "poison",
       "sinnoh"
     ],
     "family": "stunky"
@@ -4780,6 +5438,8 @@
       "en": "Skuntank"
     },
     "tags": [
+      "dark",
+      "poison",
       "sinnoh"
     ],
     "family": "stunky"
@@ -4791,7 +5451,9 @@
       "en": "Bronzor"
     },
     "tags": [
-      "sinnoh"
+      "psychic",
+      "sinnoh",
+      "steel"
     ],
     "family": "bronzor"
   },
@@ -4802,7 +5464,9 @@
       "en": "Bronzong"
     },
     "tags": [
-      "sinnoh"
+      "psychic",
+      "sinnoh",
+      "steel"
     ],
     "family": "bronzor"
   },
@@ -4813,6 +5477,7 @@
       "en": "Bonsly"
     },
     "tags": [
+      "rock",
       "sinnoh"
     ],
     "family": "bonsly"
@@ -4821,12 +5486,14 @@
     "id": "mime-jr",
     "number": 439,
     "name": {
-      "en": "Mime Jr"
+      "en": "Mime Jr."
     },
     "tags": [
+      "fairy",
+      "psychic",
       "sinnoh"
     ],
-    "family": "mimejr"
+    "family": "mime-jr"
   },
   {
     "id": "happiny",
@@ -4835,6 +5502,7 @@
       "en": "Happiny"
     },
     "tags": [
+      "normal",
       "sinnoh"
     ],
     "family": "happiny"
@@ -4846,6 +5514,8 @@
       "en": "Chatot"
     },
     "tags": [
+      "flying",
+      "normal",
       "sinnoh"
     ],
     "family": "chatot"
@@ -4857,6 +5527,8 @@
       "en": "Spiritomb"
     },
     "tags": [
+      "dark",
+      "ghost",
       "sinnoh"
     ],
     "family": "spiritomb"
@@ -4868,6 +5540,8 @@
       "en": "Gible"
     },
     "tags": [
+      "dragon",
+      "ground",
       "sinnoh"
     ],
     "family": "gible"
@@ -4879,6 +5553,8 @@
       "en": "Gabite"
     },
     "tags": [
+      "dragon",
+      "ground",
       "sinnoh"
     ],
     "family": "gible"
@@ -4890,6 +5566,8 @@
       "en": "Garchomp"
     },
     "tags": [
+      "dragon",
+      "ground",
       "sinnoh"
     ],
     "family": "gible"
@@ -4901,6 +5579,7 @@
       "en": "Munchlax"
     },
     "tags": [
+      "normal",
       "sinnoh"
     ],
     "family": "munchlax"
@@ -4912,6 +5591,7 @@
       "en": "Riolu"
     },
     "tags": [
+      "fighting",
       "sinnoh"
     ],
     "family": "riolu"
@@ -4923,7 +5603,9 @@
       "en": "Lucario"
     },
     "tags": [
-      "sinnoh"
+      "fighting",
+      "sinnoh",
+      "steel"
     ],
     "family": "riolu"
   },
@@ -4934,6 +5616,7 @@
       "en": "Hippopotas"
     },
     "tags": [
+      "ground",
       "sinnoh"
     ],
     "family": "hippopotas"
@@ -4945,6 +5628,7 @@
       "en": "Hippowdon"
     },
     "tags": [
+      "ground",
       "sinnoh"
     ],
     "family": "hippopotas"
@@ -4956,6 +5640,8 @@
       "en": "Skorupi"
     },
     "tags": [
+      "bug",
+      "poison",
       "sinnoh"
     ],
     "family": "skorupi"
@@ -4967,6 +5653,8 @@
       "en": "Drapion"
     },
     "tags": [
+      "dark",
+      "poison",
       "sinnoh"
     ],
     "family": "skorupi"
@@ -4978,6 +5666,8 @@
       "en": "Croagunk"
     },
     "tags": [
+      "fighting",
+      "poison",
       "sinnoh"
     ],
     "family": "croagunk"
@@ -4989,6 +5679,8 @@
       "en": "Toxicroak"
     },
     "tags": [
+      "fighting",
+      "poison",
       "sinnoh"
     ],
     "family": "croagunk"
@@ -5000,6 +5692,7 @@
       "en": "Carnivine"
     },
     "tags": [
+      "grass",
       "sinnoh"
     ],
     "family": "carnivine"
@@ -5011,7 +5704,8 @@
       "en": "Finneon"
     },
     "tags": [
-      "sinnoh"
+      "sinnoh",
+      "water"
     ],
     "family": "finneon"
   },
@@ -5022,7 +5716,8 @@
       "en": "Lumineon"
     },
     "tags": [
-      "sinnoh"
+      "sinnoh",
+      "water"
     ],
     "family": "finneon"
   },
@@ -5033,7 +5728,9 @@
       "en": "Mantyke"
     },
     "tags": [
-      "sinnoh"
+      "flying",
+      "sinnoh",
+      "water"
     ],
     "family": "mantyke"
   },
@@ -5044,6 +5741,8 @@
       "en": "Snover"
     },
     "tags": [
+      "grass",
+      "ice",
       "sinnoh"
     ],
     "family": "snover"
@@ -5055,6 +5754,8 @@
       "en": "Abomasnow"
     },
     "tags": [
+      "grass",
+      "ice",
       "sinnoh"
     ],
     "family": "snover"
@@ -5066,6 +5767,8 @@
       "en": "Weavile"
     },
     "tags": [
+      "dark",
+      "ice",
       "sinnoh"
     ],
     "family": "sneasel"
@@ -5077,7 +5780,9 @@
       "en": "Magnezone"
     },
     "tags": [
-      "sinnoh"
+      "electric",
+      "sinnoh",
+      "steel"
     ],
     "family": "magnemite"
   },
@@ -5088,6 +5793,7 @@
       "en": "Lickilicky"
     },
     "tags": [
+      "normal",
       "sinnoh"
     ],
     "family": "lickitung"
@@ -5099,6 +5805,8 @@
       "en": "Rhyperior"
     },
     "tags": [
+      "ground",
+      "rock",
       "sinnoh"
     ],
     "family": "rhyhorn"
@@ -5110,6 +5818,7 @@
       "en": "Tangrowth"
     },
     "tags": [
+      "grass",
       "sinnoh"
     ],
     "family": "tangela"
@@ -5121,6 +5830,7 @@
       "en": "Electivire"
     },
     "tags": [
+      "electric",
       "sinnoh"
     ],
     "family": "elekid"
@@ -5132,6 +5842,7 @@
       "en": "Magmortar"
     },
     "tags": [
+      "fire",
       "sinnoh"
     ],
     "family": "magby"
@@ -5143,6 +5854,8 @@
       "en": "Togekiss"
     },
     "tags": [
+      "fairy",
+      "flying",
       "sinnoh"
     ],
     "family": "togepi"
@@ -5154,6 +5867,8 @@
       "en": "Yanmega"
     },
     "tags": [
+      "bug",
+      "flying",
       "sinnoh"
     ],
     "family": "yanma"
@@ -5165,6 +5880,7 @@
       "en": "Leafeon"
     },
     "tags": [
+      "grass",
       "sinnoh"
     ],
     "family": "eevee"
@@ -5176,6 +5892,7 @@
       "en": "Glaceon"
     },
     "tags": [
+      "ice",
       "sinnoh"
     ],
     "family": "eevee"
@@ -5187,6 +5904,8 @@
       "en": "Gliscor"
     },
     "tags": [
+      "flying",
+      "ground",
       "sinnoh"
     ],
     "family": "gligar"
@@ -5198,6 +5917,8 @@
       "en": "Mamoswine"
     },
     "tags": [
+      "ground",
+      "ice",
       "sinnoh"
     ],
     "family": "swinub"
@@ -5209,6 +5930,7 @@
       "en": "Porygon-Z"
     },
     "tags": [
+      "normal",
       "sinnoh"
     ],
     "family": "porygon"
@@ -5220,6 +5942,8 @@
       "en": "Gallade"
     },
     "tags": [
+      "fighting",
+      "psychic",
       "sinnoh"
     ],
     "family": "ralts"
@@ -5231,7 +5955,9 @@
       "en": "Probopass"
     },
     "tags": [
-      "sinnoh"
+      "rock",
+      "sinnoh",
+      "steel"
     ],
     "family": "nosepass"
   },
@@ -5242,6 +5968,7 @@
       "en": "Dusknoir"
     },
     "tags": [
+      "ghost",
       "sinnoh"
     ],
     "family": "duskull"
@@ -5253,6 +5980,8 @@
       "en": "Froslass"
     },
     "tags": [
+      "ghost",
+      "ice",
       "sinnoh"
     ],
     "family": "snorunt"
@@ -5264,6 +5993,8 @@
       "en": "Rotom"
     },
     "tags": [
+      "electric",
+      "ghost",
       "sinnoh"
     ],
     "family": "rotom"
@@ -5275,6 +6006,8 @@
       "en": "Uxie"
     },
     "tags": [
+      "legendary",
+      "psychic",
       "sinnoh"
     ],
     "family": "uxie"
@@ -5286,6 +6019,8 @@
       "en": "Mesprit"
     },
     "tags": [
+      "legendary",
+      "psychic",
       "sinnoh"
     ],
     "family": "mesprit"
@@ -5297,6 +6032,8 @@
       "en": "Azelf"
     },
     "tags": [
+      "legendary",
+      "psychic",
       "sinnoh"
     ],
     "family": "azelf"
@@ -5308,7 +6045,10 @@
       "en": "Dialga"
     },
     "tags": [
-      "sinnoh"
+      "dragon",
+      "legendary",
+      "sinnoh",
+      "steel"
     ],
     "family": "dialga"
   },
@@ -5319,7 +6059,10 @@
       "en": "Palkia"
     },
     "tags": [
-      "sinnoh"
+      "dragon",
+      "legendary",
+      "sinnoh",
+      "water"
     ],
     "family": "palkia"
   },
@@ -5330,7 +6073,10 @@
       "en": "Heatran"
     },
     "tags": [
-      "sinnoh"
+      "fire",
+      "legendary",
+      "sinnoh",
+      "steel"
     ],
     "family": "heatran"
   },
@@ -5341,6 +6087,8 @@
       "en": "Regigigas"
     },
     "tags": [
+      "legendary",
+      "normal",
       "sinnoh"
     ],
     "family": "regigigas"
@@ -5352,6 +6100,9 @@
       "en": "Giratina"
     },
     "tags": [
+      "dragon",
+      "ghost",
+      "legendary",
       "sinnoh"
     ],
     "family": "giratina"
@@ -5363,6 +6114,8 @@
       "en": "Cresselia"
     },
     "tags": [
+      "legendary",
+      "psychic",
       "sinnoh"
     ],
     "family": "cresselia"
@@ -5374,7 +6127,9 @@
       "en": "Phione"
     },
     "tags": [
-      "sinnoh"
+      "mythical",
+      "sinnoh",
+      "water"
     ],
     "family": "phione"
   },
@@ -5385,7 +6140,9 @@
       "en": "Manaphy"
     },
     "tags": [
-      "sinnoh"
+      "mythical",
+      "sinnoh",
+      "water"
     ],
     "family": "phione"
   },
@@ -5396,6 +6153,8 @@
       "en": "Darkrai"
     },
     "tags": [
+      "dark",
+      "mythical",
       "sinnoh"
     ],
     "family": "darkrai"
@@ -5407,6 +6166,8 @@
       "en": "Shaymin"
     },
     "tags": [
+      "grass",
+      "mythical",
       "sinnoh"
     ],
     "family": "shaymin"
@@ -5418,6 +6179,8 @@
       "en": "Arceus"
     },
     "tags": [
+      "mythical",
+      "normal",
       "sinnoh"
     ],
     "family": "arceus"
@@ -5429,6 +6192,9 @@
       "en": "Victini"
     },
     "tags": [
+      "fire",
+      "mythical",
+      "psychic",
       "unova"
     ],
     "family": "victini"
@@ -5440,6 +6206,7 @@
       "en": "Snivy"
     },
     "tags": [
+      "grass",
       "unova"
     ],
     "family": "snivy"
@@ -5451,6 +6218,7 @@
       "en": "Servine"
     },
     "tags": [
+      "grass",
       "unova"
     ],
     "family": "snivy"
@@ -5462,6 +6230,7 @@
       "en": "Serperior"
     },
     "tags": [
+      "grass",
       "unova"
     ],
     "family": "snivy"
@@ -5473,6 +6242,7 @@
       "en": "Tepig"
     },
     "tags": [
+      "fire",
       "unova"
     ],
     "family": "tepig"
@@ -5484,6 +6254,8 @@
       "en": "Pignite"
     },
     "tags": [
+      "fighting",
+      "fire",
       "unova"
     ],
     "family": "tepig"
@@ -5495,6 +6267,8 @@
       "en": "Emboar"
     },
     "tags": [
+      "fighting",
+      "fire",
       "unova"
     ],
     "family": "tepig"
@@ -5506,7 +6280,8 @@
       "en": "Oshawott"
     },
     "tags": [
-      "unova"
+      "unova",
+      "water"
     ],
     "family": "oshawott"
   },
@@ -5517,7 +6292,8 @@
       "en": "Dewott"
     },
     "tags": [
-      "unova"
+      "unova",
+      "water"
     ],
     "family": "oshawott"
   },
@@ -5528,7 +6304,8 @@
       "en": "Samurott"
     },
     "tags": [
-      "unova"
+      "unova",
+      "water"
     ],
     "family": "oshawott"
   },
@@ -5539,6 +6316,7 @@
       "en": "Patrat"
     },
     "tags": [
+      "normal",
       "unova"
     ],
     "family": "patrat"
@@ -5550,6 +6328,7 @@
       "en": "Watchog"
     },
     "tags": [
+      "normal",
       "unova"
     ],
     "family": "patrat"
@@ -5561,6 +6340,7 @@
       "en": "Lillipup"
     },
     "tags": [
+      "normal",
       "unova"
     ],
     "family": "lillipup"
@@ -5572,6 +6352,7 @@
       "en": "Herdier"
     },
     "tags": [
+      "normal",
       "unova"
     ],
     "family": "lillipup"
@@ -5583,6 +6364,7 @@
       "en": "Stoutland"
     },
     "tags": [
+      "normal",
       "unova"
     ],
     "family": "lillipup"
@@ -5594,6 +6376,7 @@
       "en": "Purrloin"
     },
     "tags": [
+      "dark",
       "unova"
     ],
     "family": "purrloin"
@@ -5605,6 +6388,7 @@
       "en": "Liepard"
     },
     "tags": [
+      "dark",
       "unova"
     ],
     "family": "purrloin"
@@ -5616,6 +6400,7 @@
       "en": "Pansage"
     },
     "tags": [
+      "grass",
       "unova"
     ],
     "family": "pansage"
@@ -5627,6 +6412,7 @@
       "en": "Simisage"
     },
     "tags": [
+      "grass",
       "unova"
     ],
     "family": "pansage"
@@ -5638,6 +6424,7 @@
       "en": "Pansear"
     },
     "tags": [
+      "fire",
       "unova"
     ],
     "family": "pansear"
@@ -5649,6 +6436,7 @@
       "en": "Simisear"
     },
     "tags": [
+      "fire",
       "unova"
     ],
     "family": "pansear"
@@ -5660,7 +6448,8 @@
       "en": "Panpour"
     },
     "tags": [
-      "unova"
+      "unova",
+      "water"
     ],
     "family": "panpour"
   },
@@ -5671,7 +6460,8 @@
       "en": "Simipour"
     },
     "tags": [
-      "unova"
+      "unova",
+      "water"
     ],
     "family": "panpour"
   },
@@ -5682,6 +6472,7 @@
       "en": "Munna"
     },
     "tags": [
+      "psychic",
       "unova"
     ],
     "family": "munna"
@@ -5693,6 +6484,7 @@
       "en": "Musharna"
     },
     "tags": [
+      "psychic",
       "unova"
     ],
     "family": "munna"
@@ -5704,6 +6496,8 @@
       "en": "Pidove"
     },
     "tags": [
+      "flying",
+      "normal",
       "unova"
     ],
     "family": "pidove"
@@ -5715,6 +6509,8 @@
       "en": "Tranquill"
     },
     "tags": [
+      "flying",
+      "normal",
       "unova"
     ],
     "family": "pidove"
@@ -5726,6 +6522,8 @@
       "en": "Unfezant"
     },
     "tags": [
+      "flying",
+      "normal",
       "unova"
     ],
     "family": "pidove"
@@ -5737,6 +6535,7 @@
       "en": "Blitzle"
     },
     "tags": [
+      "electric",
       "unova"
     ],
     "family": "blitzle"
@@ -5748,6 +6547,7 @@
       "en": "Zebstrika"
     },
     "tags": [
+      "electric",
       "unova"
     ],
     "family": "blitzle"
@@ -5759,6 +6559,7 @@
       "en": "Roggenrola"
     },
     "tags": [
+      "rock",
       "unova"
     ],
     "family": "roggenrola"
@@ -5770,6 +6571,7 @@
       "en": "Boldore"
     },
     "tags": [
+      "rock",
       "unova"
     ],
     "family": "roggenrola"
@@ -5781,6 +6583,7 @@
       "en": "Gigalith"
     },
     "tags": [
+      "rock",
       "unova"
     ],
     "family": "roggenrola"
@@ -5792,6 +6595,8 @@
       "en": "Woobat"
     },
     "tags": [
+      "flying",
+      "psychic",
       "unova"
     ],
     "family": "woobat"
@@ -5803,6 +6608,8 @@
       "en": "Swoobat"
     },
     "tags": [
+      "flying",
+      "psychic",
       "unova"
     ],
     "family": "woobat"
@@ -5814,6 +6621,7 @@
       "en": "Drilbur"
     },
     "tags": [
+      "ground",
       "unova"
     ],
     "family": "drilbur"
@@ -5825,6 +6633,8 @@
       "en": "Excadrill"
     },
     "tags": [
+      "ground",
+      "steel",
       "unova"
     ],
     "family": "drilbur"
@@ -5836,6 +6646,7 @@
       "en": "Audino"
     },
     "tags": [
+      "normal",
       "unova"
     ],
     "family": "audino"
@@ -5847,6 +6658,7 @@
       "en": "Timburr"
     },
     "tags": [
+      "fighting",
       "unova"
     ],
     "family": "timburr"
@@ -5858,6 +6670,7 @@
       "en": "Gurdurr"
     },
     "tags": [
+      "fighting",
       "unova"
     ],
     "family": "timburr"
@@ -5869,6 +6682,7 @@
       "en": "Conkeldurr"
     },
     "tags": [
+      "fighting",
       "unova"
     ],
     "family": "timburr"
@@ -5880,7 +6694,8 @@
       "en": "Tympole"
     },
     "tags": [
-      "unova"
+      "unova",
+      "water"
     ],
     "family": "tympole"
   },
@@ -5891,7 +6706,9 @@
       "en": "Palpitoad"
     },
     "tags": [
-      "unova"
+      "ground",
+      "unova",
+      "water"
     ],
     "family": "tympole"
   },
@@ -5902,7 +6719,9 @@
       "en": "Seismitoad"
     },
     "tags": [
-      "unova"
+      "ground",
+      "unova",
+      "water"
     ],
     "family": "tympole"
   },
@@ -5913,6 +6732,7 @@
       "en": "Throh"
     },
     "tags": [
+      "fighting",
       "unova"
     ],
     "family": "throh"
@@ -5924,6 +6744,7 @@
       "en": "Sawk"
     },
     "tags": [
+      "fighting",
       "unova"
     ],
     "family": "sawk"
@@ -5935,6 +6756,8 @@
       "en": "Sewaddle"
     },
     "tags": [
+      "bug",
+      "grass",
       "unova"
     ],
     "family": "sewaddle"
@@ -5946,6 +6769,8 @@
       "en": "Swadloon"
     },
     "tags": [
+      "bug",
+      "grass",
       "unova"
     ],
     "family": "sewaddle"
@@ -5957,6 +6782,8 @@
       "en": "Leavanny"
     },
     "tags": [
+      "bug",
+      "grass",
       "unova"
     ],
     "family": "sewaddle"
@@ -5968,6 +6795,8 @@
       "en": "Venipede"
     },
     "tags": [
+      "bug",
+      "poison",
       "unova"
     ],
     "family": "venipede"
@@ -5979,6 +6808,8 @@
       "en": "Whirlipede"
     },
     "tags": [
+      "bug",
+      "poison",
       "unova"
     ],
     "family": "venipede"
@@ -5990,6 +6821,8 @@
       "en": "Scolipede"
     },
     "tags": [
+      "bug",
+      "poison",
       "unova"
     ],
     "family": "venipede"
@@ -6001,6 +6834,8 @@
       "en": "Cottonee"
     },
     "tags": [
+      "fairy",
+      "grass",
       "unova"
     ],
     "family": "cottonee"
@@ -6012,6 +6847,8 @@
       "en": "Whimsicott"
     },
     "tags": [
+      "fairy",
+      "grass",
       "unova"
     ],
     "family": "cottonee"
@@ -6023,6 +6860,7 @@
       "en": "Petilil"
     },
     "tags": [
+      "grass",
       "unova"
     ],
     "family": "petilil"
@@ -6034,6 +6872,7 @@
       "en": "Lilligant"
     },
     "tags": [
+      "grass",
       "unova"
     ],
     "family": "petilil"
@@ -6045,7 +6884,8 @@
       "en": "Basculin"
     },
     "tags": [
-      "unova"
+      "unova",
+      "water"
     ],
     "family": "basculin"
   },
@@ -6056,6 +6896,8 @@
       "en": "Sandile"
     },
     "tags": [
+      "dark",
+      "ground",
       "unova"
     ],
     "family": "sandile"
@@ -6067,6 +6909,8 @@
       "en": "Krokorok"
     },
     "tags": [
+      "dark",
+      "ground",
       "unova"
     ],
     "family": "sandile"
@@ -6078,6 +6922,8 @@
       "en": "Krookodile"
     },
     "tags": [
+      "dark",
+      "ground",
       "unova"
     ],
     "family": "sandile"
@@ -6089,6 +6935,7 @@
       "en": "Darumaka"
     },
     "tags": [
+      "fire",
       "unova"
     ],
     "family": "darumaka"
@@ -6100,6 +6947,7 @@
       "en": "Darmanitan"
     },
     "tags": [
+      "fire",
       "unova"
     ],
     "family": "darumaka"
@@ -6111,6 +6959,7 @@
       "en": "Maractus"
     },
     "tags": [
+      "grass",
       "unova"
     ],
     "family": "maractus"
@@ -6122,6 +6971,8 @@
       "en": "Dwebble"
     },
     "tags": [
+      "bug",
+      "rock",
       "unova"
     ],
     "family": "dwebble"
@@ -6133,6 +6984,8 @@
       "en": "Crustle"
     },
     "tags": [
+      "bug",
+      "rock",
       "unova"
     ],
     "family": "dwebble"
@@ -6144,6 +6997,8 @@
       "en": "Scraggy"
     },
     "tags": [
+      "dark",
+      "fighting",
       "unova"
     ],
     "family": "scraggy"
@@ -6155,6 +7010,8 @@
       "en": "Scrafty"
     },
     "tags": [
+      "dark",
+      "fighting",
       "unova"
     ],
     "family": "scraggy"
@@ -6166,6 +7023,8 @@
       "en": "Sigilyph"
     },
     "tags": [
+      "flying",
+      "psychic",
       "unova"
     ],
     "family": "sigilyph"
@@ -6177,6 +7036,7 @@
       "en": "Yamask"
     },
     "tags": [
+      "ghost",
       "unova"
     ],
     "family": "yamask"
@@ -6188,6 +7048,7 @@
       "en": "Cofagrigus"
     },
     "tags": [
+      "ghost",
       "unova"
     ],
     "family": "yamask"
@@ -6199,7 +7060,9 @@
       "en": "Tirtouga"
     },
     "tags": [
-      "unova"
+      "rock",
+      "unova",
+      "water"
     ],
     "family": "tirtouga"
   },
@@ -6210,7 +7073,9 @@
       "en": "Carracosta"
     },
     "tags": [
-      "unova"
+      "rock",
+      "unova",
+      "water"
     ],
     "family": "tirtouga"
   },
@@ -6221,6 +7086,8 @@
       "en": "Archen"
     },
     "tags": [
+      "flying",
+      "rock",
       "unova"
     ],
     "family": "archen"
@@ -6232,6 +7099,8 @@
       "en": "Archeops"
     },
     "tags": [
+      "flying",
+      "rock",
       "unova"
     ],
     "family": "archen"
@@ -6243,6 +7112,7 @@
       "en": "Trubbish"
     },
     "tags": [
+      "poison",
       "unova"
     ],
     "family": "trubbish"
@@ -6254,6 +7124,7 @@
       "en": "Garbodor"
     },
     "tags": [
+      "poison",
       "unova"
     ],
     "family": "trubbish"
@@ -6265,6 +7136,7 @@
       "en": "Zorua"
     },
     "tags": [
+      "dark",
       "unova"
     ],
     "family": "zorua"
@@ -6276,6 +7148,7 @@
       "en": "Zoroark"
     },
     "tags": [
+      "dark",
       "unova"
     ],
     "family": "zorua"
@@ -6287,6 +7160,7 @@
       "en": "Minccino"
     },
     "tags": [
+      "normal",
       "unova"
     ],
     "family": "minccino"
@@ -6298,6 +7172,7 @@
       "en": "Cinccino"
     },
     "tags": [
+      "normal",
       "unova"
     ],
     "family": "minccino"
@@ -6309,6 +7184,7 @@
       "en": "Gothita"
     },
     "tags": [
+      "psychic",
       "unova"
     ],
     "family": "gothita"
@@ -6320,6 +7196,7 @@
       "en": "Gothorita"
     },
     "tags": [
+      "psychic",
       "unova"
     ],
     "family": "gothita"
@@ -6331,6 +7208,7 @@
       "en": "Gothitelle"
     },
     "tags": [
+      "psychic",
       "unova"
     ],
     "family": "gothita"
@@ -6342,6 +7220,7 @@
       "en": "Solosis"
     },
     "tags": [
+      "psychic",
       "unova"
     ],
     "family": "solosis"
@@ -6353,6 +7232,7 @@
       "en": "Duosion"
     },
     "tags": [
+      "psychic",
       "unova"
     ],
     "family": "solosis"
@@ -6364,6 +7244,7 @@
       "en": "Reuniclus"
     },
     "tags": [
+      "psychic",
       "unova"
     ],
     "family": "solosis"
@@ -6375,7 +7256,9 @@
       "en": "Ducklett"
     },
     "tags": [
-      "unova"
+      "flying",
+      "unova",
+      "water"
     ],
     "family": "ducklett"
   },
@@ -6386,7 +7269,9 @@
       "en": "Swanna"
     },
     "tags": [
-      "unova"
+      "flying",
+      "unova",
+      "water"
     ],
     "family": "ducklett"
   },
@@ -6397,6 +7282,7 @@
       "en": "Vanillite"
     },
     "tags": [
+      "ice",
       "unova"
     ],
     "family": "vanillite"
@@ -6408,6 +7294,7 @@
       "en": "Vanillish"
     },
     "tags": [
+      "ice",
       "unova"
     ],
     "family": "vanillite"
@@ -6419,6 +7306,7 @@
       "en": "Vanilluxe"
     },
     "tags": [
+      "ice",
       "unova"
     ],
     "family": "vanillite"
@@ -6430,6 +7318,8 @@
       "en": "Deerling"
     },
     "tags": [
+      "grass",
+      "normal",
       "unova"
     ],
     "family": "deerling"
@@ -6441,6 +7331,8 @@
       "en": "Sawsbuck"
     },
     "tags": [
+      "grass",
+      "normal",
       "unova"
     ],
     "family": "deerling"
@@ -6452,6 +7344,8 @@
       "en": "Emolga"
     },
     "tags": [
+      "electric",
+      "flying",
       "unova"
     ],
     "family": "emolga"
@@ -6463,6 +7357,7 @@
       "en": "Karrablast"
     },
     "tags": [
+      "bug",
       "unova"
     ],
     "family": "karrablast"
@@ -6474,6 +7369,8 @@
       "en": "Escavalier"
     },
     "tags": [
+      "bug",
+      "steel",
       "unova"
     ],
     "family": "karrablast"
@@ -6485,6 +7382,8 @@
       "en": "Foongus"
     },
     "tags": [
+      "grass",
+      "poison",
       "unova"
     ],
     "family": "foongus"
@@ -6496,6 +7395,8 @@
       "en": "Amoonguss"
     },
     "tags": [
+      "grass",
+      "poison",
       "unova"
     ],
     "family": "foongus"
@@ -6507,7 +7408,9 @@
       "en": "Frillish"
     },
     "tags": [
-      "unova"
+      "ghost",
+      "unova",
+      "water"
     ],
     "family": "frillish"
   },
@@ -6518,7 +7421,9 @@
       "en": "Jellicent"
     },
     "tags": [
-      "unova"
+      "ghost",
+      "unova",
+      "water"
     ],
     "family": "frillish"
   },
@@ -6529,7 +7434,8 @@
       "en": "Alomomola"
     },
     "tags": [
-      "unova"
+      "unova",
+      "water"
     ],
     "family": "alomomola"
   },
@@ -6540,6 +7446,8 @@
       "en": "Joltik"
     },
     "tags": [
+      "bug",
+      "electric",
       "unova"
     ],
     "family": "joltik"
@@ -6551,6 +7459,8 @@
       "en": "Galvantula"
     },
     "tags": [
+      "bug",
+      "electric",
       "unova"
     ],
     "family": "joltik"
@@ -6562,6 +7472,8 @@
       "en": "Ferroseed"
     },
     "tags": [
+      "grass",
+      "steel",
       "unova"
     ],
     "family": "ferroseed"
@@ -6573,6 +7485,8 @@
       "en": "Ferrothorn"
     },
     "tags": [
+      "grass",
+      "steel",
       "unova"
     ],
     "family": "ferroseed"
@@ -6584,6 +7498,7 @@
       "en": "Klink"
     },
     "tags": [
+      "steel",
       "unova"
     ],
     "family": "klink"
@@ -6595,6 +7510,7 @@
       "en": "Klang"
     },
     "tags": [
+      "steel",
       "unova"
     ],
     "family": "klink"
@@ -6606,6 +7522,7 @@
       "en": "Klinklang"
     },
     "tags": [
+      "steel",
       "unova"
     ],
     "family": "klink"
@@ -6617,6 +7534,7 @@
       "en": "Tynamo"
     },
     "tags": [
+      "electric",
       "unova"
     ],
     "family": "tynamo"
@@ -6628,6 +7546,7 @@
       "en": "Eelektrik"
     },
     "tags": [
+      "electric",
       "unova"
     ],
     "family": "tynamo"
@@ -6639,6 +7558,7 @@
       "en": "Eelektross"
     },
     "tags": [
+      "electric",
       "unova"
     ],
     "family": "tynamo"
@@ -6650,6 +7570,7 @@
       "en": "Elgyem"
     },
     "tags": [
+      "psychic",
       "unova"
     ],
     "family": "elgyem"
@@ -6661,6 +7582,7 @@
       "en": "Beheeyem"
     },
     "tags": [
+      "psychic",
       "unova"
     ],
     "family": "elgyem"
@@ -6672,6 +7594,8 @@
       "en": "Litwick"
     },
     "tags": [
+      "fire",
+      "ghost",
       "unova"
     ],
     "family": "litwick"
@@ -6683,6 +7607,8 @@
       "en": "Lampent"
     },
     "tags": [
+      "fire",
+      "ghost",
       "unova"
     ],
     "family": "litwick"
@@ -6694,6 +7620,8 @@
       "en": "Chandelure"
     },
     "tags": [
+      "fire",
+      "ghost",
       "unova"
     ],
     "family": "litwick"
@@ -6705,6 +7633,7 @@
       "en": "Axew"
     },
     "tags": [
+      "dragon",
       "unova"
     ],
     "family": "axew"
@@ -6716,6 +7645,7 @@
       "en": "Fraxure"
     },
     "tags": [
+      "dragon",
       "unova"
     ],
     "family": "axew"
@@ -6727,6 +7657,7 @@
       "en": "Haxorus"
     },
     "tags": [
+      "dragon",
       "unova"
     ],
     "family": "axew"
@@ -6738,6 +7669,7 @@
       "en": "Cubchoo"
     },
     "tags": [
+      "ice",
       "unova"
     ],
     "family": "cubchoo"
@@ -6749,6 +7681,7 @@
       "en": "Beartic"
     },
     "tags": [
+      "ice",
       "unova"
     ],
     "family": "cubchoo"
@@ -6760,6 +7693,7 @@
       "en": "Cryogonal"
     },
     "tags": [
+      "ice",
       "unova"
     ],
     "family": "cryogonal"
@@ -6771,6 +7705,7 @@
       "en": "Shelmet"
     },
     "tags": [
+      "bug",
       "unova"
     ],
     "family": "shelmet"
@@ -6782,6 +7717,7 @@
       "en": "Accelgor"
     },
     "tags": [
+      "bug",
       "unova"
     ],
     "family": "shelmet"
@@ -6793,6 +7729,8 @@
       "en": "Stunfisk"
     },
     "tags": [
+      "electric",
+      "ground",
       "unova"
     ],
     "family": "stunfisk"
@@ -6804,6 +7742,7 @@
       "en": "Mienfoo"
     },
     "tags": [
+      "fighting",
       "unova"
     ],
     "family": "mienfoo"
@@ -6815,6 +7754,7 @@
       "en": "Mienshao"
     },
     "tags": [
+      "fighting",
       "unova"
     ],
     "family": "mienfoo"
@@ -6826,6 +7766,7 @@
       "en": "Druddigon"
     },
     "tags": [
+      "dragon",
       "unova"
     ],
     "family": "druddigon"
@@ -6837,6 +7778,8 @@
       "en": "Golett"
     },
     "tags": [
+      "ghost",
+      "ground",
       "unova"
     ],
     "family": "golett"
@@ -6848,6 +7791,8 @@
       "en": "Golurk"
     },
     "tags": [
+      "ghost",
+      "ground",
       "unova"
     ],
     "family": "golett"
@@ -6859,6 +7804,8 @@
       "en": "Pawniard"
     },
     "tags": [
+      "dark",
+      "steel",
       "unova"
     ],
     "family": "pawniard"
@@ -6870,6 +7817,8 @@
       "en": "Bisharp"
     },
     "tags": [
+      "dark",
+      "steel",
       "unova"
     ],
     "family": "pawniard"
@@ -6881,6 +7830,7 @@
       "en": "Bouffalant"
     },
     "tags": [
+      "normal",
       "unova"
     ],
     "family": "bouffalant"
@@ -6892,6 +7842,8 @@
       "en": "Rufflet"
     },
     "tags": [
+      "flying",
+      "normal",
       "unova"
     ],
     "family": "rufflet"
@@ -6903,6 +7855,8 @@
       "en": "Braviary"
     },
     "tags": [
+      "flying",
+      "normal",
       "unova"
     ],
     "family": "rufflet"
@@ -6914,6 +7868,8 @@
       "en": "Vullaby"
     },
     "tags": [
+      "dark",
+      "flying",
       "unova"
     ],
     "family": "vullaby"
@@ -6925,6 +7881,8 @@
       "en": "Mandibuzz"
     },
     "tags": [
+      "dark",
+      "flying",
       "unova"
     ],
     "family": "vullaby"
@@ -6936,6 +7894,7 @@
       "en": "Heatmor"
     },
     "tags": [
+      "fire",
       "unova"
     ],
     "family": "heatmor"
@@ -6947,6 +7906,8 @@
       "en": "Durant"
     },
     "tags": [
+      "bug",
+      "steel",
       "unova"
     ],
     "family": "durant"
@@ -6958,6 +7919,8 @@
       "en": "Deino"
     },
     "tags": [
+      "dark",
+      "dragon",
       "unova"
     ],
     "family": "deino"
@@ -6969,6 +7932,8 @@
       "en": "Zweilous"
     },
     "tags": [
+      "dark",
+      "dragon",
       "unova"
     ],
     "family": "deino"
@@ -6980,6 +7945,8 @@
       "en": "Hydreigon"
     },
     "tags": [
+      "dark",
+      "dragon",
       "unova"
     ],
     "family": "deino"
@@ -6991,6 +7958,8 @@
       "en": "Larvesta"
     },
     "tags": [
+      "bug",
+      "fire",
       "unova"
     ],
     "family": "larvesta"
@@ -7002,6 +7971,8 @@
       "en": "Volcarona"
     },
     "tags": [
+      "bug",
+      "fire",
       "unova"
     ],
     "family": "larvesta"
@@ -7013,6 +7984,9 @@
       "en": "Cobalion"
     },
     "tags": [
+      "fighting",
+      "legendary",
+      "steel",
       "unova"
     ],
     "family": "cobalion"
@@ -7024,6 +7998,9 @@
       "en": "Terrakion"
     },
     "tags": [
+      "fighting",
+      "legendary",
+      "rock",
       "unova"
     ],
     "family": "terrakion"
@@ -7035,6 +8012,9 @@
       "en": "Virizion"
     },
     "tags": [
+      "fighting",
+      "grass",
+      "legendary",
       "unova"
     ],
     "family": "virizion"
@@ -7046,6 +8026,8 @@
       "en": "Tornadus"
     },
     "tags": [
+      "flying",
+      "legendary",
       "unova"
     ],
     "family": "tornadus"
@@ -7057,6 +8039,9 @@
       "en": "Thundurus"
     },
     "tags": [
+      "electric",
+      "flying",
+      "legendary",
       "unova"
     ],
     "family": "thundurus"
@@ -7068,6 +8053,9 @@
       "en": "Reshiram"
     },
     "tags": [
+      "dragon",
+      "fire",
+      "legendary",
       "unova"
     ],
     "family": "reshiram"
@@ -7079,6 +8067,9 @@
       "en": "Zekrom"
     },
     "tags": [
+      "dragon",
+      "electric",
+      "legendary",
       "unova"
     ],
     "family": "zekrom"
@@ -7090,6 +8081,9 @@
       "en": "Landorus"
     },
     "tags": [
+      "flying",
+      "ground",
+      "legendary",
       "unova"
     ],
     "family": "landorus"
@@ -7101,6 +8095,9 @@
       "en": "Kyurem"
     },
     "tags": [
+      "dragon",
+      "ice",
+      "legendary",
       "unova"
     ],
     "family": "kyurem"
@@ -7112,7 +8109,10 @@
       "en": "Keldeo"
     },
     "tags": [
-      "unova"
+      "fighting",
+      "mythical",
+      "unova",
+      "water"
     ],
     "family": "keldeo"
   },
@@ -7123,6 +8123,9 @@
       "en": "Meloetta"
     },
     "tags": [
+      "mythical",
+      "normal",
+      "psychic",
       "unova"
     ],
     "family": "meloetta"
@@ -7134,6 +8137,9 @@
       "en": "Genesect"
     },
     "tags": [
+      "bug",
+      "mythical",
+      "steel",
       "unova"
     ],
     "family": "genesect"
@@ -7145,6 +8151,7 @@
       "en": "Chespin"
     },
     "tags": [
+      "grass",
       "kalos"
     ],
     "family": "chespin"
@@ -7156,6 +8163,7 @@
       "en": "Quilladin"
     },
     "tags": [
+      "grass",
       "kalos"
     ],
     "family": "chespin"
@@ -7167,6 +8175,8 @@
       "en": "Chesnaught"
     },
     "tags": [
+      "fighting",
+      "grass",
       "kalos"
     ],
     "family": "chespin"
@@ -7178,6 +8188,7 @@
       "en": "Fennekin"
     },
     "tags": [
+      "fire",
       "kalos"
     ],
     "family": "fennekin"
@@ -7189,6 +8200,7 @@
       "en": "Braixen"
     },
     "tags": [
+      "fire",
       "kalos"
     ],
     "family": "fennekin"
@@ -7200,7 +8212,9 @@
       "en": "Delphox"
     },
     "tags": [
-      "kalos"
+      "fire",
+      "kalos",
+      "psychic"
     ],
     "family": "fennekin"
   },
@@ -7211,7 +8225,8 @@
       "en": "Froakie"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "water"
     ],
     "family": "froakie"
   },
@@ -7222,7 +8237,8 @@
       "en": "Frogadier"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "water"
     ],
     "family": "froakie"
   },
@@ -7233,7 +8249,9 @@
       "en": "Greninja"
     },
     "tags": [
-      "kalos"
+      "dark",
+      "kalos",
+      "water"
     ],
     "family": "froakie"
   },
@@ -7244,7 +8262,8 @@
       "en": "Bunnelby"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "normal"
     ],
     "family": "bunnelby"
   },
@@ -7255,7 +8274,9 @@
       "en": "Diggersby"
     },
     "tags": [
-      "kalos"
+      "ground",
+      "kalos",
+      "normal"
     ],
     "family": "bunnelby"
   },
@@ -7266,7 +8287,9 @@
       "en": "Fletchling"
     },
     "tags": [
-      "kalos"
+      "flying",
+      "kalos",
+      "normal"
     ],
     "family": "fletchling"
   },
@@ -7277,6 +8300,8 @@
       "en": "Fletchinder"
     },
     "tags": [
+      "fire",
+      "flying",
       "kalos"
     ],
     "family": "fletchling"
@@ -7288,6 +8313,8 @@
       "en": "Talonflame"
     },
     "tags": [
+      "fire",
+      "flying",
       "kalos"
     ],
     "family": "fletchling"
@@ -7299,6 +8326,7 @@
       "en": "Scatterbug"
     },
     "tags": [
+      "bug",
       "kalos"
     ],
     "family": "scatterbug"
@@ -7310,6 +8338,7 @@
       "en": "Spewpa"
     },
     "tags": [
+      "bug",
       "kalos"
     ],
     "family": "scatterbug"
@@ -7321,6 +8350,8 @@
       "en": "Vivillon"
     },
     "tags": [
+      "bug",
+      "flying",
       "kalos"
     ],
     "family": "scatterbug"
@@ -7332,7 +8363,9 @@
       "en": "Litleo"
     },
     "tags": [
-      "kalos"
+      "fire",
+      "kalos",
+      "normal"
     ],
     "family": "litleo"
   },
@@ -7343,7 +8376,9 @@
       "en": "Pyroar"
     },
     "tags": [
-      "kalos"
+      "fire",
+      "kalos",
+      "normal"
     ],
     "family": "litleo"
   },
@@ -7351,9 +8386,10 @@
     "id": "flabebe",
     "number": 669,
     "name": {
-      "en": "Flabebe"
+      "en": "Flabébé"
     },
     "tags": [
+      "fairy",
       "kalos"
     ],
     "family": "flabebe"
@@ -7365,6 +8401,7 @@
       "en": "Floette"
     },
     "tags": [
+      "fairy",
       "kalos"
     ],
     "family": "flabebe"
@@ -7376,6 +8413,7 @@
       "en": "Florges"
     },
     "tags": [
+      "fairy",
       "kalos"
     ],
     "family": "flabebe"
@@ -7387,6 +8425,7 @@
       "en": "Skiddo"
     },
     "tags": [
+      "grass",
       "kalos"
     ],
     "family": "skiddo"
@@ -7398,6 +8437,7 @@
       "en": "Gogoat"
     },
     "tags": [
+      "grass",
       "kalos"
     ],
     "family": "skiddo"
@@ -7409,6 +8449,7 @@
       "en": "Pancham"
     },
     "tags": [
+      "fighting",
       "kalos"
     ],
     "family": "pancham"
@@ -7420,6 +8461,8 @@
       "en": "Pangoro"
     },
     "tags": [
+      "dark",
+      "fighting",
       "kalos"
     ],
     "family": "pancham"
@@ -7431,7 +8474,8 @@
       "en": "Furfrou"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "normal"
     ],
     "family": "furfrou"
   },
@@ -7442,7 +8486,8 @@
       "en": "Espurr"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "psychic"
     ],
     "family": "espurr"
   },
@@ -7453,7 +8498,8 @@
       "en": "Meowstic"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "psychic"
     ],
     "family": "espurr"
   },
@@ -7464,7 +8510,9 @@
       "en": "Honedge"
     },
     "tags": [
-      "kalos"
+      "ghost",
+      "kalos",
+      "steel"
     ],
     "family": "honedge"
   },
@@ -7475,7 +8523,9 @@
       "en": "Doublade"
     },
     "tags": [
-      "kalos"
+      "ghost",
+      "kalos",
+      "steel"
     ],
     "family": "honedge"
   },
@@ -7486,7 +8536,9 @@
       "en": "Aegislash"
     },
     "tags": [
-      "kalos"
+      "ghost",
+      "kalos",
+      "steel"
     ],
     "family": "honedge"
   },
@@ -7497,6 +8549,7 @@
       "en": "Spritzee"
     },
     "tags": [
+      "fairy",
       "kalos"
     ],
     "family": "spritzee"
@@ -7508,6 +8561,7 @@
       "en": "Aromatisse"
     },
     "tags": [
+      "fairy",
       "kalos"
     ],
     "family": "spritzee"
@@ -7519,6 +8573,7 @@
       "en": "Swirlix"
     },
     "tags": [
+      "fairy",
       "kalos"
     ],
     "family": "swirlix"
@@ -7530,6 +8585,7 @@
       "en": "Slurpuff"
     },
     "tags": [
+      "fairy",
       "kalos"
     ],
     "family": "swirlix"
@@ -7541,7 +8597,9 @@
       "en": "Inkay"
     },
     "tags": [
-      "kalos"
+      "dark",
+      "kalos",
+      "psychic"
     ],
     "family": "inkay"
   },
@@ -7552,7 +8610,9 @@
       "en": "Malamar"
     },
     "tags": [
-      "kalos"
+      "dark",
+      "kalos",
+      "psychic"
     ],
     "family": "inkay"
   },
@@ -7563,7 +8623,9 @@
       "en": "Binacle"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "rock",
+      "water"
     ],
     "family": "binacle"
   },
@@ -7574,7 +8636,9 @@
       "en": "Barbaracle"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "rock",
+      "water"
     ],
     "family": "binacle"
   },
@@ -7585,7 +8649,9 @@
       "en": "Skrelp"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "poison",
+      "water"
     ],
     "family": "skrelp"
   },
@@ -7596,7 +8662,9 @@
       "en": "Dragalge"
     },
     "tags": [
-      "kalos"
+      "dragon",
+      "kalos",
+      "poison"
     ],
     "family": "skrelp"
   },
@@ -7607,7 +8675,8 @@
       "en": "Clauncher"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "water"
     ],
     "family": "clauncher"
   },
@@ -7618,7 +8687,8 @@
       "en": "Clawitzer"
     },
     "tags": [
-      "kalos"
+      "kalos",
+      "water"
     ],
     "family": "clauncher"
   },
@@ -7629,7 +8699,9 @@
       "en": "Helioptile"
     },
     "tags": [
-      "kalos"
+      "electric",
+      "kalos",
+      "normal"
     ],
     "family": "helioptile"
   },
@@ -7640,7 +8712,9 @@
       "en": "Heliolisk"
     },
     "tags": [
-      "kalos"
+      "electric",
+      "kalos",
+      "normal"
     ],
     "family": "helioptile"
   },
@@ -7651,7 +8725,9 @@
       "en": "Tyrunt"
     },
     "tags": [
-      "kalos"
+      "dragon",
+      "kalos",
+      "rock"
     ],
     "family": "tyrunt"
   },
@@ -7662,7 +8738,9 @@
       "en": "Tyrantrum"
     },
     "tags": [
-      "kalos"
+      "dragon",
+      "kalos",
+      "rock"
     ],
     "family": "tyrunt"
   },
@@ -7673,7 +8751,9 @@
       "en": "Amaura"
     },
     "tags": [
-      "kalos"
+      "ice",
+      "kalos",
+      "rock"
     ],
     "family": "amaura"
   },
@@ -7684,7 +8764,9 @@
       "en": "Aurorus"
     },
     "tags": [
-      "kalos"
+      "ice",
+      "kalos",
+      "rock"
     ],
     "family": "amaura"
   },
@@ -7695,6 +8777,7 @@
       "en": "Sylveon"
     },
     "tags": [
+      "fairy",
       "kalos"
     ],
     "family": "eevee"
@@ -7706,6 +8789,8 @@
       "en": "Hawlucha"
     },
     "tags": [
+      "fighting",
+      "flying",
       "kalos"
     ],
     "family": "hawlucha"
@@ -7717,6 +8802,8 @@
       "en": "Dedenne"
     },
     "tags": [
+      "electric",
+      "fairy",
       "kalos"
     ],
     "family": "dedenne"
@@ -7728,7 +8815,9 @@
       "en": "Carbink"
     },
     "tags": [
-      "kalos"
+      "fairy",
+      "kalos",
+      "rock"
     ],
     "family": "carbink"
   },
@@ -7739,6 +8828,7 @@
       "en": "Goomy"
     },
     "tags": [
+      "dragon",
       "kalos"
     ],
     "family": "goomy"
@@ -7750,6 +8840,7 @@
       "en": "Sliggoo"
     },
     "tags": [
+      "dragon",
       "kalos"
     ],
     "family": "goomy"
@@ -7761,6 +8852,7 @@
       "en": "Goodra"
     },
     "tags": [
+      "dragon",
       "kalos"
     ],
     "family": "goomy"
@@ -7772,7 +8864,9 @@
       "en": "Klefki"
     },
     "tags": [
-      "kalos"
+      "fairy",
+      "kalos",
+      "steel"
     ],
     "family": "klefki"
   },
@@ -7783,6 +8877,8 @@
       "en": "Phantump"
     },
     "tags": [
+      "ghost",
+      "grass",
       "kalos"
     ],
     "family": "phantump"
@@ -7794,6 +8890,8 @@
       "en": "Trevenant"
     },
     "tags": [
+      "ghost",
+      "grass",
       "kalos"
     ],
     "family": "phantump"
@@ -7805,6 +8903,8 @@
       "en": "Pumpkaboo"
     },
     "tags": [
+      "ghost",
+      "grass",
       "kalos"
     ],
     "family": "pumpkaboo"
@@ -7816,6 +8916,8 @@
       "en": "Gourgeist"
     },
     "tags": [
+      "ghost",
+      "grass",
       "kalos"
     ],
     "family": "pumpkaboo"
@@ -7827,6 +8929,7 @@
       "en": "Bergmite"
     },
     "tags": [
+      "ice",
       "kalos"
     ],
     "family": "bergmite"
@@ -7838,6 +8941,7 @@
       "en": "Avalugg"
     },
     "tags": [
+      "ice",
       "kalos"
     ],
     "family": "bergmite"
@@ -7849,6 +8953,8 @@
       "en": "Noibat"
     },
     "tags": [
+      "dragon",
+      "flying",
       "kalos"
     ],
     "family": "noibat"
@@ -7860,6 +8966,8 @@
       "en": "Noivern"
     },
     "tags": [
+      "dragon",
+      "flying",
       "kalos"
     ],
     "family": "noibat"
@@ -7871,7 +8979,9 @@
       "en": "Xerneas"
     },
     "tags": [
-      "kalos"
+      "fairy",
+      "kalos",
+      "legendary"
     ],
     "family": "xerneas"
   },
@@ -7882,7 +8992,10 @@
       "en": "Yveltal"
     },
     "tags": [
-      "kalos"
+      "dark",
+      "flying",
+      "kalos",
+      "legendary"
     ],
     "family": "yveltal"
   },
@@ -7893,7 +9006,10 @@
       "en": "Zygarde"
     },
     "tags": [
-      "kalos"
+      "dragon",
+      "ground",
+      "kalos",
+      "legendary"
     ],
     "family": "zygarde"
   },
@@ -7904,7 +9020,10 @@
       "en": "Diancie"
     },
     "tags": [
-      "kalos"
+      "fairy",
+      "kalos",
+      "mythical",
+      "rock"
     ],
     "family": "diancie"
   },
@@ -7915,7 +9034,10 @@
       "en": "Hoopa"
     },
     "tags": [
-      "kalos"
+      "ghost",
+      "kalos",
+      "mythical",
+      "psychic"
     ],
     "family": "hoopa"
   },
@@ -7926,7 +9048,10 @@
       "en": "Volcanion"
     },
     "tags": [
-      "kalos"
+      "fire",
+      "kalos",
+      "mythical",
+      "water"
     ],
     "family": "volcanion"
   },
@@ -7937,7 +9062,9 @@
       "en": "Rowlet"
     },
     "tags": [
-      "alola"
+      "alola",
+      "flying",
+      "grass"
     ],
     "family": "rowlet"
   },
@@ -7948,7 +9075,9 @@
       "en": "Dartrix"
     },
     "tags": [
-      "alola"
+      "alola",
+      "flying",
+      "grass"
     ],
     "family": "rowlet"
   },
@@ -7959,7 +9088,9 @@
       "en": "Decidueye"
     },
     "tags": [
-      "alola"
+      "alola",
+      "ghost",
+      "grass"
     ],
     "family": "rowlet"
   },
@@ -7970,7 +9101,8 @@
       "en": "Litten"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fire"
     ],
     "family": "litten"
   },
@@ -7981,7 +9113,8 @@
       "en": "Torracat"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fire"
     ],
     "family": "litten"
   },
@@ -7992,7 +9125,9 @@
       "en": "Incineroar"
     },
     "tags": [
-      "alola"
+      "alola",
+      "dark",
+      "fire"
     ],
     "family": "litten"
   },
@@ -8003,7 +9138,8 @@
       "en": "Popplio"
     },
     "tags": [
-      "alola"
+      "alola",
+      "water"
     ],
     "family": "popplio"
   },
@@ -8014,7 +9150,8 @@
       "en": "Brionne"
     },
     "tags": [
-      "alola"
+      "alola",
+      "water"
     ],
     "family": "popplio"
   },
@@ -8025,7 +9162,9 @@
       "en": "Primarina"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fairy",
+      "water"
     ],
     "family": "popplio"
   },
@@ -8036,7 +9175,9 @@
       "en": "Pikipek"
     },
     "tags": [
-      "alola"
+      "alola",
+      "flying",
+      "normal"
     ],
     "family": "pikipek"
   },
@@ -8047,7 +9188,9 @@
       "en": "Trumbeak"
     },
     "tags": [
-      "alola"
+      "alola",
+      "flying",
+      "normal"
     ],
     "family": "pikipek"
   },
@@ -8058,7 +9201,9 @@
       "en": "Toucannon"
     },
     "tags": [
-      "alola"
+      "alola",
+      "flying",
+      "normal"
     ],
     "family": "pikipek"
   },
@@ -8069,7 +9214,8 @@
       "en": "Yungoos"
     },
     "tags": [
-      "alola"
+      "alola",
+      "normal"
     ],
     "family": "yungoos"
   },
@@ -8080,7 +9226,8 @@
       "en": "Gumshoos"
     },
     "tags": [
-      "alola"
+      "alola",
+      "normal"
     ],
     "family": "yungoos"
   },
@@ -8091,7 +9238,8 @@
       "en": "Grubbin"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug"
     ],
     "family": "grubbin"
   },
@@ -8102,7 +9250,9 @@
       "en": "Charjabug"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug",
+      "electric"
     ],
     "family": "grubbin"
   },
@@ -8113,7 +9263,9 @@
       "en": "Vikavolt"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug",
+      "electric"
     ],
     "family": "grubbin"
   },
@@ -8124,7 +9276,8 @@
       "en": "Crabrawler"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fighting"
     ],
     "family": "crabrawler"
   },
@@ -8135,7 +9288,9 @@
       "en": "Crabominable"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fighting",
+      "ice"
     ],
     "family": "crabrawler"
   },
@@ -8146,7 +9301,9 @@
       "en": "Oricorio"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fire",
+      "flying"
     ],
     "family": "oricorio"
   },
@@ -8157,7 +9314,9 @@
       "en": "Cutiefly"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug",
+      "fairy"
     ],
     "family": "cutiefly"
   },
@@ -8168,7 +9327,9 @@
       "en": "Ribombee"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug",
+      "fairy"
     ],
     "family": "cutiefly"
   },
@@ -8179,7 +9340,8 @@
       "en": "Rockruff"
     },
     "tags": [
-      "alola"
+      "alola",
+      "rock"
     ],
     "family": "rockruff"
   },
@@ -8190,7 +9352,8 @@
       "en": "Lycanroc"
     },
     "tags": [
-      "alola"
+      "alola",
+      "rock"
     ],
     "family": "rockruff"
   },
@@ -8201,7 +9364,8 @@
       "en": "Wishiwashi"
     },
     "tags": [
-      "alola"
+      "alola",
+      "water"
     ],
     "family": "wishiwashi"
   },
@@ -8212,7 +9376,9 @@
       "en": "Mareanie"
     },
     "tags": [
-      "alola"
+      "alola",
+      "poison",
+      "water"
     ],
     "family": "mareanie"
   },
@@ -8223,7 +9389,9 @@
       "en": "Toxapex"
     },
     "tags": [
-      "alola"
+      "alola",
+      "poison",
+      "water"
     ],
     "family": "mareanie"
   },
@@ -8234,7 +9402,8 @@
       "en": "Mudbray"
     },
     "tags": [
-      "alola"
+      "alola",
+      "ground"
     ],
     "family": "mudbray"
   },
@@ -8245,7 +9414,8 @@
       "en": "Mudsdale"
     },
     "tags": [
-      "alola"
+      "alola",
+      "ground"
     ],
     "family": "mudbray"
   },
@@ -8256,7 +9426,9 @@
       "en": "Dewpider"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug",
+      "water"
     ],
     "family": "dewpider"
   },
@@ -8267,7 +9439,9 @@
       "en": "Araquanid"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug",
+      "water"
     ],
     "family": "dewpider"
   },
@@ -8278,7 +9452,8 @@
       "en": "Fomantis"
     },
     "tags": [
-      "alola"
+      "alola",
+      "grass"
     ],
     "family": "fomantis"
   },
@@ -8289,7 +9464,8 @@
       "en": "Lurantis"
     },
     "tags": [
-      "alola"
+      "alola",
+      "grass"
     ],
     "family": "fomantis"
   },
@@ -8300,7 +9476,9 @@
       "en": "Morelull"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fairy",
+      "grass"
     ],
     "family": "morelull"
   },
@@ -8311,7 +9489,9 @@
       "en": "Shiinotic"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fairy",
+      "grass"
     ],
     "family": "morelull"
   },
@@ -8322,7 +9502,9 @@
       "en": "Salandit"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fire",
+      "poison"
     ],
     "family": "salandit"
   },
@@ -8333,7 +9515,9 @@
       "en": "Salazzle"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fire",
+      "poison"
     ],
     "family": "salandit"
   },
@@ -8344,7 +9528,9 @@
       "en": "Stufful"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fighting",
+      "normal"
     ],
     "family": "stufful"
   },
@@ -8355,7 +9541,9 @@
       "en": "Bewear"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fighting",
+      "normal"
     ],
     "family": "stufful"
   },
@@ -8366,7 +9554,8 @@
       "en": "Bounsweet"
     },
     "tags": [
-      "alola"
+      "alola",
+      "grass"
     ],
     "family": "bounsweet"
   },
@@ -8377,7 +9566,8 @@
       "en": "Steenee"
     },
     "tags": [
-      "alola"
+      "alola",
+      "grass"
     ],
     "family": "bounsweet"
   },
@@ -8388,7 +9578,8 @@
       "en": "Tsareena"
     },
     "tags": [
-      "alola"
+      "alola",
+      "grass"
     ],
     "family": "bounsweet"
   },
@@ -8399,7 +9590,8 @@
       "en": "Comfey"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fairy"
     ],
     "family": "comfey"
   },
@@ -8410,7 +9602,9 @@
       "en": "Oranguru"
     },
     "tags": [
-      "alola"
+      "alola",
+      "normal",
+      "psychic"
     ],
     "family": "oranguru"
   },
@@ -8421,7 +9615,8 @@
       "en": "Passimian"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fighting"
     ],
     "family": "passimian"
   },
@@ -8432,7 +9627,9 @@
       "en": "Wimpod"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug",
+      "water"
     ],
     "family": "wimpod"
   },
@@ -8443,7 +9640,9 @@
       "en": "Golisopod"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug",
+      "water"
     ],
     "family": "wimpod"
   },
@@ -8454,7 +9653,9 @@
       "en": "Sandygast"
     },
     "tags": [
-      "alola"
+      "alola",
+      "ghost",
+      "ground"
     ],
     "family": "sandygast"
   },
@@ -8465,7 +9666,9 @@
       "en": "Palossand"
     },
     "tags": [
-      "alola"
+      "alola",
+      "ghost",
+      "ground"
     ],
     "family": "sandygast"
   },
@@ -8476,7 +9679,8 @@
       "en": "Pyukumuku"
     },
     "tags": [
-      "alola"
+      "alola",
+      "water"
     ],
     "family": "pyukumuku"
   },
@@ -8487,9 +9691,10 @@
       "en": "Type: Null"
     },
     "tags": [
-      "alola"
+      "alola",
+      "normal"
     ],
-    "family": "typenull"
+    "family": "type-null"
   },
   {
     "id": "silvally",
@@ -8498,9 +9703,11 @@
       "en": "Silvally"
     },
     "tags": [
-      "alola"
+      "alola",
+      "legendary",
+      "normal"
     ],
-    "family": "typenull"
+    "family": "type-null"
   },
   {
     "id": "minior",
@@ -8509,7 +9716,9 @@
       "en": "Minior"
     },
     "tags": [
-      "alola"
+      "alola",
+      "flying",
+      "rock"
     ],
     "family": "minior"
   },
@@ -8520,7 +9729,8 @@
       "en": "Komala"
     },
     "tags": [
-      "alola"
+      "alola",
+      "normal"
     ],
     "family": "komala"
   },
@@ -8531,7 +9741,9 @@
       "en": "Turtonator"
     },
     "tags": [
-      "alola"
+      "alola",
+      "dragon",
+      "fire"
     ],
     "family": "turtonator"
   },
@@ -8542,7 +9754,9 @@
       "en": "Togedemaru"
     },
     "tags": [
-      "alola"
+      "alola",
+      "electric",
+      "steel"
     ],
     "family": "togedemaru"
   },
@@ -8553,7 +9767,9 @@
       "en": "Mimikyu"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fairy",
+      "ghost"
     ],
     "family": "mimikyu"
   },
@@ -8564,7 +9780,9 @@
       "en": "Bruxish"
     },
     "tags": [
-      "alola"
+      "alola",
+      "psychic",
+      "water"
     ],
     "family": "bruxish"
   },
@@ -8575,7 +9793,9 @@
       "en": "Drampa"
     },
     "tags": [
-      "alola"
+      "alola",
+      "dragon",
+      "normal"
     ],
     "family": "drampa"
   },
@@ -8586,7 +9806,9 @@
       "en": "Dhelmise"
     },
     "tags": [
-      "alola"
+      "alola",
+      "ghost",
+      "grass"
     ],
     "family": "dhelmise"
   },
@@ -8597,9 +9819,10 @@
       "en": "Jangmo-o"
     },
     "tags": [
-      "alola"
+      "alola",
+      "dragon"
     ],
-    "family": "jangmoo"
+    "family": "jangmo-o"
   },
   {
     "id": "hakamo-o",
@@ -8608,9 +9831,11 @@
       "en": "Hakamo-o"
     },
     "tags": [
-      "alola"
+      "alola",
+      "dragon",
+      "fighting"
     ],
-    "family": "jangmoo"
+    "family": "jangmo-o"
   },
   {
     "id": "kommo-o",
@@ -8619,9 +9844,11 @@
       "en": "Kommo-o"
     },
     "tags": [
-      "alola"
+      "alola",
+      "dragon",
+      "fighting"
     ],
-    "family": "jangmoo"
+    "family": "jangmo-o"
   },
   {
     "id": "tapu-koko",
@@ -8630,9 +9857,12 @@
       "en": "Tapu Koko"
     },
     "tags": [
-      "alola"
+      "alola",
+      "electric",
+      "fairy",
+      "legendary"
     ],
-    "family": "tapukoko"
+    "family": "tapu-koko"
   },
   {
     "id": "tapu-lele",
@@ -8641,9 +9871,12 @@
       "en": "Tapu Lele"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fairy",
+      "legendary",
+      "psychic"
     ],
-    "family": "tapulele"
+    "family": "tapu-lele"
   },
   {
     "id": "tapu-bulu",
@@ -8652,9 +9885,12 @@
       "en": "Tapu Bulu"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fairy",
+      "grass",
+      "legendary"
     ],
-    "family": "tapubulu"
+    "family": "tapu-bulu"
   },
   {
     "id": "tapu-fini",
@@ -8663,9 +9899,12 @@
       "en": "Tapu Fini"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fairy",
+      "legendary",
+      "water"
     ],
-    "family": "tapufini"
+    "family": "tapu-fini"
   },
   {
     "id": "cosmog",
@@ -8674,7 +9913,9 @@
       "en": "Cosmog"
     },
     "tags": [
-      "alola"
+      "alola",
+      "legendary",
+      "psychic"
     ],
     "family": "cosmog"
   },
@@ -8685,7 +9926,9 @@
       "en": "Cosmoem"
     },
     "tags": [
-      "alola"
+      "alola",
+      "legendary",
+      "psychic"
     ],
     "family": "cosmog"
   },
@@ -8696,7 +9939,10 @@
       "en": "Solgaleo"
     },
     "tags": [
-      "alola"
+      "alola",
+      "legendary",
+      "psychic",
+      "steel"
     ],
     "family": "cosmog"
   },
@@ -8707,7 +9953,10 @@
       "en": "Lunala"
     },
     "tags": [
-      "alola"
+      "alola",
+      "ghost",
+      "legendary",
+      "psychic"
     ],
     "family": "cosmog"
   },
@@ -8718,7 +9967,9 @@
       "en": "Nihilego"
     },
     "tags": [
-      "alola"
+      "alola",
+      "poison",
+      "rock"
     ],
     "family": "nihilego"
   },
@@ -8729,7 +9980,9 @@
       "en": "Buzzwole"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug",
+      "fighting"
     ],
     "family": "buzzwole"
   },
@@ -8740,7 +9993,9 @@
       "en": "Pheromosa"
     },
     "tags": [
-      "alola"
+      "alola",
+      "bug",
+      "fighting"
     ],
     "family": "pheromosa"
   },
@@ -8751,7 +10006,8 @@
       "en": "Xurkitree"
     },
     "tags": [
-      "alola"
+      "alola",
+      "electric"
     ],
     "family": "xurkitree"
   },
@@ -8762,7 +10018,9 @@
       "en": "Celesteela"
     },
     "tags": [
-      "alola"
+      "alola",
+      "flying",
+      "steel"
     ],
     "family": "celesteela"
   },
@@ -8773,7 +10031,9 @@
       "en": "Kartana"
     },
     "tags": [
-      "alola"
+      "alola",
+      "grass",
+      "steel"
     ],
     "family": "kartana"
   },
@@ -8784,7 +10044,9 @@
       "en": "Guzzlord"
     },
     "tags": [
-      "alola"
+      "alola",
+      "dark",
+      "dragon"
     ],
     "family": "guzzlord"
   },
@@ -8795,7 +10057,9 @@
       "en": "Necrozma"
     },
     "tags": [
-      "alola"
+      "alola",
+      "legendary",
+      "psychic"
     ],
     "family": "necrozma"
   },
@@ -8806,7 +10070,10 @@
       "en": "Magearna"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fairy",
+      "mythical",
+      "steel"
     ],
     "family": "magearna"
   },
@@ -8817,7 +10084,10 @@
       "en": "Marshadow"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fighting",
+      "ghost",
+      "mythical"
     ],
     "family": "marshadow"
   },
@@ -8828,7 +10098,8 @@
       "en": "Poipole"
     },
     "tags": [
-      "alola"
+      "alola",
+      "poison"
     ],
     "family": "poipole"
   },
@@ -8839,7 +10110,9 @@
       "en": "Naganadel"
     },
     "tags": [
-      "alola"
+      "alola",
+      "dragon",
+      "poison"
     ],
     "family": "poipole"
   },
@@ -8850,7 +10123,9 @@
       "en": "Stakataka"
     },
     "tags": [
-      "alola"
+      "alola",
+      "rock",
+      "steel"
     ],
     "family": "stakataka"
   },
@@ -8861,7 +10136,9 @@
       "en": "Blacephalon"
     },
     "tags": [
-      "alola"
+      "alola",
+      "fire",
+      "ghost"
     ],
     "family": "blacephalon"
   },
@@ -8872,7 +10149,9 @@
       "en": "Zeraora"
     },
     "tags": [
-      "alola"
+      "alola",
+      "electric",
+      "mythical"
     ],
     "family": "zeraora"
   },
@@ -8883,7 +10162,9 @@
       "en": "Meltan"
     },
     "tags": [
-      "alola"
+      "alola",
+      "mythical",
+      "steel"
     ],
     "family": "meltan"
   },
@@ -8894,9 +10175,11 @@
       "en": "Melmetal"
     },
     "tags": [
-      "alola"
+      "alola",
+      "mythical",
+      "steel"
     ],
-    "family": "melmetal"
+    "family": null
   },
   {
     "id": "grookey",
@@ -8905,7 +10188,8 @@
       "en": "Grookey"
     },
     "tags": [
-      "galar"
+      "galar",
+      "grass"
     ],
     "family": "grookey"
   },
@@ -8916,7 +10200,8 @@
       "en": "Thwackey"
     },
     "tags": [
-      "galar"
+      "galar",
+      "grass"
     ],
     "family": "grookey"
   },
@@ -8927,7 +10212,8 @@
       "en": "Rillaboom"
     },
     "tags": [
-      "galar"
+      "galar",
+      "grass"
     ],
     "family": "grookey"
   },
@@ -8938,6 +10224,7 @@
       "en": "Scorbunny"
     },
     "tags": [
+      "fire",
       "galar"
     ],
     "family": "scorbunny"
@@ -8949,6 +10236,7 @@
       "en": "Raboot"
     },
     "tags": [
+      "fire",
       "galar"
     ],
     "family": "scorbunny"
@@ -8960,6 +10248,7 @@
       "en": "Cinderace"
     },
     "tags": [
+      "fire",
       "galar"
     ],
     "family": "scorbunny"
@@ -8971,7 +10260,8 @@
       "en": "Sobble"
     },
     "tags": [
-      "galar"
+      "galar",
+      "water"
     ],
     "family": "sobble"
   },
@@ -8982,7 +10272,8 @@
       "en": "Drizzile"
     },
     "tags": [
-      "galar"
+      "galar",
+      "water"
     ],
     "family": "sobble"
   },
@@ -8993,7 +10284,8 @@
       "en": "Inteleon"
     },
     "tags": [
-      "galar"
+      "galar",
+      "water"
     ],
     "family": "sobble"
   },
@@ -9004,7 +10296,8 @@
       "en": "Skwovet"
     },
     "tags": [
-      "galar"
+      "galar",
+      "normal"
     ],
     "family": "skwovet"
   },
@@ -9015,7 +10308,8 @@
       "en": "Greedent"
     },
     "tags": [
-      "galar"
+      "galar",
+      "normal"
     ],
     "family": "skwovet"
   },
@@ -9026,6 +10320,7 @@
       "en": "Rookidee"
     },
     "tags": [
+      "flying",
       "galar"
     ],
     "family": "rookidee"
@@ -9037,6 +10332,7 @@
       "en": "Corvisquire"
     },
     "tags": [
+      "flying",
       "galar"
     ],
     "family": "rookidee"
@@ -9048,7 +10344,9 @@
       "en": "Corviknight"
     },
     "tags": [
-      "galar"
+      "flying",
+      "galar",
+      "steel"
     ],
     "family": "rookidee"
   },
@@ -9059,6 +10357,7 @@
       "en": "Blipbug"
     },
     "tags": [
+      "bug",
       "galar"
     ],
     "family": "blipbug"
@@ -9070,7 +10369,9 @@
       "en": "Dottler"
     },
     "tags": [
-      "galar"
+      "bug",
+      "galar",
+      "psychic"
     ],
     "family": "blipbug"
   },
@@ -9081,7 +10382,9 @@
       "en": "Orbeetle"
     },
     "tags": [
-      "galar"
+      "bug",
+      "galar",
+      "psychic"
     ],
     "family": "blipbug"
   },
@@ -9092,6 +10395,7 @@
       "en": "Nickit"
     },
     "tags": [
+      "dark",
       "galar"
     ],
     "family": "nickit"
@@ -9103,6 +10407,7 @@
       "en": "Thievul"
     },
     "tags": [
+      "dark",
       "galar"
     ],
     "family": "nickit"
@@ -9114,7 +10419,8 @@
       "en": "Gossifleur"
     },
     "tags": [
-      "galar"
+      "galar",
+      "grass"
     ],
     "family": "gossifleur"
   },
@@ -9125,7 +10431,8 @@
       "en": "Eldegoss"
     },
     "tags": [
-      "galar"
+      "galar",
+      "grass"
     ],
     "family": "gossifleur"
   },
@@ -9136,7 +10443,8 @@
       "en": "Wooloo"
     },
     "tags": [
-      "galar"
+      "galar",
+      "normal"
     ],
     "family": "wooloo"
   },
@@ -9147,7 +10455,8 @@
       "en": "Dubwool"
     },
     "tags": [
-      "galar"
+      "galar",
+      "normal"
     ],
     "family": "wooloo"
   },
@@ -9158,7 +10467,8 @@
       "en": "Chewtle"
     },
     "tags": [
-      "galar"
+      "galar",
+      "water"
     ],
     "family": "chewtle"
   },
@@ -9169,7 +10479,9 @@
       "en": "Drednaw"
     },
     "tags": [
-      "galar"
+      "galar",
+      "rock",
+      "water"
     ],
     "family": "chewtle"
   },
@@ -9180,6 +10492,7 @@
       "en": "Yamper"
     },
     "tags": [
+      "electric",
       "galar"
     ],
     "family": "yamper"
@@ -9191,6 +10504,7 @@
       "en": "Boltund"
     },
     "tags": [
+      "electric",
       "galar"
     ],
     "family": "yamper"
@@ -9202,7 +10516,8 @@
       "en": "Rolycoly"
     },
     "tags": [
-      "galar"
+      "galar",
+      "rock"
     ],
     "family": "rolycoly"
   },
@@ -9213,7 +10528,9 @@
       "en": "Carkol"
     },
     "tags": [
-      "galar"
+      "fire",
+      "galar",
+      "rock"
     ],
     "family": "rolycoly"
   },
@@ -9224,7 +10541,9 @@
       "en": "Coalossal"
     },
     "tags": [
-      "galar"
+      "fire",
+      "galar",
+      "rock"
     ],
     "family": "rolycoly"
   },
@@ -9235,7 +10554,9 @@
       "en": "Applin"
     },
     "tags": [
-      "galar"
+      "dragon",
+      "galar",
+      "grass"
     ],
     "family": "applin"
   },
@@ -9246,7 +10567,9 @@
       "en": "Flapple"
     },
     "tags": [
-      "galar"
+      "dragon",
+      "galar",
+      "grass"
     ],
     "family": "applin"
   },
@@ -9257,7 +10580,9 @@
       "en": "Appletun"
     },
     "tags": [
-      "galar"
+      "dragon",
+      "galar",
+      "grass"
     ],
     "family": "applin"
   },
@@ -9268,7 +10593,8 @@
       "en": "Silicobra"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ground"
     ],
     "family": "silicobra"
   },
@@ -9279,7 +10605,8 @@
       "en": "Sandaconda"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ground"
     ],
     "family": "silicobra"
   },
@@ -9290,7 +10617,9 @@
       "en": "Cramorant"
     },
     "tags": [
-      "galar"
+      "flying",
+      "galar",
+      "water"
     ],
     "family": "cramorant"
   },
@@ -9301,7 +10630,8 @@
       "en": "Arrokuda"
     },
     "tags": [
-      "galar"
+      "galar",
+      "water"
     ],
     "family": "arrokuda"
   },
@@ -9312,7 +10642,8 @@
       "en": "Barraskewda"
     },
     "tags": [
-      "galar"
+      "galar",
+      "water"
     ],
     "family": "arrokuda"
   },
@@ -9323,7 +10654,9 @@
       "en": "Toxel"
     },
     "tags": [
-      "galar"
+      "electric",
+      "galar",
+      "poison"
     ],
     "family": "toxel"
   },
@@ -9334,7 +10667,9 @@
       "en": "Toxtricity"
     },
     "tags": [
-      "galar"
+      "electric",
+      "galar",
+      "poison"
     ],
     "family": "toxel"
   },
@@ -9345,6 +10680,8 @@
       "en": "Sizzlipede"
     },
     "tags": [
+      "bug",
+      "fire",
       "galar"
     ],
     "family": "sizzlipede"
@@ -9356,6 +10693,8 @@
       "en": "Centiskorch"
     },
     "tags": [
+      "bug",
+      "fire",
       "galar"
     ],
     "family": "sizzlipede"
@@ -9367,6 +10706,7 @@
       "en": "Clobbopus"
     },
     "tags": [
+      "fighting",
       "galar"
     ],
     "family": "clobbopus"
@@ -9378,6 +10718,7 @@
       "en": "Grapploct"
     },
     "tags": [
+      "fighting",
       "galar"
     ],
     "family": "clobbopus"
@@ -9389,7 +10730,8 @@
       "en": "Sinistea"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ghost"
     ],
     "family": "sinistea"
   },
@@ -9400,7 +10742,8 @@
       "en": "Polteageist"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ghost"
     ],
     "family": "sinistea"
   },
@@ -9411,7 +10754,8 @@
       "en": "Hatenna"
     },
     "tags": [
-      "galar"
+      "galar",
+      "psychic"
     ],
     "family": "hatenna"
   },
@@ -9422,7 +10766,8 @@
       "en": "Hattrem"
     },
     "tags": [
-      "galar"
+      "galar",
+      "psychic"
     ],
     "family": "hatenna"
   },
@@ -9433,7 +10778,9 @@
       "en": "Hatterene"
     },
     "tags": [
-      "galar"
+      "fairy",
+      "galar",
+      "psychic"
     ],
     "family": "hatenna"
   },
@@ -9444,6 +10791,8 @@
       "en": "Impidimp"
     },
     "tags": [
+      "dark",
+      "fairy",
       "galar"
     ],
     "family": "impidimp"
@@ -9455,6 +10804,8 @@
       "en": "Morgrem"
     },
     "tags": [
+      "dark",
+      "fairy",
       "galar"
     ],
     "family": "impidimp"
@@ -9466,6 +10817,8 @@
       "en": "Grimmsnarl"
     },
     "tags": [
+      "dark",
+      "fairy",
       "galar"
     ],
     "family": "impidimp"
@@ -9477,7 +10830,9 @@
       "en": "Obstagoon"
     },
     "tags": [
-      "galar"
+      "dark",
+      "galar",
+      "normal"
     ],
     "family": "zigzagoon"
   },
@@ -9488,7 +10843,8 @@
       "en": "Perrserker"
     },
     "tags": [
-      "galar"
+      "galar",
+      "steel"
     ],
     "family": "meowth"
   },
@@ -9499,7 +10855,8 @@
       "en": "Cursola"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ghost"
     ],
     "family": "corsola"
   },
@@ -9507,9 +10864,10 @@
     "id": "sirfetchd",
     "number": 865,
     "name": {
-      "en": "Sirfetchd"
+      "en": "Sirfetch’d"
     },
     "tags": [
+      "fighting",
       "galar"
     ],
     "family": "farfetchd"
@@ -9518,12 +10876,14 @@
     "id": "mr-rime",
     "number": 866,
     "name": {
-      "en": "Mr Rime"
+      "en": "Mr. Rime"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ice",
+      "psychic"
     ],
-    "family": "mimejr"
+    "family": "mime-jr"
   },
   {
     "id": "runerigus",
@@ -9532,7 +10892,9 @@
       "en": "Runerigus"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ghost",
+      "ground"
     ],
     "family": "yamask"
   },
@@ -9543,6 +10905,7 @@
       "en": "Milcery"
     },
     "tags": [
+      "fairy",
       "galar"
     ],
     "family": "milcery"
@@ -9554,6 +10917,7 @@
       "en": "Alcremie"
     },
     "tags": [
+      "fairy",
       "galar"
     ],
     "family": "milcery"
@@ -9565,6 +10929,7 @@
       "en": "Falinks"
     },
     "tags": [
+      "fighting",
       "galar"
     ],
     "family": "falinks"
@@ -9576,6 +10941,7 @@
       "en": "Pincurchin"
     },
     "tags": [
+      "electric",
       "galar"
     ],
     "family": "pincurchin"
@@ -9587,7 +10953,9 @@
       "en": "Snom"
     },
     "tags": [
-      "galar"
+      "bug",
+      "galar",
+      "ice"
     ],
     "family": "snom"
   },
@@ -9598,7 +10966,9 @@
       "en": "Frosmoth"
     },
     "tags": [
-      "galar"
+      "bug",
+      "galar",
+      "ice"
     ],
     "family": "snom"
   },
@@ -9609,7 +10979,8 @@
       "en": "Stonjourner"
     },
     "tags": [
-      "galar"
+      "galar",
+      "rock"
     ],
     "family": "stonjourner"
   },
@@ -9620,7 +10991,8 @@
       "en": "Eiscue"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ice"
     ],
     "family": "eiscue"
   },
@@ -9631,7 +11003,9 @@
       "en": "Indeedee"
     },
     "tags": [
-      "galar"
+      "galar",
+      "normal",
+      "psychic"
     ],
     "family": "indeedee"
   },
@@ -9642,6 +11016,8 @@
       "en": "Morpeko"
     },
     "tags": [
+      "dark",
+      "electric",
       "galar"
     ],
     "family": "morpeko"
@@ -9653,7 +11029,8 @@
       "en": "Cufant"
     },
     "tags": [
-      "galar"
+      "galar",
+      "steel"
     ],
     "family": "cufant"
   },
@@ -9664,7 +11041,8 @@
       "en": "Copperajah"
     },
     "tags": [
-      "galar"
+      "galar",
+      "steel"
     ],
     "family": "cufant"
   },
@@ -9675,6 +11053,8 @@
       "en": "Dracozolt"
     },
     "tags": [
+      "dragon",
+      "electric",
       "galar"
     ],
     "family": "dracozolt"
@@ -9686,7 +11066,9 @@
       "en": "Arctozolt"
     },
     "tags": [
-      "galar"
+      "electric",
+      "galar",
+      "ice"
     ],
     "family": "arctozolt"
   },
@@ -9697,7 +11079,9 @@
       "en": "Dracovish"
     },
     "tags": [
-      "galar"
+      "dragon",
+      "galar",
+      "water"
     ],
     "family": "dracovish"
   },
@@ -9708,7 +11092,9 @@
       "en": "Arctovish"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ice",
+      "water"
     ],
     "family": "arctovish"
   },
@@ -9719,7 +11105,9 @@
       "en": "Duraludon"
     },
     "tags": [
-      "galar"
+      "dragon",
+      "galar",
+      "steel"
     ],
     "family": "duraludon"
   },
@@ -9730,7 +11118,9 @@
       "en": "Dreepy"
     },
     "tags": [
-      "galar"
+      "dragon",
+      "galar",
+      "ghost"
     ],
     "family": "dreepy"
   },
@@ -9741,7 +11131,9 @@
       "en": "Drakloak"
     },
     "tags": [
-      "galar"
+      "dragon",
+      "galar",
+      "ghost"
     ],
     "family": "dreepy"
   },
@@ -9752,7 +11144,9 @@
       "en": "Dragapult"
     },
     "tags": [
-      "galar"
+      "dragon",
+      "galar",
+      "ghost"
     ],
     "family": "dreepy"
   },
@@ -9763,7 +11157,9 @@
       "en": "Zacian"
     },
     "tags": [
-      "galar"
+      "fairy",
+      "galar",
+      "legendary"
     ],
     "family": "zacian"
   },
@@ -9774,7 +11170,9 @@
       "en": "Zamazenta"
     },
     "tags": [
-      "galar"
+      "fighting",
+      "galar",
+      "legendary"
     ],
     "family": "zamazenta"
   },
@@ -9785,7 +11183,10 @@
       "en": "Eternatus"
     },
     "tags": [
-      "galar"
+      "dragon",
+      "galar",
+      "legendary",
+      "poison"
     ],
     "family": "eternatus"
   },
@@ -9796,7 +11197,9 @@
       "en": "Kubfu"
     },
     "tags": [
-      "galar"
+      "fighting",
+      "galar",
+      "legendary"
     ],
     "family": "kubfu"
   },
@@ -9807,7 +11210,10 @@
       "en": "Urshifu"
     },
     "tags": [
-      "galar"
+      "dark",
+      "fighting",
+      "galar",
+      "legendary"
     ],
     "family": "kubfu"
   },
@@ -9818,7 +11224,10 @@
       "en": "Zarude"
     },
     "tags": [
-      "galar"
+      "dark",
+      "galar",
+      "grass",
+      "mythical"
     ],
     "family": "zarude"
   },
@@ -9829,7 +11238,9 @@
       "en": "Regieleki"
     },
     "tags": [
-      "galar"
+      "electric",
+      "galar",
+      "legendary"
     ],
     "family": "regieleki"
   },
@@ -9840,7 +11251,9 @@
       "en": "Regidrago"
     },
     "tags": [
-      "galar"
+      "dragon",
+      "galar",
+      "legendary"
     ],
     "family": "regidrago"
   },
@@ -9851,7 +11264,9 @@
       "en": "Glastrier"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ice",
+      "legendary"
     ],
     "family": "glastrier"
   },
@@ -9862,7 +11277,9 @@
       "en": "Spectrier"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ghost",
+      "legendary"
     ],
     "family": "spectrier"
   },
@@ -9873,7 +11290,10 @@
       "en": "Calyrex"
     },
     "tags": [
-      "galar"
+      "galar",
+      "grass",
+      "legendary",
+      "psychic"
     ],
     "family": "calyrex"
   },
@@ -9884,7 +11304,9 @@
       "en": "Wyrdeer"
     },
     "tags": [
-      "galar"
+      "galar",
+      "normal",
+      "psychic"
     ],
     "family": "stantler"
   },
@@ -9895,7 +11317,9 @@
       "en": "Kleavor"
     },
     "tags": [
-      "galar"
+      "bug",
+      "galar",
+      "rock"
     ],
     "family": "scyther"
   },
@@ -9906,7 +11330,9 @@
       "en": "Ursaluna"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ground",
+      "normal"
     ],
     "family": "teddiursa"
   },
@@ -9917,7 +11343,9 @@
       "en": "Basculegion"
     },
     "tags": [
-      "galar"
+      "galar",
+      "ghost",
+      "water"
     ],
     "family": "basculin"
   },
@@ -9928,7 +11356,9 @@
       "en": "Sneasler"
     },
     "tags": [
-      "galar"
+      "fighting",
+      "galar",
+      "poison"
     ],
     "family": "sneasel"
   },
@@ -9939,7 +11369,9 @@
       "en": "Overqwil"
     },
     "tags": [
-      "galar"
+      "dark",
+      "galar",
+      "poison"
     ],
     "family": "qwilfish"
   },
@@ -9950,7 +11382,10 @@
       "en": "Enamorus"
     },
     "tags": [
-      "galar"
+      "fairy",
+      "flying",
+      "galar",
+      "legendary"
     ],
     "family": "enamorus"
   },
@@ -9961,6 +11396,7 @@
       "en": "Sprigatito"
     },
     "tags": [
+      "grass",
       "paldea"
     ],
     "family": "sprigatito"
@@ -9972,6 +11408,7 @@
       "en": "Floragato"
     },
     "tags": [
+      "grass",
       "paldea"
     ],
     "family": "sprigatito"
@@ -9983,6 +11420,8 @@
       "en": "Meowscarada"
     },
     "tags": [
+      "dark",
+      "grass",
       "paldea"
     ],
     "family": "sprigatito"
@@ -9994,6 +11433,7 @@
       "en": "Fuecoco"
     },
     "tags": [
+      "fire",
       "paldea"
     ],
     "family": "fuecoco"
@@ -10005,6 +11445,7 @@
       "en": "Crocalor"
     },
     "tags": [
+      "fire",
       "paldea"
     ],
     "family": "fuecoco"
@@ -10016,6 +11457,8 @@
       "en": "Skeledirge"
     },
     "tags": [
+      "fire",
+      "ghost",
       "paldea"
     ],
     "family": "fuecoco"
@@ -10027,7 +11470,8 @@
       "en": "Quaxly"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "water"
     ],
     "family": "quaxly"
   },
@@ -10038,7 +11482,8 @@
       "en": "Quaxwell"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "water"
     ],
     "family": "quaxly"
   },
@@ -10049,7 +11494,9 @@
       "en": "Quaquaval"
     },
     "tags": [
-      "paldea"
+      "fighting",
+      "paldea",
+      "water"
     ],
     "family": "quaxly"
   },
@@ -10060,6 +11507,7 @@
       "en": "Lechonk"
     },
     "tags": [
+      "normal",
       "paldea"
     ],
     "family": "lechonk"
@@ -10071,6 +11519,7 @@
       "en": "Oinkologne"
     },
     "tags": [
+      "normal",
       "paldea"
     ],
     "family": "lechonk"
@@ -10082,6 +11531,7 @@
       "en": "Tarountula"
     },
     "tags": [
+      "bug",
       "paldea"
     ],
     "family": "tarountula"
@@ -10093,6 +11543,7 @@
       "en": "Spidops"
     },
     "tags": [
+      "bug",
       "paldea"
     ],
     "family": "tarountula"
@@ -10104,6 +11555,7 @@
       "en": "Nymble"
     },
     "tags": [
+      "bug",
       "paldea"
     ],
     "family": "nymble"
@@ -10115,6 +11567,8 @@
       "en": "Lokix"
     },
     "tags": [
+      "bug",
+      "dark",
       "paldea"
     ],
     "family": "nymble"
@@ -10126,6 +11580,7 @@
       "en": "Pawmi"
     },
     "tags": [
+      "electric",
       "paldea"
     ],
     "family": "pawmi"
@@ -10137,6 +11592,8 @@
       "en": "Pawmo"
     },
     "tags": [
+      "electric",
+      "fighting",
       "paldea"
     ],
     "family": "pawmi"
@@ -10148,6 +11605,8 @@
       "en": "Pawmot"
     },
     "tags": [
+      "electric",
+      "fighting",
       "paldea"
     ],
     "family": "pawmi"
@@ -10159,6 +11618,7 @@
       "en": "Tandemaus"
     },
     "tags": [
+      "normal",
       "paldea"
     ],
     "family": "tandemaus"
@@ -10170,6 +11630,7 @@
       "en": "Maushold"
     },
     "tags": [
+      "normal",
       "paldea"
     ],
     "family": "tandemaus"
@@ -10181,6 +11642,7 @@
       "en": "Fidough"
     },
     "tags": [
+      "fairy",
       "paldea"
     ],
     "family": "fidough"
@@ -10192,6 +11654,7 @@
       "en": "Dachsbun"
     },
     "tags": [
+      "fairy",
       "paldea"
     ],
     "family": "fidough"
@@ -10203,6 +11666,8 @@
       "en": "Smoliv"
     },
     "tags": [
+      "grass",
+      "normal",
       "paldea"
     ],
     "family": "smoliv"
@@ -10214,6 +11679,8 @@
       "en": "Dolliv"
     },
     "tags": [
+      "grass",
+      "normal",
       "paldea"
     ],
     "family": "smoliv"
@@ -10225,6 +11692,8 @@
       "en": "Arboliva"
     },
     "tags": [
+      "grass",
+      "normal",
       "paldea"
     ],
     "family": "smoliv"
@@ -10236,6 +11705,8 @@
       "en": "Squawkabilly"
     },
     "tags": [
+      "flying",
+      "normal",
       "paldea"
     ],
     "family": "squawkabilly"
@@ -10247,7 +11718,8 @@
       "en": "Nacli"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "rock"
     ],
     "family": "nacli"
   },
@@ -10258,7 +11730,8 @@
       "en": "Naclstack"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "rock"
     ],
     "family": "nacli"
   },
@@ -10269,7 +11742,8 @@
       "en": "Garganacl"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "rock"
     ],
     "family": "nacli"
   },
@@ -10280,6 +11754,7 @@
       "en": "Charcadet"
     },
     "tags": [
+      "fire",
       "paldea"
     ],
     "family": "charcadet"
@@ -10291,7 +11766,9 @@
       "en": "Armarouge"
     },
     "tags": [
-      "paldea"
+      "fire",
+      "paldea",
+      "psychic"
     ],
     "family": "charcadet"
   },
@@ -10302,6 +11779,8 @@
       "en": "Ceruledge"
     },
     "tags": [
+      "fire",
+      "ghost",
       "paldea"
     ],
     "family": "charcadet"
@@ -10313,6 +11792,7 @@
       "en": "Tadbulb"
     },
     "tags": [
+      "electric",
       "paldea"
     ],
     "family": "tadbulb"
@@ -10324,6 +11804,7 @@
       "en": "Bellibolt"
     },
     "tags": [
+      "electric",
       "paldea"
     ],
     "family": "tadbulb"
@@ -10335,6 +11816,8 @@
       "en": "Wattrel"
     },
     "tags": [
+      "electric",
+      "flying",
       "paldea"
     ],
     "family": "wattrel"
@@ -10346,6 +11829,8 @@
       "en": "Kilowattrel"
     },
     "tags": [
+      "electric",
+      "flying",
       "paldea"
     ],
     "family": "wattrel"
@@ -10357,6 +11842,7 @@
       "en": "Maschiff"
     },
     "tags": [
+      "dark",
       "paldea"
     ],
     "family": "maschiff"
@@ -10368,6 +11854,7 @@
       "en": "Mabosstiff"
     },
     "tags": [
+      "dark",
       "paldea"
     ],
     "family": "maschiff"
@@ -10379,7 +11866,9 @@
       "en": "Shroodle"
     },
     "tags": [
-      "paldea"
+      "normal",
+      "paldea",
+      "poison"
     ],
     "family": "shroodle"
   },
@@ -10390,7 +11879,9 @@
       "en": "Grafaiai"
     },
     "tags": [
-      "paldea"
+      "normal",
+      "paldea",
+      "poison"
     ],
     "family": "shroodle"
   },
@@ -10401,6 +11892,8 @@
       "en": "Bramblin"
     },
     "tags": [
+      "ghost",
+      "grass",
       "paldea"
     ],
     "family": "bramblin"
@@ -10412,6 +11905,8 @@
       "en": "Brambleghast"
     },
     "tags": [
+      "ghost",
+      "grass",
       "paldea"
     ],
     "family": "bramblin"
@@ -10423,6 +11918,8 @@
       "en": "Toedscool"
     },
     "tags": [
+      "grass",
+      "ground",
       "paldea"
     ],
     "family": "toedscool"
@@ -10434,6 +11931,8 @@
       "en": "Toedscruel"
     },
     "tags": [
+      "grass",
+      "ground",
       "paldea"
     ],
     "family": "toedscool"
@@ -10445,7 +11944,8 @@
       "en": "Klawf"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "rock"
     ],
     "family": "klawf"
   },
@@ -10456,6 +11956,7 @@
       "en": "Capsakid"
     },
     "tags": [
+      "grass",
       "paldea"
     ],
     "family": "capsakid"
@@ -10467,6 +11968,8 @@
       "en": "Scovillain"
     },
     "tags": [
+      "fire",
+      "grass",
       "paldea"
     ],
     "family": "capsakid"
@@ -10478,6 +11981,7 @@
       "en": "Rellor"
     },
     "tags": [
+      "bug",
       "paldea"
     ],
     "family": "rellor"
@@ -10489,7 +11993,9 @@
       "en": "Rabsca"
     },
     "tags": [
-      "paldea"
+      "bug",
+      "paldea",
+      "psychic"
     ],
     "family": "rellor"
   },
@@ -10500,7 +12006,8 @@
       "en": "Flittle"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "psychic"
     ],
     "family": "flittle"
   },
@@ -10511,7 +12018,8 @@
       "en": "Espathra"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "psychic"
     ],
     "family": "flittle"
   },
@@ -10522,7 +12030,9 @@
       "en": "Tinkatink"
     },
     "tags": [
-      "paldea"
+      "fairy",
+      "paldea",
+      "steel"
     ],
     "family": "tinkatink"
   },
@@ -10533,7 +12043,9 @@
       "en": "Tinkatuff"
     },
     "tags": [
-      "paldea"
+      "fairy",
+      "paldea",
+      "steel"
     ],
     "family": "tinkatink"
   },
@@ -10544,7 +12056,9 @@
       "en": "Tinkaton"
     },
     "tags": [
-      "paldea"
+      "fairy",
+      "paldea",
+      "steel"
     ],
     "family": "tinkatink"
   },
@@ -10555,7 +12069,8 @@
       "en": "Wiglett"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "water"
     ],
     "family": "wiglett"
   },
@@ -10566,7 +12081,8 @@
       "en": "Wugtrio"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "water"
     ],
     "family": "wiglett"
   },
@@ -10577,6 +12093,8 @@
       "en": "Bombirdier"
     },
     "tags": [
+      "dark",
+      "flying",
       "paldea"
     ],
     "family": "bombirdier"
@@ -10588,7 +12106,8 @@
       "en": "Finizen"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "water"
     ],
     "family": "finizen"
   },
@@ -10599,7 +12118,8 @@
       "en": "Palafin"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "water"
     ],
     "family": "finizen"
   },
@@ -10610,7 +12130,9 @@
       "en": "Varoom"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "poison",
+      "steel"
     ],
     "family": "varoom"
   },
@@ -10621,7 +12143,9 @@
       "en": "Revavroom"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "poison",
+      "steel"
     ],
     "family": "varoom"
   },
@@ -10632,6 +12156,8 @@
       "en": "Cyclizar"
     },
     "tags": [
+      "dragon",
+      "normal",
       "paldea"
     ],
     "family": "cyclizar"
@@ -10643,7 +12169,8 @@
       "en": "Orthworm"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "steel"
     ],
     "family": "orthworm"
   },
@@ -10654,7 +12181,9 @@
       "en": "Glimmet"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "poison",
+      "rock"
     ],
     "family": "glimmet"
   },
@@ -10665,7 +12194,9 @@
       "en": "Glimmora"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "poison",
+      "rock"
     ],
     "family": "glimmet"
   },
@@ -10676,6 +12207,7 @@
       "en": "Greavard"
     },
     "tags": [
+      "ghost",
       "paldea"
     ],
     "family": "greavard"
@@ -10687,6 +12219,7 @@
       "en": "Houndstone"
     },
     "tags": [
+      "ghost",
       "paldea"
     ],
     "family": "greavard"
@@ -10698,6 +12231,8 @@
       "en": "Flamigo"
     },
     "tags": [
+      "fighting",
+      "flying",
       "paldea"
     ],
     "family": "flamigo"
@@ -10709,6 +12244,7 @@
       "en": "Cetoddle"
     },
     "tags": [
+      "ice",
       "paldea"
     ],
     "family": "cetoddle"
@@ -10720,6 +12256,7 @@
       "en": "Cetitan"
     },
     "tags": [
+      "ice",
       "paldea"
     ],
     "family": "cetoddle"
@@ -10731,7 +12268,9 @@
       "en": "Veluza"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "psychic",
+      "water"
     ],
     "family": "veluza"
   },
@@ -10742,7 +12281,8 @@
       "en": "Dondozo"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "water"
     ],
     "family": "dondozo"
   },
@@ -10753,7 +12293,9 @@
       "en": "Tatsugiri"
     },
     "tags": [
-      "paldea"
+      "dragon",
+      "paldea",
+      "water"
     ],
     "family": "tatsugiri"
   },
@@ -10764,6 +12306,8 @@
       "en": "Annihilape"
     },
     "tags": [
+      "fighting",
+      "ghost",
       "paldea"
     ],
     "family": "mankey"
@@ -10775,7 +12319,9 @@
       "en": "Clodsire"
     },
     "tags": [
-      "paldea"
+      "ground",
+      "paldea",
+      "poison"
     ],
     "family": "wooper"
   },
@@ -10786,7 +12332,9 @@
       "en": "Farigiraf"
     },
     "tags": [
-      "paldea"
+      "normal",
+      "paldea",
+      "psychic"
     ],
     "family": "girafarig"
   },
@@ -10797,6 +12345,7 @@
       "en": "Dudunsparce"
     },
     "tags": [
+      "normal",
       "paldea"
     ],
     "family": "dunsparce"
@@ -10808,7 +12357,9 @@
       "en": "Kingambit"
     },
     "tags": [
-      "paldea"
+      "dark",
+      "paldea",
+      "steel"
     ],
     "family": "pawniard"
   },
@@ -10819,9 +12370,11 @@
       "en": "Great Tusk"
     },
     "tags": [
+      "fighting",
+      "ground",
       "paldea"
     ],
-    "family": "greattusk"
+    "family": "great-tusk"
   },
   {
     "id": "scream-tail",
@@ -10830,9 +12383,11 @@
       "en": "Scream Tail"
     },
     "tags": [
-      "paldea"
+      "fairy",
+      "paldea",
+      "psychic"
     ],
-    "family": "screamtail"
+    "family": "scream-tail"
   },
   {
     "id": "brute-bonnet",
@@ -10841,9 +12396,11 @@
       "en": "Brute Bonnet"
     },
     "tags": [
+      "dark",
+      "grass",
       "paldea"
     ],
-    "family": "brutebonnet"
+    "family": "brute-bonnet"
   },
   {
     "id": "flutter-mane",
@@ -10852,9 +12409,11 @@
       "en": "Flutter Mane"
     },
     "tags": [
+      "fairy",
+      "ghost",
       "paldea"
     ],
-    "family": "fluttermane"
+    "family": "flutter-mane"
   },
   {
     "id": "slither-wing",
@@ -10863,9 +12422,11 @@
       "en": "Slither Wing"
     },
     "tags": [
+      "bug",
+      "fighting",
       "paldea"
     ],
-    "family": "slitherwing"
+    "family": "slither-wing"
   },
   {
     "id": "sandy-shocks",
@@ -10874,9 +12435,11 @@
       "en": "Sandy Shocks"
     },
     "tags": [
+      "electric",
+      "ground",
       "paldea"
     ],
-    "family": "sandyshocks"
+    "family": "sandy-shocks"
   },
   {
     "id": "iron-treads",
@@ -10885,9 +12448,11 @@
       "en": "Iron Treads"
     },
     "tags": [
-      "paldea"
+      "ground",
+      "paldea",
+      "steel"
     ],
-    "family": "irontreads"
+    "family": "iron-treads"
   },
   {
     "id": "iron-bundle",
@@ -10896,9 +12461,11 @@
       "en": "Iron Bundle"
     },
     "tags": [
-      "paldea"
+      "ice",
+      "paldea",
+      "water"
     ],
-    "family": "ironbundle"
+    "family": "iron-bundle"
   },
   {
     "id": "iron-hands",
@@ -10907,9 +12474,11 @@
       "en": "Iron Hands"
     },
     "tags": [
+      "electric",
+      "fighting",
       "paldea"
     ],
-    "family": "ironhands"
+    "family": "iron-hands"
   },
   {
     "id": "iron-jugulis",
@@ -10918,9 +12487,11 @@
       "en": "Iron Jugulis"
     },
     "tags": [
+      "dark",
+      "flying",
       "paldea"
     ],
-    "family": "ironjugulis"
+    "family": "iron-jugulis"
   },
   {
     "id": "iron-moth",
@@ -10929,9 +12500,11 @@
       "en": "Iron Moth"
     },
     "tags": [
-      "paldea"
+      "fire",
+      "paldea",
+      "poison"
     ],
-    "family": "ironmoth"
+    "family": "iron-moth"
   },
   {
     "id": "iron-thorns",
@@ -10940,9 +12513,11 @@
       "en": "Iron Thorns"
     },
     "tags": [
-      "paldea"
+      "electric",
+      "paldea",
+      "rock"
     ],
-    "family": "ironthorns"
+    "family": "iron-thorns"
   },
   {
     "id": "frigibax",
@@ -10951,6 +12526,8 @@
       "en": "Frigibax"
     },
     "tags": [
+      "dragon",
+      "ice",
       "paldea"
     ],
     "family": "frigibax"
@@ -10962,6 +12539,8 @@
       "en": "Arctibax"
     },
     "tags": [
+      "dragon",
+      "ice",
       "paldea"
     ],
     "family": "frigibax"
@@ -10973,6 +12552,8 @@
       "en": "Baxcalibur"
     },
     "tags": [
+      "dragon",
+      "ice",
       "paldea"
     ],
     "family": "frigibax"
@@ -10984,6 +12565,7 @@
       "en": "Gimmighoul"
     },
     "tags": [
+      "ghost",
       "paldea"
     ],
     "family": "gimmighoul"
@@ -10995,7 +12577,9 @@
       "en": "Gholdengo"
     },
     "tags": [
-      "paldea"
+      "ghost",
+      "paldea",
+      "steel"
     ],
     "family": "gimmighoul"
   },
@@ -11006,9 +12590,12 @@
       "en": "Wo-Chien"
     },
     "tags": [
+      "dark",
+      "grass",
+      "legendary",
       "paldea"
     ],
-    "family": "wochien"
+    "family": "wo-chien"
   },
   {
     "id": "chien-pao",
@@ -11017,9 +12604,12 @@
       "en": "Chien-Pao"
     },
     "tags": [
+      "dark",
+      "ice",
+      "legendary",
       "paldea"
     ],
-    "family": "chienpao"
+    "family": "chien-pao"
   },
   {
     "id": "ting-lu",
@@ -11028,9 +12618,12 @@
       "en": "Ting-Lu"
     },
     "tags": [
+      "dark",
+      "ground",
+      "legendary",
       "paldea"
     ],
-    "family": "tinglu"
+    "family": "ting-lu"
   },
   {
     "id": "chi-yu",
@@ -11039,9 +12632,12 @@
       "en": "Chi-Yu"
     },
     "tags": [
+      "dark",
+      "fire",
+      "legendary",
       "paldea"
     ],
-    "family": "chiyu"
+    "family": "chi-yu"
   },
   {
     "id": "roaring-moon",
@@ -11050,9 +12646,11 @@
       "en": "Roaring Moon"
     },
     "tags": [
+      "dark",
+      "dragon",
       "paldea"
     ],
-    "family": "roaringmoon"
+    "family": "roaring-moon"
   },
   {
     "id": "iron-valiant",
@@ -11061,9 +12659,11 @@
       "en": "Iron Valiant"
     },
     "tags": [
+      "fairy",
+      "fighting",
       "paldea"
     ],
-    "family": "ironvaliant"
+    "family": "iron-valiant"
   },
   {
     "id": "koraidon",
@@ -11072,6 +12672,9 @@
       "en": "Koraidon"
     },
     "tags": [
+      "dragon",
+      "fighting",
+      "legendary",
       "paldea"
     ],
     "family": "koraidon"
@@ -11083,6 +12686,9 @@
       "en": "Miraidon"
     },
     "tags": [
+      "dragon",
+      "electric",
+      "legendary",
       "paldea"
     ],
     "family": "miraidon"
@@ -11094,9 +12700,11 @@
       "en": "Walking Wake"
     },
     "tags": [
-      "paldea"
+      "dragon",
+      "paldea",
+      "water"
     ],
-    "family": "walkingwake"
+    "family": "walking-wake"
   },
   {
     "id": "iron-leaves",
@@ -11105,9 +12713,11 @@
       "en": "Iron Leaves"
     },
     "tags": [
-      "paldea"
+      "grass",
+      "paldea",
+      "psychic"
     ],
-    "family": "ironleaves"
+    "family": "iron-leaves"
   },
   {
     "id": "dipplin",
@@ -11116,6 +12726,8 @@
       "en": "Dipplin"
     },
     "tags": [
+      "dragon",
+      "grass",
       "paldea"
     ],
     "family": "applin"
@@ -11127,6 +12739,8 @@
       "en": "Poltchageist"
     },
     "tags": [
+      "ghost",
+      "grass",
       "paldea"
     ],
     "family": "poltchageist"
@@ -11138,6 +12752,8 @@
       "en": "Sinistcha"
     },
     "tags": [
+      "ghost",
+      "grass",
       "paldea"
     ],
     "family": "poltchageist"
@@ -11149,7 +12765,10 @@
       "en": "Okidogi"
     },
     "tags": [
-      "paldea"
+      "fighting",
+      "legendary",
+      "paldea",
+      "poison"
     ],
     "family": "okidogi"
   },
@@ -11160,7 +12779,10 @@
       "en": "Munkidori"
     },
     "tags": [
-      "paldea"
+      "legendary",
+      "paldea",
+      "poison",
+      "psychic"
     ],
     "family": "munkidori"
   },
@@ -11171,7 +12793,10 @@
       "en": "Fezandipiti"
     },
     "tags": [
-      "paldea"
+      "fairy",
+      "legendary",
+      "paldea",
+      "poison"
     ],
     "family": "fezandipiti"
   },
@@ -11182,6 +12807,8 @@
       "en": "Ogerpon"
     },
     "tags": [
+      "grass",
+      "legendary",
       "paldea"
     ],
     "family": "ogerpon"
@@ -11193,7 +12820,9 @@
       "en": "Archaludon"
     },
     "tags": [
-      "paldea"
+      "dragon",
+      "paldea",
+      "steel"
     ],
     "family": "duraludon"
   },
@@ -11204,6 +12833,8 @@
       "en": "Hydrapple"
     },
     "tags": [
+      "dragon",
+      "grass",
       "paldea"
     ],
     "family": "applin"
@@ -11215,9 +12846,11 @@
       "en": "Gouging Fire"
     },
     "tags": [
+      "dragon",
+      "fire",
       "paldea"
     ],
-    "family": "gougingfire"
+    "family": "gouging-fire"
   },
   {
     "id": "raging-bolt",
@@ -11226,9 +12859,11 @@
       "en": "Raging Bolt"
     },
     "tags": [
+      "dragon",
+      "electric",
       "paldea"
     ],
-    "family": "ragingbolt"
+    "family": "raging-bolt"
   },
   {
     "id": "iron-boulder",
@@ -11237,9 +12872,11 @@
       "en": "Iron Boulder"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "psychic",
+      "rock"
     ],
-    "family": "ironboulder"
+    "family": "iron-boulder"
   },
   {
     "id": "iron-crown",
@@ -11248,9 +12885,11 @@
       "en": "Iron Crown"
     },
     "tags": [
-      "paldea"
+      "paldea",
+      "psychic",
+      "steel"
     ],
-    "family": "ironcrown"
+    "family": "iron-crown"
   },
   {
     "id": "terapagos",
@@ -11259,6 +12898,8 @@
       "en": "Terapagos"
     },
     "tags": [
+      "legendary",
+      "normal",
       "paldea"
     ],
     "family": "terapagos"
@@ -11270,7 +12911,10 @@
       "en": "Pecharunt"
     },
     "tags": [
-      "paldea"
+      "ghost",
+      "mythical",
+      "paldea",
+      "poison"
     ],
     "family": "pecharunt"
   }
