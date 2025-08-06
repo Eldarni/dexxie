@@ -12,7 +12,7 @@ import { initializeAndMigrateStores, togglePokemonTag } from './common/store.mjs
 import { initialiseCollectionSelector } from './common/collectionSelector.mjs';
 
 //
-import { subscribe, emit } from '../utilities/events.mjs';
+import { subscribe } from '../utilities/events.mjs';
 
 //
 import { exportPokemonData } from './common/exportPokemonData.mjs';
@@ -30,13 +30,10 @@ initializeAndMigrateStores();
 initialiseCollectionSelector();
 
 //
+renderPokemonList();
+
+//
 subscribe('pokemon-list-updated', () => renderPokemonList());
-
-//
-let currentCollection = 'national';
-
-//
-let lastFilteredPokemon = [];
 
 //
 document.getElementById('search-bar').addEventListener('input', debounceTrailing(300, (event) => {
@@ -44,13 +41,10 @@ document.getElementById('search-bar').addEventListener('input', debounceTrailing
 }));
 
 //
-renderPokemonList();
-
-// Handle export and import buttons
 document.querySelector('button[data-action="export-tags"').addEventListener('click', exportPokemonData);
 document.querySelector('button[data-action="import-tags"').addEventListener('click', importPokemonData);
 
-// Handle copy list button
+//
 document.querySelector('button[data-action="copy-list"').addEventListener('click', () => {
 
     //
