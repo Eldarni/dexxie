@@ -48,13 +48,11 @@ document.querySelector('button[data-action="import-tags"').addEventListener('cli
 document.querySelector('button[data-action="copy-list"').addEventListener('click', () => {
 
     //
-    if (!lastFilteredPokemon || lastFilteredPokemon.length === 0) {
-        return;
-    }
+    const results = document.querySelector('[data-name="pokemon-results"]');
+    const pokemon = Array.from(results.querySelectorAll('.pokemon')).map(p => p.dataset.id).join(', ');
 
-    // Copy names as a newline-separated list
-    const text = lastFilteredPokemon.map(p => p.id).join(', ');
-    navigator.clipboard.writeText(text).then(() => {
+    //
+    navigator.clipboard.writeText(pokemon).then(() => {
         toast(`Copied!`, 'success', 3000);
     });
 
