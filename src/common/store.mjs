@@ -71,19 +71,33 @@ export function getCollections() {
 }
 
 //
-export function getCurrentCollection() {
-    return currentCollection;
+export function getCollection(collection = currentCollection) {
+
+    //
+    const collections = getCollections();
+
+    //
+    if (!collections.hasOwnProperty(collection)) {
+        return null;
+    }
+
+    //
+    return { id: collection, ...collections[collection] };
+
 }
 
 //
-export function setCurrentCollection(collection) {
-    currentCollection = collection;
+export function changeCollection(collection) {
+
+    //
+    currentCollection = collection || collection.id;
+
+    //
+    emit('collection-changed');
+
+    //
     emit('pokemon-list-updated', currentCollection);
-}
 
-//
-export function getCurrentCollectionData() {
-    return getCollections()[currentCollection];
 }
 
 //
@@ -137,9 +151,9 @@ export function getPokemon() {
     });
 
     //
-    const currentCollectionData = getCurrentCollection();
+    const { searchString } = getCollection();
 
     //
-    return filterPokemonBySearchString(pokemon, currentCollectionData?.searchString);
+    return filterPokemonBySearchString(pokemon, searchString);
 
 }

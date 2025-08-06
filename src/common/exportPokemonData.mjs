@@ -6,13 +6,15 @@ import { getLocalStorageJSON } from '../../utilities/storage.mjs';
 import { triggerFileDownload } from '../../utilities/triggerFileDownload.mjs';
 
 //
-import { getCurrentCollection } from './store.mjs';
+import { getCollection } from './store.mjs';
 
 //
 export function exportPokemonData() {
 
     //
-    const collection = getCurrentCollection();
+    const { id: collection } = getCollection();
+
+    //
     const pokemon = getLocalStorageJSON(`${collection}:pokemon`, {});
 
     //

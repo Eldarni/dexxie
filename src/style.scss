@@ -350,11 +350,6 @@ main {
                     fill: var(--colour-foreground);
                 }
 
-                //
-                &.active, &:hover {
-                    background-color: color-mix(in srgb, var(--colour-foreground), transparent 90%);
-                }
-
             }
 
             //
@@ -381,13 +376,6 @@ main {
                 //
                 transform: translateY(-0.5rem);
                 transition: all 0.2s ease;
-
-                //
-                &.show {
-                    opacity: 1;
-                    visibility: visible;
-                    transform: translateY(0);
-                }
 
                 //
                 .dropdown-item {
@@ -432,6 +420,19 @@ main {
                     }
                 }
             }
+
+            //
+            &.active .dropdown-toggle, .dropdown-toggle:hover {
+                background-color: color-mix(in srgb, var(--colour-foreground), transparent 90%);
+            }
+
+            //
+            &.active .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
         }
 
     }

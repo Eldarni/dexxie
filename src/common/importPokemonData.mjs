@@ -4,7 +4,7 @@ import { setLocalStorageJSON } from '../../utilities/storage.mjs';
 import { toast } from '../../utilities/toaster.mjs';
 
 //
-import { getCurrentCollection } from './store.mjs';
+import { getCollection } from './store.mjs';
 
 //
 import { emit } from '../../utilities/events.mjs';
@@ -19,7 +19,7 @@ export async function importPokemonData() {
     try {
 
         //
-        const collection = getCurrentCollection();
+        const { id: collection } = getCollection();
 
         //
         const importData = JSON.parse(await triggerFileUpload('application/json'));
