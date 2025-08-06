@@ -6,7 +6,7 @@ import './style.scss';
 import { toast } from '../utilities/toaster.mjs';
 
 //
-import { initializeAndMigrateStores } from './common/store.mjs';
+import { initializeAndMigrateStores, togglePokemonTag } from './common/store.mjs';
 
 //
 import { initialiseCollectionSelector } from './common/collectionSelector.mjs';
@@ -64,9 +64,24 @@ document.querySelector('button[data-action="copy-list"').addEventListener('click
 
 });
 
-
-
 //
+document.querySelector('[data-name="pokemon-results"]').addEventListener('click', debounceLeading(300, (event) => {
 
+    //
+    if (event.target.dataset.action != 'toggle-tag') {
+        return;
+    }
 
+    //
+    const id = event.target.closest('.pokemon').dataset.id;
 
+    //
+    const tag = event.target.dataset.tag;
+
+    //
+    const isTagged = togglePokemonTag(id, tag);
+
+    //
+    event.target.setAttribute('data-state', (isTagged ? 1 : 0));
+
+}));
