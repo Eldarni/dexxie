@@ -1,0 +1,192 @@
+//
+@use './position' as *;
+
+//
+.popup-overlay {
+    
+    //
+    @include absolute($inset: 0);
+
+    //
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    //
+    animation: fadeIn 0.3s ease-out;
+
+}
+
+//
+.popup-content {
+
+    //
+    @include absolute($inset-block: 0, $inset-inline-end: 0);
+
+    //
+    width: 400px;
+    max-width: 90vw;
+
+    //
+    background-color: var(--colour-background);
+    border-left: 0.15rem solid #767676;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
+    
+    //
+    display: flex;
+    flex-direction: column;
+
+    //
+    transform: translateX(0%);
+
+    //
+    &[data-show] {
+        animation: slideInRight 0.2s ease-in;
+    }
+    
+    //
+    &[data-hide] {
+        animation: slideOutRight 0.3s ease-in forwards;
+    }
+
+}
+
+//
+.popup-header {
+
+    //
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    //
+    padding: 1rem 1.5rem;
+
+    //
+    border-bottom: 0.1rem solid #767676;
+
+    //
+    background-color: var(--colour-background);
+    
+    //
+    h2 {
+        margin: 0;
+        color: var(--colour-foreground);
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+}
+
+//
+.popup-close {
+    background: none;
+    border: none;
+    color: var(--colour-foreground);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    &:focus {
+        outline: 0.2rem solid var(--colour-blue);
+        outline-offset: 0.1rem;
+    }
+}
+
+//
+.popup-body {
+
+    //
+    padding: 1.5rem;
+
+    //
+    overflow-y: auto;
+
+    //
+    flex: 1;
+    
+}
+
+//
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+//
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+//
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+//
+@media (prefers-reduced-motion: reduce) {
+    .popup-overlay, .popup-content {
+        animation: none !important;
+    }
+}
+
+//
+@media (max-width: 768px) {
+
+    //
+    .popup-content {
+
+        //
+        inset: 0;
+
+        //
+        width: auto;
+        max-width: 100%;
+
+        //
+        border: none;
+
+    }
+    
+    //
+    .popup-header {
+
+        //
+        padding: 1.5rem 1rem 0.75rem 1rem;
+      
+        //
+        h2 {
+            font-size: 1.25rem;
+        }
+
+    }
+    
+    //
+    .popup-body {
+        padding: 1rem;
+    }
+
+}

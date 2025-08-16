@@ -27,6 +27,9 @@ import { debounceLeading, debounceTrailing } from '../utilities/debounce.mjs';
 import { renderPokemonList } from './common/renderPokemonList.mjs';
 
 //
+import { showPopup } from './popup.mjs';
+
+//
 initializeAndMigrateStores();
 
 //
@@ -82,3 +85,12 @@ document.querySelector('[data-name="pokemon-results"]').addEventListener('click'
     event.target.setAttribute('data-state', (isTagged ? 1 : 0));
 
 }));
+
+//
+document.querySelector('button[data-action="sign-in"]').addEventListener('click', (event) => {
+    showPopup('Sign in', (popup) => {
+        popup.innerHTML = `
+            <p>Sign in to your account to continue</p>
+        `;
+    });
+});
