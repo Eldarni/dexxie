@@ -38,6 +38,7 @@ export function addEventListener({ on = 'body', event = 'click', target, callbac
                 if (stopPropagation) {
                     originalEvent.stopPropagation();
                 }
+                return callback.call(eventTarget, originalEvent);
             }
             eventTarget = eventTarget.parentElement;
         }
