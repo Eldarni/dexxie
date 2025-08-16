@@ -43,7 +43,6 @@ export async function showPopup(title, callback) {
     //dismiss popup when clicking outside of the popup
     addEventListener({ on: '.popup-overlay', event: 'click', callback: (event) => {
         if (event.target.closest('.popup-content') === null) {
-            console.log('removing dismiss popup on click listener');
             hidePopup();
         }
     }});     
