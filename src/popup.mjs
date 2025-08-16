@@ -15,13 +15,18 @@ export async function showPopup(title, callback) {
         <div class="popup-overlay">
             <div class="popup-content">
                 <div class="popup-header">
-                    <h2>${title}</h2>
+                    <h2></h2>
                     <button class="popup-close">&times;</button>
                 </div>
                 <div class="popup-body"></div>
             </div>
         </div>
     `);
+
+    //
+    if (title !== undefined && typeof title === 'string') {
+        popup.querySelector('.popup-header h2').textContent = title;
+    }
 
     //
     if (typeof callback === 'function') {
