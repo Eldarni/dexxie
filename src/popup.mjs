@@ -48,9 +48,11 @@ export async function showPopup(title, callback) {
     }});     
 
     //get the drawer to animate in (done on next frame as the animation skips frames for some reason)
-    setTimeout(() => {
-        document.querySelector('.popup-content').setAttribute('data-show', 'true');
-    }, 1);
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            document.querySelector('.popup-content').setAttribute('data-show', 'true');
+        });
+    });
     
 }
 
