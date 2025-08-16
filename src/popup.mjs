@@ -13,9 +13,9 @@ export async function showPopup(title, callback) {
     //
     const popup = document.createRange().createContextualFragment(`
         <div class="popup-overlay">
-            <div class="popup-content">
+            <div class="popup-content" role="dialog" aria-labelledby="popup-title" aria-labelledby="popup-title">
                 <div class="popup-header">
-                    <h2></h2>
+                    <h2 id="popup-title"></h2>
                     <button class="popup-close">&times;</button>
                 </div>
                 <div class="popup-body"></div>
