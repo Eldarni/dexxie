@@ -7,6 +7,9 @@
 @use 'toast.scss' as *;
 
 //
+@use 'popup.scss' as *;
+
+//
 @use 'background.scss' as *;
 
 //
@@ -197,6 +200,9 @@ main {
     flex: 0 1 100%;
 
     //
+    position: relative;
+
+    //
     display: flex;
     flex-direction: column;
 
@@ -222,6 +228,9 @@ main {
 
     // add a shine effect over the screen
     @include after($inset: 0px) {
+
+        //
+        z-index: 1000;
 
         //make sure the layer is transparent to any mouse stuff
         pointer-events: none;
