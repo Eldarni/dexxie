@@ -147,6 +147,13 @@
 }
 
 //
+@media (prefers-reduced-motion: reduce) {
+    .popup-overlay, .popup-content {
+        animation: none !important;
+    }
+}
+
+//
 @media (max-width: 768px) {
 
     //
