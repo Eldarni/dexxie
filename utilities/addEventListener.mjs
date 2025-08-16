@@ -5,7 +5,7 @@ import { debounceTrailing, debounceLeading } from './debounce.mjs';
  * Wrapper for the addEventListener that replicates the behaviour of jQueries ".on()" method for "deferred events" with built in debounce functionality
  * Returns a couple of methods that can be used to remove the listener and trigger the event
  */
-export function addEventListener({ on = 'body', event = 'click', target, callback, debounce, debounceStrategy = 'leading', capture = false }) {
+export function addEventListener({ on = 'body', event = 'click', target, callback, debounce, debounceStrategy = 'leading', capture = false, stopPropagation = false }) {
 
     //resolve the parent element (as this might be a selector
     const actualParentElement = ((typeof on === 'string' ) ? document.querySelector(on) : on);
@@ -35,8 +35,9 @@ export function addEventListener({ on = 'body', event = 'click', target, callbac
         //move up the dom tree to check if the target or any of its parents match the selector (replicating the way jquery .on() works)
         while (eventTarget) {
             if (target === undefined || ((typeof target === 'string') ? eventTarget.matches(target) : eventTarget === target)) {
-                originalEvent.stopPropagation();
-                return callback(originalEvent);
+                if (stopPropagation) {
+                    originalEvent.stopPropagation();
+                }
             }
             eventTarget = eventTarget.parentElement;
         }
