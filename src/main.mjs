@@ -6,9 +6,6 @@ import './style.scss';
 import { toast } from '../utilities/toaster.mjs';
 
 //
-import { supabase } from './common/supabase.mjs';
-
-//
 import { initializeAndMigrateStores, togglePokemonTag } from './common/store.mjs';
 
 //
