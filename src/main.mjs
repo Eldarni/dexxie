@@ -52,7 +52,7 @@ document.querySelector('button[data-action="copy-list"').addEventListener('click
 
     //
     const results = document.querySelector('[data-name="pokemon-results"]');
-    const pokemon = Array.from(results.querySelectorAll('.pokemon')).map(p => p.dataset.id).join(', ');
+    const pokemon = Array.from(results.querySelectorAll('.pokemon .name')).map(p => p.textContent).join(', ');
 
     //
     navigator.clipboard.writeText(pokemon).then(() => {
