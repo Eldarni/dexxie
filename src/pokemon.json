@@ -1592,6 +1592,44 @@
     "family": "tauros"
   },
   {
+    "id": "tauros-paldea-combat",
+    "number": 128,
+    "name": {
+      "en": "Pladean Tauros (Combat Breed)"
+    },
+    "tags": [
+      "paldea",
+      "fighting"
+    ],
+    "family": "tauros"
+  },
+  {
+    "id": "tauros-paldea-blaze",
+    "number": 128,
+    "name": {
+      "en": "Pladean Tauros (Blaze Breed)"
+    },
+    "tags": [
+      "paldea",
+      "fighting",
+      "fire"
+    ],
+    "family": "tauros"
+  },
+  {
+    "id": "tauros-paldea-aqua",
+    "number": 128,
+    "name": {
+      "en": "Pladean Tauros (Aqua Breed)"
+    },
+    "tags": [
+      "paldea",
+      "fighting",
+      "water"
+    ],
+    "family": "tauros"
+  },
+  {
     "id": "magikarp",
     "number": 129,
     "name": {
@@ -2495,10 +2533,334 @@
     "family": "misdreavus"
   },
   {
-    "id": "unown",
+    "id": "unown-a",
     "number": 201,
     "name": {
-      "en": "Unown"
+      "en": "Unown A"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-b",
+    "number": 201,
+    "name": {
+      "en": "Unown B"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-c",
+    "number": 201,
+    "name": {
+      "en": "Unown C"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-d",
+    "number": 201,
+    "name": {
+      "en": "Unown D"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-e",
+    "number": 201,
+    "name": {
+      "en": "Unown E"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-f",
+    "number": 201,
+    "name": {
+      "en": "Unown F"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-g",
+    "number": 201,
+    "name": {
+      "en": "Unown G"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-h",
+    "number": 201,
+    "name": {
+      "en": "Unown H"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-i",
+    "number": 201,
+    "name": {
+      "en": "Unown I"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-j",
+    "number": 201,
+    "name": {
+      "en": "Unown J"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-k",
+    "number": 201,
+    "name": {
+      "en": "Unown K"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-l",
+    "number": 201,
+    "name": {
+      "en": "Unown L"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-m",
+    "number": 201,
+    "name": {
+      "en": "Unown M"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-n",
+    "number": 201,
+    "name": {
+      "en": "Unown N"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-o",
+    "number": 201,
+    "name": {
+      "en": "Unown O"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-p",
+    "number": 201,
+    "name": {
+      "en": "Unown P"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-q",
+    "number": 201,
+    "name": {
+      "en": "Unown Q"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-r",
+    "number": 201,
+    "name": {
+      "en": "Unown R"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-s",
+    "number": 201,
+    "name": {
+      "en": "Unown S"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-t",
+    "number": 201,
+    "name": {
+      "en": "Unown T"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-u",
+    "number": 201,
+    "name": {
+      "en": "Unown U"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-v",
+    "number": 201,
+    "name": {
+      "en": "Unown V"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-w",
+    "number": 201,
+    "name": {
+      "en": "Unown W"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-x",
+    "number": 201,
+    "name": {
+      "en": "Unown X"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-y",
+    "number": 201,
+    "name": {
+      "en": "Unown Y"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-z",
+    "number": 201,
+    "name": {
+      "en": "Unown Z"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-exclamation",
+    "number": 201,
+    "name": {
+      "en": "Unown !"
+    },
+    "tags": [
+      "johto",
+      "psychic"
+    ],
+    "family": "unown"
+  },
+  {
+    "id": "unown-question",
+    "number": 201,
+    "name": {
+      "en": "Unown ?"
     },
     "tags": [
       "johto",
@@ -4076,10 +4438,106 @@
     "family": "spoink"
   },
   {
-    "id": "spinda",
+    "id": "spinda-1",
     "number": 327,
     "name": {
-      "en": "Spinda"
+      "en": "Spinda (Pattern 1)"
+    },
+    "tags": [
+      "hoenn",
+      "normal"
+    ],
+    "family": "spinda"
+  },
+  {
+    "id": "spinda-pattern-2",
+    "number": 327,
+    "name": {
+      "en": "Spinda (Pattern 2)"
+    },
+    "tags": [
+      "hoenn",
+      "normal"
+    ],
+    "family": "spinda"
+  },
+  {
+    "id": "spinda-pattern-3",
+    "number": 327,
+    "name": {
+      "en": "Spinda (Pattern 3"
+    },
+    "tags": [
+      "hoenn",
+      "normal"
+    ],
+    "family": "spinda"
+  },
+  {
+    "id": "spinda-pattern-4",
+    "number": 327,
+    "name": {
+      "en": "Spinda (Pattern 4)"
+    },
+    "tags": [
+      "hoenn",
+      "normal"
+    ],
+    "family": "spinda"
+  },
+  {
+    "id": "spinda-pattern-5",
+    "number": 327,
+    "name": {
+      "en": "Spinda (Pattern 5)"
+    },
+    "tags": [
+      "hoenn",
+      "normal"
+    ],
+    "family": "spinda"
+  },
+  {
+    "id": "spinda-pattern-6",
+    "number": 327,
+    "name": {
+      "en": "Spinda (Pattern 6)"
+    },
+    "tags": [
+      "hoenn",
+      "normal"
+    ],
+    "family": "spinda"
+  },
+  {
+    "id": "spinda-pattern-7",
+    "number": 327,
+    "name": {
+      "en": "Spinda (Pattern 7)"
+    },
+    "tags": [
+      "hoenn",
+      "normal"
+    ],
+    "family": "spinda"
+  },
+  {
+    "id": "spinda-pattern-8",
+    "number": 327,
+    "name": {
+      "en": "Spinda (Pattern 8)"
+    },
+    "tags": [
+      "hoenn",
+      "normal"
+    ],
+    "family": "spinda"
+  },
+  {
+    "id": "spinda-pattern-9",
+    "number": 327,
+    "name": {
+      "en": "Spinda (Pattern 9)"
     },
     "tags": [
       "hoenn",
@@ -4388,6 +4846,42 @@
     "tags": [
       "hoenn",
       "normal"
+    ],
+    "family": "castform"
+  },
+  {
+    "id": "castform-sunny",
+    "number": 351,
+    "name": {
+      "en": "Castform (Sunny Form)"
+    },
+    "tags": [
+      "hoenn",
+      "fire"
+    ],
+    "family": "castform"
+  },
+  {
+    "id": "castform-rainy",
+    "number": 351,
+    "name": {
+      "en": "Castform (Rainy Form)"
+    },
+    "tags": [
+      "hoenn",
+      "water"
+    ],
+    "family": "castform"
+  },
+  {
+    "id": "castform-snowy",
+    "number": 351,
+    "name": {
+      "en": "Castform (Snowy Form)"
+    },
+    "tags": [
+      "hoenn",
+      "ice"
     ],
     "family": "castform"
   },
@@ -4822,10 +5316,49 @@
     "family": "jirachi"
   },
   {
-    "id": "deoxys",
+    "id": "deoxys-normal",
     "number": 386,
     "name": {
-      "en": "Deoxys"
+      "en": "Deoxys (Normal)"
+    },
+    "tags": [
+      "hoenn",
+      "mythical",
+      "psychic"
+    ],
+    "family": "deoxys"
+  },
+  {
+    "id": "deoxys-attack",
+    "number": 386,
+    "name": {
+      "en": "Deoxys (Attack)"
+    },
+    "tags": [
+      "hoenn",
+      "mythical",
+      "psychic"
+    ],
+    "family": "deoxys"
+  },
+  {
+    "id": "deoxys-defense",
+    "number": 386,
+    "name": {
+      "en": "Deoxys (Defense)"
+    },
+    "tags": [
+      "hoenn",
+      "mythical",
+      "psychic"
+    ],
+    "family": "deoxys"
+  },
+  {
+    "id": "deoxys-speed",
+    "number": 386,
+    "name": {
+      "en": "Deoxys (Speed)"
     },
     "tags": [
       "hoenn",
@@ -5147,10 +5680,10 @@
     "family": "shieldon"
   },
   {
-    "id": "burmy",
+    "id": "burmy-plant",
     "number": 412,
     "name": {
-      "en": "Burmy"
+      "en": "Burmy (Plant Cloak)"
     },
     "tags": [
       "bug",
@@ -5159,15 +5692,65 @@
     "family": "burmy"
   },
   {
-    "id": "wormadam",
+    "id": "burmy-sandy",
+    "number": 412,
+    "name": {
+      "en": "Burmy (Sandy Cloak)"
+    },
+    "tags": [
+      "bug",
+      "sinnoh"
+    ],
+    "family": "burmy"
+  },
+  {
+    "id": "burmy-trash",
+    "number": 412,
+    "name": {
+      "en": "Burmy (Trash Cloak)"
+    },
+    "tags": [
+      "bug",
+      "sinnoh"
+    ],
+    "family": "burmy"
+  },
+  {
+    "id": "wormadam-plant",
     "number": 413,
     "name": {
-      "en": "Wormadam"
+      "en": "Wormadam (Plant Cloak)"
     },
     "tags": [
       "bug",
       "grass",
       "sinnoh"
+    ],
+    "family": "burmy"
+  },
+  {
+    "id": "wormadam-sandy",
+    "number": 413,
+    "name": {
+      "en": "Wormadam (Sandy Cloak)"
+    },
+    "tags": [
+      "bug",
+      "ground",
+      "sinnoh"
+    ],
+    "family": "burmy"
+  },
+  {
+    "id": "wormadam-trash",
+    "number": 413,
+    "name": {
+      "en": "Wormadam (Trash Cloak)"
+    },
+    "tags": [
+      "bug",
+      "sinnoh",
+      "steel"
     ],
     "family": "burmy"
   },
@@ -5259,10 +5842,10 @@
     "family": "cherubi"
   },
   {
-    "id": "cherrim",
+    "id": "cherrim-overcast",
     "number": 421,
     "name": {
-      "en": "Cherrim"
+      "en": "Cherrim (Overcast Form)"
     },
     "tags": [
       "grass",
@@ -5271,10 +5854,22 @@
     "family": "cherubi"
   },
   {
-    "id": "shellos",
+    "id": "cherrim-sunshine",
+    "number": 421,
+    "name": {
+      "en": "Cherrim (Sunshine Form)"
+    },
+    "tags": [
+      "grass",
+      "sinnoh"
+    ],
+    "family": "cherubi"
+  },
+  {
+    "id": "shellos-west",
     "number": 422,
     "name": {
-      "en": "Shellos"
+      "en": "Shellos (West Sea Form)"
     },
     "tags": [
       "sinnoh",
@@ -5283,10 +5878,35 @@
     "family": "shellos"
   },
   {
-    "id": "gastrodon",
+    "id": "shellos-east",
+    "number": 422,
+    "name": {
+      "en": "Shellos (East Sea Form)"
+    },
+    "tags": [
+      "sinnoh",
+      "water"
+    ],
+    "family": "shellos"
+  },
+  {
+    "id": "gastrodon-west",
     "number": 423,
     "name": {
-      "en": "Gastrodon"
+      "en": "Gastrodon (West Sea Form)"
+    },
+    "tags": [
+      "ground",
+      "sinnoh",
+      "water"
+    ],
+    "family": "shellos"
+  },
+  {
+    "id": "gastrodon-east",
+    "number": 423,
+    "name": {
+      "en": "Gastrodon (East Sea Form)"
     },
     "tags": [
       "ground",
@@ -6000,6 +6620,71 @@
     "family": "rotom"
   },
   {
+    "id": "rotom-heat",
+    "number": 479,
+    "name": {
+      "en": "Heat Rotom"
+    },
+    "tags": [
+      "electric",
+      "fire",
+      "sinnoh"
+    ],
+    "family": "rotom"
+  },
+  {
+    "id": "rotom-wash",
+    "number": 479,
+    "name": {
+      "en": "Wash Rotom"
+    },
+    "tags": [
+      "electric",
+      "water",
+      "sinnoh"
+    ],
+    "family": "rotom"
+  },
+  {
+    "id": "rotom-frost",
+    "number": 479,
+    "name": {
+      "en": "Frost Rotom"
+    },
+    "tags": [
+      "electric",
+      "ice",
+      "sinnoh"
+    ],
+    "family": "rotom"
+  },
+  {
+    "id": "rotom-fan",
+    "number": 479,
+    "name": {
+      "en": "Fan Rotom"
+    },
+    "tags": [
+      "electric",
+      "ghost",
+      "sinnoh"
+    ],
+    "family": "rotom"
+  },
+  {
+    "id": "rotom-mow",
+    "number": 479,
+    "name": {
+      "en": "Mow Rotom"
+    },
+    "tags": [
+      "electric",
+      "grass",
+      "sinnoh"
+    ],
+    "family": "rotom"
+  },
+  {
     "id": "uxie",
     "number": 480,
     "name": {
@@ -6053,6 +6738,34 @@
     "family": "dialga"
   },
   {
+    "id": "dialga-origin",
+    "number": 483,
+    "name": {
+      "en": "Origin Forme Dialga"
+    },
+    "tags": [
+      "dragon",
+      "legendary",
+      "sinnoh",
+      "steel"
+    ],
+    "family": "dialga"
+  },
+  {
+    "id": "palkia-origin",
+    "number": 484,
+    "name": {
+      "en": "Origin Forme Palkia"
+    },
+    "tags": [
+      "dragon",
+      "legendary",
+      "sinnoh",
+      "water"
+    ],
+    "family": "palkia"
+  },
+  {
     "id": "palkia",
     "number": 484,
     "name": {
@@ -6094,10 +6807,24 @@
     "family": "regigigas"
   },
   {
-    "id": "giratina",
+    "id": "giratina-altered",
     "number": 487,
     "name": {
-      "en": "Giratina"
+      "en": "Altered Forme Giratina"
+    },
+    "tags": [
+      "dragon",
+      "ghost",
+      "legendary",
+      "sinnoh"
+    ],
+    "family": "giratina"
+  },
+  {
+    "id": "giratina-origin",
+    "number": 487,
+    "name": {
+      "en": "Origin Forme Giratina"
     },
     "tags": [
       "dragon",
@@ -6160,10 +6887,10 @@
     "family": "darkrai"
   },
   {
-    "id": "shaymin",
+    "id": "shaymin-land",
     "number": 492,
     "name": {
-      "en": "Shaymin"
+      "en": "Land Forme Shaymin"
     },
     "tags": [
       "grass",
@@ -6173,14 +6900,249 @@
     "family": "shaymin"
   },
   {
-    "id": "arceus",
+    "id": "shaymin-sky",
+    "number": 492,
+    "name": {
+      "en": "Sky Forme Shaymin"
+    },
+    "tags": [
+      "grass",
+      "flying",
+      "mythical",
+      "sinnoh"
+    ],
+    "family": "shaymin"
+  },
+  {
+    "id": "arceus-normal",
     "number": 493,
     "name": {
-      "en": "Arceus"
+      "en": "Arceus (Normal)"
     },
     "tags": [
       "mythical",
       "normal",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-fire",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Fire)"
+    },
+    "tags": [
+      "mythical",
+      "fire",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-water",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Water)"
+    },
+    "tags": [
+      "mythical",
+      "water",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-electric",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Electric)"
+    },
+    "tags": [
+      "mythical",
+      "electric",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-grass",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Grass)"
+    },
+    "tags": [
+      "mythical",
+      "grass",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-ice",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Ice)"
+    },
+    "tags": [
+      "mythical",
+      "ice",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-fighting",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Fighting)"
+    },
+    "tags": [
+      "mythical",
+      "fighting",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-poison",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Poison)"
+    },
+    "tags": [
+      "mythical",
+      "poison",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-ground",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Ground)"
+    },
+    "tags": [
+      "mythical",
+      "ground",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-flying",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Flying)"
+    },
+    "tags": [
+      "mythical",
+      "flying",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-psychic",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Psychic)"
+    },
+    "tags": [
+      "mythical",
+      "psychic",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-bug",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Bug)"
+    },
+    "tags": [
+      "mythical",
+      "bug",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-rock",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Rock)"
+    },
+    "tags": [
+      "mythical",
+      "rock",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-ghost",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Ghost)"
+    },
+    "tags": [
+      "mythical",
+      "ghost",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-dragon",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Dragon)"
+    },
+    "tags": [
+      "mythical",
+      "dragon",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-dark",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Dark)"
+    },
+    "tags": [
+      "mythical",
+      "dark",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-steel",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Steel)"
+    },
+    "tags": [
+      "mythical",
+      "steel",
+      "sinnoh"
+    ],
+    "family": "arceus"
+  },
+  {
+    "id": "arceus-fairy",
+    "number": 493,
+    "name": {
+      "en": "Arceus (Fairy)"
+    },
+    "tags": [
+      "mythical",
+      "fairy",
       "sinnoh"
     ],
     "family": "arceus"
@@ -6878,10 +7840,34 @@
     "family": "petilil"
   },
   {
-    "id": "basculin",
+    "id": "basculin-red-striped",
     "number": 550,
     "name": {
-      "en": "Basculin"
+      "en": "Red-striped Basculin"
+    },
+    "tags": [
+      "unova",
+      "water"
+    ],
+    "family": "basculin"
+  },
+  {
+    "id": "basculin-blue-striped",
+    "number": 550,
+    "name": {
+      "en": "Blue-striped Basculin"
+    },
+    "tags": [
+      "unova",
+      "water"
+    ],
+    "family": "basculin"
+  },
+  {
+    "id": "basculin-white-striped",
+    "number": 550,
+    "name": {
+      "en": "White-striped Basculin"
     },
     "tags": [
       "unova",
@@ -6941,13 +7927,26 @@
     "family": "darumaka"
   },
   {
-    "id": "darmanitan",
+    "id": "darmanitan-standard",
     "number": 555,
     "name": {
-      "en": "Darmanitan"
+      "en": "Standard Mode Darmanitan"
     },
     "tags": [
       "fire",
+      "unova"
+    ],
+    "family": "darumaka"
+  },
+  {
+    "id": "darmanitan-zen",
+    "number": 555,
+    "name": {
+      "en": "Zen Mode Darmanitan"
+    },
+    "tags": [
+      "fire",
+      "psychic",
       "unova"
     ],
     "family": "darumaka"
@@ -7312,10 +8311,10 @@
     "family": "vanillite"
   },
   {
-    "id": "deerling",
+    "id": "deerling-spring",
     "number": 585,
     "name": {
-      "en": "Deerling"
+      "en": "Deerling (Spring)"
     },
     "tags": [
       "grass",
@@ -7325,10 +8324,88 @@
     "family": "deerling"
   },
   {
-    "id": "sawsbuck",
+    "id": "deerling-summer",
+    "number": 585,
+    "name": {
+      "en": "Deerling (Summer)"
+    },
+    "tags": [
+      "grass",
+      "normal",
+      "unova"
+    ],
+    "family": "deerling"
+  },
+  {
+    "id": "deerling-autumn",
+    "number": 585,
+    "name": {
+      "en": "Deerling (Autumn)"
+    },
+    "tags": [
+      "grass",
+      "normal",
+      "unova"
+    ],
+    "family": "deerling"
+  },
+  {
+    "id": "deerling-winter",
+    "number": 585,
+    "name": {
+      "en": "Deerling (Winter)"
+    },
+    "tags": [
+      "grass",
+      "normal",
+      "unova"
+    ],
+    "family": "deerling"
+  },
+  {
+    "id": "sawsbuck-spring",
     "number": 586,
     "name": {
-      "en": "Sawsbuck"
+      "en": "Sawsbuck (Spring)"
+    },
+    "tags": [
+      "grass",
+      "normal",
+      "unova"
+    ],
+    "family": "deerling"
+  },
+  {
+    "id": "sawsbuck-summer",
+    "number": 586,
+    "name": {
+      "en": "Sawsbuck (Summer)"
+    },
+    "tags": [
+      "grass",
+      "normal",
+      "unova"
+    ],
+    "family": "deerling"
+  },
+  {
+    "id": "sawsbuck-autumn",
+    "number": 586,
+    "name": {
+      "en": "Sawsbuck (Autumn)"
+    },
+    "tags": [
+      "grass",
+      "normal",
+      "unova"
+    ],
+    "family": "deerling"
+  },
+  {
+    "id": "sawsbuck-winter",
+    "number": 586,
+    "name": {
+      "en": "Sawsbuck (Winter)"
     },
     "tags": [
       "grass",
@@ -8020,10 +9097,10 @@
     "family": "virizion"
   },
   {
-    "id": "tornadus",
+    "id": "tornadus-incarnate",
     "number": 641,
     "name": {
-      "en": "Tornadus"
+      "en": "Tornadus (Incarnate)"
     },
     "tags": [
       "flying",
@@ -8033,10 +9110,37 @@
     "family": "tornadus"
   },
   {
-    "id": "thundurus",
+    "id": "tornadus-therian",
+    "number": 641,
+    "name": {
+      "en": "Tornadus (Therian)"
+    },
+    "tags": [
+      "flying",
+      "legendary",
+      "unova"
+    ],
+    "family": "tornadus"
+  },
+  {
+    "id": "thundurus-incarnate",
     "number": 642,
     "name": {
-      "en": "Thundurus"
+      "en": "Thundurus (Incarnate)"
+    },
+    "tags": [
+      "electric",
+      "flying",
+      "legendary",
+      "unova"
+    ],
+    "family": "thundurus"
+  },
+  {
+    "id": "thundurus-therian",
+    "number": 642,
+    "name": {
+      "en": "Thundurus (Therian)"
     },
     "tags": [
       "electric",
@@ -8075,10 +9179,24 @@
     "family": "zekrom"
   },
   {
-    "id": "landorus",
+    "id": "landorus-incarnate",
     "number": 645,
     "name": {
-      "en": "Landorus"
+      "en": "Landorus (Incarnate)"
+    },
+    "tags": [
+      "flying",
+      "ground",
+      "legendary",
+      "unova"
+    ],
+    "family": "landorus"
+  },
+  {
+    "id": "landorus-therian",
+    "number": 645,
+    "name": {
+      "en": "Landorus (Therian)"
     },
     "tags": [
       "flying",
@@ -8103,10 +9221,38 @@
     "family": "kyurem"
   },
   {
-    "id": "keldeo",
+    "id": "kyurem-black",
+    "number": 646,
+    "name": {
+      "en": "Kyurem (Black)"
+    },
+    "tags": [
+      "dragon",
+      "ice",
+      "legendary",
+      "unova"
+    ],
+    "family": "kyurem"
+  },
+  {
+    "id": "kyurem-white",
+    "number": 646,
+    "name": {
+      "en": "Kyurem (White)"
+    },
+    "tags": [
+      "dragon",
+      "ice",
+      "legendary",
+      "unova"
+    ],
+    "family": "kyurem"
+  },
+  {
+    "id": "keldeo-ordinary",
     "number": 647,
     "name": {
-      "en": "Keldeo"
+      "en": "Keldeo (Ordinary)"
     },
     "tags": [
       "fighting",
@@ -8117,10 +9263,24 @@
     "family": "keldeo"
   },
   {
-    "id": "meloetta",
+    "id": "keldeo-resolute",
+    "number": 647,
+    "name": {
+      "en": "Keldeo (Resolute)"
+    },
+    "tags": [
+      "fighting",
+      "mythical",
+      "unova",
+      "water"
+    ],
+    "family": "keldeo"
+  },
+  {
+    "id": "meloetta-aria",
     "number": 648,
     "name": {
-      "en": "Meloetta"
+      "en": "Meloetta (Aria)"
     },
     "tags": [
       "mythical",
@@ -8131,10 +9291,80 @@
     "family": "meloetta"
   },
   {
+    "id": "meloetta-pirouette",
+    "number": 648,
+    "name": {
+      "en": "Meloetta (Pirouette)"
+    },
+    "tags": [
+      "mythical",
+      "normal",
+      "fighting",
+      "unova"
+    ],
+    "family": "meloetta"
+  },
+  {
     "id": "genesect",
     "number": 649,
     "name": {
       "en": "Genesect"
+    },
+    "tags": [
+      "bug",
+      "mythical",
+      "steel",
+      "unova"
+    ],
+    "family": "genesect"
+  },
+  {
+    "id": "genesect-shock-drive",
+    "number": 649,
+    "name": {
+      "en": "Genesect (Shock Drive)"
+    },
+    "tags": [
+      "bug",
+      "mythical",
+      "steel",
+      "unova"
+    ],
+    "family": "genesect"
+  },
+  {
+    "id": "genesect-burn-drive",
+    "number": 649,
+    "name": {
+      "en": "Genesect (Burn Drive)"
+    },
+    "tags": [
+      "bug",
+      "mythical",
+      "steel",
+      "unova"
+    ],
+    "family": "genesect"
+  },
+  {
+    "id": "genesect-chill-drive",
+    "number": 649,
+    "name": {
+      "en": "Genesect (Chill Drive)"
+    },
+    "tags": [
+      "bug",
+      "mythical",
+      "steel",
+      "unova"
+    ],
+    "family": "genesect"
+  },
+  {
+    "id": "genesect-douse-drive",
+    "number": 649,
+    "name": {
+      "en": "Genesect (Douse Drive)"
     },
     "tags": [
       "bug",
@@ -8344,10 +9574,257 @@
     "family": "scatterbug"
   },
   {
-    "id": "vivillon",
+    "id": "vivillon-archipelago",
     "number": 666,
     "name": {
-      "en": "Vivillon"
+      "en": "Vivillon (Archipelago)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon=continental",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Continental)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-elegant",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Elegant)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-fancy",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Fancy)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-garden",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Garden)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-highp-plains",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (High Plains)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-icy-snow",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Icy Snow)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-jungle",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Jungle)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-marine",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Marine)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-meadow",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Meadow)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-modern",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Modern)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-monsoon",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Monsoon)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-ocean",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Ocean)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-pokeball",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Pokeball)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-polar",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Polar)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-river",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (River)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-sandstorm",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Sandstorm)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-savanna",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Savanna)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-sun",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Sun)"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kalos"
+    ],
+    "family": "scatterbug"
+  },
+  {
+    "id": "vivillon-tundra",
+    "number": 666,
+    "name": {
+      "en": "Vivillon (Tundra)"
     },
     "tags": [
       "bug",
@@ -8383,10 +9860,10 @@
     "family": "litleo"
   },
   {
-    "id": "flabebe",
+    "id": "flabebe-red",
     "number": 669,
     "name": {
-      "en": "Flabébé"
+      "en": "Flabébé (Red Flower)"
     },
     "tags": [
       "fairy",
@@ -8395,10 +9872,58 @@
     "family": "flabebe"
   },
   {
-    "id": "floette",
+    "id": "flabebe-yellow",
+    "number": 669,
+    "name": {
+      "en": "Flabébé (Yellow Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "flabebe-orange",
+    "number": 669,
+    "name": {
+      "en": "Flabébé (Orange Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "flabebe-blue",
+    "number": 669,
+    "name": {
+      "en": "Flabébé (Blue Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "flabebe-white",
+    "number": 669,
+    "name": {
+      "en": "Flabébé (White Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "floette-red",
     "number": 670,
     "name": {
-      "en": "Floette"
+      "en": "Floette (Red Flower)"
     },
     "tags": [
       "fairy",
@@ -8407,10 +9932,106 @@
     "family": "flabebe"
   },
   {
-    "id": "florges",
+    "id": "floette-yellow",
+    "number": 670,
+    "name": {
+      "en": "Floette (Yellow Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "floette-orange",
+    "number": 670,
+    "name": {
+      "en": "Floette (Orange Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "floette-blue",
+    "number": 670,
+    "name": {
+      "en": "Floette (Blue Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "floette-white",
+    "number": 670,
+    "name": {
+      "en": "Floette (White Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "florges-red",
     "number": 671,
     "name": {
-      "en": "Florges"
+      "en": "Florges (Red Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "florges-yellow",
+    "number": 671,
+    "name": {
+      "en": "Florges (Yellow Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "florges-orange",
+    "number": 671,
+    "name": {
+      "en": "Florges (Orange Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "florges-blue",
+    "number": 671,
+    "name": {
+      "en": "Florges (Blue Flower)"
+    },
+    "tags": [
+      "fairy",
+      "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "florges-white",
+    "number": 671,
+    "name": {
+      "en": "Florges (White Flower)"
     },
     "tags": [
       "fairy",
@@ -8468,10 +10089,118 @@
     "family": "pancham"
   },
   {
-    "id": "furfrou",
+    "id": "furfrou-natural",
     "number": 676,
     "name": {
-      "en": "Furfrou"
+      "en": "Furfrou (Natural)"
+    },
+    "tags": [
+      "kalos",
+      "normal"
+    ],
+    "family": "furfrou"
+  },
+  {
+    "id": "furfrou-heart",
+    "number": 676,
+    "name": {
+      "en": "Furfrou (Heart)"
+    },
+    "tags": [
+      "kalos",
+      "normal"
+    ],
+    "family": "furfrou"
+  },
+  {
+    "id": "furfrou-star",
+    "number": 676,
+    "name": {
+      "en": "Furfrou (Star)"
+    },
+    "tags": [
+      "kalos",
+      "normal"
+    ],
+    "family": "furfrou"
+  },
+  {
+    "id": "furfrou-diamond",
+    "number": 676,
+    "name": {
+      "en": "Furfrou (Diamond)"
+    },
+    "tags": [
+      "kalos",
+      "normal"
+    ],
+    "family": "furfrou"
+  },
+  {
+    "id": "furfrou-debutant",
+    "number": 676,
+    "name": {
+      "en": "Furfrou (Debutant)"
+    },
+    "tags": [
+      "kalos",
+      "normal"
+    ],
+    "family": "furfrou"
+  },
+  {
+    "id": "furfrou-matron",
+    "number": 676,
+    "name": {
+      "en": "Furfrou (Matron)"
+    },
+    "tags": [
+      "kalos",
+      "normal"
+    ],
+    "family": "furfrou"
+  },
+  {
+    "id": "furfrou-dandy",
+    "number": 676,
+    "name": {
+      "en": "Furfrou (Dandy)"
+    },
+    "tags": [
+      "kalos",
+      "normal"
+    ],
+    "family": "furfrou"
+  },
+  {
+    "id": "furfrou-la-reine",
+    "number": 676,
+    "name": {
+      "en": "Furfrou (La Reine)"
+    },
+    "tags": [
+      "kalos",
+      "normal"
+    ],
+    "family": "furfrou"
+  },
+  {
+    "id": "furfrou-kabuki",
+    "number": 676,
+    "name": {
+      "en": "Furfrou (Kabuki)"
+    },
+    "tags": [
+      "kalos",
+      "normal"
+    ],
+    "family": "furfrou"
+  },
+  {
+    "id": "furfrou-pharoh",
+    "number": 676,
+    "name": {
+      "en": "Furfrou (Pharoh)"
     },
     "tags": [
       "kalos",
@@ -8492,10 +10221,22 @@
     "family": "espurr"
   },
   {
-    "id": "meowstic",
+    "id": "meowstic-male",
     "number": 678,
     "name": {
-      "en": "Meowstic"
+      "en": "Meowstic (Male)"
+    },
+    "tags": [
+      "kalos",
+      "psychic"
+    ],
+    "family": "espurr"
+  },
+  {
+    "id": "meowstic-female",
+    "number": 678,
+    "name": {
+      "en": "Meowstic (Female)"
     },
     "tags": [
       "kalos",
@@ -8530,10 +10271,23 @@
     "family": "honedge"
   },
   {
-    "id": "aegislash",
+    "id": "aegislash-blade",
     "number": 681,
     "name": {
-      "en": "Aegislash"
+      "en": "Aegislash (Blade Forme)"
+    },
+    "tags": [
+      "ghost",
+      "kalos",
+      "steel"
+    ],
+    "family": "honedge"
+  },
+  {
+    "id": "aegislash-shield",
+    "number": 681,
+    "name": {
+      "en": "Aegislash (Shield Forme)"
     },
     "tags": [
       "ghost",
@@ -8897,10 +10651,10 @@
     "family": "phantump"
   },
   {
-    "id": "pumpkaboo",
+    "id": "pumpkaboo-small",
     "number": 710,
     "name": {
-      "en": "Pumpkaboo"
+      "en": "Pumpkaboo (Small)"
     },
     "tags": [
       "ghost",
@@ -8910,10 +10664,88 @@
     "family": "pumpkaboo"
   },
   {
-    "id": "gourgeist",
+    "id": "pumpkaboo-medium",
+    "number": 710,
+    "name": {
+      "en": "Pumpkaboo (Medium)"
+    },
+    "tags": [
+      "ghost",
+      "grass",
+      "kalos"
+    ],
+    "family": "pumpkaboo"
+  },
+  {
+    "id": "pumpkaboo-large",
+    "number": 710,
+    "name": {
+      "en": "Pumpkaboo (Large)"
+    },
+    "tags": [
+      "ghost",
+      "grass",
+      "kalos"
+    ],
+    "family": "pumpkaboo"
+  },
+  {
+    "id": "pumpkaboo-jumbo",
+    "number": 710,
+    "name": {
+      "en": "Pumpkaboo (Jumbo)"
+    },
+    "tags": [
+      "ghost",
+      "grass",
+      "kalos"
+    ],
+    "family": "pumpkaboo"
+  },
+  {
+    "id": "gourgeist-small",
     "number": 711,
     "name": {
-      "en": "Gourgeist"
+      "en": "Gourgeist (Small)"
+    },
+    "tags": [
+      "ghost",
+      "grass",
+      "kalos"
+    ],
+    "family": "pumpkaboo"
+  },
+  {
+    "id": "gourgeist-medium",
+    "number": 711,
+    "name": {
+      "en": "Gourgeist (Medium)"
+    },
+    "tags": [
+      "ghost",
+      "grass",
+      "kalos"
+    ],
+    "family": "pumpkaboo"
+  },
+  {
+    "id": "gourgeist-large",
+    "number": 711,
+    "name": {
+      "en": "Gourgeist (Large)"
+    },
+    "tags": [
+      "ghost",
+      "grass",
+      "kalos"
+    ],
+    "family": "pumpkaboo"
+  },
+  {
+    "id": "gourgeist-jumbo",
+    "number": 711,
+    "name": {
+      "en": "Gourgeist (Jumbo)"
     },
     "tags": [
       "ghost",
@@ -9000,10 +10832,38 @@
     "family": "yveltal"
   },
   {
-    "id": "zygarde",
+    "id": "zygarde-10",
     "number": 718,
     "name": {
-      "en": "Zygarde"
+      "en": "Zygarde (10%)"
+    },
+    "tags": [
+      "dragon",
+      "ground",
+      "kalos",
+      "legendary"
+    ],
+    "family": "zygarde"
+  },
+  {
+    "id": "zygarde-50",
+    "number": 718,
+    "name": {
+      "en": "Zygarde (50%)"
+    },
+    "tags": [
+      "dragon",
+      "ground",
+      "kalos",
+      "legendary"
+    ],
+    "family": "zygarde"
+  },
+  {
+    "id": "zygarde-100",
+    "number": 718,
+    "name": {
+      "en": "Zygarde (Complete)"
     },
     "tags": [
       "dragon",
@@ -9028,13 +10888,27 @@
     "family": "diancie"
   },
   {
-    "id": "hoopa",
+    "id": "hoopa-confined",
     "number": 720,
     "name": {
-      "en": "Hoopa"
+      "en": "Hoopa (Confined)"
     },
     "tags": [
       "ghost",
+      "kalos",
+      "mythical",
+      "psychic"
+    ],
+    "family": "hoopa"
+  },
+  {
+    "id": "hoopa-unbound",
+    "number": 720,
+    "name": {
+      "en": "Hoopa (Unbound)"
+    },
+    "tags": [
+      "dark",
       "kalos",
       "mythical",
       "psychic"
@@ -9295,14 +11169,53 @@
     "family": "crabrawler"
   },
   {
-    "id": "oricorio",
+    "id": "oricorio-baile",
     "number": 741,
     "name": {
-      "en": "Oricorio"
+      "en": "Oricorio (Baile)"
     },
     "tags": [
       "alola",
       "fire",
+      "flying"
+    ],
+    "family": "oricorio"
+  },
+  {
+    "id": "oricorio-pompom",
+    "number": 741,
+    "name": {
+      "en": "Oricorio (Pom-pom)"
+    },
+    "tags": [
+      "alola",
+      "electric",
+      "flying"
+    ],
+    "family": "oricorio"
+  },
+  {
+    "id": "oricorio-pau",
+    "number": 741,
+    "name": {
+      "en": "Oricorio (Pa'u)"
+    },
+    "tags": [
+      "alola",
+      "psychic",
+      "flying"
+    ],
+    "family": "oricorio"
+  },
+  {
+    "id": "oricorio-sensu",
+    "number": 741,
+    "name": {
+      "en": "Oricorio (Sensu)"
+    },
+    "tags": [
+      "alola",
+      "ghost",
       "flying"
     ],
     "family": "oricorio"
@@ -9346,10 +11259,10 @@
     "family": "rockruff"
   },
   {
-    "id": "lycanroc",
+    "id": "lycanroc-midday",
     "number": 745,
     "name": {
-      "en": "Lycanroc"
+      "en": "Lycanroc (Midday)"
     },
     "tags": [
       "alola",
@@ -9358,10 +11271,46 @@
     "family": "rockruff"
   },
   {
-    "id": "wishiwashi",
+    "id": "lycanroc-midnight",
+    "number": 745,
+    "name": {
+      "en": "Lycanroc (Midnight)"
+    },
+    "tags": [
+      "alola",
+      "rock"
+    ],
+    "family": "rockruff"
+  },
+  {
+    "id": "lycanroc-dusk",
+    "number": 745,
+    "name": {
+      "en": "Lycanroc (Dusk)"
+    },
+    "tags": [
+      "alola",
+      "rock"
+    ],
+    "family": "rockruff"
+  },
+  {
+    "id": "wishiwashi-solo",
     "number": 746,
     "name": {
-      "en": "Wishiwashi"
+      "en": "Wishiwashi (Solo)"
+    },
+    "tags": [
+      "alola",
+      "water"
+    ],
+    "family": "wishiwashi"
+  },
+  {
+    "id": "wishiwashi-school",
+    "number": 746,
+    "name": {
+      "en": "Wishiwashi (School)"
     },
     "tags": [
       "alola",
@@ -9697,15 +11646,236 @@
     "family": "type-null"
   },
   {
-    "id": "silvally",
+    "id": "silvally-normal",
     "number": 773,
     "name": {
-      "en": "Silvally"
+      "en": "Silvally (Normal)"
     },
     "tags": [
       "alola",
       "legendary",
       "normal"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-fire",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Fire)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "fire"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-water",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Water)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "water"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-electric",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Electric)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "electric"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-grass",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Grass)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "grass"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-ice",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Ice)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "ice"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-fighting",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Fighting)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "fighting"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-poison",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Poison)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "poison"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-ground",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Ground)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "ground"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-flying",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Flying)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "flying"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-psychic",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Psychic)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "psychic"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-bug",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Bug)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "bug"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-rock",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Rock)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "rock"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-ghost",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Ghost)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "ghost"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-dragon",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Dragon)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "dragon"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-dark",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Dark)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "dark"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-steel",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Steel)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "steel"
+    ],
+    "family": "type-null"
+  },
+  {
+    "id": "silvally-fairy",
+    "number": 773,
+    "name": {
+      "en": "Silvally (Fairy)"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "fairy"
     ],
     "family": "type-null"
   },
@@ -10064,10 +12234,52 @@
     "family": "necrozma"
   },
   {
+    "id": "necrozma-dusk-mane",
+    "number": 800,
+    "name": {
+      "en": "Dusk Mane Necrozma"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "psychic",
+      "steel"
+    ],
+    "family": "necrozma"
+  },
+  {
+    "id": "necrozma-dawn-wings",
+    "number": 800,
+    "name": {
+      "en": "Dawn Wings Necrozma"
+    },
+    "tags": [
+      "alola",
+      "legendary",
+      "psychic",
+      "ghost"
+    ],
+    "family": "necrozma"
+  },
+  {
     "id": "magearna",
     "number": 801,
     "name": {
       "en": "Magearna"
+    },
+    "tags": [
+      "alola",
+      "fairy",
+      "mythical",
+      "steel"
+    ],
+    "family": "magearna"
+  },
+  {
+    "id": "magearna-original-color",
+    "number": 801,
+    "name": {
+      "en": "Magearna (Orginal Color)"
     },
     "tags": [
       "alola",
@@ -10661,10 +12873,23 @@
     "family": "toxel"
   },
   {
-    "id": "toxtricity",
+    "id": "toxtricity-amped",
     "number": 849,
     "name": {
-      "en": "Toxtricity"
+      "en": "Toxtricity (Amped Form)"
+    },
+    "tags": [
+      "electric",
+      "galar",
+      "poison"
+    ],
+    "family": "toxel"
+  },
+  {
+    "id": "toxtricity-low-key",
+    "number": 849,
+    "name": {
+      "en": "Toxtricity (Low Key)"
     },
     "tags": [
       "electric",
@@ -10724,10 +12949,23 @@
     "family": "clobbopus"
   },
   {
-    "id": "sinistea",
+    "id": "sinistea-phony",
     "number": 854,
     "name": {
-      "en": "Sinistea"
+      "en": "Sinistea (Phony Form)"
+    },
+    "tags": [
+      "galar",
+      "ghost"
+    ],
+    "family": "sinistea"
+  },
+
+  {
+    "id": "sinistea-antique",
+    "number": 854,
+    "name": {
+      "en": "Sinistea (Antique Form)"
     },
     "tags": [
       "galar",
@@ -10736,10 +12974,22 @@
     "family": "sinistea"
   },
   {
-    "id": "polteageist",
+    "id": "polteageist-phony",
     "number": 855,
     "name": {
-      "en": "Polteageist"
+      "en": "Polteageist (Phony Form)"
+    },
+    "tags": [
+      "galar",
+      "ghost"
+    ],
+    "family": "sinistea"
+  },
+  {
+    "id": "polteageist-antique",
+    "number": 855,
+    "name": {
+      "en": "Polteageist (Antique Form)"
     },
     "tags": [
       "galar",
@@ -10911,10 +13161,754 @@
     "family": "milcery"
   },
   {
-    "id": "alcremie",
+    "id": "alcremie-strawberry-vanilla-cream",
     "number": 869,
     "name": {
-      "en": "Alcremie"
+      "en": "Alcremie (Strawberry Sweet Vanilla Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-strawberry-ruby-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Strawberry Sweet Ruby Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-strawberry-matcha-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Strawberry Sweet Matcha Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-strawberry-mint-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Strawberry Sweet Mint Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-strawberry-lemon-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Strawberry Sweet Lemon Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-strawberry-salted-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Strawberry Sweet Salted Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-strawberry-ruby-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Strawberry Sweet Ruby Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-strawberry-caramel-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Strawberry Sweet Caramel Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-strawberry-rainbow-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Strawberry Sweet Rainbow Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-berry-vanilla-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Berry Sweet Vanilla Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-berry-ruby-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Berry Sweet Ruby Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-berry-matcha-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Berry Sweet Matcha Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-berry-mint-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Berry Sweet Mint Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-berry-lemon-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Berry Sweet Lemon Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-berry-salted-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Berry Sweet Salted Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-berry-ruby-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Berry Sweet Ruby Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-berry-caramel-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Berry Sweet Caramel Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-berry-rainbow-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Berry Sweet Rainbow Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-love-vanilla-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Love Sweet Vanilla Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-love-ruby-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Love Sweet Ruby Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-love-matcha-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Love Sweet Matcha Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-love-mint-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Love Sweet Mint Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-love-lemon-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Love Sweet Lemon Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-love-salted-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Love Sweet Salted Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-love-ruby-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Love Sweet Ruby Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-love-caramel-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Love Sweet Caramel Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-love-rainbow-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Love Sweet Rainbow Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-star-vanilla-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Star Sweet Vanilla Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-star-ruby-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Star Sweet Ruby Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-star-matcha-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Star Sweet Matcha Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-star-mint-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Star Sweet Mint Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-star-lemon-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Star Sweet Lemon Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-star-salted-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Star Sweet Salted Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-star-ruby-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Star Sweet Ruby Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-star-caramel-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Star Sweet Caramel Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-star-rainbow-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Star Sweet Rainbow Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-clover-vanilla-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Clover Sweet Vanilla Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-clover-ruby-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Clover Sweet Ruby Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-clover-matcha-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Clover Sweet Matcha Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-clover-mint-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Clover Sweet Mint Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-clover-lemon-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Clover Sweet Lemon Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-clover-salted-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Clover Sweet Salted Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-clover-ruby-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Clover Sweet Ruby Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-clover-caramel-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Clover Sweet Caramel Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-clover-rainbow-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Clover Sweet Rainbow Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-flower-vanilla-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Flower Sweet Vanilla Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-flower-ruby-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Flower Sweet Ruby Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-flower-matcha-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Flower Sweet Matcha Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-flower-mint-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Flower Sweet Mint Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-flower-lemon-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Flower Sweet Lemon Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-flower-salted-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Flower Sweet Salted Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-flower-ruby-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Flower Sweet Ruby Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-flower-caramel-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Flower Sweet Caramel Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-flower-rainbow-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Flower Sweet Rainbow Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-ribbon-vanilla-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Ribbon Sweet Vanilla Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-ribbon-ruby-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Ribbon Sweet Ruby Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-ribbon-matcha-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Ribbon Sweet Matcha Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-ribbon-mint-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Ribbon Sweet Mint Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-ribbon-lemon-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Ribbon Sweet Lemon Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-ribbon-salted-cream",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Ribbon Sweet Salted Cream)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-ribbon-ruby-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Ribbon Sweet Ruby Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-ribbon-caramel-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Ribbon Sweet Caramel Swirl)"
+    },
+    "tags": [
+      "fairy",
+      "galar"
+    ],
+    "family": "milcery"
+  },
+  {
+    "id": "alcremie-ribbon-rainbow-swirl",
+    "number": 869,
+    "name": {
+      "en": "Alcremie (Ribbon Sweet Rainbow Swirl)"
     },
     "tags": [
       "fairy",
@@ -10997,10 +13991,23 @@
     "family": "eiscue"
   },
   {
-    "id": "indeedee",
+    "id": "indeedee-male",
     "number": 876,
     "name": {
-      "en": "Indeedee"
+      "en": "Indeedee (Male)"
+    },
+    "tags": [
+      "galar",
+      "normal",
+      "psychic"
+    ],
+    "family": "indeedee"
+  },
+  {
+    "id": "indeedee-female",
+    "number": 876,
+    "name": {
+      "en": "Indeedee (Female)"
     },
     "tags": [
       "galar",
@@ -11164,10 +14171,36 @@
     "family": "zacian"
   },
   {
+    "id": "zacian-crowned-sword",
+    "number": 888,
+    "name": {
+      "en": "Zacian (Crowned Sword)"
+    },
+    "tags": [
+      "fairy",
+      "galar",
+      "legendary"
+    ],
+    "family": "zacian"
+  },
+  {
     "id": "zamazenta",
     "number": 889,
     "name": {
       "en": "Zamazenta"
+    },
+    "tags": [
+      "fighting",
+      "galar",
+      "legendary"
+    ],
+    "family": "zamazenta"
+  },
+  {
+    "id": "zamazenta-crowned-shield",
+    "number": 889,
+    "name": {
+      "en": "Zamazenta (Crowned Shield)"
     },
     "tags": [
       "fighting",
@@ -11204,13 +14237,27 @@
     "family": "kubfu"
   },
   {
-    "id": "urshifu",
+    "id": "urshifu-single-strike",
     "number": 892,
     "name": {
-      "en": "Urshifu"
+      "en": "Urshifu (Single Strike)"
     },
     "tags": [
       "dark",
+      "fighting",
+      "galar",
+      "legendary"
+    ],
+    "family": "kubfu"
+  },
+  {
+    "id": "urshifu-rapid-strike",
+    "number": 892,
+    "name": {
+      "en": "Urshifu (Rapid Strike)"
+    },
+    "tags": [
+      "water",
       "fighting",
       "galar",
       "legendary"
@@ -11298,6 +14345,34 @@
     "family": "calyrex"
   },
   {
+    "id": "calyrex-ice-rider",
+    "number": 898,
+    "name": {
+      "en": "Calyrex (Ice Rider)"
+    },
+    "tags": [
+      "galar",
+      "ice",
+      "legendary",
+      "psychic"
+    ],
+    "family": "calyrex"
+  },
+  {
+    "id": "calyrex-shadow-rider",
+    "number": 898,
+    "name": {
+      "en": "Calyrex (Shadow Rider)"
+    },
+    "tags": [
+      "galar",
+      "ghost",
+      "legendary",
+      "psychic"
+    ],
+    "family": "calyrex"
+  },
+  {
     "id": "wyrdeer",
     "number": 899,
     "name": {
@@ -11337,10 +14412,36 @@
     "family": "teddiursa"
   },
   {
-    "id": "basculegion",
+    "id": "ursaluna-bloodmoon",
+    "number": 901,
+    "name": {
+      "en": "Ursaluna (Bloodmoon)"
+    },
+    "tags": [
+      "galar",
+      "ground",
+      "normal"
+    ],
+    "family": "teddiursa"
+  },
+  {
+    "id": "basculegion-male",
     "number": 902,
     "name": {
-      "en": "Basculegion"
+      "en": "Basculegion (Male)"
+    },
+    "tags": [
+      "galar",
+      "ghost",
+      "water"
+    ],
+    "family": "basculin"
+  },
+  {
+    "id": "basculegion-female",
+    "number": 902,
+    "name": {
+      "en": "Basculegion (Female)"
     },
     "tags": [
       "galar",
@@ -11376,10 +14477,24 @@
     "family": "qwilfish"
   },
   {
-    "id": "enamorus",
+    "id": "enamorus-incarnate",
     "number": 905,
     "name": {
-      "en": "Enamorus"
+      "en": "Enamorus (Incarnate)"
+    },
+    "tags": [
+      "fairy",
+      "flying",
+      "galar",
+      "legendary"
+    ],
+    "family": "enamorus"
+  },
+  {
+    "id": "enamorus-therian",
+    "number": 905,
+    "name": {
+      "en": "Enamorus (Therian)"
     },
     "tags": [
       "fairy",
@@ -11513,10 +14628,22 @@
     "family": "lechonk"
   },
   {
-    "id": "oinkologne",
+    "id": "oinkologne-mail",
     "number": 916,
     "name": {
-      "en": "Oinkologne"
+      "en": "Oinkologne (Male)"
+    },
+    "tags": [
+      "normal",
+      "paldea"
+    ],
+    "family": "lechonk"
+  },
+  {
+    "id": "oinkologne-female",
+    "number": 916,
+    "name": {
+      "en": "Oinkologne (Female)"
     },
     "tags": [
       "normal",
@@ -11624,10 +14751,22 @@
     "family": "tandemaus"
   },
   {
-    "id": "maushold",
+    "id": "maushold-family-of-four",
     "number": 925,
     "name": {
-      "en": "Maushold"
+      "en": "Maushold (Family of Four)"
+    },
+    "tags": [
+      "normal",
+      "paldea"
+    ],
+    "family": "tandemaus"
+  },
+  {
+    "id": "maushold-family-of-three",
+    "number": 925,
+    "name": {
+      "en": "Maushold (Family of Three)"
     },
     "tags": [
       "normal",
@@ -11699,10 +14838,49 @@
     "family": "smoliv"
   },
   {
-    "id": "squawkabilly",
+    "id": "squawkabilly-green-plumage",
     "number": 931,
     "name": {
-      "en": "Squawkabilly"
+      "en": "Squawkabilly (Green Plumage)"
+    },
+    "tags": [
+      "flying",
+      "normal",
+      "paldea"
+    ],
+    "family": "squawkabilly"
+  },
+  {
+    "id": "squawkabilly-blue-plumage",
+    "number": 931,
+    "name": {
+      "en": "Squawkabilly (Blue Plumage)"
+    },
+    "tags": [
+      "flying",
+      "normal",
+      "paldea"
+    ],
+    "family": "squawkabilly"
+  },
+  {
+    "id": "squawkabilly-yellow-plumage",
+    "number": 931,
+    "name": {
+      "en": "Squawkabilly (Yello Plumage)"
+    },
+    "tags": [
+      "flying",
+      "normal",
+      "paldea"
+    ],
+    "family": "squawkabilly"
+  },
+  {
+    "id": "squawkabilly-white-plumage",
+    "number": 931,
+    "name": {
+      "en": "Squawkabilly (White Plumage)"
     },
     "tags": [
       "flying",
@@ -12287,10 +15465,36 @@
     "family": "dondozo"
   },
   {
-    "id": "tatsugiri",
+    "id": "tatsugiri-curly",
     "number": 978,
     "name": {
-      "en": "Tatsugiri"
+      "en": "Tatsugiri (Curly Form)"
+    },
+    "tags": [
+      "dragon",
+      "paldea",
+      "water"
+    ],
+    "family": "tatsugiri"
+  },
+  {
+    "id": "tatsugiri-droopy",
+    "number": 978,
+    "name": {
+      "en": "Tatsugiri (Droopy Form)"
+    },
+    "tags": [
+      "dragon",
+      "paldea",
+      "water"
+    ],
+    "family": "tatsugiri"
+  },
+  {
+    "id": "tatsugiri-stretchy",
+    "number": 978,
+    "name": {
+      "en": "Tatsugiri (Stretchy Form)"
     },
     "tags": [
       "dragon",
@@ -12339,10 +15543,22 @@
     "family": "girafarig"
   },
   {
-    "id": "dudunsparce",
+    "id": "dudunsparce-two-segment",
     "number": 982,
     "name": {
-      "en": "Dudunsparce"
+      "en": "Dudunsparce (Two Segment Form)"
+    },
+    "tags": [
+      "normal",
+      "paldea"
+    ],
+    "family": "dunsparce"
+  },
+  {
+    "id": "dudunsparce-three-segment",
+    "number": 982,
+    "name": {
+      "en": "Dudunsparce (Three Segment Form)"
     },
     "tags": [
       "normal",
@@ -12559,10 +15775,22 @@
     "family": "frigibax"
   },
   {
-    "id": "gimmighoul",
+    "id": "gimmighoul-chest",
     "number": 999,
     "name": {
-      "en": "Gimmighoul"
+      "en": "Gimmighoul (Chest Form)"
+    },
+    "tags": [
+      "ghost",
+      "paldea"
+    ],
+    "family": "gimmighoul"
+  },
+  {
+    "id": "gimmighoul-roaming",
+    "number": 999,
+    "name": {
+      "en": "Gimmighoul (Roaming Form)"
     },
     "tags": [
       "ghost",
@@ -12733,10 +15961,10 @@
     "family": "applin"
   },
   {
-    "id": "poltchageist",
+    "id": "poltchageist-counterfeit",
     "number": 1012,
     "name": {
-      "en": "Poltchageist"
+      "en": "Poltchageist (Counterfeit Form)"
     },
     "tags": [
       "ghost",
@@ -12746,10 +15974,36 @@
     "family": "poltchageist"
   },
   {
-    "id": "sinistcha",
+    "id": "poltchageist-artisan",
+    "number": 1012,
+    "name": {
+      "en": "Poltchageist (Artisan Form)"
+    },
+    "tags": [
+      "ghost",
+      "grass",
+      "paldea"
+    ],
+    "family": "poltchageist"
+  },
+  {
+    "id": "sinistcha-unremarkable",
     "number": 1013,
     "name": {
-      "en": "Sinistcha"
+      "en": "Sinistcha (Unremarkable Form)"
+    },
+    "tags": [
+      "ghost",
+      "grass",
+      "paldea"
+    ],
+    "family": "poltchageist"
+  },
+  {
+    "id": "sinistcha-masterpiece",
+    "number": 1013,
+    "name": {
+      "en": "Sinistcha (Masterpiece Form)"
     },
     "tags": [
       "ghost",
@@ -12801,13 +16055,55 @@
     "family": "fezandipiti"
   },
   {
-    "id": "ogerpon",
+    "id": "ogerpon-teal-mask",
     "number": 1017,
     "name": {
-      "en": "Ogerpon"
+      "en": "Ogerpon (Teal Mask)"
     },
     "tags": [
       "grass",
+      "legendary",
+      "paldea"
+    ],
+    "family": "ogerpon"
+  },
+  {
+    "id": "ogerpon-wellspring-mask",
+    "number": 1017,
+    "name": {
+      "en": "Ogerpon (Wellspring Mask)"
+    },
+    "tags": [
+      "grass",
+      "water",
+      "legendary",
+      "paldea"
+    ],
+    "family": "ogerpon"
+  },
+  {
+    "id": "ogerpon-hearthflame-mask",
+    "number": 1017,
+    "name": {
+      "en": "Ogerpon (Hearthflame Mask)"
+    },
+    "tags": [
+      "grass",
+      "fire",
+      "legendary",
+      "paldea"
+    ],
+    "family": "ogerpon"
+  },
+  {
+    "id": "ogerpon-cornerstone-mask",
+    "number": 1017,
+    "name": {
+      "en": "Ogerpon (Cornerstone Mask"
+    },
+    "tags": [
+      "grass",
+      "rock",
       "legendary",
       "paldea"
     ],
