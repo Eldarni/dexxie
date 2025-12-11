@@ -459,10 +459,23 @@ main {
         overflow: hidden;
 
         //
-        > div {
+        .grid {
             @include absolute($inset: 0);
+            margin-block-end: 1.5rem;
         }
 
+        //
+        .pokemon-count {
+
+            //
+            @include absolute($inset-block-end: 0rem, $inset-inline-start: 25rem);
+
+            //
+            font-size: 0.8rem;
+            font-weight: 300;
+            color: color-mix(in srgb, var(--colour-foreground), transparent 10%);
+
+        }
 
     }
 

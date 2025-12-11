@@ -22,6 +22,7 @@ export function renderPokemonList(searchString = null) {
 
     //
     const results = document.querySelector('[data-name="pokemon-results"]');
+    const count = document.querySelector('[data-name="pokemon-count"]');
 
     //
     if (!filteredPokemon || !Array.isArray(filteredPokemon) || filteredPokemon.length === 0) {
@@ -83,5 +84,16 @@ export function renderPokemonList(searchString = null) {
         results.append(wrapper);
 
     });
+
+    //
+    const totalCount   = ((Array.isArray(collectionFilteredPokemon)) ? collectionFilteredPokemon.length : 0);
+    const visibleCount = ((Array.isArray(filteredPokemon))           ? filteredPokemon.length           : 0);
+
+    //
+    const formattedTotalCount   = totalCount.toLocaleString('en-GB');
+    const formattedVisibleCount = visibleCount.toLocaleString('en-GB');
+
+    //
+    count.textContent = `Showing ${formattedVisibleCount} of ${formattedTotalCount} Pokémon`;
 
 }
