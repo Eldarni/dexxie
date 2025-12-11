@@ -102,7 +102,30 @@ export function changeCollection(collection) {
 
 //
 export function getTags() {
-    return getLocalStorageJSON('tags', []);
+
+    //
+    const collectionTags = getLocalStorageJSON(`${currentCollection}:tags`, null);
+    if (Array.isArray(collectionTags) && collectionTags.length > 0) {
+        return collectionTags;
+    }
+
+    //
+    return defaultTags;
+
+}
+
+//
+export function setTags(tags) {
+
+    //
+    setLocalStorageJSON(`${currentCollection}:tags`, tags || []);
+
+    //
+    emit('tags-updated', currentCollection);
+
+    //
+    emit('pokemon-list-updated', currentCollection);
+
 }
 
 //get the pokemon from the current collection
