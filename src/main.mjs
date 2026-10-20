@@ -18,7 +18,7 @@ import { subscribe } from '../utilities/events.mjs';
 import { exportPokemonData } from './common/exportPokemonData.mjs';
 import { importPokemonData } from './common/importPokemonData.mjs';
 
-import { debounceLeading, debounceTrailing } from '../utilities/debounce.mjs';
+import { debounceTrailing } from '../utilities/debounce.mjs';
 
 //
 import { renderPokemonList } from './common/renderPokemonList.mjs';
@@ -62,10 +62,15 @@ document.querySelector('button[data-action="copy-list"').addEventListener('click
 });
 
 //
-document.querySelector('[data-name="pokemon-results"]').addEventListener('click', debounceLeading(300, (event) => {
+document.querySelector('[data-name="pokemon-results"]').addEventListener('click', (event) => {
 
     //
     if (event.target.dataset.action != 'toggle-tag') {
+        return;
+    }
+
+    //
+    if (event.target.dataset.locked) {
         return;
     }
 
@@ -81,4 +86,8 @@ document.querySelector('[data-name="pokemon-results"]').addEventListener('click'
     //
     event.target.setAttribute('data-state', (isTagged ? 1 : 0));
 
-}));
+    //
+    event.target.setAttribute('data-locked', 1);
+    setTimeout(() => event.target.removeAttribute('data-locked'), 250);
+
+});
