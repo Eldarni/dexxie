@@ -42,6 +42,13 @@ export function initialiseCollectionSelector() {
     });
 
     //
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            dropdown.classList.remove('active');
+        }
+    });
+
+    //
     dropdownMenu.addEventListener('click', (event) => {
 
         //

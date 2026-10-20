@@ -6,7 +6,10 @@ import './style.scss';
 import { toast } from '../utilities/toaster.mjs';
 
 //
-import { initializeAndMigrateStores, togglePokemonTag } from './common/store.mjs';
+import { initializeAndMigrateStores } from './common/store.mjs';
+
+//
+import { getSelection, isSelected, toggleSelection, selectOnly, selectRange, selectAll, clearSelection } from './common/selection.mjs';
 
 //
 import { initialiseCollectionSelector } from './common/collectionSelector.mjs';
@@ -21,7 +24,11 @@ import { importPokemonData } from './common/importPokemonData.mjs';
 import { debounceTrailing } from '../utilities/debounce.mjs';
 
 //
-import { renderPokemonList } from './common/renderPokemonList.mjs';
+import { renderPokemonList, getVisiblePokemonIds } from './common/renderPokemonList.mjs';
+
+//
+import { initialiseTagMenu, toggleTagMenu } from './common/tagMenu.mjs';
+import { initialiseSelectionBar } from './common/selectionBar.mjs';
 
 //
 import { showPopup } from './popup.mjs';
@@ -31,6 +38,10 @@ initializeAndMigrateStores();
 
 //
 initialiseCollectionSelector();
+
+//
+initialiseTagMenu();
+initialiseSelectionBar();
 
 //
 renderPokemonList();
@@ -65,29 +76,72 @@ document.querySelector('button[data-action="copy-list"').addEventListener('click
 document.querySelector('[data-name="pokemon-results"]').addEventListener('click', (event) => {
 
     //
-    if (event.target.dataset.action != 'toggle-tag') {
+    const card = event.target.closest('.pokemon');
+    if (!card) {
         return;
     }
 
     //
-    if (event.target.dataset.locked) {
+    const id = card.dataset.id;
+
+    //the tag menu toggle never changes the selection
+    const menuToggle = event.target.closest('[data-action="open-tag-menu"]');
+    if (menuToggle) {
+        toggleTagMenu(menuToggle, id);
         return;
     }
 
-    //
-    const id = event.target.closest('.pokemon').dataset.id;
+    //shift adds everything from the last clicked card to this one
+    if (event.shiftKey) {
+        selectRange(getVisiblePokemonIds(), id);
+        return;
+    }
 
-    //
-    const tag = event.target.dataset.tag;
+    //the checkbox and ctrl/cmd+click toggle just this card
+    if (event.ctrlKey || event.metaKey || event.target.closest('[data-action="toggle-selection"]')) {
+        toggleSelection(id);
+        return;
+    }
 
-    //
-    const isTagged = togglePokemonTag(id, tag);
-
-    //
-    event.target.setAttribute('data-state', (isTagged ? 1 : 0));
-
-    //
-    event.target.setAttribute('data-locked', 1);
-    setTimeout(() => event.target.removeAttribute('data-locked'), 250);
+    //a plain click selects only this card
+    selectOnly(id);
 
 });
+
+//ctrl/cmd+a selects every visible card (unless typing in the search)
+document.addEventListener('keydown', (event) => {
+
+    //
+    if (!(event.ctrlKey || event.metaKey) || event.key.toLowerCase() !== 'a') {
+        return;
+    }
+
+    //
+    if (event.target.closest('input, textarea, [contenteditable]')) {
+        return;
+    }
+
+    //
+    event.preventDefault();
+    selectAll(getVisiblePokemonIds());
+
+});
+
+//keep the highlighted cards in step with the selection
+subscribe('selection-changed', () => {
+
+    //
+    const results = document.querySelector('[data-name="pokemon-results"]');
+
+    //the checkboxes are faint until a selection has been started
+    results.classList.toggle('has-selection', (getSelection().length > 0));
+
+    //
+    results.querySelectorAll('.pokemon').forEach(card => {
+        card.classList.toggle('selected', isSelected(card.dataset.id));
+    });
+
+});
+
+//tags belong to a collection, so a selection doesn't carry over
+subscribe('collection-changed', clearSelection);

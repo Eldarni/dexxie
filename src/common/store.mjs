@@ -159,6 +159,42 @@ export function togglePokemonTag(id, tag) {
 
 }
 
+//get the user tags for every pokemon in the current collection, keyed by id
+export function getTaggedPokemon() {
+    return getLocalStorageJSON(`${currentCollection}:pokemon`, {});
+}
+
+//add (or remove) a tag on several pokemon with a single write
+export function setPokemonTag(ids, tag, enabled) {
+
+    //
+    const pokemon = getLocalStorageJSON(`${currentCollection}:pokemon`, {});
+
+    //
+    ids.forEach(id => {
+
+        //
+        const tags = (pokemon[id] || []).filter(t => t !== tag);
+
+        //
+        if (enabled) {
+            tags.push(tag);
+        }
+
+        //
+        if (tags.length === 0) {
+            delete pokemon[id];
+        } else {
+            pokemon[id] = tags;
+        }
+
+    });
+
+    //
+    setLocalStorageJSON(`${currentCollection}:pokemon`, pokemon);
+
+}
+
 //
 export function getPokemon() {
 

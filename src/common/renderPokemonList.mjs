@@ -1,9 +1,18 @@
 
 //
-import { getTags, getPokemon } from './store.mjs';
+import { getPokemon } from './store.mjs';
+
+//
+import { isSelected } from './selection.mjs';
+
+//
+import { emit } from '../../utilities/events.mjs';
 
 //
 import { filterPokemonBySearchString } from './filterPokemonBySearchString.mjs';
+
+//the number of pokemon in the collection, and how many of those the search is showing
+const counts = { total: 0, visible: 0 };
 
 //
 export function renderPokemonList(searchString = null) {
@@ -18,15 +27,16 @@ export function renderPokemonList(searchString = null) {
     // lastFilteredPokemon = filteredPokemon;
 
     //
-    const tags = getTags();
+    const results = document.querySelector('[data-name="pokemon-results"]');
 
     //
-    const results = document.querySelector('[data-name="pokemon-results"]');
-    const count = document.querySelector('[data-name="pokemon-count"]');
+    counts.total   = ((Array.isArray(collectionFilteredPokemon)) ? collectionFilteredPokemon.length : 0);
+    counts.visible = ((Array.isArray(filteredPokemon))           ? filteredPokemon.length           : 0);
 
     //
     if (!filteredPokemon || !Array.isArray(filteredPokemon) || filteredPokemon.length === 0) {
         results.innerHTML = '<p>No Pokémon found.</p>';
+        emit('pokemon-list-rendered');
         return;
     }
 
@@ -37,9 +47,10 @@ export function renderPokemonList(searchString = null) {
     filteredPokemon.forEach(p => {
 
         //
-        const wrapper = document.createElement('div');
-        wrapper.className = 'pokemon';
-        wrapper.dataset.id = p.id;
+        const card = document.createElement('div');
+        card.className = 'pokemon';
+        card.dataset.id = p.id;
+        card.classList.toggle('selected', isSelected(p.id));
 
         //
         const number = document.createElement('div');
@@ -47,53 +58,47 @@ export function renderPokemonList(searchString = null) {
         number.innerHTML = `<span>#${'0'.repeat(4 - String(p.number).length)}</span>${p.number}`;
 
         //
+        const checkbox = document.createElement('button');
+        checkbox.type = 'button';
+        checkbox.className = 'checkbox';
+        checkbox.setAttribute('data-action', 'toggle-selection');
+        checkbox.setAttribute('aria-label', `Select ${p.name.en}`);
+
+        //space for the icon (up to 128x128), a placeholder for now
+        const icon = document.createElement('div');
+        icon.className = 'icon';
+
+        //
         const name = document.createElement('div');
         name.className = 'name';
         name.textContent = p.name.en;
 
         //
-        const buttons = document.createElement('div');
-        buttons.className = 'buttons';
+        const menuToggle = document.createElement('button');
+        menuToggle.type = 'button';
+        menuToggle.className = 'tag-menu-toggle';
+        menuToggle.setAttribute('data-action', 'open-tag-menu');
+        menuToggle.setAttribute('aria-label', `Tags for ${p.name.en}`);
 
         //
-        wrapper.appendChild(number);
-        wrapper.appendChild(name);
-        wrapper.appendChild(buttons);
+        card.append(number, checkbox, icon, name, menuToggle);
 
         //
-        tags.forEach(tag => {
-
-            //
-            const button = document.createElement('button');
-
-            //
-            button.className = 'button'
-            button.textContent = tag;
-
-            //
-            button.setAttribute('data-action', 'toggle-tag');
-            button.setAttribute('data-tag', tag);
-            button.setAttribute('data-state', ((p.tags.includes(tag)) ? 1 : 0));
-
-            //
-            buttons.appendChild(button);
-
-        });
-
-        //
-        results.append(wrapper);
+        results.append(card);
 
     });
 
     //
-    const totalCount   = ((Array.isArray(collectionFilteredPokemon)) ? collectionFilteredPokemon.length : 0);
-    const visibleCount = ((Array.isArray(filteredPokemon))           ? filteredPokemon.length           : 0);
+    emit('pokemon-list-rendered');
 
-    //
-    const formattedTotalCount   = totalCount.toLocaleString('en-GB');
-    const formattedVisibleCount = visibleCount.toLocaleString('en-GB');
+}
 
-    //
-    count.textContent = `Showing ${formattedVisibleCount} of ${formattedTotalCount} Pokémon`;
+//
+export function getPokemonCounts() {
+    return { ...counts };
+}
 
+//the ids of the cards currently on screen, in display order
+export function getVisiblePokemonIds() {
+    return Array.from(document.querySelectorAll('[data-name="pokemon-results"] .pokemon')).map(card => card.dataset.id);
 }

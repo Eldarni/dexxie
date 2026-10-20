@@ -399,71 +399,7 @@ main {
 
             //
             .dropdown-menu {
-
-                //
                 @include absolute($inset-block-start: 100%, $inset-inline-end: 0);
-
-                //
-                z-index: 1000;
-
-                //
-                background-color: var(--colour-background);
-
-                //
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                border: 0.15rem solid #767676;
-                border-radius: 0.2rem;
-
-                //
-                opacity: 0;
-                visibility: hidden;
-
-                //
-                transform: translateY(-0.5rem);
-                transition: all 0.2s ease;
-
-                //
-                .dropdown-item {
-
-                    //
-                    padding: 0.75rem 1rem;
-
-                    //
-                    color: var(--colour-foreground);
-
-                    //
-                    cursor: pointer;
-
-                    //
-                    border-bottom: 0.05rem solid #767676;
-
-                    //
-                    transition: background-color 0.1s ease;
-
-                    //
-                    &:last-child {
-                        border-bottom: none;
-                    }
-
-                    //
-                    &:hover {
-                        background-color: color-mix(in srgb, var(--colour-foreground), transparent 90%);
-                    }
-
-                    //
-                    &.active {
-
-                        //
-                        background-color: var(--colour-pokedex-red);
-                        color: var(--white);
-
-                        //
-                        &:hover {
-                            background-color: color-mix(in srgb, var(--colour-pokedex-red), var(--colour-foreground) 10%);
-                        }
-
-                    }
-                }
             }
 
             //
@@ -497,20 +433,248 @@ main {
         //
         .grid {
             @include absolute($inset: 0);
-            margin-block-end: 1.5rem;
+        }
+
+    }
+
+    // shared look for dropdown menus (the collection selector and the card tag menu)
+    .dropdown-menu {
+
+        //
+        z-index: 1000;
+
+        //
+        background-color: var(--colour-background);
+
+        //
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 0.15rem solid #767676;
+        border-radius: 0.2rem;
+
+        //
+        opacity: 0;
+        visibility: hidden;
+
+        //
+        transform: translateY(-0.5rem);
+        transition: all 0.2s ease;
+
+        //
+        .dropdown-item {
+
+            //
+            padding: 0.75rem 1rem;
+
+            //
+            color: var(--colour-foreground);
+
+            //
+            cursor: pointer;
+
+            //
+            border-bottom: 0.05rem solid #767676;
+
+            //
+            transition: background-color 0.1s ease;
+
+            //
+            &:last-child {
+                border-bottom: none;
+            }
+
+            //
+            &:hover {
+                background-color: color-mix(in srgb, var(--colour-foreground), transparent 90%);
+            }
+
+            //
+            &.active {
+
+                //
+                background-color: var(--colour-pokedex-red);
+                color: var(--white);
+
+                //
+                &:hover {
+                    background-color: color-mix(in srgb, var(--colour-pokedex-red), var(--colour-foreground) 10%);
+                }
+
+            }
+        }
+    }
+
+    // the card tag menu is positioned in javascript against the card that opened it
+    .tag-menu {
+
+        //
+        position: fixed;
+
+        //
+        min-width: 10rem;
+
+        //don't animate top/left, or the menu slides between cards
+        transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+
+        //
+        .dropdown-item {
+
+            //
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+
+            //
+            width: 100%;
+
+            //
+            border: none;
+            border-bottom: 0.05rem solid #767676;
+            background: none;
+            text-align: start;
+
+            //
+            &[data-state="on"] {
+                background-color: color-mix(in srgb, #4caf50 15%, transparent);
+            }
+
+            //
+            &[data-state="on"]:hover {
+                background-color: color-mix(in srgb, #4caf50 25%, transparent);
+            }
+
         }
 
         //
-        .pokemon-count {
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+    }
+
+    // tri-state tag indicators, only the icon that matches the button's data-state is shown
+    [data-action="toggle-tag"] {
+
+        //
+        .state-icon {
+            display: none;
+            width: 1rem;
+            text-align: center;
+        }
+
+        //
+        &[data-state="on"] .state-icon.on { display: inline-block; color: #4caf50; }
+        &[data-state="mixed"] .state-icon.mixed { display: inline-block; color: var(--colour-yellow); }
+        &[data-state="off"] .state-icon.off { display: inline-block; opacity: 0.5; }
+
+    }
+
+    // always shown below the grid, the count when nothing is selected, the selection and its tags when something is
+    .selection-bar {
+
+        // label | tags | clear, with equal outer columns so the tags sit in the true centre
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-areas: "count tags clear";
+        grid-auto-rows: minmax(1.75rem, auto);
+        align-items: center;
+        gap: 0.5rem 1rem;
+
+        //
+        margin-top: 1em;
+        padding: 0.4rem 1rem;
+
+        // a dark translucent pill, so it doesn't look like something to type into
+        border-radius: 999px;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        // on small screens the tags get a row of their own
+        @media only screen and (max-width: 900px) {
+            grid-template-columns: 1fr auto;
+            grid-template-areas: "count clear" "tags tags";
+            border-radius: 1.25rem;
+        }
+
+        //
+        .selection-count {
+            grid-area: count;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        //
+        .selection-tags {
+            grid-area: tags;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        //
+        button {
 
             //
-            @include absolute($inset-block-end: 0rem, $inset-inline-start: 25rem);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
 
             //
-            font-size: 0.8rem;
-            font-weight: 300;
-            color: color-mix(in srgb, var(--colour-foreground), transparent 10%);
+            padding: 0.3rem 0.8rem;
+            border-radius: 999px;
+            border: 0.05rem solid #bdbdbd;
+            background: #464646;
+            color: var(--colour-foreground);
+            font-size: 0.95em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.1s;
 
+            //
+            &:hover {
+                background: #767676;
+            }
+
+        }
+
+        // tint the tags so the state of the selection reads at a glance
+        button[data-state="on"] {
+
+            //
+            border-color: #4caf50;
+            background: color-mix(in srgb, #4caf50 30%, #464646);
+
+            //
+            &:hover {
+                background: color-mix(in srgb, #4caf50 45%, #464646);
+            }
+
+        }
+
+        //
+        button[data-state="mixed"] {
+
+            //
+            border-color: var(--colour-yellow);
+            background: color-mix(in srgb, var(--colour-yellow) 25%, #464646);
+
+            //
+            &:hover {
+                background: color-mix(in srgb, var(--colour-yellow) 40%, #464646);
+            }
+
+        }
+
+        //
+        button[data-action="clear-selection"] {
+            grid-area: clear;
+            justify-self: end;
+        }
+
+        // nothing selected, so there's nothing to clear
+        &:not([data-has-selection]) button[data-action="clear-selection"] {
+            display: none;
         }
 
     }
@@ -520,73 +684,204 @@ main {
 
         //
         display: grid;
-        grid-template-columns: min-content 10rem auto;
-        grid-auto-rows: auto;
-
-        //
-        align-items: center;
-
-        //
-        column-gap: 1rem;
-        row-gap: 0.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        align-content: start;
+        gap: 1rem;
 
         //
         overflow-y: scroll;
 
         //
-        padding-inline: 1rem;
+        padding: 0.2rem 1rem;
 
-        // hide the "pokemon" wrapper from the grid
+        //
         .pokemon {
-            display: contents;
+
+            //
+            display: grid;
+            grid-template-columns: 1.5rem 1fr 1.5rem;
+            grid-template-areas:
+                ".    number checkbox"
+                "icon icon   icon"
+                ".    name   menu";
+            align-items: center;
+            row-gap: 0.5rem;
+
+            //
+            padding: 0.5rem;
+
+            //
+            border: 0.15rem solid #5a5a5a;
+            border-radius: 0.5rem;
+
+            //
+            background-color: #4c4c4c;
+
+            //
+            cursor: pointer;
+            transition: border-color 0.1s ease, background-color 0.1s ease;
+
+            //
+            &:hover {
+                border-color: #767676;
+            }
+
+            //
+            &.selected {
+                border-color: var(--colour-blue);
+                background-color: color-mix(in srgb, var(--colour-blue), #4c4c4c 80%);
+            }
+
+        }
+
+        //
+        .pokemon .number {
+            grid-area: number;
+            text-align: center;
         }
 
         //
         .pokemon .number span { font-weight: 600; opacity: 0.1; }
-        .pokemon .name { font-weight: 600; }
 
         //
-        .pokemon .buttons {
+        .pokemon .name {
 
             //
-            display: flex;
-            gap: 0.5rem;
+            grid-area: name;
 
             //
-            button {
+            font-weight: 600;
+            text-align: center;
 
-                //
-                padding: 0.3rem 1rem;
-                border-radius: 0.3rem;
-                border: 0.05rem solid #bdbdbd;
-                background: #464646;
-                color: var(--colour-foreground);
-                font-size: 0.95em;
-                font-weight: 500;
-                cursor: pointer;
-                transition: 0.1s;
+            //
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
 
-                //
-                &:hover {
-                    background: #767676;
-                    border-color: #bdbdbd;
-                }
+        }
 
+        // room for an icon of up to 128x128
+        .pokemon .icon {
+
+            //
+            grid-area: icon;
+            justify-self: center;
+
+            //
+            position: relative;
+
+            //
+            width: 100%;
+            max-width: 128px;
+            aspect-ratio: 1;
+
+            // a faint poké ball as a placeholder until the real icons arrive
+            @include before($inset: 20%) {
+                border: 0.2rem solid currentColor;
+                border-radius: 50%;
+                background: linear-gradient(transparent calc(50% - 0.1rem), currentColor calc(50% - 0.1rem), currentColor calc(50% + 0.1rem), transparent calc(50% + 0.1rem));
+                opacity: 0.08;
+            }
+
+        }
+
+        //
+        .pokemon .checkbox {
+
+            //
+            grid-area: checkbox;
+            justify-self: end;
+
+            //
+            position: relative;
+
+            //
+            width: 1rem;
+            height: 1rem;
+            padding: 0;
+
+            //
+            border: 0.1rem solid #bdbdbd;
+            border-radius: 50%;
+            background: transparent;
+
+            // faint until the card is hovered or a selection has been started
+            opacity: 0.25;
+
+            //
+            cursor: pointer;
+            transition: 0.1s;
+
+            // the tick, hidden until selected
+            @include after($inset-block-start: 45%, $inset-inline-start: 50%) {
+                width: 0.25rem;
+                height: 0.45rem;
+                border: solid var(--white);
+                border-width: 0 0.1rem 0.1rem 0;
+                transform: translate(-50%, -50%) rotate(45deg);
+                opacity: 0;
+            }
+
+        }
+
+        //
+        .pokemon:hover .checkbox, &.has-selection .pokemon .checkbox {
+            opacity: 1;
+        }
+
+        //
+        .pokemon.selected .checkbox {
+
+            //
+            border-color: var(--colour-blue);
+            background-color: var(--colour-blue);
+
+            //
+            &::after {
+                opacity: 1;
+            }
+
+        }
+
+        //
+        .pokemon .tag-menu-toggle {
+
+            //
+            grid-area: menu;
+            justify-self: end;
+
+            //
+            display: grid;
+            place-items: center;
+
+            //
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0;
+
+            //
+            border: none;
+            border-radius: 0.25rem;
+            background: transparent;
+            color: var(--colour-foreground);
+
+            //
+            cursor: pointer;
+            transition: 0.1s;
+
+            // the chevron
+            @include before($position: relative) {
+                width: 0.45rem;
+                height: 0.45rem;
+                margin-block-start: -0.2rem;
+                border: solid currentColor;
+                border-width: 0 0.15rem 0.15rem 0;
+                transform: rotate(45deg);
             }
 
             //
-            button[data-state="1"] {
-
-                //
-                background: #4caf50;
-                border-color: #388e3c;
-
-                //
-                &:hover {
-                    background: #388e3c;
-                    border-color: #4caf50;
-                }
-
+            &:hover, &.active {
+                background-color: color-mix(in srgb, var(--colour-foreground), transparent 85%);
             }
 
         }
