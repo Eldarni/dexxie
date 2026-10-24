@@ -1,6 +1,6 @@
 
 //
-import { getPokemon } from './store.mjs';
+import { getPokemon, getTags, getTaggedPokemon } from './store.mjs';
 
 //
 import { isSelected } from './selection.mjs';
@@ -64,9 +64,22 @@ export function renderPokemonList(searchString = null) {
         checkbox.setAttribute('data-action', 'toggle-selection');
         checkbox.setAttribute('aria-label', `Select ${p.name.en}`);
 
-        //space for the icon (up to 128x128), a placeholder for now
+        //space for the icon (up to 128x128), the placeholder shows until the sprite has loaded
         const icon = document.createElement('div');
         icon.className = 'icon';
+
+        //
+        const sprite = document.createElement('img');
+        sprite.loading = 'lazy';
+        sprite.decoding = 'async';
+        sprite.width = 128;
+        sprite.height = 128;
+        sprite.alt = p.name.en;
+        sprite.draggable = false;
+        sprite.addEventListener('load', () => icon.classList.add('loaded'));
+
+        //
+        icon.append(sprite);
 
         //
         const name = document.createElement('div');
@@ -84,12 +97,49 @@ export function renderPokemonList(searchString = null) {
         card.append(number, checkbox, icon, name, menuToggle);
 
         //
+        updateCardSprite(card, p.tags);
+
+        //
         results.append(card);
 
     });
 
     //
     emit('pokemon-list-rendered');
+
+}
+
+//point a card's sprite at the normal or shiny image, and grey it out if it hasn't been caught
+export function updateCardSprite(card, tags) {
+
+    //
+    const icon = card.querySelector('.icon');
+    const sprite = icon.querySelector('img');
+
+    //
+    const src = `${import.meta.env.BASE_URL}sprites/${(tags.includes('shiny') ? 'shiny/' : '')}${card.dataset.id}.webp`;
+
+    //only swap the image when it changes, the placeholder shows again while the new one loads
+    if (sprite.getAttribute('src') !== src) {
+        icon.classList.remove('loaded');
+        sprite.setAttribute('src', src);
+    }
+
+    //
+    icon.classList.toggle('uncaught', !tags.includes('caught'));
+
+}
+
+//refresh the sprites of the cards on screen after their tags have changed
+export function updateSprites() {
+
+    //
+    const taggedPokemon = getTaggedPokemon();
+
+    //
+    document.querySelectorAll('[data-name="pokemon-results"] .pokemon').forEach(card => {
+        updateCardSprite(card, (taggedPokemon[card.dataset.id] || []));
+    });
 
 }
 

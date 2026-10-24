@@ -775,12 +775,45 @@ main {
             max-width: 128px;
             aspect-ratio: 1;
 
-            // a faint poké ball as a placeholder until the real icons arrive
+            // a faint poké ball as a placeholder until the sprite has loaded
             @include before($inset: 20%) {
                 border: 0.2rem solid currentColor;
                 border-radius: 50%;
                 background: linear-gradient(transparent calc(50% - 0.1rem), currentColor calc(50% - 0.1rem), currentColor calc(50% + 0.1rem), transparent calc(50% + 0.1rem));
                 opacity: 0.08;
+                transition: opacity 0.2s ease;
+            }
+
+            // hidden until it has loaded, then faded in over the placeholder
+            img {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                opacity: 0;
+                transition: opacity 0.2s ease, filter 0.2s ease;
+            }
+
+            //
+            &.loaded {
+
+                //
+                &::before {
+                    opacity: 0;
+                }
+
+                //
+                img {
+                    opacity: 1;
+                }
+
+            }
+
+            // not caught yet, so greyed out and dimmed
+            &.uncaught.loaded img {
+                filter: grayscale(1);
+                opacity: 0.6;
             }
 
         }

@@ -12,7 +12,7 @@ import { getVisiblePokemonIds, getPokemonCounts } from './renderPokemonList.mjs'
 import { createTagStateButton } from './createTagStateButton.mjs';
 
 //
-import { subscribe } from '../../utilities/events.mjs';
+import { subscribe, emit } from '../../utilities/events.mjs';
 
 //
 import { lockButton } from '../../utilities/lockButton.mjs';
@@ -30,7 +30,7 @@ export function initialiseSelectionBar() {
     subscribe('pokemon-list-rendered', renderSelectionBar);
     subscribe('tags-updated', renderSelectionBar);
 
-    //a tag changed from a card's menu, only the states need refreshing
+    //a tag changed (from a card's menu or the bar itself), only the states need refreshing
     subscribe('pokemon-tags-changed', updateTagStates);
 
     //
@@ -51,8 +51,8 @@ export function initialiseSelectionBar() {
         //a mixed or empty tag gets added to everything, a full one gets removed from everything
         setPokemonTag(getSelection(), button.dataset.tag, (button.dataset.state !== 'on'));
 
-        //
-        updateTagStates();
+        //refreshes the tag states here and the sprites on the cards
+        emit('pokemon-tags-changed');
 
         //
         lockButton(button);
