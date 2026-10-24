@@ -20,6 +20,12 @@ const TYPES = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting'
 //the built in tags of each pokemon, so a card's tags can be rebuilt when the user tags change
 const builtInTags = new Map(pokemonData.map(p => [ p.id, p.tags ]));
 
+//a stable number (0-99990) from an id, for effects that should differ between pokemon but not between renders
+//the remainder of a prime on every step keeps the hash small and exact, and 99991 leaves only a few pokemon sharing a seed
+function getSeed(id) {
+    return [ ...id ].reduce((hash, character) => ((hash * 31) + character.charCodeAt(0)) % 99991, 0);
+}
+
 //the number of pokemon in the collection, and how many of those the search is showing
 const counts = { total: 0, visible: 0 };
 
@@ -59,6 +65,7 @@ export function renderPokemonList(searchString = null) {
         const card = document.createElement('div');
         card.className = 'pokemon';
         card.dataset.id = p.id;
+        card.style.setProperty('--seed', getSeed(p.id));
         card.classList.toggle('selected', isSelected(p.id));
 
         //the types are kept apart from the other tags, as the order matters for the background

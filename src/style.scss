@@ -1,5 +1,9 @@
 
 //
+@use 'sass:list';
+@use 'sass:string';
+
+//
 @use 'position.scss' as *;
 @use 'pseudo.scss' as *;
 
@@ -82,6 +86,10 @@ $type-colours: (
     //how much of the type colours show through on the cards
     --type-strength : 10%;
     --type-border-strength : 50%;
+
+    //the warm glow of a lucky pokemon, and how strongly it shows
+    --colour-lucky : #f5c542;
+    --lucky-strength : 35%;
 
 }
 
@@ -700,16 +708,22 @@ main {
             border-radius: 0.5rem;
 
             //the first type fades into the second (the same colour for a single type), faintly inside the card and stronger on the border
+            --type-fill: linear-gradient(135deg,
+                color-mix(in srgb, var(--type-1, transparent) var(--type-strength), transparent),
+                color-mix(in srgb, var(--type-2, var(--type-1, transparent)) var(--type-strength), transparent)
+            );
+            --type-border: linear-gradient(135deg,
+                color-mix(in srgb, var(--type-1, #5a5a5a) var(--type-border-strength), #5a5a5a),
+                color-mix(in srgb, var(--type-2, var(--type-1, #5a5a5a)) var(--type-border-strength), #5a5a5a)
+            );
+
+            //the layers inside the card, then the layers for the border, tags can add their own on top of each (see lucky below)
             background:
-                linear-gradient(135deg,
-                    color-mix(in srgb, var(--type-1, transparent) var(--type-strength), transparent),
-                    color-mix(in srgb, var(--type-2, var(--type-1, transparent)) var(--type-strength), transparent)
-                ) padding-box,
+                var(--lucky-fill, none) padding-box,
+                var(--type-fill) padding-box,
                 linear-gradient(#4c4c4c, #4c4c4c) padding-box,
-                linear-gradient(135deg,
-                    color-mix(in srgb, var(--type-1, #5a5a5a) var(--type-border-strength), #5a5a5a),
-                    color-mix(in srgb, var(--type-2, var(--type-1, #5a5a5a)) var(--type-border-strength), #5a5a5a)
-                ) border-box;
+                var(--lucky-border, none) border-box,
+                var(--type-border) border-box;
 
             //
             @each $type, $colour in $type-colours {
@@ -725,6 +739,12 @@ main {
             &:hover {
                 --type-strength: 20%;
                 --type-border-strength: 100%;
+            }
+
+            //a warm glow rising from the bottom of a lucky pokemon, over its type colours
+            &[data-tags~="lucky"] {
+                --lucky-fill: linear-gradient(to top, color-mix(in srgb, var(--colour-lucky) var(--lucky-strength), transparent), transparent 60%);
+                --lucky-border: linear-gradient(to top, var(--colour-lucky), transparent 60%);
             }
 
             //a sparkle in the top corner for a shiny pokemon, the svg is a mask over a yellow fill
@@ -826,6 +846,44 @@ main {
                 filter: grayscale(1);
                 opacity: 0.6;
             }
+
+        }
+
+        // overlapping circles behind the sprite of a lucky pokemon, the --seed on each card gives it its own pattern
+        .pokemon[data-tags~="lucky"] .icon {
+
+            //
+            $images: ();
+            $sizes: ();
+            $positions: ();
+
+            //
+            @for $i from 1 through 8 {
+
+                //a number from 0 to 1 for each property of the circle, worked out from the seed
+                $k-size: "(sin(var(--seed) * #{1.37 * $i + 0.41}) * 0.5 + 0.5)";
+                $k-x: "(sin(var(--seed) * #{2.11 * $i + 1.3}) * 0.5 + 0.5)";
+                $k-y: "(sin(var(--seed) * #{2.89 * $i + 2.7}) * 0.5 + 0.5)";
+                $k-alpha: "(sin(var(--seed) * #{3.53 * $i + 0.9}) * 0.5 + 0.5)";
+
+                //alternate between gold and white circles
+                $colour: "var(--white)";
+                @if $i % 2 == 1 {
+                    $colour: "var(--colour-lucky)";
+                }
+
+                //20-50% of the box across, 10-35% opaque, anywhere in the box right up to its edges
+                $images: list.append($images, string.unquote("radial-gradient(circle closest-side, color-mix(in srgb, #{$colour} calc(10% + #{$k-alpha} * 25%), transparent) 97%, transparent)"), comma);
+                $sizes: list.append($sizes, string.unquote("calc(20% + #{$k-size} * 30%) calc(20% + #{$k-size} * 30%)"), comma);
+                $positions: list.append($positions, string.unquote("calc(#{$k-x} * 100%) calc(#{$k-y} * 100%)"), comma);
+
+            }
+
+            //
+            background-image: $images;
+            background-size: $sizes;
+            background-position: $positions;
+            background-repeat: no-repeat;
 
         }
 
