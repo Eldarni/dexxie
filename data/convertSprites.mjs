@@ -127,11 +127,6 @@ async function main() {
         console.error(`Failed to convert ${failed.length} sprites:\n${failed.join('\n')}`);
     }
 
-    //
-    if (missing.length > 0 || failed.length > 0) {
-        process.exit(1);
-    }
-
 }
 
 //

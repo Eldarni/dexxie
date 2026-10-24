@@ -39,6 +39,20 @@
     "family": "bulbasaur"
   },
   {
+    "id": "venusaur-mega",
+    "number": 3,
+    "name": {
+      "en": "Mega Venusaur"
+    },
+    "tags": [
+      "grass",
+      "poison",
+      "kanto",
+      "mega"
+    ],
+    "family": "bulbasaur"
+  },
+  {
     "id": "charmander",
     "number": 4,
     "name": {
@@ -76,6 +90,34 @@
     "family": "charmander"
   },
   {
+    "id": "charizard-mega-x",
+    "number": 6,
+    "name": {
+      "en": "Mega Charizard X"
+    },
+    "tags": [
+      "fire",
+      "dragon",
+      "kanto",
+      "mega"
+    ],
+    "family": "charmander"
+  },
+  {
+    "id": "charizard-mega-y",
+    "number": 6,
+    "name": {
+      "en": "Mega Charizard Y"
+    },
+    "tags": [
+      "fire",
+      "flying",
+      "kanto",
+      "mega"
+    ],
+    "family": "charmander"
+  },
+  {
     "id": "squirtle",
     "number": 7,
     "name": {
@@ -108,6 +150,19 @@
     "tags": [
       "kanto",
       "water"
+    ],
+    "family": "squirtle"
+  },
+  {
+    "id": "blastoise-mega",
+    "number": 9,
+    "name": {
+      "en": "Mega Blastoise"
+    },
+    "tags": [
+      "water",
+      "kanto",
+      "mega"
     ],
     "family": "squirtle"
   },
@@ -188,6 +243,20 @@
     "family": "weedle"
   },
   {
+    "id": "beedrill-mega",
+    "number": 15,
+    "name": {
+      "en": "Mega Beedrill"
+    },
+    "tags": [
+      "bug",
+      "poison",
+      "kanto",
+      "mega"
+    ],
+    "family": "weedle"
+  },
+  {
     "id": "pidgey",
     "number": 16,
     "name": {
@@ -223,6 +292,20 @@
       "flying",
       "kanto",
       "normal"
+    ],
+    "family": "pidgey"
+  },
+  {
+    "id": "pidgeot-mega",
+    "number": 18,
+    "name": {
+      "en": "Mega Pidgeot"
+    },
+    "tags": [
+      "normal",
+      "flying",
+      "kanto",
+      "mega"
     ],
     "family": "pidgey"
   },
@@ -321,6 +404,32 @@
     "tags": [
       "electric",
       "kanto"
+    ],
+    "family": "pichu"
+  },
+  {
+    "id": "raichu-mega-x",
+    "number": 26,
+    "name": {
+      "en": "Mega Raichu X"
+    },
+    "tags": [
+      "electric",
+      "kanto",
+      "mega"
+    ],
+    "family": "pichu"
+  },
+  {
+    "id": "raichu-mega-y",
+    "number": 26,
+    "name": {
+      "en": "Mega Raichu Y"
+    },
+    "tags": [
+      "electric",
+      "kanto",
+      "mega"
     ],
     "family": "pichu"
   },
@@ -443,6 +552,20 @@
     "tags": [
       "fairy",
       "kanto"
+    ],
+    "family": "cleffa"
+  },
+  {
+    "id": "clefable-mega",
+    "number": 36,
+    "name": {
+      "en": "Mega Clefable"
+    },
+    "tags": [
+      "fairy",
+      "flying",
+      "kanto",
+      "mega"
     ],
     "family": "cleffa"
   },
@@ -807,6 +930,19 @@
     "family": "abra"
   },
   {
+    "id": "alakazam-mega",
+    "number": 65,
+    "name": {
+      "en": "Mega Alakazam"
+    },
+    "tags": [
+      "psychic",
+      "kanto",
+      "mega"
+    ],
+    "family": "abra"
+  },
+  {
     "id": "machop",
     "number": 66,
     "name": {
@@ -878,6 +1014,20 @@
       "grass",
       "kanto",
       "poison"
+    ],
+    "family": "bellsprout"
+  },
+  {
+    "id": "victreebel-mega",
+    "number": 71,
+    "name": {
+      "en": "Mega Victreebel"
+    },
+    "tags": [
+      "grass",
+      "poison",
+      "kanto",
+      "mega"
     ],
     "family": "bellsprout"
   },
@@ -993,6 +1143,20 @@
       "kanto",
       "psychic",
       "water"
+    ],
+    "family": "slowpoke"
+  },
+  {
+    "id": "slowbro-mega",
+    "number": 80,
+    "name": {
+      "en": "Mega Slowbro"
+    },
+    "tags": [
+      "water",
+      "psychic",
+      "kanto",
+      "mega"
     ],
     "family": "slowpoke"
   },
@@ -1171,6 +1335,20 @@
       "ghost",
       "kanto",
       "poison"
+    ],
+    "family": "gastly"
+  },
+  {
+    "id": "gengar-mega",
+    "number": 94,
+    "name": {
+      "en": "Mega Gengar"
+    },
+    "tags": [
+      "ghost",
+      "poison",
+      "kanto",
+      "mega"
     ],
     "family": "gastly"
   },
@@ -1432,6 +1610,19 @@
     "family": "kangaskhan"
   },
   {
+    "id": "kangaskhan-mega",
+    "number": 115,
+    "name": {
+      "en": "Mega Kangaskhan"
+    },
+    "tags": [
+      "normal",
+      "kanto",
+      "mega"
+    ],
+    "family": "kangaskhan"
+  },
+  {
     "id": "horsea",
     "number": 116,
     "name": {
@@ -1501,6 +1692,20 @@
       "kanto",
       "psychic",
       "water"
+    ],
+    "family": "staryu"
+  },
+  {
+    "id": "starmie-mega",
+    "number": 121,
+    "name": {
+      "en": "Mega Starmie"
+    },
+    "tags": [
+      "water",
+      "psychic",
+      "kanto",
+      "mega"
     ],
     "family": "staryu"
   },
@@ -1580,6 +1785,20 @@
     "family": "pinsir"
   },
   {
+    "id": "pinsir-mega",
+    "number": 127,
+    "name": {
+      "en": "Mega Pinsir"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kanto",
+      "mega"
+    ],
+    "family": "pinsir"
+  },
+  {
     "id": "tauros",
     "number": 128,
     "name": {
@@ -1651,6 +1870,20 @@
       "flying",
       "kanto",
       "water"
+    ],
+    "family": "magikarp"
+  },
+  {
+    "id": "gyarados-mega",
+    "number": 130,
+    "name": {
+      "en": "Mega Gyarados"
+    },
+    "tags": [
+      "water",
+      "dark",
+      "kanto",
+      "mega"
     ],
     "family": "magikarp"
   },
@@ -1805,6 +2038,20 @@
     "family": "aerodactyl"
   },
   {
+    "id": "aerodactyl-mega",
+    "number": 142,
+    "name": {
+      "en": "Mega Aerodactyl"
+    },
+    "tags": [
+      "rock",
+      "flying",
+      "kanto",
+      "mega"
+    ],
+    "family": "aerodactyl"
+  },
+  {
     "id": "snorlax",
     "number": 143,
     "name": {
@@ -1896,6 +2143,20 @@
     "family": "dratini"
   },
   {
+    "id": "dragonite-mega",
+    "number": 149,
+    "name": {
+      "en": "Mega Dragonite"
+    },
+    "tags": [
+      "dragon",
+      "flying",
+      "kanto",
+      "mega"
+    ],
+    "family": "dratini"
+  },
+  {
     "id": "mewtwo",
     "number": 150,
     "name": {
@@ -1905,6 +2166,35 @@
       "kanto",
       "legendary",
       "psychic"
+    ],
+    "family": "mewtwo"
+  },
+  {
+    "id": "mewtwo-mega-x",
+    "number": 150,
+    "name": {
+      "en": "Mega Mewtwo X"
+    },
+    "tags": [
+      "psychic",
+      "fighting",
+      "kanto",
+      "legendary",
+      "mega"
+    ],
+    "family": "mewtwo"
+  },
+  {
+    "id": "mewtwo-mega-y",
+    "number": 150,
+    "name": {
+      "en": "Mega Mewtwo Y"
+    },
+    "tags": [
+      "psychic",
+      "kanto",
+      "legendary",
+      "mega"
     ],
     "family": "mewtwo"
   },
@@ -1954,6 +2244,20 @@
     "tags": [
       "grass",
       "johto"
+    ],
+    "family": "chikorita"
+  },
+  {
+    "id": "meganium-mega",
+    "number": 154,
+    "name": {
+      "en": "Mega Meganium"
+    },
+    "tags": [
+      "grass",
+      "fairy",
+      "johto",
+      "mega"
     ],
     "family": "chikorita"
   },
@@ -2026,6 +2330,20 @@
     "tags": [
       "johto",
       "water"
+    ],
+    "family": "totodile"
+  },
+  {
+    "id": "feraligatr-mega",
+    "number": 160,
+    "name": {
+      "en": "Mega Feraligatr"
+    },
+    "tags": [
+      "water",
+      "dragon",
+      "johto",
+      "mega"
     ],
     "family": "totodile"
   },
@@ -2291,6 +2609,20 @@
     "tags": [
       "electric",
       "johto"
+    ],
+    "family": "mareep"
+  },
+  {
+    "id": "ampharos-mega",
+    "number": 181,
+    "name": {
+      "en": "Mega Ampharos"
+    },
+    "tags": [
+      "electric",
+      "dragon",
+      "johto",
+      "mega"
     ],
     "family": "mareep"
   },
@@ -2957,6 +3289,20 @@
     "family": "onix"
   },
   {
+    "id": "steelix-mega",
+    "number": 208,
+    "name": {
+      "en": "Mega Steelix"
+    },
+    "tags": [
+      "steel",
+      "ground",
+      "johto",
+      "mega"
+    ],
+    "family": "onix"
+  },
+  {
     "id": "snubbull",
     "number": 209,
     "name": {
@@ -3007,6 +3353,20 @@
     "family": "scyther"
   },
   {
+    "id": "scizor-mega",
+    "number": 212,
+    "name": {
+      "en": "Mega Scizor"
+    },
+    "tags": [
+      "bug",
+      "steel",
+      "johto",
+      "mega"
+    ],
+    "family": "scyther"
+  },
+  {
     "id": "shuckle",
     "number": 213,
     "name": {
@@ -3029,6 +3389,20 @@
       "bug",
       "fighting",
       "johto"
+    ],
+    "family": "heracross"
+  },
+  {
+    "id": "heracross-mega",
+    "number": 214,
+    "name": {
+      "en": "Mega Heracross"
+    },
+    "tags": [
+      "bug",
+      "fighting",
+      "johto",
+      "mega"
     ],
     "family": "heracross"
   },
@@ -3197,6 +3571,20 @@
     "family": "skarmory"
   },
   {
+    "id": "skarmory-mega",
+    "number": 227,
+    "name": {
+      "en": "Mega Skarmory"
+    },
+    "tags": [
+      "steel",
+      "flying",
+      "johto",
+      "mega"
+    ],
+    "family": "skarmory"
+  },
+  {
     "id": "houndour",
     "number": 228,
     "name": {
@@ -3219,6 +3607,20 @@
       "dark",
       "fire",
       "johto"
+    ],
+    "family": "houndour"
+  },
+  {
+    "id": "houndoom-mega",
+    "number": 229,
+    "name": {
+      "en": "Mega Houndoom"
+    },
+    "tags": [
+      "dark",
+      "fire",
+      "johto",
+      "mega"
     ],
     "family": "houndour"
   },
@@ -3459,6 +3861,20 @@
     "family": "larvitar"
   },
   {
+    "id": "tyranitar-mega",
+    "number": 248,
+    "name": {
+      "en": "Mega Tyranitar"
+    },
+    "tags": [
+      "rock",
+      "dark",
+      "johto",
+      "mega"
+    ],
+    "family": "larvitar"
+  },
+  {
     "id": "lugia",
     "number": 249,
     "name": {
@@ -3537,6 +3953,20 @@
     "family": "treecko"
   },
   {
+    "id": "sceptile-mega",
+    "number": 254,
+    "name": {
+      "en": "Mega Sceptile"
+    },
+    "tags": [
+      "grass",
+      "dragon",
+      "hoenn",
+      "mega"
+    ],
+    "family": "treecko"
+  },
+  {
     "id": "torchic",
     "number": 255,
     "name": {
@@ -3575,6 +4005,20 @@
     "family": "torchic"
   },
   {
+    "id": "blaziken-mega",
+    "number": 257,
+    "name": {
+      "en": "Mega Blaziken"
+    },
+    "tags": [
+      "fire",
+      "fighting",
+      "hoenn",
+      "mega"
+    ],
+    "family": "torchic"
+  },
+  {
     "id": "mudkip",
     "number": 258,
     "name": {
@@ -3609,6 +4053,20 @@
       "ground",
       "hoenn",
       "water"
+    ],
+    "family": "mudkip"
+  },
+  {
+    "id": "swampert-mega",
+    "number": 260,
+    "name": {
+      "en": "Mega Swampert"
+    },
+    "tags": [
+      "water",
+      "ground",
+      "hoenn",
+      "mega"
     ],
     "family": "mudkip"
   },
@@ -3891,6 +4349,20 @@
     "family": "ralts"
   },
   {
+    "id": "gardevoir-mega",
+    "number": 282,
+    "name": {
+      "en": "Mega Gardevoir"
+    },
+    "tags": [
+      "psychic",
+      "fairy",
+      "hoenn",
+      "mega"
+    ],
+    "family": "ralts"
+  },
+  {
     "id": "surskit",
     "number": 283,
     "name": {
@@ -4139,6 +4611,20 @@
     "family": "sableye"
   },
   {
+    "id": "sableye-mega",
+    "number": 302,
+    "name": {
+      "en": "Mega Sableye"
+    },
+    "tags": [
+      "dark",
+      "ghost",
+      "hoenn",
+      "mega"
+    ],
+    "family": "sableye"
+  },
+  {
     "id": "mawile",
     "number": 303,
     "name": {
@@ -4148,6 +4634,20 @@
       "fairy",
       "hoenn",
       "steel"
+    ],
+    "family": "mawile"
+  },
+  {
+    "id": "mawile-mega",
+    "number": 303,
+    "name": {
+      "en": "Mega Mawile"
+    },
+    "tags": [
+      "steel",
+      "fairy",
+      "hoenn",
+      "mega"
     ],
     "family": "mawile"
   },
@@ -4191,6 +4691,19 @@
     "family": "aron"
   },
   {
+    "id": "aggron-mega",
+    "number": 306,
+    "name": {
+      "en": "Mega Aggron"
+    },
+    "tags": [
+      "steel",
+      "hoenn",
+      "mega"
+    ],
+    "family": "aron"
+  },
+  {
     "id": "meditite",
     "number": 307,
     "name": {
@@ -4217,6 +4730,20 @@
     "family": "meditite"
   },
   {
+    "id": "medicham-mega",
+    "number": 308,
+    "name": {
+      "en": "Mega Medicham"
+    },
+    "tags": [
+      "fighting",
+      "psychic",
+      "hoenn",
+      "mega"
+    ],
+    "family": "meditite"
+  },
+  {
     "id": "electrike",
     "number": 309,
     "name": {
@@ -4237,6 +4764,19 @@
     "tags": [
       "electric",
       "hoenn"
+    ],
+    "family": "electrike"
+  },
+  {
+    "id": "manectric-mega",
+    "number": 310,
+    "name": {
+      "en": "Mega Manectric"
+    },
+    "tags": [
+      "electric",
+      "hoenn",
+      "mega"
     ],
     "family": "electrike"
   },
@@ -4352,6 +4892,20 @@
     "family": "carvanha"
   },
   {
+    "id": "sharpedo-mega",
+    "number": 319,
+    "name": {
+      "en": "Mega Sharpedo"
+    },
+    "tags": [
+      "water",
+      "dark",
+      "hoenn",
+      "mega"
+    ],
+    "family": "carvanha"
+  },
+  {
     "id": "wailmer",
     "number": 320,
     "name": {
@@ -4398,6 +4952,20 @@
       "fire",
       "ground",
       "hoenn"
+    ],
+    "family": "numel"
+  },
+  {
+    "id": "camerupt-mega",
+    "number": 323,
+    "name": {
+      "en": "Mega Camerupt"
+    },
+    "tags": [
+      "fire",
+      "ground",
+      "hoenn",
+      "mega"
     ],
     "family": "numel"
   },
@@ -4631,6 +5199,20 @@
       "dragon",
       "flying",
       "hoenn"
+    ],
+    "family": "swablu"
+  },
+  {
+    "id": "altaria-mega",
+    "number": 334,
+    "name": {
+      "en": "Mega Altaria"
+    },
+    "tags": [
+      "dragon",
+      "fairy",
+      "hoenn",
+      "mega"
     ],
     "family": "swablu"
   },
@@ -4922,6 +5504,19 @@
     "family": "shuppet"
   },
   {
+    "id": "banette-mega",
+    "number": 354,
+    "name": {
+      "en": "Mega Banette"
+    },
+    "tags": [
+      "ghost",
+      "hoenn",
+      "mega"
+    ],
+    "family": "shuppet"
+  },
+  {
     "id": "duskull",
     "number": 355,
     "name": {
@@ -4971,6 +5566,20 @@
     "family": "chingling"
   },
   {
+    "id": "chimecho-mega",
+    "number": 358,
+    "name": {
+      "en": "Mega Chimecho"
+    },
+    "tags": [
+      "psychic",
+      "steel",
+      "hoenn",
+      "mega"
+    ],
+    "family": "chingling"
+  },
+  {
     "id": "absol",
     "number": 359,
     "name": {
@@ -4979,6 +5588,33 @@
     "tags": [
       "dark",
       "hoenn"
+    ],
+    "family": "absol"
+  },
+  {
+    "id": "absol-mega",
+    "number": 359,
+    "name": {
+      "en": "Mega Absol"
+    },
+    "tags": [
+      "dark",
+      "hoenn",
+      "mega"
+    ],
+    "family": "absol"
+  },
+  {
+    "id": "absol-mega-z",
+    "number": 359,
+    "name": {
+      "en": "Mega Absol Z"
+    },
+    "tags": [
+      "dark",
+      "ghost",
+      "hoenn",
+      "mega"
     ],
     "family": "absol"
   },
@@ -5015,6 +5651,19 @@
     "tags": [
       "hoenn",
       "ice"
+    ],
+    "family": "snorunt"
+  },
+  {
+    "id": "glalie-mega",
+    "number": 362,
+    "name": {
+      "en": "Mega Glalie"
+    },
+    "tags": [
+      "ice",
+      "hoenn",
+      "mega"
     ],
     "family": "snorunt"
   },
@@ -5156,6 +5805,20 @@
     "family": "bagon"
   },
   {
+    "id": "salamence-mega",
+    "number": 373,
+    "name": {
+      "en": "Mega Salamence"
+    },
+    "tags": [
+      "dragon",
+      "flying",
+      "hoenn",
+      "mega"
+    ],
+    "family": "bagon"
+  },
+  {
     "id": "beldum",
     "number": 374,
     "name": {
@@ -5191,6 +5854,20 @@
       "hoenn",
       "psychic",
       "steel"
+    ],
+    "family": "beldum"
+  },
+  {
+    "id": "metagross-mega",
+    "number": 376,
+    "name": {
+      "en": "Mega Metagross"
+    },
+    "tags": [
+      "steel",
+      "psychic",
+      "hoenn",
+      "mega"
     ],
     "family": "beldum"
   },
@@ -5248,6 +5925,21 @@
     "family": "latias"
   },
   {
+    "id": "latias-mega",
+    "number": 380,
+    "name": {
+      "en": "Mega Latias"
+    },
+    "tags": [
+      "dragon",
+      "psychic",
+      "hoenn",
+      "legendary",
+      "mega"
+    ],
+    "family": "latias"
+  },
+  {
     "id": "latios",
     "number": 381,
     "name": {
@@ -5258,6 +5950,21 @@
       "hoenn",
       "legendary",
       "psychic"
+    ],
+    "family": "latios"
+  },
+  {
+    "id": "latios-mega",
+    "number": 381,
+    "name": {
+      "en": "Mega Latios"
+    },
+    "tags": [
+      "dragon",
+      "psychic",
+      "hoenn",
+      "legendary",
+      "mega"
     ],
     "family": "latios"
   },
@@ -5275,6 +5982,20 @@
     "family": "kyogre"
   },
   {
+    "id": "kyogre-primal",
+    "number": 382,
+    "name": {
+      "en": "Primal Kyogre"
+    },
+    "tags": [
+      "water",
+      "hoenn",
+      "legendary",
+      "mega"
+    ],
+    "family": "kyogre"
+  },
+  {
     "id": "groudon",
     "number": 383,
     "name": {
@@ -5284,6 +6005,21 @@
       "ground",
       "hoenn",
       "legendary"
+    ],
+    "family": "groudon"
+  },
+  {
+    "id": "groudon-primal",
+    "number": 383,
+    "name": {
+      "en": "Primal Groudon"
+    },
+    "tags": [
+      "ground",
+      "fire",
+      "hoenn",
+      "legendary",
+      "mega"
     ],
     "family": "groudon"
   },
@@ -5298,6 +6034,21 @@
       "flying",
       "hoenn",
       "legendary"
+    ],
+    "family": "rayquaza"
+  },
+  {
+    "id": "rayquaza-mega",
+    "number": 384,
+    "name": {
+      "en": "Mega Rayquaza"
+    },
+    "tags": [
+      "dragon",
+      "flying",
+      "hoenn",
+      "legendary",
+      "mega"
     ],
     "family": "rayquaza"
   },
@@ -5515,6 +6266,20 @@
       "flying",
       "normal",
       "sinnoh"
+    ],
+    "family": "starly"
+  },
+  {
+    "id": "staraptor-mega",
+    "number": 398,
+    "name": {
+      "en": "Mega Staraptor"
+    },
+    "tags": [
+      "fighting",
+      "flying",
+      "sinnoh",
+      "mega"
     ],
     "family": "starly"
   },
@@ -5978,6 +6743,20 @@
     "family": "buneary"
   },
   {
+    "id": "lopunny-mega",
+    "number": 428,
+    "name": {
+      "en": "Mega Lopunny"
+    },
+    "tags": [
+      "normal",
+      "fighting",
+      "sinnoh",
+      "mega"
+    ],
+    "family": "buneary"
+  },
+  {
     "id": "mismagius",
     "number": 429,
     "name": {
@@ -6193,6 +6972,33 @@
     "family": "gible"
   },
   {
+    "id": "garchomp-mega",
+    "number": 445,
+    "name": {
+      "en": "Mega Garchomp"
+    },
+    "tags": [
+      "dragon",
+      "ground",
+      "sinnoh",
+      "mega"
+    ],
+    "family": "gible"
+  },
+  {
+    "id": "garchomp-mega-z",
+    "number": 445,
+    "name": {
+      "en": "Mega Garchomp Z"
+    },
+    "tags": [
+      "dragon",
+      "sinnoh",
+      "mega"
+    ],
+    "family": "gible"
+  },
+  {
     "id": "munchlax",
     "number": 446,
     "name": {
@@ -6226,6 +7032,34 @@
       "fighting",
       "sinnoh",
       "steel"
+    ],
+    "family": "riolu"
+  },
+  {
+    "id": "lucario-mega",
+    "number": 448,
+    "name": {
+      "en": "Mega Lucario"
+    },
+    "tags": [
+      "fighting",
+      "steel",
+      "sinnoh",
+      "mega"
+    ],
+    "family": "riolu"
+  },
+  {
+    "id": "lucario-mega-z",
+    "number": 448,
+    "name": {
+      "en": "Mega Lucario Z"
+    },
+    "tags": [
+      "fighting",
+      "steel",
+      "sinnoh",
+      "mega"
     ],
     "family": "riolu"
   },
@@ -6377,6 +7211,20 @@
       "grass",
       "ice",
       "sinnoh"
+    ],
+    "family": "snover"
+  },
+  {
+    "id": "abomasnow-mega",
+    "number": 460,
+    "name": {
+      "en": "Mega Abomasnow"
+    },
+    "tags": [
+      "grass",
+      "ice",
+      "sinnoh",
+      "mega"
     ],
     "family": "snover"
   },
@@ -6569,6 +7417,20 @@
     "family": "ralts"
   },
   {
+    "id": "gallade-mega",
+    "number": 475,
+    "name": {
+      "en": "Mega Gallade"
+    },
+    "tags": [
+      "psychic",
+      "fighting",
+      "sinnoh",
+      "mega"
+    ],
+    "family": "ralts"
+  },
+  {
     "id": "probopass",
     "number": 476,
     "name": {
@@ -6603,6 +7465,20 @@
       "ghost",
       "ice",
       "sinnoh"
+    ],
+    "family": "snorunt"
+  },
+  {
+    "id": "froslass-mega",
+    "number": 478,
+    "name": {
+      "en": "Mega Froslass"
+    },
+    "tags": [
+      "ice",
+      "ghost",
+      "sinnoh",
+      "mega"
     ],
     "family": "snorunt"
   },
@@ -6794,6 +7670,21 @@
     "family": "heatran"
   },
   {
+    "id": "heatran-mega",
+    "number": 485,
+    "name": {
+      "en": "Mega Heatran"
+    },
+    "tags": [
+      "fire",
+      "steel",
+      "sinnoh",
+      "legendary",
+      "mega"
+    ],
+    "family": "heatran"
+  },
+  {
     "id": "regigigas",
     "number": 486,
     "name": {
@@ -6883,6 +7774,20 @@
       "dark",
       "mythical",
       "sinnoh"
+    ],
+    "family": "darkrai"
+  },
+  {
+    "id": "darkrai-mega",
+    "number": 491,
+    "name": {
+      "en": "Mega Darkrai"
+    },
+    "tags": [
+      "dark",
+      "sinnoh",
+      "mythical",
+      "mega"
     ],
     "family": "darkrai"
   },
@@ -7232,6 +8137,20 @@
       "fighting",
       "fire",
       "unova"
+    ],
+    "family": "tepig"
+  },
+  {
+    "id": "emboar-mega",
+    "number": 500,
+    "name": {
+      "en": "Mega Emboar"
+    },
+    "tags": [
+      "fire",
+      "fighting",
+      "unova",
+      "mega"
     ],
     "family": "tepig"
   },
@@ -7602,6 +8521,20 @@
     "family": "drilbur"
   },
   {
+    "id": "excadrill-mega",
+    "number": 530,
+    "name": {
+      "en": "Mega Excadrill"
+    },
+    "tags": [
+      "ground",
+      "steel",
+      "unova",
+      "mega"
+    ],
+    "family": "drilbur"
+  },
+  {
     "id": "audino",
     "number": 531,
     "name": {
@@ -7610,6 +8543,20 @@
     "tags": [
       "normal",
       "unova"
+    ],
+    "family": "audino"
+  },
+  {
+    "id": "audino-mega",
+    "number": 531,
+    "name": {
+      "en": "Mega Audino"
+    },
+    "tags": [
+      "normal",
+      "fairy",
+      "unova",
+      "mega"
     ],
     "family": "audino"
   },
@@ -7786,6 +8733,20 @@
       "bug",
       "poison",
       "unova"
+    ],
+    "family": "venipede"
+  },
+  {
+    "id": "scolipede-mega",
+    "number": 545,
+    "name": {
+      "en": "Mega Scolipede"
+    },
+    "tags": [
+      "bug",
+      "poison",
+      "unova",
+      "mega"
     ],
     "family": "venipede"
   },
@@ -8012,6 +8973,20 @@
       "dark",
       "fighting",
       "unova"
+    ],
+    "family": "scraggy"
+  },
+  {
+    "id": "scrafty-mega",
+    "number": 560,
+    "name": {
+      "en": "Mega Scrafty"
+    },
+    "tags": [
+      "dark",
+      "fighting",
+      "unova",
+      "mega"
     ],
     "family": "scraggy"
   },
@@ -8641,6 +9616,19 @@
     "family": "tynamo"
   },
   {
+    "id": "eelektross-mega",
+    "number": 604,
+    "name": {
+      "en": "Mega Eelektross"
+    },
+    "tags": [
+      "electric",
+      "unova",
+      "mega"
+    ],
+    "family": "tynamo"
+  },
+  {
     "id": "elgyem",
     "number": 605,
     "name": {
@@ -8700,6 +9688,20 @@
       "fire",
       "ghost",
       "unova"
+    ],
+    "family": "litwick"
+  },
+  {
+    "id": "chandelure-mega",
+    "number": 609,
+    "name": {
+      "en": "Mega Chandelure"
+    },
+    "tags": [
+      "ghost",
+      "fire",
+      "unova",
+      "mega"
     ],
     "family": "litwick"
   },
@@ -8871,6 +9873,20 @@
       "ghost",
       "ground",
       "unova"
+    ],
+    "family": "golett"
+  },
+  {
+    "id": "golurk-mega",
+    "number": 623,
+    "name": {
+      "en": "Mega Golurk"
+    },
+    "tags": [
+      "ground",
+      "ghost",
+      "unova",
+      "mega"
     ],
     "family": "golett"
   },
@@ -9412,6 +10428,20 @@
     "family": "chespin"
   },
   {
+    "id": "chesnaught-mega",
+    "number": 652,
+    "name": {
+      "en": "Mega Chesnaught"
+    },
+    "tags": [
+      "grass",
+      "fighting",
+      "kalos",
+      "mega"
+    ],
+    "family": "chespin"
+  },
+  {
     "id": "fennekin",
     "number": 653,
     "name": {
@@ -9449,6 +10479,20 @@
     "family": "fennekin"
   },
   {
+    "id": "delphox-mega",
+    "number": 655,
+    "name": {
+      "en": "Mega Delphox"
+    },
+    "tags": [
+      "fire",
+      "psychic",
+      "kalos",
+      "mega"
+    ],
+    "family": "fennekin"
+  },
+  {
     "id": "froakie",
     "number": 656,
     "name": {
@@ -9482,6 +10526,20 @@
       "dark",
       "kalos",
       "water"
+    ],
+    "family": "froakie"
+  },
+  {
+    "id": "greninja-mega",
+    "number": 658,
+    "name": {
+      "en": "Mega Greninja"
+    },
+    "tags": [
+      "water",
+      "dark",
+      "kalos",
+      "mega"
     ],
     "family": "froakie"
   },
@@ -9860,6 +10918,20 @@
     "family": "litleo"
   },
   {
+    "id": "pyroar-mega",
+    "number": 668,
+    "name": {
+      "en": "Mega Pyroar"
+    },
+    "tags": [
+      "fire",
+      "normal",
+      "kalos",
+      "mega"
+    ],
+    "family": "litleo"
+  },
+  {
     "id": "flabebe-red",
     "number": 669,
     "name": {
@@ -9976,6 +11048,19 @@
     "tags": [
       "fairy",
       "kalos"
+    ],
+    "family": "flabebe"
+  },
+  {
+    "id": "floette-mega",
+    "number": 670,
+    "name": {
+      "en": "Mega Floette"
+    },
+    "tags": [
+      "fairy",
+      "kalos",
+      "mega"
     ],
     "family": "flabebe"
   },
@@ -10245,6 +11330,32 @@
     "family": "espurr"
   },
   {
+    "id": "meowstic-male-mega",
+    "number": 678,
+    "name": {
+      "en": "Mega Meowstic (Male)"
+    },
+    "tags": [
+      "psychic",
+      "kalos",
+      "mega"
+    ],
+    "family": "espurr"
+  },
+  {
+    "id": "meowstic-female-mega",
+    "number": 678,
+    "name": {
+      "en": "Mega Meowstic (Female)"
+    },
+    "tags": [
+      "psychic",
+      "kalos",
+      "mega"
+    ],
+    "family": "espurr"
+  },
+  {
     "id": "honedge",
     "number": 679,
     "name": {
@@ -10371,6 +11482,20 @@
     "family": "inkay"
   },
   {
+    "id": "malamar-mega",
+    "number": 687,
+    "name": {
+      "en": "Mega Malamar"
+    },
+    "tags": [
+      "dark",
+      "psychic",
+      "kalos",
+      "mega"
+    ],
+    "family": "inkay"
+  },
+  {
     "id": "binacle",
     "number": 688,
     "name": {
@@ -10397,6 +11522,20 @@
     "family": "binacle"
   },
   {
+    "id": "barbaracle-mega",
+    "number": 689,
+    "name": {
+      "en": "Mega Barbaracle"
+    },
+    "tags": [
+      "rock",
+      "fighting",
+      "kalos",
+      "mega"
+    ],
+    "family": "binacle"
+  },
+  {
     "id": "skrelp",
     "number": 690,
     "name": {
@@ -10419,6 +11558,20 @@
       "dragon",
       "kalos",
       "poison"
+    ],
+    "family": "skrelp"
+  },
+  {
+    "id": "dragalge-mega",
+    "number": 691,
+    "name": {
+      "en": "Mega Dragalge"
+    },
+    "tags": [
+      "poison",
+      "dragon",
+      "kalos",
+      "mega"
     ],
     "family": "skrelp"
   },
@@ -10546,6 +11699,20 @@
       "fighting",
       "flying",
       "kalos"
+    ],
+    "family": "hawlucha"
+  },
+  {
+    "id": "hawlucha-mega",
+    "number": 701,
+    "name": {
+      "en": "Mega Hawlucha"
+    },
+    "tags": [
+      "fighting",
+      "flying",
+      "kalos",
+      "mega"
     ],
     "family": "hawlucha"
   },
@@ -10874,6 +12041,21 @@
     "family": "zygarde"
   },
   {
+    "id": "zygarde-mega",
+    "number": 718,
+    "name": {
+      "en": "Mega Zygarde"
+    },
+    "tags": [
+      "dragon",
+      "ground",
+      "kalos",
+      "legendary",
+      "mega"
+    ],
+    "family": "zygarde"
+  },
+  {
     "id": "diancie",
     "number": 719,
     "name": {
@@ -10884,6 +12066,21 @@
       "kalos",
       "mythical",
       "rock"
+    ],
+    "family": "diancie"
+  },
+  {
+    "id": "diancie-mega",
+    "number": 719,
+    "name": {
+      "en": "Mega Diancie"
+    },
+    "tags": [
+      "rock",
+      "fairy",
+      "kalos",
+      "mythical",
+      "mega"
     ],
     "family": "diancie"
   },
@@ -11165,6 +12362,20 @@
       "alola",
       "fighting",
       "ice"
+    ],
+    "family": "crabrawler"
+  },
+  {
+    "id": "crabominable-mega",
+    "number": 740,
+    "name": {
+      "en": "Mega Crabominable"
+    },
+    "tags": [
+      "fighting",
+      "ice",
+      "alola",
+      "mega"
     ],
     "family": "crabrawler"
   },
@@ -11596,6 +12807,20 @@
     "family": "wimpod"
   },
   {
+    "id": "golisopod-mega",
+    "number": 768,
+    "name": {
+      "en": "Mega Golisopod"
+    },
+    "tags": [
+      "bug",
+      "steel",
+      "alola",
+      "mega"
+    ],
+    "family": "wimpod"
+  },
+  {
     "id": "sandygast",
     "number": 769,
     "name": {
@@ -11970,6 +13195,20 @@
     "family": "drampa"
   },
   {
+    "id": "drampa-mega",
+    "number": 780,
+    "name": {
+      "en": "Mega Drampa"
+    },
+    "tags": [
+      "normal",
+      "dragon",
+      "alola",
+      "mega"
+    ],
+    "family": "drampa"
+  },
+  {
     "id": "dhelmise",
     "number": 781,
     "name": {
@@ -12276,6 +13515,21 @@
     "family": "magearna"
   },
   {
+    "id": "magearna-mega",
+    "number": 801,
+    "name": {
+      "en": "Mega Magearna"
+    },
+    "tags": [
+      "steel",
+      "fairy",
+      "alola",
+      "mythical",
+      "mega"
+    ],
+    "family": "magearna"
+  },
+  {
     "id": "magearna-original-color",
     "number": 801,
     "name": {
@@ -12286,6 +13540,21 @@
       "fairy",
       "mythical",
       "steel"
+    ],
+    "family": "magearna"
+  },
+  {
+    "id": "magearna-original-color-mega",
+    "number": 801,
+    "name": {
+      "en": "Mega Magearna (Orginal Color)"
+    },
+    "tags": [
+      "steel",
+      "fairy",
+      "alola",
+      "mythical",
+      "mega"
     ],
     "family": "magearna"
   },
@@ -12364,6 +13633,20 @@
       "alola",
       "electric",
       "mythical"
+    ],
+    "family": "zeraora"
+  },
+  {
+    "id": "zeraora-mega",
+    "number": 807,
+    "name": {
+      "en": "Mega Zeraora"
+    },
+    "tags": [
+      "electric",
+      "alola",
+      "mythical",
+      "mega"
     ],
     "family": "zeraora"
   },
@@ -12960,7 +14243,6 @@
     ],
     "family": "sinistea"
   },
-
   {
     "id": "sinistea-antique",
     "number": 854,
@@ -13925,6 +15207,19 @@
     "tags": [
       "fighting",
       "galar"
+    ],
+    "family": "falinks"
+  },
+  {
+    "id": "falinks-mega",
+    "number": 870,
+    "name": {
+      "en": "Mega Falinks"
+    },
+    "tags": [
+      "fighting",
+      "galar",
+      "mega"
     ],
     "family": "falinks"
   },
@@ -15153,6 +16448,20 @@
     "family": "capsakid"
   },
   {
+    "id": "scovillain-mega",
+    "number": 952,
+    "name": {
+      "en": "Mega Scovillain"
+    },
+    "tags": [
+      "grass",
+      "fire",
+      "paldea",
+      "mega"
+    ],
+    "family": "capsakid"
+  },
+  {
     "id": "rellor",
     "number": 953,
     "name": {
@@ -15379,6 +16688,20 @@
     "family": "glimmet"
   },
   {
+    "id": "glimmora-mega",
+    "number": 970,
+    "name": {
+      "en": "Mega Glimmora"
+    },
+    "tags": [
+      "rock",
+      "poison",
+      "paldea",
+      "mega"
+    ],
+    "family": "glimmet"
+  },
+  {
     "id": "greavard",
     "number": 971,
     "name": {
@@ -15500,6 +16823,48 @@
       "dragon",
       "paldea",
       "water"
+    ],
+    "family": "tatsugiri"
+  },
+  {
+    "id": "tatsugiri-curly-mega",
+    "number": 978,
+    "name": {
+      "en": "Mega Curly Tatsugiri"
+    },
+    "tags": [
+      "dragon",
+      "water",
+      "paldea",
+      "mega"
+    ],
+    "family": "tatsugiri"
+  },
+  {
+    "id": "tatsugiri-droopy-mega",
+    "number": 978,
+    "name": {
+      "en": "Mega Droopy Tatsugiri"
+    },
+    "tags": [
+      "dragon",
+      "water",
+      "paldea",
+      "mega"
+    ],
+    "family": "tatsugiri"
+  },
+  {
+    "id": "tatsugiri-stretchy-mega",
+    "number": 978,
+    "name": {
+      "en": "Mega Stretchy Tatsugiri"
+    },
+    "tags": [
+      "dragon",
+      "water",
+      "paldea",
+      "mega"
     ],
     "family": "tatsugiri"
   },
@@ -15771,6 +17136,20 @@
       "dragon",
       "ice",
       "paldea"
+    ],
+    "family": "frigibax"
+  },
+  {
+    "id": "baxcalibur-mega",
+    "number": 998,
+    "name": {
+      "en": "Mega Baxcalibur"
+    },
+    "tags": [
+      "dragon",
+      "ice",
+      "paldea",
+      "mega"
     ],
     "family": "frigibax"
   },
