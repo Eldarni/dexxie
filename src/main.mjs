@@ -24,7 +24,7 @@ import { importPokemonData } from './common/importPokemonData.mjs';
 import { debounceTrailing } from '../utilities/debounce.mjs';
 
 //
-import { renderPokemonList, updateSprites, getVisiblePokemonIds } from './common/renderPokemonList.mjs';
+import { renderPokemonList, updateAllCardTags, getVisiblePokemonIds } from './common/renderPokemonList.mjs';
 
 //
 import { initialiseSelectionBar } from './common/selectionBar.mjs';
@@ -47,8 +47,8 @@ renderPokemonList();
 //
 subscribe('pokemon-list-updated', () => renderPokemonList());
 
-//a caught or shiny tag may have changed, so the sprites need refreshing
-subscribe('pokemon-tags-changed', updateSprites);
+//a tag may have changed, so the cards need refreshing (their tags, and the sprite for caught or shiny)
+subscribe('pokemon-tags-changed', updateAllCardTags);
 
 //
 document.getElementById('search-bar').addEventListener('input', debounceTrailing(300, (event) => {

@@ -12,6 +12,28 @@
 //
 @use 'background.scss' as *;
 
+//the colour of each pokemon type, used for the card backgrounds
+$type-colours: (
+    normal   : #a8a77a,
+    fire     : #ee8130,
+    water    : #6390f0,
+    electric : #f7d02c,
+    grass    : #7ac74c,
+    ice      : #96d9d6,
+    fighting : #c22e28,
+    poison   : #a33ea1,
+    ground   : #e2bf65,
+    flying   : #a98ff3,
+    psychic  : #f95587,
+    bug      : #a6b91a,
+    rock     : #b6a136,
+    ghost    : #735797,
+    dragon   : #6f35fc,
+    dark     : #705746,
+    steel    : #b7b7ce,
+    fairy    : #d685ad,
+);
+
 //
 :root {
 
@@ -51,6 +73,15 @@
     --colour-blue : #6ea4bb;
     --colour-red : #c04c4b;
     --colour-yellow : #f0dba5;
+
+    //
+    @each $type, $colour in $type-colours {
+        --type-#{$type} : #{$colour};
+    }
+
+    //how much of the type colours show through on the cards
+    --type-strength : 10%;
+    --type-border-strength : 50%;
 
 }
 
@@ -661,11 +692,27 @@ main {
             padding: 0.5rem;
 
             //
-            border: 0.15rem solid #5a5a5a;
+            //the border is see through, so the border gradient in the background below shows through it
+            border: 0.15rem solid transparent;
             border-radius: 0.5rem;
 
+            //the first type fades into the second (the same colour for a single type), faintly inside the card and stronger on the border
+            background:
+                linear-gradient(135deg,
+                    color-mix(in srgb, var(--type-1, transparent) var(--type-strength), transparent),
+                    color-mix(in srgb, var(--type-2, var(--type-1, transparent)) var(--type-strength), transparent)
+                ) padding-box,
+                linear-gradient(#4c4c4c, #4c4c4c) padding-box,
+                linear-gradient(135deg,
+                    color-mix(in srgb, var(--type-1, #5a5a5a) var(--type-border-strength), #5a5a5a),
+                    color-mix(in srgb, var(--type-2, var(--type-1, #5a5a5a)) var(--type-border-strength), #5a5a5a)
+                ) border-box;
+
             //
-            background-color: #4c4c4c;
+            @each $type, $colour in $type-colours {
+                &[data-type-1="#{$type}"] { --type-1: var(--type-#{$type}); }
+                &[data-type-2="#{$type}"] { --type-2: var(--type-#{$type}); }
+            }
 
             //
             cursor: pointer;
@@ -673,13 +720,14 @@ main {
 
             //
             &:hover {
-                border-color: #767676;
+                --type-strength: 20%;
+                --type-border-strength: 100%;
             }
 
             //
             &.selected {
                 border-color: var(--colour-blue);
-                background-color: color-mix(in srgb, var(--colour-blue), #4c4c4c 80%);
+                background: color-mix(in srgb, var(--colour-blue), #4c4c4c 80%);
             }
 
         }

@@ -11,6 +11,15 @@ import { emit } from '../../utilities/events.mjs';
 //
 import { filterPokemonBySearchString } from './filterPokemonBySearchString.mjs';
 
+//
+import pokemonData from '../pokemon.json';
+
+//the pokemon types, to pick them out from the other tags
+const TYPES = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting', 'poison', 'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost', 'dragon', 'dark', 'steel', 'fairy'];
+
+//the built in tags of each pokemon, so a card's tags can be rebuilt when the user tags change
+const builtInTags = new Map(pokemonData.map(p => [ p.id, p.tags ]));
+
 //the number of pokemon in the collection, and how many of those the search is showing
 const counts = { total: 0, visible: 0 };
 
@@ -52,6 +61,13 @@ export function renderPokemonList(searchString = null) {
         card.dataset.id = p.id;
         card.classList.toggle('selected', isSelected(p.id));
 
+        //the types are kept apart from the other tags, as the order matters for the background
+        const [ type1, type2 ] = p.tags.filter(tag => TYPES.includes(tag));
+        card.setAttribute('data-type-1', type1);
+        if (type2) {
+            card.setAttribute('data-type-2', type2);
+        }
+
         //
         const number = document.createElement('div');
         number.className = 'number';
@@ -83,7 +99,7 @@ export function renderPokemonList(searchString = null) {
         card.append(number, icon, name);
 
         //
-        updateCardSprite(card, p.tags);
+        updateCardTags(card, p.tags);
 
         //
         results.append(card);
@@ -95,8 +111,11 @@ export function renderPokemonList(searchString = null) {
 
 }
 
-//point a card's sprite at the normal or shiny image, and grey it out if it hasn't been caught
-export function updateCardSprite(card, tags) {
+//keep a card's tags in step with its user tags, then point its sprite at the normal or shiny image, and grey it out if it hasn't been caught
+export function updateCardTags(card, tags) {
+
+    //every tag, built in and the user's, for styling cards by tag in css
+    card.dataset.tags = [ ...new Set([ ...builtInTags.get(card.dataset.id), ...tags ]) ].join(' ');
 
     //
     const icon = card.querySelector('.icon');
@@ -116,15 +135,15 @@ export function updateCardSprite(card, tags) {
 
 }
 
-//refresh the sprites of the cards on screen after their tags have changed
-export function updateSprites() {
+//refresh the tags and sprites of the cards on screen after their tags have changed
+export function updateAllCardTags() {
 
     //
     const taggedPokemon = getTaggedPokemon();
 
     //
     document.querySelectorAll('[data-name="pokemon-results"] .pokemon').forEach(card => {
-        updateCardSprite(card, (taggedPokemon[card.dataset.id] || []));
+        updateCardTags(card, (taggedPokemon[card.dataset.id] || []));
     });
 
 }
