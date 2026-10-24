@@ -377,6 +377,19 @@
     "family": "rattata"
   },
   {
+    "id": "rattata-alola",
+    "number": 19,
+    "name": {
+      "en": "Alolan Rattata"
+    },
+    "tags": [
+      "dark",
+      "normal",
+      "alola"
+    ],
+    "family": "rattata"
+  },
+  {
     "id": "raticate",
     "number": 20,
     "name": {
@@ -385,6 +398,19 @@
     "tags": [
       "kanto",
       "normal"
+    ],
+    "family": "rattata"
+  },
+  {
+    "id": "raticate-alola",
+    "number": 20,
+    "name": {
+      "en": "Alolan Raticate"
+    },
+    "tags": [
+      "dark",
+      "normal",
+      "alola"
     ],
     "family": "rattata"
   },
@@ -476,6 +502,19 @@
     "family": "pichu"
   },
   {
+    "id": "raichu-alola",
+    "number": 26,
+    "name": {
+      "en": "Alolan Raichu"
+    },
+    "tags": [
+      "electric",
+      "psychic",
+      "alola"
+    ],
+    "family": "pichu"
+  },
+  {
     "id": "raichu-mega-x",
     "number": 26,
     "name": {
@@ -514,6 +553,19 @@
     "family": "sandshrew"
   },
   {
+    "id": "sandshrew-alola",
+    "number": 27,
+    "name": {
+      "en": "Alolan Sandshrew"
+    },
+    "tags": [
+      "ice",
+      "steel",
+      "alola"
+    ],
+    "family": "sandshrew"
+  },
+  {
     "id": "sandslash",
     "number": 28,
     "name": {
@@ -522,6 +574,19 @@
     "tags": [
       "ground",
       "kanto"
+    ],
+    "family": "sandshrew"
+  },
+  {
+    "id": "sandslash-alola",
+    "number": 28,
+    "name": {
+      "en": "Alolan Sandslash"
+    },
+    "tags": [
+      "ice",
+      "steel",
+      "alola"
     ],
     "family": "sandshrew"
   },
@@ -650,6 +715,18 @@
     "family": "vulpix"
   },
   {
+    "id": "vulpix-alola",
+    "number": 37,
+    "name": {
+      "en": "Alolan Vulpix"
+    },
+    "tags": [
+      "ice",
+      "alola"
+    ],
+    "family": "vulpix"
+  },
+  {
     "id": "ninetales",
     "number": 38,
     "name": {
@@ -658,6 +735,19 @@
     "tags": [
       "fire",
       "kanto"
+    ],
+    "family": "vulpix"
+  },
+  {
+    "id": "ninetales-alola",
+    "number": 38,
+    "name": {
+      "en": "Alolan Ninetales"
+    },
+    "tags": [
+      "ice",
+      "fairy",
+      "alola"
     ],
     "family": "vulpix"
   },
@@ -817,6 +907,19 @@
     "family": "diglett"
   },
   {
+    "id": "diglett-alola",
+    "number": 50,
+    "name": {
+      "en": "Alolan Diglett"
+    },
+    "tags": [
+      "ground",
+      "steel",
+      "alola"
+    ],
+    "family": "diglett"
+  },
+  {
     "id": "dugtrio",
     "number": 51,
     "name": {
@@ -829,6 +932,19 @@
     "family": "diglett"
   },
   {
+    "id": "dugtrio-alola",
+    "number": 51,
+    "name": {
+      "en": "Alolan Dugtrio"
+    },
+    "tags": [
+      "ground",
+      "steel",
+      "alola"
+    ],
+    "family": "diglett"
+  },
+  {
     "id": "meowth",
     "number": 52,
     "name": {
@@ -837,6 +953,30 @@
     "tags": [
       "kanto",
       "normal"
+    ],
+    "family": "meowth"
+  },
+  {
+    "id": "meowth-alola",
+    "number": 52,
+    "name": {
+      "en": "Alolan Meowth"
+    },
+    "tags": [
+      "dark",
+      "alola"
+    ],
+    "family": "meowth"
+  },
+  {
+    "id": "meowth-galar",
+    "number": 52,
+    "name": {
+      "en": "Galarian Meowth"
+    },
+    "tags": [
+      "steel",
+      "galar"
     ],
     "family": "meowth"
   },
@@ -862,6 +1002,18 @@
     "tags": [
       "kanto",
       "normal"
+    ],
+    "family": "meowth"
+  },
+  {
+    "id": "persian-alola",
+    "number": 53,
+    "name": {
+      "en": "Alolan Persian"
+    },
+    "tags": [
+      "dark",
+      "alola"
     ],
     "family": "meowth"
   },
@@ -926,6 +1078,19 @@
     "family": "growlithe"
   },
   {
+    "id": "growlithe-hisui",
+    "number": 58,
+    "name": {
+      "en": "Hisuian Growlithe"
+    },
+    "tags": [
+      "fire",
+      "rock",
+      "hisui"
+    ],
+    "family": "growlithe"
+  },
+  {
     "id": "arcanine",
     "number": 59,
     "name": {
@@ -934,6 +1099,19 @@
     "tags": [
       "fire",
       "kanto"
+    ],
+    "family": "growlithe"
+  },
+  {
+    "id": "arcanine-hisui",
+    "number": 59,
+    "name": {
+      "en": "Hisuian Arcanine"
+    },
+    "tags": [
+      "fire",
+      "rock",
+      "hisui"
     ],
     "family": "growlithe"
   },
@@ -1165,6 +1343,19 @@
     "family": "geodude"
   },
   {
+    "id": "geodude-alola",
+    "number": 74,
+    "name": {
+      "en": "Alolan Geodude"
+    },
+    "tags": [
+      "rock",
+      "electric",
+      "alola"
+    ],
+    "family": "geodude"
+  },
+  {
     "id": "graveler",
     "number": 75,
     "name": {
@@ -1174,6 +1365,19 @@
       "ground",
       "kanto",
       "rock"
+    ],
+    "family": "geodude"
+  },
+  {
+    "id": "graveler-alola",
+    "number": 75,
+    "name": {
+      "en": "Alolan Graveler"
+    },
+    "tags": [
+      "rock",
+      "electric",
+      "alola"
     ],
     "family": "geodude"
   },
@@ -1191,6 +1395,19 @@
     "family": "geodude"
   },
   {
+    "id": "golem-alola",
+    "number": 76,
+    "name": {
+      "en": "Alolan Golem"
+    },
+    "tags": [
+      "rock",
+      "electric",
+      "alola"
+    ],
+    "family": "geodude"
+  },
+  {
     "id": "ponyta",
     "number": 77,
     "name": {
@@ -1203,6 +1420,18 @@
     "family": "ponyta"
   },
   {
+    "id": "ponyta-galar",
+    "number": 77,
+    "name": {
+      "en": "Galarian Ponyta"
+    },
+    "tags": [
+      "psychic",
+      "galar"
+    ],
+    "family": "ponyta"
+  },
+  {
     "id": "rapidash",
     "number": 78,
     "name": {
@@ -1211,6 +1440,19 @@
     "tags": [
       "fire",
       "kanto"
+    ],
+    "family": "ponyta"
+  },
+  {
+    "id": "rapidash-galar",
+    "number": 78,
+    "name": {
+      "en": "Galarian Rapidash"
+    },
+    "tags": [
+      "psychic",
+      "fairy",
+      "galar"
     ],
     "family": "ponyta"
   },
@@ -1228,6 +1470,18 @@
     "family": "slowpoke"
   },
   {
+    "id": "slowpoke-galar",
+    "number": 79,
+    "name": {
+      "en": "Galarian Slowpoke"
+    },
+    "tags": [
+      "psychic",
+      "galar"
+    ],
+    "family": "slowpoke"
+  },
+  {
     "id": "slowbro",
     "number": 80,
     "name": {
@@ -1237,6 +1491,19 @@
       "kanto",
       "psychic",
       "water"
+    ],
+    "family": "slowpoke"
+  },
+  {
+    "id": "slowbro-galar",
+    "number": 80,
+    "name": {
+      "en": "Galarian Slowbro"
+    },
+    "tags": [
+      "poison",
+      "psychic",
+      "galar"
     ],
     "family": "slowpoke"
   },
@@ -1290,6 +1557,18 @@
       "flying",
       "kanto",
       "normal"
+    ],
+    "family": "farfetchd"
+  },
+  {
+    "id": "farfetchd-galar",
+    "number": 83,
+    "name": {
+      "en": "Galarian Farfetch’d"
+    },
+    "tags": [
+      "fighting",
+      "galar"
     ],
     "family": "farfetchd"
   },
@@ -1357,6 +1636,19 @@
     "family": "grimer"
   },
   {
+    "id": "grimer-alola",
+    "number": 88,
+    "name": {
+      "en": "Alolan Grimer"
+    },
+    "tags": [
+      "poison",
+      "dark",
+      "alola"
+    ],
+    "family": "grimer"
+  },
+  {
     "id": "muk",
     "number": 89,
     "name": {
@@ -1365,6 +1657,19 @@
     "tags": [
       "kanto",
       "poison"
+    ],
+    "family": "grimer"
+  },
+  {
+    "id": "muk-alola",
+    "number": 89,
+    "name": {
+      "en": "Alolan Muk"
+    },
+    "tags": [
+      "poison",
+      "dark",
+      "alola"
     ],
     "family": "grimer"
   },
@@ -1547,6 +1852,19 @@
     "family": "voltorb"
   },
   {
+    "id": "voltorb-hisui",
+    "number": 100,
+    "name": {
+      "en": "Hisuian Voltorb"
+    },
+    "tags": [
+      "electric",
+      "grass",
+      "hisui"
+    ],
+    "family": "voltorb"
+  },
+  {
     "id": "electrode",
     "number": 101,
     "name": {
@@ -1555,6 +1873,19 @@
     "tags": [
       "electric",
       "kanto"
+    ],
+    "family": "voltorb"
+  },
+  {
+    "id": "electrode-hisui",
+    "number": 101,
+    "name": {
+      "en": "Hisuian Electrode"
+    },
+    "tags": [
+      "electric",
+      "grass",
+      "hisui"
     ],
     "family": "voltorb"
   },
@@ -1585,6 +1916,19 @@
     "family": "exeggcute"
   },
   {
+    "id": "exeggutor-alola",
+    "number": 103,
+    "name": {
+      "en": "Alolan Exeggutor"
+    },
+    "tags": [
+      "grass",
+      "dragon",
+      "alola"
+    ],
+    "family": "exeggcute"
+  },
+  {
     "id": "cubone",
     "number": 104,
     "name": {
@@ -1605,6 +1949,19 @@
     "tags": [
       "ground",
       "kanto"
+    ],
+    "family": "cubone"
+  },
+  {
+    "id": "marowak-alola",
+    "number": 105,
+    "name": {
+      "en": "Alolan Marowak"
+    },
+    "tags": [
+      "fire",
+      "ghost",
+      "alola"
     ],
     "family": "cubone"
   },
@@ -1665,6 +2022,19 @@
     "tags": [
       "kanto",
       "poison"
+    ],
+    "family": "koffing"
+  },
+  {
+    "id": "weezing-galar",
+    "number": 110,
+    "name": {
+      "en": "Galarian Weezing"
+    },
+    "tags": [
+      "poison",
+      "fairy",
+      "galar"
     ],
     "family": "koffing"
   },
@@ -1844,6 +2214,19 @@
     "family": "mime-jr"
   },
   {
+    "id": "mr-mime-galar",
+    "number": 122,
+    "name": {
+      "en": "Galarian Mr. Mime"
+    },
+    "tags": [
+      "ice",
+      "psychic",
+      "galar"
+    ],
+    "family": "mime-jr"
+  },
+  {
     "id": "scyther",
     "number": 123,
     "name": {
@@ -1932,40 +2315,40 @@
     "family": "tauros"
   },
   {
-    "id": "tauros-paldea-combat",
+    "id": "tauros-paldea-combat-breed",
     "number": 128,
     "name": {
-      "en": "Pladean Tauros (Combat Breed)"
+      "en": "Paldean Tauros (Combat Breed)"
     },
     "tags": [
-      "paldea",
-      "fighting"
+      "fighting",
+      "paldea"
     ],
     "family": "tauros"
   },
   {
-    "id": "tauros-paldea-blaze",
+    "id": "tauros-paldea-blaze-breed",
     "number": 128,
     "name": {
-      "en": "Pladean Tauros (Blaze Breed)"
+      "en": "Paldean Tauros (Blaze Breed)"
     },
     "tags": [
-      "paldea",
       "fighting",
-      "fire"
+      "fire",
+      "paldea"
     ],
     "family": "tauros"
   },
   {
-    "id": "tauros-paldea-aqua",
+    "id": "tauros-paldea-aqua-breed",
     "number": 128,
     "name": {
-      "en": "Pladean Tauros (Aqua Breed)"
+      "en": "Paldean Tauros (Aqua Breed)"
     },
     "tags": [
-      "paldea",
       "fighting",
-      "water"
+      "water",
+      "paldea"
     ],
     "family": "tauros"
   },
@@ -2239,6 +2622,19 @@
     "family": "articuno"
   },
   {
+    "id": "articuno-galar",
+    "number": 144,
+    "name": {
+      "en": "Galarian Articuno"
+    },
+    "tags": [
+      "psychic",
+      "flying",
+      "galar"
+    ],
+    "family": "articuno"
+  },
+  {
     "id": "zapdos",
     "number": 145,
     "name": {
@@ -2253,6 +2649,19 @@
     "family": "zapdos"
   },
   {
+    "id": "zapdos-galar",
+    "number": 145,
+    "name": {
+      "en": "Galarian Zapdos"
+    },
+    "tags": [
+      "fighting",
+      "flying",
+      "galar"
+    ],
+    "family": "zapdos"
+  },
+  {
     "id": "moltres",
     "number": 146,
     "name": {
@@ -2263,6 +2672,19 @@
       "flying",
       "kanto",
       "legendary"
+    ],
+    "family": "moltres"
+  },
+  {
+    "id": "moltres-galar",
+    "number": 146,
+    "name": {
+      "en": "Galarian Moltres"
+    },
+    "tags": [
+      "dark",
+      "flying",
+      "galar"
     ],
     "family": "moltres"
   },
@@ -2455,6 +2877,19 @@
     "tags": [
       "fire",
       "johto"
+    ],
+    "family": "cyndaquil"
+  },
+  {
+    "id": "typhlosion-hisui",
+    "number": 157,
+    "name": {
+      "en": "Hisuian Typhlosion"
+    },
+    "tags": [
+      "fire",
+      "ghost",
+      "hisui"
     ],
     "family": "cyndaquil"
   },
@@ -2951,6 +3386,19 @@
     "family": "wooper"
   },
   {
+    "id": "wooper-paldea",
+    "number": 194,
+    "name": {
+      "en": "Paldean Wooper"
+    },
+    "tags": [
+      "poison",
+      "ground",
+      "paldea"
+    ],
+    "family": "wooper"
+  },
+  {
     "id": "quagsire",
     "number": 195,
     "name": {
@@ -3010,6 +3458,19 @@
       "johto",
       "psychic",
       "water"
+    ],
+    "family": "slowpoke"
+  },
+  {
+    "id": "slowking-galar",
+    "number": 199,
+    "name": {
+      "en": "Galarian Slowking"
+    },
+    "tags": [
+      "poison",
+      "psychic",
+      "galar"
     ],
     "family": "slowpoke"
   },
@@ -3501,6 +3962,19 @@
     "family": "qwilfish"
   },
   {
+    "id": "qwilfish-hisui",
+    "number": 211,
+    "name": {
+      "en": "Hisuian Qwilfish"
+    },
+    "tags": [
+      "dark",
+      "poison",
+      "hisui"
+    ],
+    "family": "qwilfish"
+  },
+  {
     "id": "scizor",
     "number": 212,
     "name": {
@@ -3577,6 +4051,19 @@
       "dark",
       "ice",
       "johto"
+    ],
+    "family": "sneasel"
+  },
+  {
+    "id": "sneasel-hisui",
+    "number": 215,
+    "name": {
+      "en": "Hisuian Sneasel"
+    },
+    "tags": [
+      "fighting",
+      "poison",
+      "hisui"
     ],
     "family": "sneasel"
   },
@@ -3665,6 +4152,18 @@
       "johto",
       "rock",
       "water"
+    ],
+    "family": "corsola"
+  },
+  {
+    "id": "corsola-galar",
+    "number": 222,
+    "name": {
+      "en": "Galarian Corsola"
+    },
+    "tags": [
+      "ghost",
+      "galar"
     ],
     "family": "corsola"
   },
@@ -4268,6 +4767,19 @@
     "family": "zigzagoon"
   },
   {
+    "id": "zigzagoon-galar",
+    "number": 263,
+    "name": {
+      "en": "Galarian Zigzagoon"
+    },
+    "tags": [
+      "dark",
+      "normal",
+      "galar"
+    ],
+    "family": "zigzagoon"
+  },
+  {
     "id": "linoone",
     "number": 264,
     "name": {
@@ -4276,6 +4788,19 @@
     "tags": [
       "hoenn",
       "normal"
+    ],
+    "family": "zigzagoon"
+  },
+  {
+    "id": "linoone-galar",
+    "number": 264,
+    "name": {
+      "en": "Galarian Linoone"
+    },
+    "tags": [
+      "dark",
+      "normal",
+      "galar"
     ],
     "family": "zigzagoon"
   },
@@ -8352,6 +8877,19 @@
     "family": "oshawott"
   },
   {
+    "id": "samurott-hisui",
+    "number": 503,
+    "name": {
+      "en": "Hisuian Samurott"
+    },
+    "tags": [
+      "water",
+      "dark",
+      "hisui"
+    ],
+    "family": "oshawott"
+  },
+  {
     "id": "patrat",
     "number": 504,
     "name": {
@@ -8962,6 +9500,19 @@
     "family": "petilil"
   },
   {
+    "id": "lilligant-hisui",
+    "number": 549,
+    "name": {
+      "en": "Hisuian Lilligant"
+    },
+    "tags": [
+      "grass",
+      "fighting",
+      "hisui"
+    ],
+    "family": "petilil"
+  },
+  {
     "id": "basculin-red-striped",
     "number": 550,
     "name": {
@@ -9049,6 +9600,18 @@
     "family": "darumaka"
   },
   {
+    "id": "darumaka-galar",
+    "number": 554,
+    "name": {
+      "en": "Galarian Darumaka"
+    },
+    "tags": [
+      "ice",
+      "galar"
+    ],
+    "family": "darumaka"
+  },
+  {
     "id": "darmanitan-standard",
     "number": 555,
     "name": {
@@ -9057,6 +9620,18 @@
     "tags": [
       "fire",
       "unova"
+    ],
+    "family": "darumaka"
+  },
+  {
+    "id": "darmanitan-galar-standard",
+    "number": 555,
+    "name": {
+      "en": "Standard Galarian Darmanitan"
+    },
+    "tags": [
+      "ice",
+      "galar"
     ],
     "family": "darumaka"
   },
@@ -9070,6 +9645,19 @@
       "fire",
       "psychic",
       "unova"
+    ],
+    "family": "darumaka"
+  },
+  {
+    "id": "darmanitan-galar-zen",
+    "number": 555,
+    "name": {
+      "en": "Zen Galarian Darmanitan"
+    },
+    "tags": [
+      "ice",
+      "fire",
+      "galar"
     ],
     "family": "darumaka"
   },
@@ -9173,6 +9761,19 @@
     "tags": [
       "ghost",
       "unova"
+    ],
+    "family": "yamask"
+  },
+  {
+    "id": "yamask-galar",
+    "number": 562,
+    "name": {
+      "en": "Galarian Yamask"
+    },
+    "tags": [
+      "ground",
+      "ghost",
+      "galar"
     ],
     "family": "yamask"
   },
@@ -9290,6 +9891,19 @@
     "family": "zorua"
   },
   {
+    "id": "zorua-hisui",
+    "number": 570,
+    "name": {
+      "en": "Hisuian Zorua"
+    },
+    "tags": [
+      "normal",
+      "ghost",
+      "hisui"
+    ],
+    "family": "zorua"
+  },
+  {
     "id": "zoroark",
     "number": 571,
     "name": {
@@ -9298,6 +9912,19 @@
     "tags": [
       "dark",
       "unova"
+    ],
+    "family": "zorua"
+  },
+  {
+    "id": "zoroark-hisui",
+    "number": 571,
+    "name": {
+      "en": "Hisuian Zoroark"
+    },
+    "tags": [
+      "normal",
+      "ghost",
+      "hisui"
     ],
     "family": "zorua"
   },
@@ -9989,6 +10616,19 @@
     "family": "stunfisk"
   },
   {
+    "id": "stunfisk-galar",
+    "number": 618,
+    "name": {
+      "en": "Galarian Stunfisk"
+    },
+    "tags": [
+      "ground",
+      "steel",
+      "galar"
+    ],
+    "family": "stunfisk"
+  },
+  {
     "id": "mienfoo",
     "number": 619,
     "name": {
@@ -10125,6 +10765,19 @@
       "flying",
       "normal",
       "unova"
+    ],
+    "family": "rufflet"
+  },
+  {
+    "id": "braviary-hisui",
+    "number": 628,
+    "name": {
+      "en": "Hisuian Braviary"
+    },
+    "tags": [
+      "psychic",
+      "flying",
+      "hisui"
     ],
     "family": "rufflet"
   },
@@ -11941,6 +12594,19 @@
     "family": "goomy"
   },
   {
+    "id": "sliggoo-hisui",
+    "number": 705,
+    "name": {
+      "en": "Hisuian Sliggoo"
+    },
+    "tags": [
+      "steel",
+      "dragon",
+      "hisui"
+    ],
+    "family": "goomy"
+  },
+  {
     "id": "goodra",
     "number": 706,
     "name": {
@@ -11949,6 +12615,19 @@
     "tags": [
       "dragon",
       "kalos"
+    ],
+    "family": "goomy"
+  },
+  {
+    "id": "goodra-hisui",
+    "number": 706,
+    "name": {
+      "en": "Hisuian Goodra"
+    },
+    "tags": [
+      "steel",
+      "dragon",
+      "hisui"
     ],
     "family": "goomy"
   },
@@ -12116,6 +12795,19 @@
     "tags": [
       "ice",
       "kalos"
+    ],
+    "family": "bergmite"
+  },
+  {
+    "id": "avalugg-hisui",
+    "number": 713,
+    "name": {
+      "en": "Hisuian Avalugg"
+    },
+    "tags": [
+      "ice",
+      "rock",
+      "hisui"
     ],
     "family": "bergmite"
   },
@@ -12336,6 +13028,19 @@
       "alola",
       "ghost",
       "grass"
+    ],
+    "family": "rowlet"
+  },
+  {
+    "id": "decidueye-hisui",
+    "number": 724,
+    "name": {
+      "en": "Hisuian Decidueye"
+    },
+    "tags": [
+      "grass",
+      "fighting",
+      "hisui"
     ],
     "family": "rowlet"
   },
