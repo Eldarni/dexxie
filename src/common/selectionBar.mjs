@@ -30,7 +30,7 @@ export function initialiseSelectionBar() {
     subscribe('pokemon-list-rendered', renderSelectionBar);
     subscribe('tags-updated', renderSelectionBar);
 
-    //a tag changed (from a card's menu or the bar itself), only the states need refreshing
+    //a tag changed, only the states need refreshing
     subscribe('pokemon-tags-changed', updateTagStates);
 
     //

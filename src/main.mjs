@@ -27,7 +27,6 @@ import { debounceTrailing } from '../utilities/debounce.mjs';
 import { renderPokemonList, updateSprites, getVisiblePokemonIds } from './common/renderPokemonList.mjs';
 
 //
-import { initialiseTagMenu, toggleTagMenu } from './common/tagMenu.mjs';
 import { initialiseSelectionBar } from './common/selectionBar.mjs';
 
 //
@@ -40,7 +39,6 @@ initializeAndMigrateStores();
 initialiseCollectionSelector();
 
 //
-initialiseTagMenu();
 initialiseSelectionBar();
 
 //
@@ -86,13 +84,6 @@ document.querySelector('[data-name="pokemon-results"]').addEventListener('click'
 
     //
     const id = card.dataset.id;
-
-    //the tag menu toggle never changes the selection
-    const menuToggle = event.target.closest('[data-action="open-tag-menu"]');
-    if (menuToggle) {
-        toggleTagMenu(menuToggle, id);
-        return;
-    }
 
     //shift adds everything from the last clicked card to this one
     if (event.shiftKey) {

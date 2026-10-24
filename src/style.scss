@@ -437,7 +437,7 @@ main {
 
     }
 
-    // shared look for dropdown menus (the collection selector and the card tag menu)
+    // the look of the collection selector's dropdown menu
     .dropdown-menu {
 
         //
@@ -501,56 +501,6 @@ main {
 
             }
         }
-    }
-
-    // the card tag menu is positioned in javascript against the card that opened it
-    .tag-menu {
-
-        //
-        position: fixed;
-
-        //
-        min-width: 10rem;
-
-        //don't animate top/left, or the menu slides between cards
-        transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
-
-        //
-        .dropdown-item {
-
-            //
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-
-            //
-            width: 100%;
-
-            //
-            border: none;
-            border-bottom: 0.05rem solid #767676;
-            background: none;
-            text-align: start;
-
-            //
-            &[data-state="on"] {
-                background-color: color-mix(in srgb, #4caf50 15%, transparent);
-            }
-
-            //
-            &[data-state="on"]:hover {
-                background-color: color-mix(in srgb, #4caf50 25%, transparent);
-            }
-
-        }
-
-        //
-        &.active {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-
     }
 
     // tri-state tag indicators, only the icon that matches the button's data-state is shown
@@ -703,7 +653,7 @@ main {
             grid-template-areas:
                 ".    number ."
                 "icon icon   icon"
-                ".    name   menu";
+                "name name name";
             align-items: center;
             row-gap: 0.5rem;
 
@@ -753,10 +703,8 @@ main {
             font-weight: 600;
             text-align: center;
 
-            //
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            //wrap long names onto more lines rather than cutting them off
+            overflow-wrap: break-word;
 
         }
 
@@ -814,49 +762,6 @@ main {
             &.uncaught.loaded img {
                 filter: grayscale(1);
                 opacity: 0.6;
-            }
-
-        }
-
-        //
-        .pokemon .tag-menu-toggle {
-
-            //
-            grid-area: menu;
-            justify-self: end;
-
-            //
-            display: grid;
-            place-items: center;
-
-            //
-            width: 1.5rem;
-            height: 1.5rem;
-            padding: 0;
-
-            //
-            border: none;
-            border-radius: 0.25rem;
-            background: transparent;
-            color: var(--colour-foreground);
-
-            //
-            cursor: pointer;
-            transition: 0.1s;
-
-            // the chevron
-            @include before($position: relative) {
-                width: 0.45rem;
-                height: 0.45rem;
-                margin-block-start: -0.2rem;
-                border: solid currentColor;
-                border-width: 0 0.15rem 0.15rem 0;
-                transform: rotate(45deg);
-            }
-
-            //
-            &:hover, &.active {
-                background-color: color-mix(in srgb, var(--colour-foreground), transparent 85%);
             }
 
         }

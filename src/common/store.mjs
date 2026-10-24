@@ -128,37 +128,6 @@ export function setTags(tags) {
 
 }
 
-//get the pokemon from the current collection
-export function togglePokemonTag(id, tag) {
-
-    //
-    const pokemon = getLocalStorageJSON(`${currentCollection}:pokemon`, {});
-
-    //
-    if (!pokemon[id]) {
-        pokemon[id] = [];
-    }
-
-    //
-    if (pokemon[id].includes(tag)) {
-        pokemon[id] = pokemon[id].filter(t => t !== tag);
-    } else {
-        pokemon[id].push(tag);
-    }
-
-    //
-    if (pokemon[id].length === 0) {
-        delete pokemon[id];
-    }
-
-    //
-    setLocalStorageJSON(`${currentCollection}:pokemon`, pokemon);
-
-    //
-    return pokemon[id]?.includes(tag);
-
-}
-
 //get the user tags for every pokemon in the current collection, keyed by id
 export function getTaggedPokemon() {
     return getLocalStorageJSON(`${currentCollection}:pokemon`, {});

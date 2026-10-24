@@ -80,14 +80,7 @@ export function renderPokemonList(searchString = null) {
         name.textContent = p.name.en;
 
         //
-        const menuToggle = document.createElement('button');
-        menuToggle.type = 'button';
-        menuToggle.className = 'tag-menu-toggle';
-        menuToggle.setAttribute('data-action', 'open-tag-menu');
-        menuToggle.setAttribute('aria-label', `Tags for ${p.name.en}`);
-
-        //
-        card.append(number, icon, name, menuToggle);
+        card.append(number, icon, name);
 
         //
         updateCardSprite(card, p.tags);
