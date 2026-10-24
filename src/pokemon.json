@@ -53,6 +53,20 @@
     "family": "bulbasaur"
   },
   {
+    "id": "venusaur-gmax",
+    "number": 3,
+    "name": {
+      "en": "Gigantamax Venusaur"
+    },
+    "tags": [
+      "grass",
+      "poison",
+      "kanto",
+      "gmax"
+    ],
+    "family": "bulbasaur"
+  },
+  {
     "id": "charmander",
     "number": 4,
     "name": {
@@ -118,6 +132,20 @@
     "family": "charmander"
   },
   {
+    "id": "charizard-gmax",
+    "number": 6,
+    "name": {
+      "en": "Gigantamax Charizard"
+    },
+    "tags": [
+      "fire",
+      "flying",
+      "kanto",
+      "gmax"
+    ],
+    "family": "charmander"
+  },
+  {
     "id": "squirtle",
     "number": 7,
     "name": {
@@ -167,6 +195,19 @@
     "family": "squirtle"
   },
   {
+    "id": "blastoise-gmax",
+    "number": 9,
+    "name": {
+      "en": "Gigantamax Blastoise"
+    },
+    "tags": [
+      "water",
+      "kanto",
+      "gmax"
+    ],
+    "family": "squirtle"
+  },
+  {
     "id": "caterpie",
     "number": 10,
     "name": {
@@ -200,6 +241,20 @@
       "bug",
       "flying",
       "kanto"
+    ],
+    "family": "caterpie"
+  },
+  {
+    "id": "butterfree-gmax",
+    "number": 12,
+    "name": {
+      "en": "Gigantamax Butterfree"
+    },
+    "tags": [
+      "bug",
+      "flying",
+      "kanto",
+      "gmax"
     ],
     "family": "caterpie"
   },
@@ -392,6 +447,19 @@
     "tags": [
       "electric",
       "kanto"
+    ],
+    "family": "pichu"
+  },
+  {
+    "id": "pikachu-gmax",
+    "number": 25,
+    "name": {
+      "en": "Gigantamax Pikachu"
+    },
+    "tags": [
+      "electric",
+      "kanto",
+      "gmax"
     ],
     "family": "pichu"
   },
@@ -773,6 +841,19 @@
     "family": "meowth"
   },
   {
+    "id": "meowth-gmax",
+    "number": 52,
+    "name": {
+      "en": "Gigantamax Meowth"
+    },
+    "tags": [
+      "normal",
+      "kanto",
+      "gmax"
+    ],
+    "family": "meowth"
+  },
+  {
     "id": "persian",
     "number": 53,
     "name": {
@@ -975,6 +1056,19 @@
     "tags": [
       "fighting",
       "kanto"
+    ],
+    "family": "machop"
+  },
+  {
+    "id": "machamp-gmax",
+    "number": 68,
+    "name": {
+      "en": "Gigantamax Machamp"
+    },
+    "tags": [
+      "fighting",
+      "kanto",
+      "gmax"
     ],
     "family": "machop"
   },
@@ -1353,6 +1447,20 @@
     "family": "gastly"
   },
   {
+    "id": "gengar-gmax",
+    "number": 94,
+    "name": {
+      "en": "Gigantamax Gengar"
+    },
+    "tags": [
+      "ghost",
+      "poison",
+      "kanto",
+      "gmax"
+    ],
+    "family": "gastly"
+  },
+  {
     "id": "onix",
     "number": 95,
     "name": {
@@ -1410,6 +1518,19 @@
     "tags": [
       "kanto",
       "water"
+    ],
+    "family": "krabby"
+  },
+  {
+    "id": "kingler-gmax",
+    "number": 99,
+    "name": {
+      "en": "Gigantamax Kingler"
+    },
+    "tags": [
+      "water",
+      "kanto",
+      "gmax"
     ],
     "family": "krabby"
   },
@@ -1901,6 +2022,20 @@
     "family": "lapras"
   },
   {
+    "id": "lapras-gmax",
+    "number": 131,
+    "name": {
+      "en": "Gigantamax Lapras"
+    },
+    "tags": [
+      "water",
+      "ice",
+      "kanto",
+      "gmax"
+    ],
+    "family": "lapras"
+  },
+  {
     "id": "ditto",
     "number": 132,
     "name": {
@@ -1921,6 +2056,19 @@
     "tags": [
       "kanto",
       "normal"
+    ],
+    "family": "eevee"
+  },
+  {
+    "id": "eevee-gmax",
+    "number": 133,
+    "name": {
+      "en": "Gigantamax Eevee"
+    },
+    "tags": [
+      "normal",
+      "kanto",
+      "gmax"
     ],
     "family": "eevee"
   },
@@ -2060,6 +2208,19 @@
     "tags": [
       "kanto",
       "normal"
+    ],
+    "family": "munchlax"
+  },
+  {
+    "id": "snorlax-gmax",
+    "number": 143,
+    "name": {
+      "en": "Gigantamax Snorlax"
+    },
+    "tags": [
+      "normal",
+      "kanto",
+      "gmax"
     ],
     "family": "munchlax"
   },
@@ -9104,6 +9265,19 @@
     "family": "trubbish"
   },
   {
+    "id": "garbodor-gmax",
+    "number": 569,
+    "name": {
+      "en": "Gigantamax Garbodor"
+    },
+    "tags": [
+      "poison",
+      "unova",
+      "gmax"
+    ],
+    "family": "trubbish"
+  },
+  {
     "id": "zorua",
     "number": 570,
     "name": {
@@ -13677,6 +13851,20 @@
     "family": null
   },
   {
+    "id": "melmetal-gmax",
+    "number": 809,
+    "name": {
+      "en": "Gigantamax Melmetal"
+    },
+    "tags": [
+      "steel",
+      "alola",
+      "mythical",
+      "gmax"
+    ],
+    "family": null
+  },
+  {
     "id": "grookey",
     "number": 810,
     "name": {
@@ -13709,6 +13897,19 @@
     "tags": [
       "galar",
       "grass"
+    ],
+    "family": "grookey"
+  },
+  {
+    "id": "rillaboom-gmax",
+    "number": 812,
+    "name": {
+      "en": "Gigantamax Rillaboom"
+    },
+    "tags": [
+      "grass",
+      "galar",
+      "gmax"
     ],
     "family": "grookey"
   },
@@ -13749,6 +13950,19 @@
     "family": "scorbunny"
   },
   {
+    "id": "cinderace-gmax",
+    "number": 815,
+    "name": {
+      "en": "Gigantamax Cinderace"
+    },
+    "tags": [
+      "fire",
+      "galar",
+      "gmax"
+    ],
+    "family": "scorbunny"
+  },
+  {
     "id": "sobble",
     "number": 816,
     "name": {
@@ -13781,6 +13995,19 @@
     "tags": [
       "galar",
       "water"
+    ],
+    "family": "sobble"
+  },
+  {
+    "id": "inteleon-gmax",
+    "number": 818,
+    "name": {
+      "en": "Gigantamax Inteleon"
+    },
+    "tags": [
+      "water",
+      "galar",
+      "gmax"
     ],
     "family": "sobble"
   },
@@ -13846,6 +14073,20 @@
     "family": "rookidee"
   },
   {
+    "id": "corviknight-gmax",
+    "number": 823,
+    "name": {
+      "en": "Gigantamax Corviknight"
+    },
+    "tags": [
+      "flying",
+      "steel",
+      "galar",
+      "gmax"
+    ],
+    "family": "rookidee"
+  },
+  {
     "id": "blipbug",
     "number": 824,
     "name": {
@@ -13880,6 +14121,20 @@
       "bug",
       "galar",
       "psychic"
+    ],
+    "family": "blipbug"
+  },
+  {
+    "id": "orbeetle-gmax",
+    "number": 826,
+    "name": {
+      "en": "Gigantamax Orbeetle"
+    },
+    "tags": [
+      "bug",
+      "psychic",
+      "galar",
+      "gmax"
     ],
     "family": "blipbug"
   },
@@ -13981,6 +14236,20 @@
     "family": "chewtle"
   },
   {
+    "id": "drednaw-gmax",
+    "number": 834,
+    "name": {
+      "en": "Gigantamax Drednaw"
+    },
+    "tags": [
+      "water",
+      "rock",
+      "galar",
+      "gmax"
+    ],
+    "family": "chewtle"
+  },
+  {
     "id": "yamper",
     "number": 835,
     "name": {
@@ -14043,6 +14312,20 @@
     "family": "rolycoly"
   },
   {
+    "id": "coalossal-gmax",
+    "number": 839,
+    "name": {
+      "en": "Gigantamax Coalossal"
+    },
+    "tags": [
+      "rock",
+      "fire",
+      "galar",
+      "gmax"
+    ],
+    "family": "rolycoly"
+  },
+  {
     "id": "applin",
     "number": 840,
     "name": {
@@ -14069,6 +14352,20 @@
     "family": "applin"
   },
   {
+    "id": "flapple-gmax",
+    "number": 841,
+    "name": {
+      "en": "Gigantamax Flapple"
+    },
+    "tags": [
+      "grass",
+      "dragon",
+      "galar",
+      "gmax"
+    ],
+    "family": "applin"
+  },
+  {
     "id": "appletun",
     "number": 842,
     "name": {
@@ -14078,6 +14375,20 @@
       "dragon",
       "galar",
       "grass"
+    ],
+    "family": "applin"
+  },
+  {
+    "id": "appletun-gmax",
+    "number": 842,
+    "name": {
+      "en": "Gigantamax Appletun"
+    },
+    "tags": [
+      "grass",
+      "dragon",
+      "galar",
+      "gmax"
     ],
     "family": "applin"
   },
@@ -14102,6 +14413,19 @@
     "tags": [
       "galar",
       "ground"
+    ],
+    "family": "silicobra"
+  },
+  {
+    "id": "sandaconda-gmax",
+    "number": 844,
+    "name": {
+      "en": "Gigantamax Sandaconda"
+    },
+    "tags": [
+      "ground",
+      "galar",
+      "gmax"
     ],
     "family": "silicobra"
   },
@@ -14169,6 +14493,20 @@
     "family": "toxel"
   },
   {
+    "id": "toxtricity-amped-gmax",
+    "number": 849,
+    "name": {
+      "en": "Gigantamax Amped Toxtricity"
+    },
+    "tags": [
+      "electric",
+      "poison",
+      "galar",
+      "gmax"
+    ],
+    "family": "toxel"
+  },
+  {
     "id": "toxtricity-low-key",
     "number": 849,
     "name": {
@@ -14178,6 +14516,20 @@
       "electric",
       "galar",
       "poison"
+    ],
+    "family": "toxel"
+  },
+  {
+    "id": "toxtricity-low-key-gmax",
+    "number": 849,
+    "name": {
+      "en": "Gigantamax Low Key Toxtricity"
+    },
+    "tags": [
+      "electric",
+      "poison",
+      "galar",
+      "gmax"
     ],
     "family": "toxel"
   },
@@ -14204,6 +14556,20 @@
       "bug",
       "fire",
       "galar"
+    ],
+    "family": "sizzlipede"
+  },
+  {
+    "id": "centiskorch-gmax",
+    "number": 851,
+    "name": {
+      "en": "Gigantamax Centiskorch"
+    },
+    "tags": [
+      "fire",
+      "bug",
+      "galar",
+      "gmax"
     ],
     "family": "sizzlipede"
   },
@@ -14317,6 +14683,20 @@
     "family": "hatenna"
   },
   {
+    "id": "hatterene-gmax",
+    "number": 858,
+    "name": {
+      "en": "Gigantamax Hatterene"
+    },
+    "tags": [
+      "psychic",
+      "fairy",
+      "galar",
+      "gmax"
+    ],
+    "family": "hatenna"
+  },
+  {
     "id": "impidimp",
     "number": 859,
     "name": {
@@ -14352,6 +14732,20 @@
       "dark",
       "fairy",
       "galar"
+    ],
+    "family": "impidimp"
+  },
+  {
+    "id": "grimmsnarl-gmax",
+    "number": 861,
+    "name": {
+      "en": "Gigantamax Grimmsnarl"
+    },
+    "tags": [
+      "dark",
+      "fairy",
+      "galar",
+      "gmax"
     ],
     "family": "impidimp"
   },
@@ -15199,6 +15593,19 @@
     "family": "milcery"
   },
   {
+    "id": "alcremie-gmax",
+    "number": 869,
+    "name": {
+      "en": "Gigantamax Alcremie"
+    },
+    "tags": [
+      "fairy",
+      "galar",
+      "gmax"
+    ],
+    "family": "milcery"
+  },
+  {
     "id": "falinks",
     "number": 870,
     "name": {
@@ -15349,6 +15756,19 @@
     "family": "cufant"
   },
   {
+    "id": "copperajah-gmax",
+    "number": 879,
+    "name": {
+      "en": "Gigantamax Copperajah"
+    },
+    "tags": [
+      "steel",
+      "galar",
+      "gmax"
+    ],
+    "family": "cufant"
+  },
+  {
     "id": "dracozolt",
     "number": 880,
     "name": {
@@ -15410,6 +15830,20 @@
       "dragon",
       "galar",
       "steel"
+    ],
+    "family": "duraludon"
+  },
+  {
+    "id": "duraludon-gmax",
+    "number": 884,
+    "name": {
+      "en": "Gigantamax Duraludon"
+    },
+    "tags": [
+      "steel",
+      "dragon",
+      "galar",
+      "gmax"
     ],
     "family": "duraludon"
   },
@@ -15546,6 +15980,21 @@
     "family": "kubfu"
   },
   {
+    "id": "urshifu-single-strike-gmax",
+    "number": 892,
+    "name": {
+      "en": "Gigantamax Single Strike Urshifu"
+    },
+    "tags": [
+      "fighting",
+      "dark",
+      "galar",
+      "legendary",
+      "gmax"
+    ],
+    "family": "kubfu"
+  },
+  {
     "id": "urshifu-rapid-strike",
     "number": 892,
     "name": {
@@ -15556,6 +16005,21 @@
       "fighting",
       "galar",
       "legendary"
+    ],
+    "family": "kubfu"
+  },
+  {
+    "id": "urshifu-rapid-strike-gmax",
+    "number": 892,
+    "name": {
+      "en": "Gigantamax Rapid Strike Urshifu"
+    },
+    "tags": [
+      "fighting",
+      "water",
+      "galar",
+      "legendary",
+      "gmax"
     ],
     "family": "kubfu"
   },
