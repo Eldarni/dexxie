@@ -100,13 +100,20 @@ document.querySelector('[data-name="pokemon-results"]').addEventListener('click'
         return;
     }
 
-    //the checkbox and ctrl/cmd+click toggle just this card
-    if (event.ctrlKey || event.metaKey || event.target.closest('[data-action="toggle-selection"]')) {
+    //ctrl/cmd+click toggles just this card
+    if (event.ctrlKey || event.metaKey) {
         toggleSelection(id);
         return;
     }
 
-    //a plain click selects only this card
+    //a plain click on the only selected card clears the selection
+    const selection = getSelection();
+    if (selection.length === 1 && selection[0] === id) {
+        clearSelection();
+        return;
+    }
+
+    //otherwise a plain click selects only this card
     selectOnly(id);
 
 });
@@ -134,13 +141,7 @@ document.addEventListener('keydown', (event) => {
 subscribe('selection-changed', () => {
 
     //
-    const results = document.querySelector('[data-name="pokemon-results"]');
-
-    //the checkboxes are faint until a selection has been started
-    results.classList.toggle('has-selection', (getSelection().length > 0));
-
-    //
-    results.querySelectorAll('.pokemon').forEach(card => {
+    document.querySelectorAll('[data-name="pokemon-results"] .pokemon').forEach(card => {
         card.classList.toggle('selected', isSelected(card.dataset.id));
     });
 

@@ -57,13 +57,6 @@ export function renderPokemonList(searchString = null) {
         number.className = 'number';
         number.innerHTML = `<span>#${'0'.repeat(4 - String(p.number).length)}</span>${p.number}`;
 
-        //
-        const checkbox = document.createElement('button');
-        checkbox.type = 'button';
-        checkbox.className = 'checkbox';
-        checkbox.setAttribute('data-action', 'toggle-selection');
-        checkbox.setAttribute('aria-label', `Select ${p.name.en}`);
-
         //space for the icon (up to 128x128), the placeholder shows until the sprite has loaded
         const icon = document.createElement('div');
         icon.className = 'icon';
@@ -94,7 +87,7 @@ export function renderPokemonList(searchString = null) {
         menuToggle.setAttribute('aria-label', `Tags for ${p.name.en}`);
 
         //
-        card.append(number, checkbox, icon, name, menuToggle);
+        card.append(number, icon, name, menuToggle);
 
         //
         updateCardSprite(card, p.tags);
