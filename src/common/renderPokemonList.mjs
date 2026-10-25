@@ -29,37 +29,30 @@ function getSeed(id) {
 //the number of pokemon in the collection, and how many of those the search is showing
 const counts = { total: 0, visible: 0 };
 
-//
+//shown after the cards when the search matches nothing, kept between rebuilds
+const emptyMessage = document.createElement('p');
+emptyMessage.className = 'empty';
+emptyMessage.hidden = true;
+emptyMessage.textContent = 'No Pokémon found.';
+
+//build a card for every pokemon in the collection, then show only those matching the search
+//this is the slow part, so it only runs when the collection changes, searching just hides cards (see filterPokemonList below)
 export function renderPokemonList(searchString = null) {
 
-    // Filter by collection first
-    let collectionFilteredPokemon = getPokemon();
-
-    //time to make the search
-    const filteredPokemon = filterPokemonBySearchString(collectionFilteredPokemon, searchString);
-
-    //store the current selection so we can perform bulk actions on it
-    // lastFilteredPokemon = filteredPokemon;
+    //
+    const pokemon = getPokemon();
 
     //
     const results = document.querySelector('[data-name="pokemon-results"]');
 
-    //
-    counts.total   = ((Array.isArray(collectionFilteredPokemon)) ? collectionFilteredPokemon.length : 0);
-    counts.visible = ((Array.isArray(filteredPokemon))           ? filteredPokemon.length           : 0);
+    //the cards are built off screen, then swapped in all at once
+    const fragment = document.createDocumentFragment();
 
     //
-    if (!filteredPokemon || !Array.isArray(filteredPokemon) || filteredPokemon.length === 0) {
-        results.innerHTML = '<p>No Pokémon found.</p>';
-        emit('pokemon-list-rendered');
-        return;
-    }
+    counts.total = pokemon.length;
 
     //
-    results.innerText = '';
-
-    //
-    filteredPokemon.forEach(p => {
+    pokemon.forEach(p => {
 
         //
         const card = document.createElement('div');
@@ -109,9 +102,32 @@ export function renderPokemonList(searchString = null) {
         updateCardTags(card, p.tags);
 
         //
-        results.append(card);
+        fragment.append(card);
 
     });
+
+    //
+    results.replaceChildren(fragment, emptyMessage);
+
+    //
+    filterPokemonList(searchString);
+
+}
+
+//show only the cards matching the search, by hiding the rest
+export function filterPokemonList(searchString = null) {
+
+    //read the collection fresh, so a search by tag sees the current tags
+    const ids = new Set(filterPokemonBySearchString(getPokemon(), searchString).map(p => p.id));
+
+    //
+    document.querySelectorAll('[data-name="pokemon-results"] .pokemon').forEach(card => {
+        card.hidden = !ids.has(card.dataset.id);
+    });
+
+    //
+    counts.visible = ids.size;
+    emptyMessage.hidden = (ids.size > 0);
 
     //
     emit('pokemon-list-rendered');
@@ -160,7 +176,7 @@ export function getPokemonCounts() {
     return { ...counts };
 }
 
-//the ids of the cards currently on screen, in display order
+//the ids of the cards the search is showing, in display order
 export function getVisiblePokemonIds() {
-    return Array.from(document.querySelectorAll('[data-name="pokemon-results"] .pokemon')).map(card => card.dataset.id);
+    return Array.from(document.querySelectorAll('[data-name="pokemon-results"] .pokemon:not([hidden])')).map(card => card.dataset.id);
 }

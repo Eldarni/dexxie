@@ -731,6 +731,13 @@ main {
                 &[data-type-2="#{$type}"] { --type-2: var(--type-#{$type}); }
             }
 
+            //the card's own display would otherwise win over the browser's style for hidden
+            &[hidden] { display: none; }
+
+            //offscreen cards skip layout and paint, auto remembers each card's real size once it has been shown
+            content-visibility: auto;
+            contain-intrinsic-size: auto 10rem auto 219px;
+
             //
             cursor: pointer;
             transition: border-color 0.1s ease, background-color 0.1s ease;

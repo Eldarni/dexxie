@@ -24,7 +24,7 @@ import { importPokemonData } from './common/importPokemonData.mjs';
 import { debounceTrailing } from '../utilities/debounce.mjs';
 
 //
-import { renderPokemonList, updateAllCardTags, getVisiblePokemonIds } from './common/renderPokemonList.mjs';
+import { renderPokemonList, filterPokemonList, updateAllCardTags, getVisiblePokemonIds } from './common/renderPokemonList.mjs';
 
 //
 import { initialiseSelectionBar } from './common/selectionBar.mjs';
@@ -42,17 +42,20 @@ initialiseCollectionSelector();
 initialiseSelectionBar();
 
 //
-renderPokemonList();
+const searchBar = document.getElementById('search-bar');
 
-//
-subscribe('pokemon-list-updated', () => renderPokemonList());
+//the browser may restore text in the search box, so the first render applies it
+renderPokemonList(searchBar.value);
+
+//rebuild the cards, keeping whatever is in the search box applied
+subscribe('pokemon-list-updated', () => renderPokemonList(searchBar.value));
 
 //a tag may have changed, so the cards need refreshing (their tags, and the sprite for caught or shiny)
 subscribe('pokemon-tags-changed', updateAllCardTags);
 
-//
-document.getElementById('search-bar').addEventListener('input', debounceTrailing(300, (event) => {
-    renderPokemonList(event.target.value);
+//searching only hides and shows the cards already built
+searchBar.addEventListener('input', debounceTrailing(300, (event) => {
+    filterPokemonList(event.target.value);
 }));
 
 //
@@ -64,7 +67,7 @@ document.querySelector('button[data-action="copy-list"').addEventListener('click
 
     //
     const results = document.querySelector('[data-name="pokemon-results"]');
-    const pokemon = Array.from(results.querySelectorAll('.pokemon .name')).map(p => p.textContent).join(', ');
+    const pokemon = Array.from(results.querySelectorAll('.pokemon:not([hidden]) .name')).map(p => p.textContent).join(', ');
 
     //
     navigator.clipboard.writeText(pokemon).then(() => {
