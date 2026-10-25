@@ -1,4 +1,16 @@
 
+//every string normalised so far, the same names and tags are normalised on every search
+const normalised = new Map();
+
+//lowercase, split accented letters into the letter and its accent (nfd), then drop everything that isn't a plain letter or number
+//so "Flabébé (Red Flower)" becomes "flabeberedflower", and "farfetchd" finds "Farfetch’d"
+function normalise(str) {
+    if (!normalised.has(str)) {
+        normalised.set(str, str.toLowerCase().normalize('NFD').replace(/[^a-zA-Z0-9]/g, ''));
+    }
+    return normalised.get(str);
+}
+
 //
 function getTokens(str, tags) {
 
@@ -29,7 +41,7 @@ function getTokens(str, tags) {
 
     };
 
-    //add context to the raw tokens
+    //add context to the raw tokens, the syntax is read first so normalising only touches the values
     return tokeniser(str).map((token) => {
 
         //
@@ -44,16 +56,22 @@ function getTokens(str, tags) {
 
         //
         const match = /^(!|\+)?(.+)$/gi.exec(token);
+        const value = normalise(match[2]);
+
+        //nothing left after normalising (just punctuation or symbols), it would match everything so it's dropped
+        if (value === '') {
+            return null;
+        }
 
         //
-        if (tags.has(match[2])) {
-            return { type: 'tag', value: match[2], inverted : (match[1] == '!') };
+        if (tags.has(value)) {
+            return { type: 'tag', value: value, inverted : (match[1] == '!') };
         }
 
         //anything else must be a family or name selector
-        return { type: ((match[1] == '+') ? 'family' : 'name'), value: match[2] };
+        return { type: ((match[1] == '+') ? 'family' : 'name'), value: value };
 
-    });
+    }).filter(token => token);
 
 }
 
@@ -116,11 +134,20 @@ function evalBooleanExpr(node, pokemon) {
     //
     switch (node.type) {
         case 'tag':
-            return pokemon.tags.includes(node.value) == !node.inverted;
+            return pokemon.tags.some(tag => normalise(tag) === node.value) == !node.inverted;
         case 'family':
             return node.value.includes(pokemon.family);
         case 'name':
-            return pokemon.name.en.toLowerCase().startsWith(node.value.toLowerCase());
+            return normalise(pokemon.name.en).includes(node.value);
+    }
+
+    //an and/or missing one side (like "pika or" while still typing) is just the other side, rather than matching everything
+    if (!node.left || !node.right) {
+        return evalBooleanExpr((node.left || node.right), pokemon);
+    }
+
+    //
+    switch (node.type) {
         case 'and':
             return evalBooleanExpr(node.left, pokemon) && evalBooleanExpr(node.right, pokemon);
         case 'or':
@@ -141,7 +168,7 @@ export function filterPokemonBySearchString(pokemon, searchString) {
 
     // Get a list of all the unique tags
     const tags = pokemon.reduce((a, c) => {
-        if (Array.isArray(c.tags)) c.tags.forEach(tag => a.add(tag.toLowerCase()));
+        if (Array.isArray(c.tags)) c.tags.forEach(tag => a.add(normalise(tag)));
         return a;
     }, new Set());
 
@@ -149,7 +176,7 @@ export function filterPokemonBySearchString(pokemon, searchString) {
     const tokens = getTokens(searchString, tags).map((token) => {
         if (token.type === 'family') {
             return { ...token, value: Array.from(pokemon.reduce((a, c) => {
-                if (c.name.en.toLowerCase().startsWith(token.value.toLowerCase())) {
+                if (normalise(c.name.en).includes(token.value)) {
                     a.add(c.family);
                 }
                 return a;

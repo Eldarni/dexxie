@@ -21,8 +21,6 @@ import { subscribe } from '../utilities/events.mjs';
 import { exportPokemonData } from './common/exportPokemonData.mjs';
 import { importPokemonData } from './common/importPokemonData.mjs';
 
-import { debounceTrailing } from '../utilities/debounce.mjs';
-
 //
 import { renderPokemonList, filterPokemonList, updateAllCardTags, getVisiblePokemonIds } from './common/renderPokemonList.mjs';
 
@@ -53,10 +51,10 @@ subscribe('pokemon-list-updated', () => renderPokemonList(searchBar.value));
 //a tag may have changed, so the cards need refreshing (their tags, and the sprite for caught or shiny)
 subscribe('pokemon-tags-changed', updateAllCardTags);
 
-//searching only hides and shows the cards already built
-searchBar.addEventListener('input', debounceTrailing(300, (event) => {
+//searching only hides and shows the cards already built, so it's quick enough to run on every keystroke
+searchBar.addEventListener('input', (event) => {
     filterPokemonList(event.target.value);
-}));
+});
 
 //
 document.querySelector('button[data-action="export-tags"').addEventListener('click', exportPokemonData);
