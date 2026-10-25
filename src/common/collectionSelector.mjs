@@ -1,6 +1,9 @@
 
 //
-import { getCollections, getCollection, changeCollection } from './store.mjs';
+import { getCollections, getCollection, changeCollection, isEditableCollection } from './store.mjs';
+
+//
+import { showCollectionForm } from './collectionForm.mjs';
 
 //
 import { subscribe, emit } from '../../utilities/events.mjs';
@@ -23,6 +26,7 @@ export function initialiseCollectionSelector() {
 
     //
     subscribe('collection-created', populateCollectionsDropdown);
+    subscribe('collection-updated', populateCollectionsDropdown);
     subscribe('collection-deleted', populateCollectionsDropdown);
 
     //
@@ -52,15 +56,19 @@ export function initialiseCollectionSelector() {
     dropdownMenu.addEventListener('click', (event) => {
 
         //
-        if (!event.target.classList.contains('dropdown-item')) {
+        const item = event.target.closest('.dropdown-item');
+        if (!item) {
             return;
         }
 
         //
-        const collection = event.target.dataset.collection;
-
-        //
-        changeCollection(collection);
+        if (item.dataset.action === 'new-collection') {
+            showCollectionForm();
+        } else if (item.dataset.action === 'edit-collection') {
+            showCollectionForm(getCollection());
+        } else {
+            changeCollection(item.dataset.collection);
+        }
 
         //
         setTimeout(() => {
@@ -94,5 +102,19 @@ function populateCollectionsDropdown() {
             'title': collection.description
         }, collection.name));
     });
+
+    //
+    dropdownMenu.appendChild(createElement('div', { 'class': 'dropdown-item dropdown-action', 'data-action': 'new-collection' }, [
+        ['i', { 'class': 'fa-solid fa-plus' }],
+        ['span', {}, 'New collection…']
+    ]));
+
+    //the national dex can't be edited
+    if (isEditableCollection(currentCollection.id)) {
+        dropdownMenu.appendChild(createElement('div', { 'class': 'dropdown-item dropdown-action', 'data-action': 'edit-collection' }, [
+            ['i', { 'class': 'fa-solid fa-pen' }],
+            ['span', {}, 'Edit this collection…']
+        ]));
+    }
 
 }

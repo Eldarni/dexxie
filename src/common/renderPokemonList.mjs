@@ -12,10 +12,10 @@ import { emit } from '../../utilities/events.mjs';
 import { filterPokemonBySearchString } from './filterPokemonBySearchString.mjs';
 
 //
-import pokemonData from '../pokemon.json';
+import { TYPES } from './builtInTags.mjs';
 
-//the pokemon types, to pick them out from the other tags
-const TYPES = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting', 'poison', 'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost', 'dragon', 'dark', 'steel', 'fairy'];
+//
+import pokemonData from '../pokemon.json';
 
 //the built in tags of each pokemon, so a card's tags can be rebuilt when the user tags change
 const builtInTags = new Map(pokemonData.map(p => [ p.id, p.tags ]));

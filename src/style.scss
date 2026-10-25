@@ -14,6 +14,9 @@
 @use 'popup.scss' as *;
 
 //
+@use 'collectionForm.scss' as *;
+
+//
 @use 'background.scss' as *;
 
 //the colour of each pokemon type, used for the card backgrounds
@@ -519,6 +522,20 @@ main {
             //
             &:last-child {
                 border-bottom: none;
+            }
+
+            //new and edit, set apart from the collections above them
+            &.dropdown-action {
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+                font-size: 0.9em;
+                opacity: 0.8;
+            }
+
+            //
+            &:not(.dropdown-action) + .dropdown-action {
+                border-top: 0.1rem solid #767676;
             }
 
             //
