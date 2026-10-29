@@ -1,6 +1,6 @@
 
 //
-import { getPokemon, getTags, getTaggedPokemon } from './store.mjs';
+import { getPokemon, getTaggedPokemon } from './store.mjs';
 
 //
 import { isSelected } from './selection.mjs';

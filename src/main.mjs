@@ -28,9 +28,6 @@ import { renderPokemonList, filterPokemonList, updateAllCardTags, getVisiblePoke
 import { initialiseSelectionBar } from './common/selectionBar.mjs';
 
 //
-import { showPopup } from './popup.mjs';
-
-//
 initializeAndMigrateStores();
 
 //
