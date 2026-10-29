@@ -6,7 +6,7 @@ import { getCollections, getCollection, changeCollection, isEditableCollection }
 import { showCollectionForm } from './collectionForm.mjs';
 
 //
-import { subscribe, emit } from '../../utilities/events.mjs';
+import { subscribe } from '../../utilities/events.mjs';
 
 //
 import { createElement } from '../../utilities/createElement.mjs';
@@ -17,6 +17,7 @@ const dropdown = document.querySelector('[data-name="collections-selector"]');
 //
 const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
 const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+const dropdownText = dropdownToggle.querySelector('.dropdown-text');
 
 //
 export function initialiseCollectionSelector() {
@@ -89,7 +90,7 @@ function populateCollectionsDropdown() {
     const currentCollection = getCollection();
 
     //
-    dropdownToggle.textContent = currentCollection.name;
+    dropdownText.textContent = currentCollection.name;
 
     //
     dropdownMenu.innerHTML = '';
