@@ -441,7 +441,7 @@ main {
 
             //
             .dropdown-menu {
-                @include absolute($inset-block-start: 100%, $inset-inline-end: 0);
+                @include absolute($inset-block-start: calc(100% + 0.4rem), $inset-inline-end: 0);
             }
 
             //
@@ -479,19 +479,23 @@ main {
 
     }
 
-    // the look of the collection selector's dropdown menu
+    // the look of the collection selector's dropdown menu, a floating rounded panel with the items inset as pills
     .dropdown-menu {
 
         //
         z-index: 1000;
 
-        //
-        background-color: var(--colour-background);
+        //at least wide enough that short names don't make a narrow menu, it still grows for long ones
+        min-width: 16rem;
+        padding: 0.3rem;
+
+        //a little darker than the page, so the menu stands out
+        background-color: color-mix(in srgb, var(--colour-background), black 8%);
 
         //
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border: 0.15rem solid #767676;
-        border-radius: 0.2rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.35);
+        border: 1px solid color-mix(in srgb, var(--colour-foreground), transparent 85%);
+        border-radius: 0.5rem;
 
         //
         opacity: 0;
@@ -505,7 +509,15 @@ main {
         .dropdown-item {
 
             //
-            padding: 0.75rem 1rem;
+            position: relative;
+
+            //
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+
+            //
+            padding: 0.6rem 0.9rem;
 
             //
             color: var(--colour-foreground);
@@ -514,28 +526,30 @@ main {
             cursor: pointer;
 
             //
-            border-bottom: 0.05rem solid #767676;
+            border-radius: 0.3rem;
 
             //
             transition: background-color 0.1s ease;
 
-            //
-            &:last-child {
-                border-bottom: none;
-            }
-
             //new and edit, set apart from the collections above them
             &.dropdown-action {
-                display: flex;
-                align-items: center;
-                gap: 0.6rem;
                 font-size: 0.9em;
                 opacity: 0.8;
             }
 
-            //
+            //a short line part way across between the collections and the actions
             &:not(.dropdown-action) + .dropdown-action {
-                border-top: 0.1rem solid #767676;
+
+                //
+                margin-top: 0.6rem;
+
+                //
+                &::before {
+                    @include pseudo($inset-block-start: -0.3rem, $inset-inline: 0.7rem);
+                    height: 1px;
+                    background-color: color-mix(in srgb, var(--colour-foreground), transparent 80%);
+                }
+
             }
 
             //
@@ -543,20 +557,30 @@ main {
                 background-color: color-mix(in srgb, var(--colour-foreground), transparent 90%);
             }
 
-            //
+            //the current collection, a red bar on the left and a tick on the right
             &.active {
 
                 //
-                background-color: var(--colour-pokedex-red);
-                color: var(--white);
+                font-weight: 600;
 
                 //
-                &:hover {
-                    background-color: color-mix(in srgb, var(--colour-pokedex-red), var(--colour-foreground) 10%);
+                &::before {
+                    @include pseudo($inset-block: 0.5rem, $inset-inline-start: 0);
+                    width: 3px;
+                    border-radius: 3px;
+                    background-color: var(--colour-pokedex-light-red);
                 }
 
             }
+
+            //pushed to the far right of the item
+            .dropdown-check {
+                margin-inline-start: auto;
+                color: var(--colour-pokedex-light-red);
+            }
+
         }
+
     }
 
     // tri-state tag indicators, only the icon that matches the button's data-state is shown

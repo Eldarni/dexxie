@@ -101,7 +101,10 @@ function populateCollectionsDropdown() {
             'class': `dropdown-item${id === currentCollection.id ? ' active' : ''}`,
             'data-collection': id,
             'title': collection.description
-        }, collection.name));
+        }, [
+            ['span', {}, collection.name],
+            ...((id === currentCollection.id) ? [['i', { 'class': 'fa-solid fa-check dropdown-check' }]] : [])
+        ]));
     });
 
     //
