@@ -54,11 +54,11 @@ searchBar.addEventListener('input', (event) => {
 });
 
 //
-document.querySelector('button[data-action="export-tags"').addEventListener('click', exportPokemonData);
-document.querySelector('button[data-action="import-tags"').addEventListener('click', importPokemonData);
+document.querySelector('button[data-action="export-tags"]').addEventListener('click', exportPokemonData);
+document.querySelector('button[data-action="import-tags"]').addEventListener('click', importPokemonData);
 
 //
-document.querySelector('button[data-action="copy-list"').addEventListener('click', () => {
+document.querySelector('button[data-action="copy-list"]').addEventListener('click', () => {
 
     //
     const results = document.querySelector('[data-name="pokemon-results"]');
