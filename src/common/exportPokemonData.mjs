@@ -17,10 +17,7 @@ export function exportPokemonData() {
     //
     const pokemon = getLocalStorageJSON(`${collection}:pokemon`, {});
 
-    //
-    const data = Object.entries(pokemon).map(([id, tags]) => ({ id, tags }));
-
-    //
-    triggerFileDownload('tagged-pokemon.json', 'application/json', JSON.stringify(data, null, 2));
+    //keyed by id, the same shape as the store, so the file can be imported back as it is
+    triggerFileDownload('tagged-pokemon.json', 'application/json', JSON.stringify(pokemon, null, 2));
 
 }
