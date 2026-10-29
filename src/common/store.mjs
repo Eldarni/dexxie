@@ -26,16 +26,11 @@ const defaultCollections = {
 };
 
 
-//the tags a new collection starts with
+//the tags a new collection starts with, also used by any collection without its own (like the national dex)
 const newCollectionTags = [ "caught", "shiny" ];
 
 //
 export function initializeAndMigrateStores() {
-
-    //
-    if (localStorage.getItem('tags') === null) {
-        setLocalStorageJSON('tags', defaultTags);
-    }
 
     //
     if (localStorage.getItem('collections') === null) {
@@ -74,7 +69,7 @@ export function getCollection(collection = currentCollection) {
 export function changeCollection(collection) {
 
     //
-    currentCollection = collection || collection.id;
+    currentCollection = collection;
     setLocalStorageJSON('current-collection', currentCollection);
 
     //
@@ -172,7 +167,7 @@ export function getTags() {
     }
 
     //
-    return defaultTags;
+    return newCollectionTags;
 
 }
 

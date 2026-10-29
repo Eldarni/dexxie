@@ -8,7 +8,6 @@ function getLocalStorageJSON(key, defaultValue) {
 
         //
         if (!raw) {
-            setLocalStorageJSON(key, defaultValue);
             return defaultValue;
         }
 
@@ -16,7 +15,6 @@ function getLocalStorageJSON(key, defaultValue) {
         return JSON.parse(raw);
 
     } catch (error) {
-        setLocalStorageJSON(key, defaultValue);
         return defaultValue;
     }
 }
