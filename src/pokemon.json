@@ -8,7 +8,8 @@
     "tags": [
       "grass",
       "kanto",
-      "poison"
+      "poison",
+      "starter"
     ],
     "family": "bulbasaur"
   },
@@ -21,7 +22,8 @@
     "tags": [
       "grass",
       "kanto",
-      "poison"
+      "poison",
+      "starter"
     ],
     "family": "bulbasaur"
   },
@@ -34,7 +36,8 @@
     "tags": [
       "grass",
       "kanto",
-      "poison"
+      "poison",
+      "starter"
     ],
     "family": "bulbasaur"
   },
@@ -74,7 +77,8 @@
     },
     "tags": [
       "fire",
-      "kanto"
+      "kanto",
+      "starter"
     ],
     "family": "charmander"
   },
@@ -86,7 +90,8 @@
     },
     "tags": [
       "fire",
-      "kanto"
+      "kanto",
+      "starter"
     ],
     "family": "charmander"
   },
@@ -99,7 +104,8 @@
     "tags": [
       "fire",
       "flying",
-      "kanto"
+      "kanto",
+      "starter"
     ],
     "family": "charmander"
   },
@@ -153,6 +159,7 @@
     },
     "tags": [
       "kanto",
+      "starter",
       "water"
     ],
     "family": "squirtle"
@@ -165,6 +172,7 @@
     },
     "tags": [
       "kanto",
+      "starter",
       "water"
     ],
     "family": "squirtle"
@@ -177,6 +185,7 @@
     },
     "tags": [
       "kanto",
+      "starter",
       "water"
     ],
     "family": "squirtle"
@@ -2802,7 +2811,8 @@
     },
     "tags": [
       "grass",
-      "johto"
+      "johto",
+      "starter"
     ],
     "family": "chikorita"
   },
@@ -2814,7 +2824,8 @@
     },
     "tags": [
       "grass",
-      "johto"
+      "johto",
+      "starter"
     ],
     "family": "chikorita"
   },
@@ -2826,7 +2837,8 @@
     },
     "tags": [
       "grass",
-      "johto"
+      "johto",
+      "starter"
     ],
     "family": "chikorita"
   },
@@ -2852,7 +2864,8 @@
     },
     "tags": [
       "fire",
-      "johto"
+      "johto",
+      "starter"
     ],
     "family": "cyndaquil"
   },
@@ -2864,7 +2877,8 @@
     },
     "tags": [
       "fire",
-      "johto"
+      "johto",
+      "starter"
     ],
     "family": "cyndaquil"
   },
@@ -2876,7 +2890,8 @@
     },
     "tags": [
       "fire",
-      "johto"
+      "johto",
+      "starter"
     ],
     "family": "cyndaquil"
   },
@@ -2901,6 +2916,7 @@
     },
     "tags": [
       "johto",
+      "starter",
       "water"
     ],
     "family": "totodile"
@@ -2913,6 +2929,7 @@
     },
     "tags": [
       "johto",
+      "starter",
       "water"
     ],
     "family": "totodile"
@@ -2925,6 +2942,7 @@
     },
     "tags": [
       "johto",
+      "starter",
       "water"
     ],
     "family": "totodile"
@@ -4584,7 +4602,8 @@
     },
     "tags": [
       "grass",
-      "hoenn"
+      "hoenn",
+      "starter"
     ],
     "family": "treecko"
   },
@@ -4596,7 +4615,8 @@
     },
     "tags": [
       "grass",
-      "hoenn"
+      "hoenn",
+      "starter"
     ],
     "family": "treecko"
   },
@@ -4608,7 +4628,8 @@
     },
     "tags": [
       "grass",
-      "hoenn"
+      "hoenn",
+      "starter"
     ],
     "family": "treecko"
   },
@@ -4634,7 +4655,8 @@
     },
     "tags": [
       "fire",
-      "hoenn"
+      "hoenn",
+      "starter"
     ],
     "family": "torchic"
   },
@@ -4647,7 +4669,8 @@
     "tags": [
       "fighting",
       "fire",
-      "hoenn"
+      "hoenn",
+      "starter"
     ],
     "family": "torchic"
   },
@@ -4660,7 +4683,8 @@
     "tags": [
       "fighting",
       "fire",
-      "hoenn"
+      "hoenn",
+      "starter"
     ],
     "family": "torchic"
   },
@@ -4686,6 +4710,7 @@
     },
     "tags": [
       "hoenn",
+      "starter",
       "water"
     ],
     "family": "mudkip"
@@ -4699,6 +4724,7 @@
     "tags": [
       "ground",
       "hoenn",
+      "starter",
       "water"
     ],
     "family": "mudkip"
@@ -4712,6 +4738,7 @@
     "tags": [
       "ground",
       "hoenn",
+      "starter",
       "water"
     ],
     "family": "mudkip"
@@ -6812,7 +6839,8 @@
     },
     "tags": [
       "grass",
-      "sinnoh"
+      "sinnoh",
+      "starter"
     ],
     "family": "turtwig"
   },
@@ -6824,7 +6852,8 @@
     },
     "tags": [
       "grass",
-      "sinnoh"
+      "sinnoh",
+      "starter"
     ],
     "family": "turtwig"
   },
@@ -6837,7 +6866,8 @@
     "tags": [
       "grass",
       "ground",
-      "sinnoh"
+      "sinnoh",
+      "starter"
     ],
     "family": "turtwig"
   },
@@ -6849,7 +6879,8 @@
     },
     "tags": [
       "fire",
-      "sinnoh"
+      "sinnoh",
+      "starter"
     ],
     "family": "chimchar"
   },
@@ -6862,7 +6893,8 @@
     "tags": [
       "fighting",
       "fire",
-      "sinnoh"
+      "sinnoh",
+      "starter"
     ],
     "family": "chimchar"
   },
@@ -6875,7 +6907,8 @@
     "tags": [
       "fighting",
       "fire",
-      "sinnoh"
+      "sinnoh",
+      "starter"
     ],
     "family": "chimchar"
   },
@@ -6887,6 +6920,7 @@
     },
     "tags": [
       "sinnoh",
+      "starter",
       "water"
     ],
     "family": "piplup"
@@ -6899,6 +6933,7 @@
     },
     "tags": [
       "sinnoh",
+      "starter",
       "water"
     ],
     "family": "piplup"
@@ -6911,6 +6946,7 @@
     },
     "tags": [
       "sinnoh",
+      "starter",
       "steel",
       "water"
     ],
@@ -8760,6 +8796,7 @@
     },
     "tags": [
       "grass",
+      "starter",
       "unova"
     ],
     "family": "snivy"
@@ -8772,6 +8809,7 @@
     },
     "tags": [
       "grass",
+      "starter",
       "unova"
     ],
     "family": "snivy"
@@ -8784,6 +8822,7 @@
     },
     "tags": [
       "grass",
+      "starter",
       "unova"
     ],
     "family": "snivy"
@@ -8796,6 +8835,7 @@
     },
     "tags": [
       "fire",
+      "starter",
       "unova"
     ],
     "family": "tepig"
@@ -8809,6 +8849,7 @@
     "tags": [
       "fighting",
       "fire",
+      "starter",
       "unova"
     ],
     "family": "tepig"
@@ -8822,6 +8863,7 @@
     "tags": [
       "fighting",
       "fire",
+      "starter",
       "unova"
     ],
     "family": "tepig"
@@ -8847,6 +8889,7 @@
       "en": "Oshawott"
     },
     "tags": [
+      "starter",
       "unova",
       "water"
     ],
@@ -8859,6 +8902,7 @@
       "en": "Dewott"
     },
     "tags": [
+      "starter",
       "unova",
       "water"
     ],
@@ -8871,6 +8915,7 @@
       "en": "Samurott"
     },
     "tags": [
+      "starter",
       "unova",
       "water"
     ],
@@ -11225,7 +11270,8 @@
     },
     "tags": [
       "grass",
-      "kalos"
+      "kalos",
+      "starter"
     ],
     "family": "chespin"
   },
@@ -11237,7 +11283,8 @@
     },
     "tags": [
       "grass",
-      "kalos"
+      "kalos",
+      "starter"
     ],
     "family": "chespin"
   },
@@ -11250,7 +11297,8 @@
     "tags": [
       "fighting",
       "grass",
-      "kalos"
+      "kalos",
+      "starter"
     ],
     "family": "chespin"
   },
@@ -11276,7 +11324,8 @@
     },
     "tags": [
       "fire",
-      "kalos"
+      "kalos",
+      "starter"
     ],
     "family": "fennekin"
   },
@@ -11288,7 +11337,8 @@
     },
     "tags": [
       "fire",
-      "kalos"
+      "kalos",
+      "starter"
     ],
     "family": "fennekin"
   },
@@ -11301,7 +11351,8 @@
     "tags": [
       "fire",
       "kalos",
-      "psychic"
+      "psychic",
+      "starter"
     ],
     "family": "fennekin"
   },
@@ -11327,6 +11378,7 @@
     },
     "tags": [
       "kalos",
+      "starter",
       "water"
     ],
     "family": "froakie"
@@ -11339,6 +11391,7 @@
     },
     "tags": [
       "kalos",
+      "starter",
       "water"
     ],
     "family": "froakie"
@@ -11352,6 +11405,7 @@
     "tags": [
       "dark",
       "kalos",
+      "starter",
       "water"
     ],
     "family": "froakie"
@@ -13001,7 +13055,8 @@
     "tags": [
       "alola",
       "flying",
-      "grass"
+      "grass",
+      "starter"
     ],
     "family": "rowlet"
   },
@@ -13014,7 +13069,8 @@
     "tags": [
       "alola",
       "flying",
-      "grass"
+      "grass",
+      "starter"
     ],
     "family": "rowlet"
   },
@@ -13027,7 +13083,8 @@
     "tags": [
       "alola",
       "ghost",
-      "grass"
+      "grass",
+      "starter"
     ],
     "family": "rowlet"
   },
@@ -13052,7 +13109,8 @@
     },
     "tags": [
       "alola",
-      "fire"
+      "fire",
+      "starter"
     ],
     "family": "litten"
   },
@@ -13064,7 +13122,8 @@
     },
     "tags": [
       "alola",
-      "fire"
+      "fire",
+      "starter"
     ],
     "family": "litten"
   },
@@ -13077,7 +13136,8 @@
     "tags": [
       "alola",
       "dark",
-      "fire"
+      "fire",
+      "starter"
     ],
     "family": "litten"
   },
@@ -13089,6 +13149,7 @@
     },
     "tags": [
       "alola",
+      "starter",
       "water"
     ],
     "family": "popplio"
@@ -13101,6 +13162,7 @@
     },
     "tags": [
       "alola",
+      "starter",
       "water"
     ],
     "family": "popplio"
@@ -13114,6 +13176,7 @@
     "tags": [
       "alola",
       "fairy",
+      "starter",
       "water"
     ],
     "family": "popplio"
@@ -14577,7 +14640,8 @@
     },
     "tags": [
       "galar",
-      "grass"
+      "grass",
+      "starter"
     ],
     "family": "grookey"
   },
@@ -14589,7 +14653,8 @@
     },
     "tags": [
       "galar",
-      "grass"
+      "grass",
+      "starter"
     ],
     "family": "grookey"
   },
@@ -14601,7 +14666,8 @@
     },
     "tags": [
       "galar",
-      "grass"
+      "grass",
+      "starter"
     ],
     "family": "grookey"
   },
@@ -14626,7 +14692,8 @@
     },
     "tags": [
       "fire",
-      "galar"
+      "galar",
+      "starter"
     ],
     "family": "scorbunny"
   },
@@ -14638,7 +14705,8 @@
     },
     "tags": [
       "fire",
-      "galar"
+      "galar",
+      "starter"
     ],
     "family": "scorbunny"
   },
@@ -14650,7 +14718,8 @@
     },
     "tags": [
       "fire",
-      "galar"
+      "galar",
+      "starter"
     ],
     "family": "scorbunny"
   },
@@ -14675,6 +14744,7 @@
     },
     "tags": [
       "galar",
+      "starter",
       "water"
     ],
     "family": "sobble"
@@ -14687,6 +14757,7 @@
     },
     "tags": [
       "galar",
+      "starter",
       "water"
     ],
     "family": "sobble"
@@ -14699,6 +14770,7 @@
     },
     "tags": [
       "galar",
+      "starter",
       "water"
     ],
     "family": "sobble"
@@ -16976,7 +17048,8 @@
     },
     "tags": [
       "grass",
-      "paldea"
+      "paldea",
+      "starter"
     ],
     "family": "sprigatito"
   },
@@ -16988,7 +17061,8 @@
     },
     "tags": [
       "grass",
-      "paldea"
+      "paldea",
+      "starter"
     ],
     "family": "sprigatito"
   },
@@ -17001,7 +17075,8 @@
     "tags": [
       "dark",
       "grass",
-      "paldea"
+      "paldea",
+      "starter"
     ],
     "family": "sprigatito"
   },
@@ -17013,7 +17088,8 @@
     },
     "tags": [
       "fire",
-      "paldea"
+      "paldea",
+      "starter"
     ],
     "family": "fuecoco"
   },
@@ -17025,7 +17101,8 @@
     },
     "tags": [
       "fire",
-      "paldea"
+      "paldea",
+      "starter"
     ],
     "family": "fuecoco"
   },
@@ -17038,7 +17115,8 @@
     "tags": [
       "fire",
       "ghost",
-      "paldea"
+      "paldea",
+      "starter"
     ],
     "family": "fuecoco"
   },
@@ -17050,6 +17128,7 @@
     },
     "tags": [
       "paldea",
+      "starter",
       "water"
     ],
     "family": "quaxly"
@@ -17062,6 +17141,7 @@
     },
     "tags": [
       "paldea",
+      "starter",
       "water"
     ],
     "family": "quaxly"
@@ -17075,6 +17155,7 @@
     "tags": [
       "fighting",
       "paldea",
+      "starter",
       "water"
     ],
     "family": "quaxly"

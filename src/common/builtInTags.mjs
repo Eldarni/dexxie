@@ -6,7 +6,7 @@ export const REGIONS = ['kanto', 'johto', 'hoenn', 'sinnoh', 'unova', 'kalos', '
 export const TYPES = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting', 'poison', 'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost', 'dragon', 'dark', 'steel', 'fairy'];
 
 //the other built in tags, a collection can be limited to these
-export const OTHER = ['legendary', 'mythical', 'mega', 'gmax'];
+export const OTHER = ['starter', 'legendary', 'mythical', 'mega', 'gmax'];
 
 //
 const labels = { gmax: 'Gigantamax' };
