@@ -1,3 +1,6 @@
+//
+@use './pseudo' as *;
+
 
 //the add/edit collection form, shown in the popup
 .collection-form {
@@ -102,12 +105,30 @@
     }
 
     //
+    //kept at the bottom of the popup while the form scrolls, with a line above it lined up with the form
     .collection-form-actions {
+
+        //
+        position: sticky;
+        inset-block-end: 0;
 
         //
         display: flex;
         justify-content: flex-end;
         gap: 0.5rem;
+
+        //
+        padding-block: 1rem 1.5rem;
+
+        //
+        background-color: var(--colour-floating-background);
+
+        //
+        &::before {
+            @include pseudo($inset-block-start: 0, $inset-inline: 0);
+            height: 1px;
+            background-color: color-mix(in srgb, var(--colour-foreground), transparent 80%);
+        }
 
         //
         button {

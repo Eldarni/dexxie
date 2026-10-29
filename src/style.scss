@@ -76,6 +76,9 @@ $type-colours: (
     --colour-foreground : #e7e7e6;
     --colour-background : #464646;
 
+    //a little darker than the page, so floating things (the dropdown, the popup) stand out
+    --colour-floating-background : color-mix(in srgb, var(--colour-background), black 8%);
+
     //
     --colour-blue : #6ea4bb;
     --colour-red : #c04c4b;
@@ -489,8 +492,8 @@ main {
         min-width: 16rem;
         padding: 0.3rem;
 
-        //a little darker than the page, so the menu stands out
-        background-color: color-mix(in srgb, var(--colour-background), black 8%);
+        //
+        background-color: var(--colour-floating-background);
 
         //
         box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.35);
