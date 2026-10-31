@@ -6,10 +6,18 @@ export const REGIONS = ['kanto', 'johto', 'hoenn', 'sinnoh', 'unova', 'kalos', '
 export const TYPES = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting', 'poison', 'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost', 'dragon', 'dark', 'steel', 'fairy'];
 
 //the other built in tags, a collection can be limited to these
-export const OTHER = ['starter', 'legendary', 'mythical', 'mega', 'gmax'];
+export const OTHER = ['starter', 'legendary', 'mythical', 'mega', 'gmax', 'regional-form', 'baby', 'ultra-beast', 'paradox', 'fossil', 'pseudo-legendary', 'go-available', 'go-regional', 'go-shiny'];
 
 //
-const labels = { gmax: 'Gigantamax' };
+const labels = {
+    'gmax': 'Gigantamax',
+    'regional-form': 'Regional form',
+    'ultra-beast': 'Ultra Beast',
+    'pseudo-legendary': 'Pseudo-legendary',
+    'go-available': 'Available (GO)',
+    'go-regional': 'Regional (GO)',
+    'go-shiny': 'Shiny (GO)'
+};
 
 //the name of a built in tag to show to the user
 export function getTagLabel(tag) {

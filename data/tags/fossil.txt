@@ -1,0 +1,28 @@
+# pokemon revived from fossils and their lines
+# one pokemon id per line (as in src/pokemon.json), lines starting with # are ignored
+aerodactyl
+aerodactyl-mega
+amaura
+anorith
+archen
+archeops
+arctovish
+arctozolt
+armaldo
+aurorus
+bastiodon
+carracosta
+cradily
+cranidos
+dracovish
+dracozolt
+kabuto
+kabutops
+lileep
+omanyte
+omastar
+rampardos
+shieldon
+tirtouga
+tyrantrum
+tyrunt

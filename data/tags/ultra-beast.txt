@@ -1,0 +1,13 @@
+# the ultra beasts
+# one pokemon id per line (as in src/pokemon.json), lines starting with # are ignored
+blacephalon
+buzzwole
+celesteela
+guzzlord
+kartana
+naganadel
+nihilego
+pheromosa
+poipole
+stakataka
+xurkitree

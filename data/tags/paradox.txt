@@ -1,0 +1,24 @@
+# paradox pokemon, ancient and future
+# one pokemon id per line (as in src/pokemon.json), lines starting with # are ignored
+brute-bonnet
+flutter-mane
+gouging-fire
+great-tusk
+iron-boulder
+iron-bundle
+iron-crown
+iron-hands
+iron-jugulis
+iron-leaves
+iron-moth
+iron-thorns
+iron-treads
+iron-valiant
+koraidon
+miraidon
+raging-bolt
+roaring-moon
+sandy-shocks
+scream-tail
+slither-wing
+walking-wake
